@@ -12,7 +12,7 @@
 
 <form action="/태섭_경주포폴/member/signup" method="post" class="sign">
 
-	<h1>회원가입</h1>ㅁ
+	<h1>회원가입</h1>
 	
 		<input type="text" value="이름" id="name" name="name">
 	
