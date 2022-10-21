@@ -29,11 +29,13 @@ public class check extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-	String id = request.getParameter("id");
+	String lid = request.getParameter("lid");
+	String lname = request.getParameter("lname");
 
-	System.out.println(id);
+	System.out.println(lid);
+	System.out.println(lname);
 	
-	boolean result = memberdao.getInstance().check(id);
+	boolean result = memberdao.getInstance().check(lid ,lname);
 	response.getWriter().print(result);
 	System.out.println(result);
 	}

@@ -13,7 +13,8 @@ function login(){
 		data : {"l_id" : l_id, "l_pw":l_pw},
 		success : function(re){
 			if(re==="true"){
-				alert("로그인되었습니다")
+				alert("로그인되었습니다") 
+				location.href("/member/login")
 			}else{
 				document.querySelector(".alertp").innerHTML = "비밀번호가 틀렸거나 존재하지 않는 아이디입니다.";
 				

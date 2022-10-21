@@ -1,5 +1,67 @@
 
 
+
+
+
+
+let cocl3 = document.querySelectorAll('.cocl3')
+
+
+function log1(){
+	let lname = document.querySelector("#lname").value
+	let lid = document.querySelector("#lid").value
+	let lidc = /^[a-z0-9]{5,20}$/
+	
+	console.log(lid)
+	console.log(lname)
+	if(lidc.test(lid)){
+		$.ajax({
+			url:"/태섭_경주포폴/member/check",
+			data:{"lid":lid,"lname" : lname },
+			success :function(re){
+			if(re==="true"){
+				cocl3[0].innerHTML = "x"
+				cocl3[1].innerHTML = "x"
+			}else{cocl3[1].innerHTML = "o" ;cocl3[0].innerHTML = "o"}
+		
+			}
+			
+			
+		})	
+	}else{
+		cocl3[0].innerHTML = "x";
+		cocl3[1].innerHTML = "x"
+		
+	}
+}
+
+
+function log2(){
+	let lpw = document.querySelector("#lpw").value
+	let lpwc = /^[a-zA-Z0-9]{10,20}$/
+		
+		if(lpwc.test(lpw)){
+			cocl3[2].innerHTML = "x"
+		}else{
+			cocl3[2].innerHTML = "o"
+			
+		}
+	
+	
+}
+
+function log3(){
+	let lph = document.querySelector("#lph").value
+	let lphc = /^([0-9]{2,3})-([0-9]{3,4})-([0-9]{3,4})$/
+	if(lphc.test(lph)){
+		
+		cocl3[3].innerHTML ="x"
+	}else{
+		cocl3[3].in
+	}
+	
+	
+}
 /*
 function signup(){
 	
@@ -30,16 +92,24 @@ function signup(){
 	/태섭_경주포폴/member/check
 	
 }
-*/
-let m = document.querySelector(".m") 
-let m1 = document.querySelector(".m1")
-let m2 = document.querySelector(".m2")
-let m3 = document.querySelector(".m3")
+
+let m = document.querySelectorAll(".m") 
+
+function namec(){
+	let name = document.querySelector('#s_name').value
+	let namec =/^[A-Za-z가-힣]{5,20}$/
+	console.log(name)
+	if(namec.test(name)){
+			m[0].innerHTML = "x"
+		}else{
+			m[0].innerHTML = "o"
+		}
+}
 
 
 function idc(){ //이름 아이디 유효성 + 중복
-
-	let id = document.querySelector("#id").value
+	
+	let id = document.querySelector("#s_id").value
 	let idc =/^[A-Za-z0-9]{6,20}$/
 	
 	console.log(id)
@@ -50,57 +120,61 @@ function idc(){ //이름 아이디 유효성 + 중복
 			success :function(re){
 			if(re==="true"){
 				
-				m.innerHTML = "x"
-			}else{m.innerHTML = "사용가능합니다"}
+				m[1].innerHTML = "x"
+			}else{m[1].innerHTML = "o"}
 		
 			}
 			
 			
 		})
 		
-	}else{m.innerHTML = "x"}
+	}else{m[1].innerHTML = "x"}
 }
 
 
 function pwc(){
-		let pw = document.querySelector("#pw").value
+		let pw = document.querySelector("#s_pw").value
 		let pwc = /^[a-zA-Z0-9]{8,20}$/
 		
 		if(pwc.test(pw)){
-				m1.innerHTML = "o"
+				m[2].innerHTML = "o"
 		}else{
-			m1.innerHTML = "x"
+			m[2].innerHTML = "x"
 		}
 }
 
 function phc(){
-		let ph = document.querySelector("#ph").value
+		let ph = document.querySelector("#s_ph").value
 		let phc = /^([0-9]{2,3})-([0-9]{3,4})-([0-9]{3,4})$/
 		
 		if(phc.test(ph)){
-			m2.innerHTML = "o"
+			m[3].innerHTML = "o"
 		}else{
-			m2.innerHTML = "x"
+			m[3].innerHTML = "x"
 		}
 		
 }
 
 function sizec(){
-	let size = document.querySelector("#size").value;
+	let size = document.querySelector("#s_size").value;
 	let sizec = /^([0-9]{2,3})$/
 	
 	
 	if(sizec.test(size)){
-		m3.innerHTML = "o"
+		m[4].innerHTML = "o"
 	}else{ 
-			m3.innerHTML = "x"
+			m[4].innerHTML = "x"
 		}
 }
 function signup(){
-			if(m1,m2,m3,m.innerHTML=="x"){
+			
+			if(m.innerHTML=="x"){
 			alert("입력이 안된정보가 있습니다."); return false;	}
 			document.querySelector(".sign").submit();
 			alert("등록되었습니다.")
 			location.href="/태섭_경주포폴/view/login.jsp"
 	
 }
+
+
+*/

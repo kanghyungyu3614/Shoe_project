@@ -39,26 +39,25 @@ public class signup extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		System.out.println(1);
 		request.setCharacterEncoding("UTF-8");
-		String name = request.getParameter("name");
-		String id = request.getParameter("id");
-		String pw = request.getParameter("pw");
-		String ad = request.getParameter("ad");
-		String ph = request.getParameter("ph");
-		String size = request.getParameter("size");
-		System.out.println(id);
-		System.out.println(pw+1);
-		dto dto = new dto(0, name, ad, id, pw, ph, size, null);
-		
+		String s_name = request.getParameter("name");
+		String s_id = request.getParameter("id");
+		String s_pw = request.getParameter("pw");
+		String s_ad = request.getParameter("ad");
+		String s_ph = request.getParameter("ph");
+		String s_size = request.getParameter("size");
+		System.out.println(s_name);
+		System.out.println(s_id);
+		dto dto = new dto(0, s_name, s_id, s_pw, s_ph ,s_ad, s_size, null);
 		System.out.println(dto.toString());
 		
 		boolean result = memberdao.getInstance().signup(dto);
 		if(result) {
 			System.out.println("성공");
 		}else {
-			System.out.println(2);
+			System.out.println("실패"); return;
 		}
 		System.out.println(result);
-		request.setCharacterEncoding("UTF-8");
+		response.setCharacterEncoding("UTF-8");
 		response.getWriter().print(result);
 	
 	}
