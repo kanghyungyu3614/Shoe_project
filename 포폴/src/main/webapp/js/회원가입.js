@@ -22,7 +22,8 @@ function log1(){
 			if(re==="true"){
 				cocl3[0].innerHTML = "x"
 				cocl3[1].innerHTML = "x"
-			}else{cocl3[1].innerHTML = "o" ;cocl3[0].innerHTML = "o"}
+			}else{cocl3[1].innerHTML = "o" ;
+			cocl3[0].innerHTML = "o"}
 		
 			}
 			
@@ -41,9 +42,9 @@ function log2(){
 	let lpwc = /^[a-zA-Z0-9]{10,20}$/
 		
 		if(lpwc.test(lpw)){
-			cocl3[2].innerHTML = "x"
-		}else{
 			cocl3[2].innerHTML = "o"
+		}else{
+			cocl3[2].innerHTML = "x"
 			
 		}
 	
@@ -55,13 +56,41 @@ function log3(){
 	let lphc = /^([0-9]{2,3})-([0-9]{3,4})-([0-9]{3,4})$/
 	if(lphc.test(lph)){
 		
-		cocl3[3].innerHTML ="x"
+		cocl3[3].innerHTML ="o"
 	}else{
-		cocl3[3].in
+		cocl3[3].innerHTML ="x"
 	}
 	
+} 
+
+
+function log4(){
 	
+	let lemail = document.querySelector("#lemail").value
+	let lemailc = /^[a-zA-Z0-9+-_.]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-]+$/ 
+	
+	if(lemailc.test(lemail)){
+		
+		cocl3[4].innerHTML ="o"
+	}else{
+		cocl3[4].innerHTML ="x"
+
+	}
+		
 }
+
+function log5(){
+	
+		let lsize = document.querySelector("#lsize").value
+		let lsizec = /^([0-9]{2,3})$/
+		if(lsizec.test(lsize)){
+			cocl3[5].innerHTML ="x"
+		}else{
+			cocl3[5].innerHTML ="o"
+		}
+		
+}
+
 /*
 function signup(){
 	

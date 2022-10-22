@@ -1,3 +1,6 @@
+
+
+
 package controll.member;
 
 import java.io.IOException;
@@ -39,15 +42,15 @@ public class signup extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		System.out.println(1);
 		request.setCharacterEncoding("UTF-8");
-		String s_name = request.getParameter("name");
-		String s_id = request.getParameter("id");
-		String s_pw = request.getParameter("pw");
-		String s_ad = request.getParameter("ad");
-		String s_ph = request.getParameter("ph");
-		String s_size = request.getParameter("size");
+		String s_name = request.getParameter("lname");
+		String s_id = request.getParameter("lid");
+		String s_pw = request.getParameter("lpw");
+		String s_email = request.getParameter("lemail");
+		String s_ph = request.getParameter("lph");
+		String s_size = request.getParameter("lsize");
 		System.out.println(s_name);
 		System.out.println(s_id);
-		dto dto = new dto(0, s_name, s_id, s_pw, s_ph ,s_ad, s_size, null);
+		dto dto = new dto(0, s_name, s_id, s_pw, s_ph ,s_email, s_size, null);
 		System.out.println(dto.toString());
 		
 		boolean result = memberdao.getInstance().signup(dto);

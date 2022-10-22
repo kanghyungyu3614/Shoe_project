@@ -9,13 +9,9 @@
 </head>
 <body>
 
-
-
 <form class="signup" action="/태섭_경주포폴/member/signup" method="post">
 
-
 	<h2> 회원가입 </h2>
-	
 	<h3> 기입 정보 </h3>
 
 
@@ -29,7 +25,6 @@
 			
 			<td><input type="text" placeholder="아이디" name="lid" id="lid" onkeyup="log1()"></td>
 			<td class="cocl3"></td>
-			
 		</tr>
 		<tr>
 			<td><input type="text" placeholder="비밀번호" name="lpw" id="lpw" onkeyup="log2()"></td>
@@ -49,10 +44,7 @@
 			<td> <input type="text" placeholder="발사이즈"  name="lsize" id="lsize" onkeyup="log5()"></td>
 			<td class="cocl3"></td>
 		</tr>
-		<tr>
-			<td> <input type="text" placeholder="주소" name="laddr" id="laddr" onkeyup="log6()"></td>
-			<td class="cocl3"></td>
-		</tr>
+		
 	</table>
 	<h3>이용약관</h3>
 		<span>
