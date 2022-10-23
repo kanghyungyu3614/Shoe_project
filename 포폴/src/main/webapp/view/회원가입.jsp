@@ -9,17 +9,17 @@
 </head>
 <body>
 
-<form class="signup" action="/태섭_경주포폴/member/signup" method="post">
+<form class="lsignup" action="/태섭_경주포폴/shoe/signup" method="post">
 
 	<h2> 회원가입 </h2>
-	<h3> 기입 정보 </h3>
+	<h3> 기입정보 </h3>
 
 
 	<table>
 		<tr>
 			<td><input type="text" placeholder="이름" name="lname" id="lname"></td>
 			<td class="cocl3"></td>
-			
+	
 		</tr>
 		<tr>
 			

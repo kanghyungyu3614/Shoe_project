@@ -16,7 +16,7 @@ import model.dto.dto;
 /**
  * Servlet implementation class signup
  */
-@WebServlet("/member/signup")
+@WebServlet("/shoe/signup")
 public class signup extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -40,28 +40,32 @@ public class signup extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		System.out.println(1);
-		request.setCharacterEncoding("UTF-8");
-		String s_name = request.getParameter("lname");
-		String s_id = request.getParameter("lid");
-		String s_pw = request.getParameter("lpw");
-		String s_email = request.getParameter("lemail");
-		String s_ph = request.getParameter("lph");
-		String s_size = request.getParameter("lsize");
-		System.out.println(s_name);
-		System.out.println(s_id);
-		dto dto = new dto(0, s_name, s_id, s_pw, s_ph ,s_email, s_size, null);
-		System.out.println(dto.toString());
 		
-		boolean result = memberdao.getInstance().signup(dto);
-		if(result) {
-			System.out.println("성공");
-		}else {
-			System.out.println("실패"); return;
-		}
-		System.out.println(result);
-		response.setCharacterEncoding("UTF-8");
-		response.getWriter().print(result);
+		request.setCharacterEncoding("UTF-8");
+		
+		
+		  String lname = request.getParameter("lname"); 
+		  String lid =request.getParameter("lid");
+		  String lpw = request.getParameter("lpw"); 
+		  String lph = request.getParameter("lph"); 
+		  String lemail = request.getParameter("lemail");
+		  String lsize = request.getParameter("lsize");
+		  System.out.println(lname); 
+		  System.out.println(lid);
+		 
+		
+		  dto dto = new dto(0, lname, lid, lpw,lph, lemail , lsize, null);
+		  System.out.println(dto.toString());
+		  
+		  boolean result = memberdao.getInstance().lsignup(dto); 
+		  if(result) {
+			  response.sendRedirect("http://localhost:8080/%ED%83%9C%EC%84%AD_%EA%B2%BD%EC%A3%BC%ED%8F%AC%ED%8F%B4/view/login.jsp"); }
+		  else {
+			  System.out.println("실패"); return; }
+		  	  System.out.println(result); 
+		  response.setCharacterEncoding("UTF-8");
+		  
+		 
 	
 	}
 

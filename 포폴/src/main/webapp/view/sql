@@ -1,0 +1,24 @@
+drop database if exists shoemain;
+
+create database shoemain;
+
+use shoemain;
+
+create table shoe(
+
+	lnum int primary key auto_increment,
+	lname varchar(10),
+    lid varchar(100),
+	lpw varchar(100),
+    lph varchar(100),
+	lemail varchar(100),
+	lsize varchar(100),
+	lday datetime default now()
+	
+
+
+);
+select * from shoe;
+select * from shoe where lid="rlarudwn900";
+select *from shoe where lid ="rlarudwn900" and lpw="kimkyu9000";
+select *from shoe where lid="rlarudwn900" and lname = "김경주"and lph="010-3956-1935"

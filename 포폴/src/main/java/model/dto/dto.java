@@ -3,97 +3,109 @@ package model.dto;
 public class dto {
 	
 	
-	private int num;
-	private String s_name;
-
+	private int lnum;
+	private String lname;
+	private String lid;
+	private String lpw;
+	private String lph;
+	private String lemail;
+	private String lsize;
+	private String lday;
 	
-
-	private String s_id;
-	private String s_pw;
-	private String s_phone;
-	private String s_add;
-	private String s_size;
-	private String s_day;
 	
 	public dto() {
 		// TODO Auto-generated constructor stub
 	}
+	
+	
+	
 
-	public dto(int num, String s_name, String s_id, String s_pw, String s_phone, String s_add, String s_size,
-			String s_day) {
+	public dto(int lnum, String lname, String lid, String lpw, String lph, String lemail, String lsize, String lday) {
 		super();
-		this.num = num;
-		this.s_name = s_name;
-		this.s_id = s_id;
-		this.s_pw = s_pw;
-		this.s_phone = s_phone;
-		this.s_add = s_add;
-		this.s_size = s_size;
-		this.s_day = s_day;
+		this.lnum = lnum;
+		this.lname = lname;
+		this.lid = lid;
+		this.lpw = lpw;
+		this.lph = lph;
+		this.lemail = lemail;
+		this.lsize = lsize;
+		this.lday = lday;
 	}
 
-	public int getNum() {
-		return num;
+
+
+
+	@Override
+	public String toString() {
+		return "dto [lnum=" + lnum + ", lname=" + lname + ", lid=" + lid + ", lpw=" + lpw + ", lph=" + lph + ", lemail="
+				+ lemail + ", lsize=" + lsize + ", lday=" + lday + "]";
 	}
 
-	public void setNum(int num) {
-		this.num = num;
+
+
+
+	public int getLnum() {
+		return lnum;
 	}
 
-	public String getS_name() {
-		return s_name;
+	public void setLnum(int lnum) {
+		this.lnum = lnum;
 	}
 
-	public void setS_name(String s_name) {
-		this.s_name = s_name;
+	public String getLname() {
+		return lname;
 	}
 
-	public String getS_id() {
-		return s_id;
+	public void setLname(String lname) {
+		this.lname = lname;
 	}
 
-	public void setS_id(String s_id) {
-		this.s_id = s_id;
+	public String getLid() {
+		return lid;
 	}
 
-	public String getS_pw() {
-		return s_pw;
+	public void setLid(String lid) {
+		this.lid = lid;
 	}
 
-	public void setS_pw(String s_pw) {
-		this.s_pw = s_pw;
+	public String getLpw() {
+		return lpw;
 	}
 
-	public String getS_phone() {
-		return s_phone;
+	public void setLpw(String lpw) {
+		this.lpw = lpw;
 	}
 
-	public void setS_phone(String s_phone) {
-		this.s_phone = s_phone;
+	public String getLph() {
+		return lph;
 	}
 
-	public String getS_add() {
-		return s_add;
+	public void setLph(String lph) {
+		this.lph = lph;
 	}
 
-	public void setS_add(String s_add) {
-		this.s_add = s_add;
+	public String getLemail() {
+		return lemail;
 	}
 
-	public String getS_size() {
-		return s_size;
+	public void setLemail(String lemail) {
+		this.lemail = lemail;
 	}
 
-	public void setS_size(String s_size) {
-		this.s_size = s_size;
+	public String getLsize() {
+		return lsize;
 	}
 
-	public String getS_day() {
-		return s_day;
+	public void setLsize(String lsize) {
+		this.lsize = lsize;
 	}
 
-	public void setS_day(String s_day) {
-		this.s_day = s_day;
+	public String getLday() {
+		return lday;
+	}
+
+	public void setLday(String lday) {
+		this.lday = lday;
 	}
 
 	

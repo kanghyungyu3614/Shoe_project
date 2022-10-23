@@ -16,7 +16,7 @@ function log1(){
 	console.log(lname)
 	if(lidc.test(lid)){
 		$.ajax({
-			url:"/태섭_경주포폴/member/check",
+			url:"/태섭_경주포폴/shoe/check",
 			data:{"lid":lid,"lname" : lname },
 			success :function(re){
 			if(re==="true"){
@@ -89,6 +89,16 @@ function log5(){
 			cocl3[5].innerHTML ="o"
 		}
 		
+}
+function signupbtn(){
+	
+		for(let i = 0; i<=5; i++){
+		if(cocl3[i].innerHTML=="x"){
+		alert("입력이 안된정보가 있습니다."); return false;	}
+		}
+		document.querySelector(".lsignup").submit();
+		
+
 }
 
 /*
