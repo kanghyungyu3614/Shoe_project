@@ -24,7 +24,7 @@
 %>
 	<li><div><%=lid%>님 안녕하세요</div></li>
 	<li><a href="../view/mypage.jsp">나의 정보</a></li>
-	<li><a href="#">셀럽들의 정보</a></li>
+	<li><a href="../board/write.jsp">셀럽들의 정보</a></li>
 	<li><a href="../view/logout.jsp">로그아웃</a></li>
 <% }%>
 </ul>

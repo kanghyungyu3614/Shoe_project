@@ -168,6 +168,19 @@ public class memberdao extends dao{
 			System.out.println(e);
 		}return false;
 	}
+	
+	//아이디를 번호로 
+	public int getlnum(String lid) {
+		String sql = "select * from shoe where lid =?";
+		try {
+			ps = con.prepareStatement(sql);
+			ps.setString(1, lid);
+			rs = ps.executeQuery();
+			if(rs.next()) return rs.getInt(1);
+		} catch (Exception e) {
+			System.out.println(e);
+		}return 0;
+	}
 	/*
 	 * public int M_login(String lid ,String lpw) { String sql =
 	 * "select *from shoe where lid=?"; try { ps = con.prepareStatement(sql);
