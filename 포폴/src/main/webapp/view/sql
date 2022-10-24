@@ -6,7 +6,7 @@ use shoemain;
 
 create table shoe(
 
-	lnum int primary key auto_increment,
+	lnum int primary key auto_increment ,
 	lname varchar(10),
     lid varchar(100),
 	lpw varchar(100),
@@ -18,6 +18,20 @@ create table shoe(
 
 
 );
+
+drop table if exists board;
+create table board(
+  snum int primary key auto_increment,
+  sid varchar(15) ,
+  stitle varchar(100),
+  scontent varchar(100),
+  sfile longtext,
+	foreign key (snum) references shoe(lnum)
+);
+
+select * from board;
+
+
 select * from shoe;
 select * from shoe where lid="rlarudwn900";
 select *from shoe where lid ="rlarudwn900" and lpw="kimkyu9000";
