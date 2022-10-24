@@ -26,6 +26,7 @@
 		<td class="num1">가입일</td>
 		<td class="ldate"></td>
 	</tr>
+	
 	<tr>
 		<td class="num1">이름</td>
 		<td class="lname"></td>

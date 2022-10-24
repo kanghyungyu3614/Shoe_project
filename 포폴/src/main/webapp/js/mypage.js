@@ -12,9 +12,9 @@ mypa()
 			console.log(member)
 			document.querySelector(".lno").innerHTML = member.lnum
 			document.querySelector(".ldate").innerHTML = member.lday
-			document.querySelector(".lname").value = member.lname
-			document.querySelector(".lid").value = member.lid
-			document.querySelector(".lpw").value = member.lpw
+			document.querySelector(".lname").innerHTML = member.lname
+			document.querySelector(".lid").innerHTML = member.lid
+			document.querySelector(".lpw").innerHTML = member.lpw
 			document.querySelector(".lph").innerHTML = member.lph
 			document.querySelector(".lemail").innerHTML = member.lemail
 			document.querySelector(".lsize").innerHTML = member.lsize

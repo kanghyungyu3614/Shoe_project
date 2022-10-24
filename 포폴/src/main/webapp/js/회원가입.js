@@ -91,11 +91,19 @@ function log5(){
 		
 }
 function signupbtn(){
-	
+		
 		for(let i = 0; i<=5; i++){
 		if(cocl3[i].innerHTML=="x"){
 		alert("입력이 안된정보가 있습니다."); return false;	}
 		}
+		if( document.querySelector("#chek1").checked == false){
+			alert("이용약관에 동의해주세요"); return false;
+		}
+		if(document.querySelector("#chek2").checked == false){
+			alert("이용약관에 동의해주세요"); return false;
+		}
+		
+		
 		document.querySelector(".lsignup").submit();
 		
 

@@ -16,7 +16,7 @@
 		<div class="findbox"></div>
 		<button type="button" onclick="findpw()">비밀번호찾기</button><br>
 		
-		<a href="login.jsp">로그인</a>
+		<a onclick="loginview()">로그인</a>
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 	<script type="text/javascript" src="../js/find.js"></script>
 </body>

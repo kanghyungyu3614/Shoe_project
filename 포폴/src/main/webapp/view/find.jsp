@@ -11,7 +11,7 @@
 	<div>
 		<h1>아이디 찾기</h1>
 				<input type="text" placeholder="성명 입력란" id="findname"><br>
-				<input type="text" placeholder="전화번호 입력란" id="findph" ><br> <!-- 키업이 안되는이유 onkeyup="meve()" -->
+				<input type="text" placeholder="전화번호 입력란" id="findph" onkeyup="findid()" ><br> <!-- 키업이 안되는이유 onkeyup="meve()" -->
 				<div class="fph"></div>
 				<input type="checkbox">개인정보 동의<br>
 			<button type="button" onclick="findid()">아이디 찾기</button>
