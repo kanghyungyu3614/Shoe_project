@@ -12,16 +12,16 @@
 
 <% if(lid==null){response.sendRedirect("../view/login.jsp");} %>
 
-
+	<form >
 	<h1>셀럽들의 정보</h1>
-		<input type="text" value="${lid}" id="lid" readonly="readonly"><br>
-		<input type="text" placeholder="제목" id="title"><br>
-		<textarea placeholder="내용" id="content"></textarea><br>
-	<form enctype="multipart/form-data" method="post">
+		<input type="text" value="${lid}" name="lid" id="lid" readonly="readonly"><br>
+		<input type="text" placeholder="제목" name="title" id="title"><br>
+		<textarea placeholder="내용" id="content" name="content"></textarea><br>
+		
 		<input type="file" name="sfile">
-	</form>	
-		<button onclick="draw()">글작성</button>
 
+		<button type="button" onclick="draw()">글작성</button>
+	</form>	
 
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 

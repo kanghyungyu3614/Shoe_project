@@ -41,7 +41,6 @@ public class write extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		request.setCharacterEncoding("UTF-8");
 		String uploadpath = request.getSession().getServletContext().getRealPath("/supload");
 		MultipartRequest multi = new MultipartRequest(
 					request,
@@ -52,14 +51,14 @@ public class write extends HttpServlet {
 				
 				);
 		
-		String lid = request.getParameter("lid");
-		int lnum = memberdao.getInstance().getlnum(lid);
-		String title = request.getParameter("title");
-		String content = request.getParameter("content");
+		String lid = multi.getParameter("lid");
+		
+		String title = multi.getParameter("title");
+		String content = multi.getParameter("content");
 		String file = multi.getFilesystemName("sfile");
-		System.out.println(lid + title + content+lnum+file);
-		System.out.println(file);
-		boolean result = boarddao.getInstance().sdraw(lid,lnum,title,content,file);
+		int lnum = memberdao.getInstance().getlnum(lid);
+		
+		boolean result = boarddao.getInstance().sdraw(title, content, file, lnum);
 		System.out.println(result);
 		response.getWriter().print(result);}
 

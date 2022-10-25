@@ -6,15 +6,15 @@ public class boarddao extends dao {
 	public static boarddao getInstance() { return mdao;}
 	
 	
-	public boolean sdraw(String id,int num, String title, String content ,String file ) {
-		String sql = "insert into board(snum,sid,stitle,scontent,sfile)values(?,?,?,?,?)";
+	public boolean sdraw( String title , String content , String file , int lnum ) {
+		String sql = "insert into board(stitle,scontent,sfile,lnum)values(?,?,?,?)";
 		try {
 			ps = con.prepareStatement(sql);
-			ps.setInt(1, num);
-			ps.setString(2, id);
-			ps.setString(3,title);
-			ps.setString(4, content);
-			ps.setString(5, file);
+			ps.setString(1, title);
+			ps.setString(2,content);
+			ps.setString(3, file);
+			ps.setInt(4, lnum);
+			
 			ps.executeUpdate(); return true;
 			
 		} catch (Exception e) {
