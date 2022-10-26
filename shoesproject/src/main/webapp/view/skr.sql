@@ -37,7 +37,6 @@ select b.* , s.lid from shoe s , board b where s.lnum = b.lnum;
 
 select * from board;
 
-drop table board;
 select * from shoe;
 select * from shoe where lid="rlarudwn900";
 select *from shoe where lid ="rlarudwn900" and lpw="kimkyu9000";

@@ -24,8 +24,11 @@
 			<th style=" width: 10%">이미지</th>
 			<th>아이디</th>
 			
+			
 		</tr>
-	</table>	
+	</table>
+	<a href="write.jsp"><button>글작성</button></a>
+		
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>

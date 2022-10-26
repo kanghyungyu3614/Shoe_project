@@ -18,7 +18,7 @@ function getsellob(){
 				img = '/shoesproject/supload/'+json[i].sfile
 				html += '<tr>'+
 							'<td>'+json[i].stitle+'</td>'+
-							'<td><img src ="'+img+'" width ="100%"></td>'+
+							'<td><img src ="'+img+'" width ="100%" onclick="sellobview()"></td>'+
 							'<td>'+json[i].lid+'</td>'+
 							//'<td>'+json[i].lid+'</td>'+
 						'</tr>'	
@@ -36,3 +36,7 @@ function getsellob(){
 	
 }
 
+function sellobview(){
+	
+	alert("dd")
+}

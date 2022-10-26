@@ -11,7 +11,7 @@
 
 <%session.setAttribute("lid", null); 
 
-response.sendRedirect("/main/mainhome.jsp");%>
+response.sendRedirect("/shoesproject/main/mainhome.jsp");%>
 
 </body>
 </html>
