@@ -25,7 +25,7 @@
 			<input type="text" placeholder="제목" name="title" id="title"><br>
 			<textarea placeholder="내용" id="content" name="content"></textarea><br>
 		
-		<input type="file" name="sfile" id="sfile"><br>
+		<input type="file" name="sfile" id="sfile" class="sfile"><br>
 		
 		<button type="button" onclick="draw()">글작성</button>
 	</form>	
