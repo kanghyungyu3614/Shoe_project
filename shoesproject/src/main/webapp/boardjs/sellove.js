@@ -23,6 +23,7 @@ function getsellob(){
 						'  <div class="card-body">'+
 						'    <h5 class="card-title">'+json[i].lid+'님</h5>'+
 						'    <p class="card-text">'+json[i].stitle+'</p>'+
+						'	 <p class="card'+i+'"></p>'+
 						
 						'  </div>'+
 						'</div>';
@@ -41,24 +42,9 @@ function getsellob(){
 }
 
 function sellobview(i){
-
-	console.log(json[i]);
-	
-	img = '/shoesproject/supload/'+json[i].sfile
-	 html =  '<div class="card col-sm-2" >'+
-						'  <img src ="'+img+'"  class="card-img-top" >'+
-						'  <div class="card-body">'+
-						'    <h5 class="card-title">'+json[i].lid+'님</h5>'+
-						'    <p class="card-text">'+json[i].stitle+'</p>'+
-						'    <p class="card-text">'+json[i].scontent+'</p>'+
-//						'<button type="button" onclick="sellovedelete()">글삭제</button>'+
-//						'<button>뒤로가기</button>'+
-						'  </div>'+
-						'</div>';		
-				
-				document.querySelector(".selove5").innerHTML = html
-
-
+	alert( i )
+	document.querySelector('.card'+i).innerHTML = json[i].scontent;
+}
 
 
 
@@ -77,7 +63,7 @@ function sellobview(i){
 //							
 //			}
 //				document.querySelector(".selove5").innerHTML = html;	
-}
+
 
 /*
 getsellob()
