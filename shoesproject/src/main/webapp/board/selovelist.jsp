@@ -18,11 +18,12 @@
 
 
 	<div>	
+	<a href="write.jsp"><button>셀럽만들기</button></a>
+		
 	<div class="selove5 row">
 		
 	</div>
-	<a href="write.jsp"><button>글작성</button></a>
-		
+	
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
