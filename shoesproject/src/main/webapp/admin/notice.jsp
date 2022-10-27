@@ -22,7 +22,7 @@
   		<form id="form_component">
 	  		<div id="form_component_title"> 공지사항등록 </div>
 	  		<div id="title_component">
-				제목 : <input type="text" class="ntitle"placeholder="ex)  이벤트발표   /  공지 ">   		
+				제목 : <input type="text" class="ntitle"placeholder="ex)  이벤트발표   /  공지 "autofocus>   		
 	  		</div>
 	  		<div id="content_component">
 				<span id="content_context">내용 :</span> 

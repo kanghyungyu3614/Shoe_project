@@ -62,15 +62,6 @@ a:visited{
 /*공지사항등록버튼 색 조정 끝*/
 /*공지사항 글짜 시작*/
 .nav_content1 #notice{
-	font-size: 28px;
-	font-weight: 700;
-	position: relative;
-	left: 40px;
-}
-/*공지사항 글짜 끝*/
-
-/*공지사항 글짜 시작*/
-.nav_content1 #notice{
 	font-size: 33px;
 	font-weight: 700;
 	position: relative;
@@ -91,6 +82,34 @@ a:visited{
 	width: 1150px;
 	border-collapse: collapse;
 }
+
+.notice tr{
+	border: 1px solid black;
+}
+table{
+	border-collapse: collapse;
+}
+.nav_content1 tr th{
+	font-size: 10px;
+}
+td{
+	border: 1px solid black;
+}
+.notice tr:nth-child(1) td:nth-child(1){
+	border: 1px solid black;
+	width: 300px;
+	height : 50px;
+	font-weight: 700;
+	font-size: 28px;
+}
+.notice tr:nth-child(1) td:nth-child(2){
+	border: 1px solid black;
+	width: 900px;
+	height : 50px;
+	font-weight: 700;
+	font-size: 28px;
+}
+
 
 
 
@@ -148,11 +167,12 @@ td{
 	border-right:1px solid black;
 	font-size: 15px;
 	font-weight: 700;
+	height: 30px;
 }
 
 
 /*공지사항 안의 테이블 끝*/
-/*상담문의 시작*/
+/*상품문의 시작*/
 .nav_content2{
 	width: 1150px;
 	margin: 0 auto;
@@ -219,10 +239,11 @@ td{
 
 
 .section_title .advice_table {
+	width: 200px;
 	font-size: 33px;
 	font-weight: 700;
 	position: relative;
-	left: 450px;
+	left: 470px;
 	margin-top: 15px;
 	margin-bottom: 10px;
 }

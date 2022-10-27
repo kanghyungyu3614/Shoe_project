@@ -6,34 +6,40 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<link href="../css/noticeDetail.css" rel="stylesheet"> 
+<link href="../css/noticeDetail.css" rel="stylesheet">
 </head>
 <body>
-  	<div id="main">
-		<!-- 네비게이션 시작 -->
-		<div id="main_title">
-			<div class="title_content"><a href="./admin.jsp">관리자게시판</a></div>
-			<div class="title_content"><a href="../detail/productDetail.jsp">상품문의게시판</a></div>
-			<div class="title_content"><a href="../admin/admin.jsp">관리자페이지</a></div>
+	<div id="main">
+		<div id="main_title"> <!-- 테스트 -->
+			<div class="title_content"><a href="../admin/product.jsp">상품등록</a></div>
+			<div class="title_content"><a href="../admin/require.jsp">상품문의등록</a></div>
+			<div class="title_content"><a href="../admin/notice.jsp">공지사항등록</a></div>
 			<div class="title_content" onclick="logout()">로그아웃</div>
-		</div>  
-		<!-- 네비게이션 끝 -->
-		<!-- 공지사항 등록 시작 -->
-  		<form id="form_component">
-	  		<div id="form_component_title"> 공지사항등록 </div>
-	  		<div id="title_component">
-				제목 : <input type="text" class="ntitle">   		
-	  		</div>
-	  		<div id="content_component">
-				<span id="content_context">내용 :</span> 
-				<input type="text" class="ncontent"> 
-	  		</div>
-	  		<div id="write_component">
-				<button id="write_button" type="button" onclick="nwrite()">글쓰기</button>  		
-				<button id="reset_button" type="reset">취소</button>  		
-	  		</div>
-		</form>
-		<!-- 공지사항 등록 끝 -->
+		</div>
+		<div class="nav_title">
+			<div class="nav_content1">
+			<span class="nav_detail"><a href="../admin/admin.jsp">관리자게시판</a></span>
+			<span id="notice">공지사항</span>
+				<div id="notice_table_component">
+					<table class="notice">	
+						<tr>
+							<td>제목</td>
+							<td>내용</td>
+						</tr>
+						<tr>
+							<td>제목</td>
+							<td>내용</td>
+						</tr>
+					</table>
+				
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		
+		
 		
 		<!-- 푸터 시작 -->
 		<footer>
@@ -47,10 +53,11 @@
 	         </div>			
 		</footer>
 		<!-- 푸터 끝 -->
-  	</div>
+		
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+		<script type="text/javascript" src="../js/admin.js"></script>
+		
+	</div>
 	<!-- 마무리 -->
-	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-	<script type="text/javascript" src="../js/notice.js"></script>
-	
 </body>
 </html>
