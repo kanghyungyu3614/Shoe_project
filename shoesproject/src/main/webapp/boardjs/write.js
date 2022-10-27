@@ -2,8 +2,6 @@
  ///////////////////셀럽들의 정보/////////////////////
 
 
- let file = document.querySelector(".sfile").value
- console.log(file)
  /////////////////////////셀럽 제작소///////////////////
  function draw(){
 	
@@ -11,8 +9,14 @@
 	
 	let form = document.querySelector('form')
 	let formdata = new FormData(form)
-	//if(file !=null){alert("사진등록해주세요")}
-	//else{
+	
+	try{
+		let filename =  document.querySelector(".sfile").files[0].name
+	}catch(e){ 
+		alert('이미지 넣어라 ')
+		return;
+	}
+	
 	$.ajax({
 		url : "/shoesproject/board/write",
 		data :  formdata,
