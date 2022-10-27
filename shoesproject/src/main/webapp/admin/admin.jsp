@@ -10,8 +10,8 @@
 <body>
 	<div id="main">
 		<div id="main_title"> <!-- 테스트 -->
-			<div class="title_content" onclick="scroll1()">상품등록</div>
-			<div class="title_content"><a href="../detail/requireDetail.jsp">상품문의등록</a></div>
+			<div class="title_content"><a href="./product.jsp">상품등록</a></div>
+			<div class="title_content"><a href="./require.jsp">상품문의등록</a></div>
 			<div class="title_content"><a href="./notice.jsp">공지사항등록</a></div>
 			<div class="title_content" onclick="logout()">로그아웃</div>
 		</div>
@@ -29,7 +29,7 @@
 		
 		<div class="nav_title">
 			<div class="nav_content2">
-				<span class="advice_table">상담 문의 게시판</span>
+				<span class="advice_table">상품 문의 게시판</span>
 				<span class="nav_detail"><a href="../detail/noticeDetail.jsp">상세보기</a></span>
 				<!-- 게시판 시작 -->
 				<div id="advice_notice_table_component">
@@ -78,13 +78,13 @@
 			<span class="nav_detail"><a href="../detail/noticeDetail.jsp">상세보기</a></span>
 			<table id="product_regist"> <!--  이름, 전화번호, 사이즈, 상품이름, 모델번호, 컬러, 상품상세설명, 상품브랜드, 출시일, 가격 -->
 				<tr>
-					<th >사이즈</th>
 					<th >상품이름</th>
 					<th >모델번호</th>
-					<th >상품상세설명</th>
+					<th >사이즈</th>
 					<th >상품브랜드</th>
-					<th >출시일</th>
+					<th >상품상세설명</th>
 					<th >가격</th>
+					<th >출시일</th>
 				</tr>
 			</table>
 		
