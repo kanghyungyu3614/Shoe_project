@@ -71,7 +71,7 @@ a:visited{
 
 /*공지사항 글짜 시작*/
 .nav_content1 #notice{
-	font-size: 28px;
+	font-size: 33px;
 	font-weight: 700;
 	position: relative;
 	left: 40px;
@@ -104,8 +104,10 @@ a:visited{
 	font-size: 20px;
 }
 
-tr, th{
+#advice_notice_table tr, th{
 	border: solid 1px black;
+	height: 30px;
+	font-size: 20px;
 }
 
 .nav_content1 table tr{
@@ -118,22 +120,22 @@ tr, th{
 #notice_table tr:nth-child(4){	
 	line-height : 30px;
 }
-table tr:nth-child(1) th:nth-child(1){
+#product_regist tr:nth-child(1) th:nth-child(1){
 	width: 250px;
 	font-size: 28px;
 	line-height : 50px;
 }
-table tr:nth-child(1) th:nth-child(2){
+#product_regist tr:nth-child(1) th:nth-child(2){
 	width: 600px;
-	font-size: 28px;
+	font-size: 40px;
 	line-height : 50px;
 }
-table tr:nth-child(1) th:nth-child(3){
+#product_regist tr:nth-child(1) th:nth-child(3){
 	width: 200px;
 	font-size: 28px;
 	line-height : 50px;
 }
-table tr:nth-child(1) th:nth-child(4){
+#product_regist tr:nth-child(1) th:nth-child(4){
 	width: 1500px;
 	font-size: 28px;
 	line-height : 50px;
@@ -162,7 +164,7 @@ td{
 	line-height: 50px;
 }
 .nav_content2 .advice_table{
-	font-size: 28px;
+	font-size: 33px;
 	font-weight: 700;
 	position: relative;
 	left:40px;
@@ -217,58 +219,57 @@ td{
 
 
 .section_title .advice_table {
-	font-size: 28px;
+	font-size: 33px;
 	font-weight: 700;
 	position: relative;
 	left: 450px;
+	margin-top: 15px;
+	margin-bottom: 10px;
 }
 
 .section_title .nav_detail{
 	float: right;
 	font-size: 17px;
 	font-weight: 700;
-	margin-right: 10px;		
+	margin-right: 10px;
+	margin-top: 10px;		
 }
 
 /*테이블 크기 조정 시작*/
 #product_regist tr:nth-child(1) th:nth-child(1){
-	width: 100px;
+	width: 30px;
 	height: 50px;
 	font-size: 25px;
 }
 #product_regist tr:nth-child(1) th:nth-child(2){
-	width: 100px;
+	width: 30px;
 	height: 50px;
 	font-size: 25px;
 }
 #product_regist tr:nth-child(1) th:nth-child(3){
-	width: 100px;
+	width: 30px;
 	height: 50px;
 	font-size: 25px;
 }
 #product_regist tr:nth-child(1) th:nth-child(4){
-	width: 100px;
+	width: 30px;
 	height: 50px;
 	font-size: 25px;
 }
 #product_regist tr:nth-child(1) th:nth-child(5){
-	width: 100px;
+	width: 20px;
 	height: 50px;
 	font-size: 25px;
 }
 #product_regist tr:nth-child(1) th:nth-child(6){
-	width: 100px;
+	width: 20px;
 	height: 50px;
 	font-size: 25px;
 }
 #product_regist tr:nth-child(1) th:nth-child(7){
-	width: 100px;
+	width: 90px;
 	height: 50px;
 	font-size: 25px;
-}
-#product_regist .product_regist{
-	width: 100px; 
-	height: 100px;
 }
 
 /*테이블 크기 조정 끝*/
