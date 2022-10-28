@@ -55,6 +55,10 @@ public class pregist extends HttpServlet {
 		System.out.println(ppurpose);
 		String pcategory = multi.getParameter("pcategory");
 		System.out.println(pcategory);
+		String pbrand = multi.getParameter("pbrand");
+		System.out.println(pcategory);
+		String psize = multi.getParameter("psize");
+		System.out.println(pcategory);
 		String ptitle = multi.getParameter("ptitle");
 		System.out.println(ptitle);
 		String pcontent = multi.getParameter("pcontent");
@@ -64,7 +68,7 @@ public class pregist extends HttpServlet {
 		String pimg = multi.getFilesystemName("pimg");
 		System.out.println(pimg);
 		
-		boolean result = PregistDao.getInstance().pregist(ppurpose, pcategory, ptitle, pcontent, pimg);
+		boolean result = PregistDao.getInstance().pregist(ppurpose , pcategory, pbrand, psize, ptitle, pcontent, pimg);
 		
 		response.getWriter().print(result);
 		

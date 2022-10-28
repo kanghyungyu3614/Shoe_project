@@ -9,11 +9,10 @@
 <body>
 
 	<form>
-		목적 : <input type="radio" class="ppurpose" name="ppurpose" value="구매">구매
-			<input type="radio" class="ppurpose" name="ppurpose" value="판매">판매
-			<input type="radio" class="ppurpose" name="ppurpose" value="문의">문의 <br>
-		카테고리 : <input type="radio" class="pcategory" name="pcategory" value="신발">신발
-			<input type="radio" name="pcategory" name="pcategory" value="가방">가방 <br>
+		목적 : <input type="text" class="ppurpose" name="ppurpose" style="border: 1px solid black;"> <br>
+		카테고리 : <input type="text" class="pcategory" name="pcategory" style="border: 1px solid black;"> <br>
+		브랜드 : <input type="text" name="pbrand" style="border: 1px solid black;"> <br>
+		사이즈 : <input type="text" name="psize" style="border: 1px solid black;"> <br>		
 		제목 : <input type="text" name="ptitle" style="border: 1px solid black;"> <br>
 		내용 : <input type="text" name="pcontent" style="border: 1px solid black;"> <br>
 		이미지 : <input type="file" name="pimg"> <br>

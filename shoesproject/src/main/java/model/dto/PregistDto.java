@@ -5,6 +5,8 @@ public class PregistDto {
 	private int pno;
 	private String ppurpose;
 	private String pcategory;
+	private String pbrand;
+	private String psize;
 	private String ptitle;
 	private String pcontent;
 	private String pdate;
@@ -13,13 +15,15 @@ public class PregistDto {
 	public PregistDto() {
 		// TODO Auto-generated constructor stub
 	}
-	
-	public PregistDto(int pno, String ppurpose, String pcategory, String ptitle, String pcontent, String pdate,
-			String pimg) {
+
+	public PregistDto(int pno, String ppurpose, String pcategory, String pbrand, String psize, String ptitle,
+			String pcontent, String pdate, String pimg) {
 		super();
 		this.pno = pno;
 		this.ppurpose = ppurpose;
 		this.pcategory = pcategory;
+		this.pbrand = pbrand;
+		this.psize = psize;
 		this.ptitle = ptitle;
 		this.pcontent = pcontent;
 		this.pdate = pdate;
@@ -48,6 +52,22 @@ public class PregistDto {
 
 	public void setPcategory(String pcategory) {
 		this.pcategory = pcategory;
+	}
+
+	public String getPbrand() {
+		return pbrand;
+	}
+
+	public void setPbrand(String pbrand) {
+		this.pbrand = pbrand;
+	}
+
+	public String getPsize() {
+		return psize;
+	}
+
+	public void setPsize(String psize) {
+		this.psize = psize;
 	}
 
 	public String getPtitle() {
@@ -84,8 +104,9 @@ public class PregistDto {
 
 	@Override
 	public String toString() {
-		return "PregistDto [pno=" + pno + ", ppurpose=" + ppurpose + ", pcategory=" + pcategory + ", ptitle=" + ptitle
-				+ ", pcontent=" + pcontent + ", pdate=" + pdate + ", pimg=" + pimg + "]";
-	}	
+		return "PregistDto [pno=" + pno + ", ppurpose=" + ppurpose + ", pcategory=" + pcategory + ", pbrand=" + pbrand
+				+ ", psize=" + psize + ", ptitle=" + ptitle + ", pcontent=" + pcontent + ", pdate=" + pdate + ", pimg="
+				+ pimg + "]";
+	}
 	
 }

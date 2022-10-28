@@ -42,6 +42,8 @@ create table product(
 	pno	int auto_increment primary key,		-- 상품번호
     ppurpose varchar(100),					-- 상품목적 (구매, 판매, 배송 등등)
     pcategory varchar(100),					-- 상품종류
+    pbrand varchar(100),					-- 상품브랜드
+    psize varchar(100),						-- 상품사이즈
     ptitle varchar(100),					-- 상품제목
     pcontent varchar(300),					-- 상품내용
     pdate datetime default now(),			-- 상품등록날짜
