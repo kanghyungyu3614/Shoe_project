@@ -10,7 +10,7 @@
 </head>
 <body>
 	<div id="main">
-		<div id="main_title"> <!-- 테스트가 됬을까요?? -->
+		<div id="main_title"> <!-- 테스트가 되겠지?-->
 			<div class="title_content"><a href="../admin/product.jsp">상품등록</a></div>
 			<div class="title_content"><a href="../admin/require.jsp">상품문의등록</a></div>
 			<div class="title_content"><a href="../admin/notice.jsp">공지사항등록</a></div>
