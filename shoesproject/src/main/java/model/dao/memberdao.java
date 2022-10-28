@@ -49,12 +49,15 @@ public class memberdao extends dao{
 		    ps.setString(2, lname);
 		    rs =  ps.executeQuery();
 			if(rs.next())return true;
-		} catch (Exception e) {System.out.println(e);}
+	} catch (Exception e) {System.out.println(e);}
 		return false;
 	}
 	
 	// 로그인
+	
+	
 	public int M_login(String lid ,String lpw) {
+		
 		String sql = "select * from shoe where lid=?";
 		try {
 			ps = con.prepareStatement(sql);
@@ -74,7 +77,11 @@ public class memberdao extends dao{
 		}
 		return 0;
 	}
+	
+	
 	//아이디 찾기
+	
+	
 	public String findid(String findname, String findph) {
 		String sql = "select * from shoe where lname=? and lph=?";
 		try {
@@ -108,7 +115,7 @@ public class memberdao extends dao{
 		}
 	
 	
-	//임시비번 업데이트
+	//임시비번 업데\
 	public boolean pwch(String id, String rand) {
 		String sql ="update shoe set lpw= ? where lid= ?";
 		try {
@@ -174,21 +181,16 @@ public class memberdao extends dao{
 			System.out.println(e);
 		}return 0;
 	}
-
-	// 회원정보 수정 2022-10-28 안태섭
-	public boolean updatemember (String lpw , String lph , String lemail , String lsize , int lnum) {
-		String sql = "update shoe set lpw = ? , lph = ? , lemail = ? , lsize = ? where lnum = ?";
-		try {
-			ps = con.prepareStatement(sql);
-			ps.setString(1, lpw);
-			ps.setString(2, lph);
-			ps.setString(3, lemail);
-			ps.setString(4, lsize);
-			ps.setInt(5, lnum);
-			ps.executeUpdate(); return true;
-		}catch (Exception e) {System.out.println(e);}
-		return false;
-	}
+	/*
+	 * public int M_login(String lid ,String lpw) { String sql =
+	 * "select *from shoe where lid=?"; try { ps = con.prepareStatement(sql);
+	 * ps.setString(1, lid); rs = ps.executeQuery(); System.out.println(lid);
+	 * System.out.println(lpw); if(rs.next()) {
+	 * sql="select *from shoe where lid =? and lpw=?"; ps =
+	 * con.prepareStatement(sql); ps.setString(1, rs.getString(2)); ps.setString(2,
+	 * lpw); rs = ps.executeQuery(); if(rs.next()) { return 1;} return 2;} } catch
+	 * (Exception e) {System.out.println(e); return 3; }return 0; }
+	 */
 	
 	
 }

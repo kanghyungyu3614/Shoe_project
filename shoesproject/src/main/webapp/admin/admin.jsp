@@ -9,7 +9,7 @@
 </head>
 <body>
 	<div id="main">
-		<div id="main_title"> <!--  테스트  -->
+		<div id="main_title"> <!-- 테스트 -->
 			<div class="title_content"><a href="./product.jsp">상품등록</a></div>
 			<div class="title_content"><a href="./require.jsp">상품문의등록</a></div>
 			<div class="title_content"><a href="./notice.jsp">공지사항등록</a></div>
@@ -53,7 +53,10 @@
 							<th>진행상황</th>
 							<th>가나다라마바사아자차카타파하(14줄/20줄)</th>
 							<th>2022/10/26</th>			
-						</tr>							
+						</tr>
+														
+																								
+											
 					</table>
 				
 				</div>
