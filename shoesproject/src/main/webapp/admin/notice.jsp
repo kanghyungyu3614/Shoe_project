@@ -1,3 +1,4 @@
+<!-- 공지사항 등록  -->
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -11,8 +12,8 @@
   	<div id="main">
 		<!-- 네비게이션 시작 -->
 		<div id="main_title">
-			<div class="title_content"><a href="./admin.jsp">상품게시판</a></div>
-			<div class="title_content"><a href="../detail/productDetail.jsp">상품문의게시판</a></div>
+			<div class="title_content"><a href="./product.jsp">상품등록</a></div>
+			<div class="title_content"><a href="./require.jsp">상품문의등록</a></div>
 			<div class="title_content"><a href="./admin.jsp">관리자페이지</a></div>
 			<div class="title_content" onclick="logout()">로그아웃</div>
 		</div>  
@@ -21,11 +22,11 @@
   		<form id="form_component">
 	  		<div id="form_component_title"> 공지사항등록 </div>
 	  		<div id="title_component">
-				제목 : <input type="text" class="ntitle">   		
+				제목 : <input type="text" class="ntitle"placeholder="ex)  이벤트발표   /  공지 "autofocus>   		
 	  		</div>
 	  		<div id="content_component">
 				<span id="content_context">내용 :</span> 
-				<input type="text" class="ncontent"> 
+				<input type="text" class="ncontent" placeholder="ex)  안녕하세요. 고객센터입니다."> 
 	  		</div>
 	  		<div id="write_component">
 				<button id="write_button" type="button" onclick="nwrite()">글쓰기</button>  		

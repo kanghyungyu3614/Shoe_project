@@ -9,9 +9,9 @@
 </head>
 <body>
 	<div id="main">
-		<div id="main_title">
-			<div class="title_content" onclick="scroll1()">상품등록</div>
-			<div class="title_content"><a href="../detail/requireDetail.jsp">상품문의등록</a></div>
+		<div id="main_title"> <!-- 테스트 -->
+			<div class="title_content"><a href="./product.jsp">상품등록</a></div>
+			<div class="title_content"><a href="./require.jsp">상품문의등록</a></div>
 			<div class="title_content"><a href="./notice.jsp">공지사항등록</a></div>
 			<div class="title_content" onclick="logout()">로그아웃</div>
 		</div>
@@ -20,7 +20,15 @@
 			<span id="notice">공지사항</span>
 			<span class="nav_detail"><a href="../detail/noticeDetail.jsp">상세보기</a></span>
 				<div id="notice_table_component">
-					<table class="notice">			
+					<table class="notice">
+						<tr>
+							<td>제목</td>
+							<td>내용</td>
+						</tr>
+						<tr>
+							<td>제목</td>
+							<td>내용</td>
+						</tr>			
 					</table>
 				
 				</div>
@@ -29,8 +37,8 @@
 		
 		<div class="nav_title">
 			<div class="nav_content2">
-				<span class="advice_table">상담 문의 게시판</span>
-				<span class="nav_detail"><a href="../detail/noticeDetail.jsp">상세보기</a></span>
+				<span class="advice_table">상품 문의 게시판</span>
+				<span class="nav_detail"><a href="../detail/requireDetail.jsp">상세보기</a></span>
 				<!-- 게시판 시작 -->
 				<div id="advice_notice_table_component">
 					<table id="advice_notice_table">
@@ -41,29 +49,12 @@
 							<th>날짜</th>			
 						</tr>
 						<tr>
-							<th>구매/판매/브랜드배송/일반</th>
-							<th>진행상황/결제/배송/검수/기타</th>
+							<th>브랜드배송</th>
+							<th>진행상황</th>
 							<th>가나다라마바사아자차카타파하(14줄/20줄)</th>
 							<th>2022/10/26</th>			
 						</tr>
-						<tr>
-							<th>구매/판매/브랜드배송/일반</th>
-							<th>진행상황/결제/배송/검수/기타</th>
-							<th>가나다라마바사아자차카타파하(14줄/20줄)</th>
-							<th>2022/10/25</th>			
-						</tr>
-						<tr>
-							<th>구매/판매/브랜드배송/일반</th>
-							<th>진행상황/결제/배송/검수/기타</th>
-							<th>가나다라마바사아자차카타파하(14줄/20줄)</th>	
-							<th>2022/10/24</th>			
-						</tr>										
-						<tr>
-							<th>(총6개정도)</th>
-							<th>진행상황/결제/배송/검수/기타</th>
-							<th>가나다라마바사아자차카타파하(14줄/20줄)</th>	
-							<th>2022/10/24</th>		
-						</tr>										
+														
 																								
 											
 					</table>
@@ -74,17 +65,91 @@
 		</div>
 	
 		<div class="section_title"> 
-			<span class="advice_table">상품 등록</span>
-			<span class="nav_detail"><a href="../detail/noticeDetail.jsp">상세보기</a></span>
+			<span class="nav_detail"><a href="../detail/productDetail.jsp">상세보기</a></span>
+			<div class="advice_table">상품 등록
+			</div>
+			
 			<table id="product_regist"> <!--  이름, 전화번호, 사이즈, 상품이름, 모델번호, 컬러, 상품상세설명, 상품브랜드, 출시일, 가격 -->
 				<tr>
-					<th >사이즈</th>
 					<th >상품이름</th>
 					<th >모델번호</th>
-					<th >상품상세설명</th>
+					<th >사이즈</th>
 					<th >상품브랜드</th>
-					<th >출시일</th>
 					<th >가격</th>
+					<th >출시일</th>
+					<th >상품상세설명</th>
+				</tr>
+				<tr>
+					<th >상품이름</th>
+					<th >모델번호</th>
+					<th >사이즈</th>
+					<th >상품브랜드</th>
+					<th >가격</th>
+					<th >출시일</th>
+					<th >상품상세설명</th>
+				</tr>
+				<tr>
+					<th >상품이름</th>
+					<th >모델번호</th>
+					<th >사이즈</th>
+					<th >상품브랜드</th>
+					<th >가격</th>
+					<th >출시일</th>
+					<th >상품상세설명</th>
+				</tr>
+				<tr>
+					<th >상품이름</th>
+					<th >모델번호</th>
+					<th >사이즈</th>
+					<th >상품브랜드</th>
+					<th >가격</th>
+					<th >출시일</th>
+					<th >상품상세설명</th>
+				</tr>
+				<tr>
+					<th >상품이름</th>
+					<th >모델번호</th>
+					<th >사이즈</th>
+					<th >상품브랜드</th>
+					<th >가격</th>
+					<th >출시일</th>
+					<th >상품상세설명</th>
+				</tr>
+				<tr>
+					<th >상품이름</th>
+					<th >모델번호</th>
+					<th >사이즈</th>
+					<th >상품브랜드</th>
+					<th >가격</th>
+					<th >출시일</th>
+					<th >상품상세설명</th>
+				</tr>
+				<tr>
+					<th >상품이름</th>
+					<th >모델번호</th>
+					<th >사이즈</th>
+					<th >상품브랜드</th>
+					<th >가격</th>
+					<th >출시일</th>
+					<th >상품상세설명</th>
+				</tr>
+				<tr>
+					<th >상품이름</th>
+					<th >모델번호</th>
+					<th >사이즈</th>
+					<th >상품브랜드</th>
+					<th >가격</th>
+					<th >출시일</th>
+					<th >상품상세설명</th>
+				</tr>
+				<tr>
+					<th >상품이름</th>
+					<th >모델번호</th>
+					<th >사이즈</th>
+					<th >상품브랜드</th>
+					<th >가격</th>
+					<th >출시일</th>
+					<th >상품상세설명</th>
 				</tr>
 			</table>
 		
