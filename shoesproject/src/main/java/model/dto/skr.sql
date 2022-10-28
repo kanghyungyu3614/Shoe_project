@@ -52,9 +52,6 @@ create table product(
 
 
 
-
-
-
 select * from board;
 
 select * from shoe;
@@ -64,20 +61,7 @@ select *from shoe where lid="rlarudwn900" and lname = "김경주"and lph="010-39
 
 /////////////////////////////////////////////////
 
-drop database if exists an;
-create database an;
-use an;
-drop table if exists an;
-create table an(
-    ano int auto_increment primary key,
-	aname varchar(100),
-    aid varchar(100),
-    apassword varchar(100),
-    aphone varchar(100),
-    aemail varchar(100),
-    aaddress varchar(100),
-    adate datetime default now()
-);
+
 
 -- insert into an values (null, "admin", "admin", "admin", "000-0000-0000", "admin@naver.com", "admin", now());
 

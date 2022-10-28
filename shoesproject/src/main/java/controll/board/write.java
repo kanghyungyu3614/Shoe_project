@@ -8,6 +8,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
@@ -83,4 +84,18 @@ public class write extends HttpServlet {
 		System.out.println(result);
 		response.getWriter().print(result);}
 
+	@Override
+	protected void doPut(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	int snum =	Integer.parseInt(request.getParameter("snum"));
+	HttpSession session = request.getSession();
+	
+	session.setAttribute("snum", snum);
+	
+	String lid =(String)session.getAttribute("lid");
+	System.out.println("잘옴");	
+	}
+	
+	
 }
+
+
