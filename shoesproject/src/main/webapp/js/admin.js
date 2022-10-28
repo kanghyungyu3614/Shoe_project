@@ -11,7 +11,7 @@ function  scroll1(){
 
 function notice() {
 	$.ajax({
-		url: "/shoesProject/nload",
+		url: "/shoesproject/nload",
 		success: function (re) {
 			if(re){
 				let list = JSON.parse(re)
@@ -37,11 +37,11 @@ function notice() {
 
 function ndelete(i) {
 	$.ajax({
-		url: "/shoesProject/ndelete",
+		url: "/shoesproject/ndelete",
 		data: {"nno" : i},
 		success: function (re) {
 			if(re == 'true') {			
-				location.reload()
+				window.location.reload()
 			}
 		}
 	})

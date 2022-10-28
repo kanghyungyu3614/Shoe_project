@@ -28,7 +28,27 @@ create table board(
 
 select b.* , s.lid from shoe s , board b where s.lnum = b.lnum;
 
+//////////////// Admin ///////////////////////////
 
+drop table if exists notice;
+create table notice(
+	nno	int auto_increment primary key,		-- 공지번호
+    ntitle varchar(100),					-- 공지제목
+    ncontent varchar(300),					-- 공지내용
+    ndate datetime default now()			-- 공지날짜
+);
+
+create table product(
+	pno	int auto_increment primary key,		-- 상품번호
+    ppurpose varchar(100),					-- 상품목적 (구매, 판매, 배송 등등)
+    pcategory varchar(100),					-- 상품종류
+    ptitle varchar(100),					-- 상품제목
+    pcontent varchar(300),					-- 상품내용
+    pdate datetime default now(),			-- 상품등록날짜
+    pimg varchar(1000)						-- 상품이미지
+);
+
+////////////////////////////////////////////////////
 
 
 
@@ -40,7 +60,7 @@ select * from board;
 select * from shoe;
 select * from shoe where lid="rlarudwn900";
 select *from shoe where lid ="rlarudwn900" and lpw="kimkyu9000";
-select *from shoe where lid="rlarudwn900" and lname = "김경주"and lph="010-3956-1935"
+select *from shoe where lid="rlarudwn900" and lname = "김경주"and lph="010-3956-1935";
 
 /////////////////////////////////////////////////
 
@@ -59,17 +79,11 @@ create table an(
     adate datetime default now()
 );
 
-insert into an values (null, "admin", "admin", "admin", "000-0000-0000", "admin@naver.com", "admin", now());
+-- insert into an values (null, "admin", "admin", "admin", "000-0000-0000", "admin@naver.com", "admin", now());
 
-insert into an values (null,'1','1','1','1','1',1,now());
+-- insert into an values (null,'1','1','1','1','1',1,now());
 
-drop table if exists notice;
-create table notice(
-	nno	int auto_increment primary key,		-- 공지번호
-    ntitle varchar(100),					-- 공지제목
-    ncontent varchar(100),					-- 공지내용
-    ndate datetime default now()			-- 공지날짜
-);
+
 
 
 

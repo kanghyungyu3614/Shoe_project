@@ -3,7 +3,7 @@ function nwrite() {
 	let ncontent = document.querySelector('.ncontent').value	
 	
 	$.ajax({
-		url: "/shoesProject/nwrite",
+		url: "/shoesproject/nwrite",
 		type: "POST",
 		data: { "ntitle": ntitle, "ncontent": ncontent },
 		success : function (re) {
@@ -11,12 +11,12 @@ function nwrite() {
 			console.log(re)
 			if(re == 'true') {
 				alert('등록성공!!')
-				location.href = "/shoesProject/admin.jsp"
+				window.location.href = "/shoesproject/admin/admin.jsp"
 			} else {
 				alert('등록실패!!')
 				console.log("re")
 			    console.log(re)
-				//locaction.reload()
+				window.location.reload()
 			}
 		}
 	})

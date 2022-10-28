@@ -42,7 +42,7 @@ function getsellob(){
 }
 
 function sellobview(i){
-	alert( i )
+
 	document.querySelector('.card'+i).innerHTML = json[i].scontent;
 }
 
