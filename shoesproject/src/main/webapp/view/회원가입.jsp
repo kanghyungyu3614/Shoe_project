@@ -48,9 +48,11 @@
 	</table>
 	<h3>이용약관</h3>
 		<span>
-			<input type="checkbox"  id="chek1">약관1<p>
+			<input type="checkbox" id="chek1">약관1<p>
+			<textarea rows="" cols="" readonly="readonly" style="resize: none;"></textarea><p>
+			<input type="checkbox" id="chek2">약관2<p>
+			<textarea rows="" cols="" readonly="readonly" style="resize: none;"></textarea>
 			
-			<input type="checkbox" id="chek2">약관2
 		</span>	
 	<div>
 		<button type="button" onclick="signupbtn()"> 가입하기</button>
