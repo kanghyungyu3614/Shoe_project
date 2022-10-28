@@ -9,7 +9,7 @@
 </head>
 <body>
 	<div id="main">
-		<div id="main_title"> <!-- 테스트 -->
+		<div id="main_title"> <!--  테스트  -->
 			<div class="title_content"><a href="./product.jsp">상품등록</a></div>
 			<div class="title_content"><a href="./require.jsp">상품문의등록</a></div>
 			<div class="title_content"><a href="./notice.jsp">공지사항등록</a></div>
