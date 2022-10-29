@@ -1,0 +1,104 @@
+@charset "UTF-8";
+/*초기설정 시작*/
+*{
+	margin: 0;
+	border: 0;
+}
+/*초기설정 끝*/
+/*눈누에서 세방고딕 글씨체 시작 font-weight:700이랑 같이 쓰자*/
+@font-face {
+    font-family: 'SEBANG_Gothic_Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/SEBANG_Gothic_Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/*눈누에서 세방고딕 글씨체 끝*/
+/*헤더 시작*/ 
+.header{
+	 width: 1200px;
+	 height: 9vh;
+	 margin: 0 auto;
+	 border-top: 1px solid #c0c0c0;
+}
+#header_logo{
+	font-family: 'SEBANG_Gothic_Bold';
+	font-weight: 700;
+	font-size: 40px;
+	margin: 20px 20px;
+}
+
+a:hover{
+	text-decoration: none;
+	color: black;
+}
+a:link{
+	text-decoration: none;
+	color: black;
+}
+
+a:active{
+	text-decoration: none;
+	color: black;
+}
+
+a:visited{
+	text-decoration: none;
+	color: black;
+}
+
+
+/*헤더 끝*/ 
+/*main 시작*/ 
+#main{
+	border: 1px solid black;
+	width: 1200px;
+	height: 2000px;
+	margin: 0 auto;
+}
+/*main 끝*/ 
+/*이달의 인기 브랜드 , 카테고리 시작*/
+.brand , .category{
+	border: 1px solid black;
+	width: 800px;
+	height: 200px;
+	margin: 20px 10px;
+	float: left;
+}
+
+
+
+/*이달의 인기 브랜드, 카테고리 끝*/
+/*이달의 인기 브랜드 , 카테고리 시작*/
+.login_modal{
+	border: 1px solid black;
+	width: 360px;
+	height: 440px;
+	margin: 20px 10px 0 0;
+	float: right;
+}
+
+
+
+/*이달의 인기 브랜드, 카테고리 끝*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
