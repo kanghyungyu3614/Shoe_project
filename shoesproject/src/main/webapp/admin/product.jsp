@@ -24,32 +24,36 @@
 			<!-- 사이즈	상품이름	모델번호	상품상세설명	상품브랜드	 출시일	가격  시작-->
 			<table>
 				<tr>
-					<td>사이즈</td>
-					<td><input type="text" class="ntitle" id="product_name" placeholder="ex)  구매 / 판매 / 브랜드배송 / 일반" autofocus></td>
+					<td>목적</td>
+					<td><input type="text" name="ppurpose" class="ntitle" id="product_name" placeholder="ex)  구매 / 판매 / 브랜드배송 / 일반" autofocus></td>
 				</tr> <!--//구매/판매/브랜드배송/일반  -->
 				<tr>
-					<td>모델번호</td>
-					<td><input type="text" class="ntitle" id="product_number"placeholder="ex)  A01FW702-WHITE"></td>
-				</tr>	
-				<tr>
 					<td>사이즈</td>
-					<td><input type="text" class="ntitle" id="product_size"placeholder="ex)  260 / 270 / 280 / 290"></td>
+					<td><input type="text" name="psize" class="ntitle" id="product_size"placeholder="ex)  260 / 270 / 280 / 290"></td>
 				</tr>	
 				<tr>
 					<td>상품브랜드</td>
-					<td><input type="text" class="ntitle" id="product_brand"placeholder="ex)  아디다스 / 나이키 / 뉴발란스"></td>
+					<td><input type="text" name="pbrand" class="ntitle" id="product_brand"placeholder="ex)  아디다스 / 나이키 / 뉴발란스"></td>
 				</tr>	
 				<tr>
 					<td>가격</td>
-					<td><input type="text" class="ntitle" id="product_price"placeholder="ex)  원"> </td>
+					<td><input type="text" name="pprice" class="ntitle" id="product_price"placeholder="ex)  원"> </td>
 				</tr>	
 				<tr>
 					<td>출시일</td>
-					<td><input type="text" class="ntitle" id="product_birthday"placeholder="ex)  22/10/27 "></td>
+					<td><input type="text" name="pbirthday" class="ntitle" id="product_birthday"placeholder="ex)  22/10/27 "></td>
+				</tr>	
+				<tr>
+					<td id="detail_explain">이미지</td>
+					<td><input type="file" name="pimg" id="nimg"></td>
+				</tr>	
+				<tr>
+					<td>제목</td>
+					<td><input type="text" name="ptitle" class="ntitle" id="product_birthday"placeholder="ex)  22/10/27 "></td>
 				</tr>	
 				<tr>
 					<td id="detail_explain">상품상세설명</td>
-					<td><input type="text" class="ntitle" id="product_detail_explain"placeholder="ex)  할인혜택,이벤트,무료배송"></td>
+					<td><input type="text" name="pcontent" class="ntitle" id="product_detail_explain"placeholder="ex)  할인혜택,이벤트,무료배송"></td>
 				</tr>	
 			</table>
 			<!-- 사이즈	상품이름	모델번호	상품상세설명	상품브랜드	 출시일	가격  끝-->
