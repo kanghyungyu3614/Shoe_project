@@ -24,9 +24,16 @@
 		<section class="category">
 			왼쪽 아래 : 카테고리 
 		</section>
-	
-	
-	
+		<section class="main_img_slade">
+			메인 이미지 슬라이드
+		</section>
+		<section class="main_img_slade">
+			이미지들
+		</section>
+		<footer class="main_img_slade">
+			푸터
+		
+		</footer>
 	</div>
 	
 	
