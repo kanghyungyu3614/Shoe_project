@@ -6,19 +6,19 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<link href="../css/noticeDetail.css" rel="stylesheet">
+<link href="../../css/noticeDetail.css" rel="stylesheet">
 </head>
 <body>
 	<div id="main">
 		<div id="main_title"> <!-- 테스트가 되겠지?-->
-			<div class="title_content"><a href="../admin/product.jsp">상품등록</a></div>
-			<div class="title_content"><a href="../admin/require.jsp">상품문의등록</a></div>
-			<div class="title_content"><a href="../admin/notice.jsp">공지사항등록</a></div>
+			<div class="title_content"><a href="../product.jsp">상품등록</a></div>
+			<div class="title_content"><a href="../require.jsp">상품문의등록</a></div>
+			<div class="title_content"><a href="../notice.jsp">공지사항등록</a></div>
 			<div class="title_content" onclick="logout()">로그아웃</div>
 		</div>
 		<div class="nav_title">
 			<div class="nav_content1">
-			<span class="nav_detail"><a href="../admin/admin.jsp">관리자게시판</a></span>
+			<span class="nav_detail"><a href="../admin.jsp">관리자게시판</a></span>
 			<span id="notice">공지사항</span>
 				<div id="notice_table_component">
 					<table class="notice">	
