@@ -15,25 +15,32 @@
 	</header>
 	<div id= main>
 		<section class="brand">
-			왼쪽 : 이달의 인기 브랜드 
+			<div class="brand_content">이달의 인기 브랜드</div> 
+			<!-- 슬라이드 시작 -->
 			<div class="section">
-				<input type="radio" name="slide" id="slide01" checked>
-				<input type="radio" name="slide" id="slide02">
-				<input type="radio" name="slide" id="slide03">
+				<input type="radio" name="slide1" id="slide01" checked>
+				<input type="radio" name="slide1" id="slide02">
+				<input type="radio" name="slide1" id="slide03">
 				<div class="slidewrap">
 					<ul class="slidelist">
 						<li>
 							<a>
 								<img src="./img/1.jpg">
-							</a>
-						</li>
-						<li>
-							<a>
 								<img src="./img/2.jpg">
+								<img src="./img/3.jpg">
 							</a>
 						</li>
 						<li>
 							<a>
+								<img src="./img/1.jpg">
+								<img src="./img/2.jpg">
+								<img src="./img/3.jpg">
+							</a>
+						</li>
+						<li>
+							<a>
+								<img src="./img/1.jpg">
+								<img src="./img/2.jpg">
 								<img src="./img/3.jpg">
 							</a>
 						</li>
@@ -55,11 +62,7 @@
 					</div>
 				</div>
 			</div>	
-			
-			
-			
-			
-			
+			<!-- 슬라이드 끝 -->
 		</section>
 		<section class="login_modal">
 		
@@ -96,8 +99,56 @@
 		<%}%>
 		</section>
 		<section class="category">
-			왼쪽 아래 : 브랜드 카테고리 
-			<!-- <img src=""> -->
+			<div class="category_content">브랜드 카테고리 </div>
+			
+						<!-- 슬라이드 시작 -->
+			<div class="section">
+				<input type="radio" name="slide" id="slide04" checked>
+				<input type="radio" name="slide" id="slide05">
+				<input type="radio" name="slide" id="slide06">
+				<div class="slidewrap">
+					<ul class="slidelist">
+						<li>
+							<a>
+								<img src="./img/1.jpg">
+								<img src="./img/2.jpg">
+								<img src="./img/3.jpg">
+							</a>
+						</li>
+						<li>
+							<a>
+								<img src="./img/1.jpg">
+								<img src="./img/2.jpg">
+								<img src="./img/3.jpg">
+							</a>
+						</li>
+						<li>
+							<a>
+								<img src="./img/1.jpg">
+								<img src="./img/2.jpg">
+								<img src="./img/3.jpg">
+							</a>
+						</li>
+					</ul>
+			
+					<div class="slide-control">
+						<div class="control01">
+							<label for="slide06" class="left"></label>
+							<label for="slide05" class="right"></label>
+						</div>
+						<div class="control02">
+							<label for="slide04" class="left"></label>
+							<label for="slide06" class="right"></label>
+						</div>
+						<div class="control03">
+							<label for="slide05" class="left"></label>
+							<label for="slide04" class="right"></label>
+						</div>
+					</div>
+				</div>
+			</div>	
+			<!-- 슬라이드 끝 -->
+			
 		</section>
 		<section class="main_img_slade">
 			메인 이미지 슬라이드
