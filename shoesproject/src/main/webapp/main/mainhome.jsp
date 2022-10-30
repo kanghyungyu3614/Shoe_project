@@ -98,14 +98,15 @@
 			</div>			
 		<%}%>
 		</section>
+		<!-- 브랜드 카테고리 시작 -->
 		<section class="category">
 			<div class="category_content">브랜드 카테고리 </div>
 			
-						<!-- 슬라이드 시작 -->
+			<!-- 슬라이드 시작 -->
 			<div class="section">
-				<input type="radio" name="slide" id="slide04" checked>
-				<input type="radio" name="slide" id="slide05">
-				<input type="radio" name="slide" id="slide06">
+				<input type="radio" name="slide2" id="slide04" checked>
+				<input type="radio" name="slide2" id="slide05">
+				<input type="radio" name="slide2" id="slide06">
 				<div class="slidewrap">
 					<ul class="slidelist">
 						<li>
@@ -150,9 +151,54 @@
 			<!-- 슬라이드 끝 -->
 			
 		</section>
+		<!-- 브랜드 카테고리 끝 -->
+		<!-- 메인 이미지 슬라이드 시작 -->
 		<section class="main_img_slade">
-			메인 이미지 슬라이드
+			<div class="main_img_content">메인 이미지 슬라이드</div>
+					<!-- 슬라이드 시작 -->
+			<div class="section">
+				<input type="radio" name="slide" id="slide07" checked>
+				<input type="radio" name="slide" id="slide08">
+				<input type="radio" name="slide" id="slide09">
+				<div class="slidewrap">
+					<ul class="slidelist">
+						<li>
+							<a>
+								<img src="./img/1.jpg">
+							</a>
+						</li>
+						<li>
+							<a>
+								<img src="./img/1.jpg">
+							</a>
+						</li>
+						<li>
+							<a>
+								<img src="./img/1.jpg">
+							</a>
+						</li>
+					</ul>
+			
+					<div class="slide-control">
+						<div class="control01">
+							<label for="slide09" class="left"></label>
+							<label for="slide08" class="right"></label>
+						</div>
+						<div class="control02">
+							<label for="slide07" class="left"></label>
+							<label for="slide09" class="right"></label>
+						</div>
+						<div class="control03">
+							<label for="slide08" class="left"></label>
+							<label for="slide07" class="right"></label>
+						</div>
+					</div>
+				</div>
+			</div>	
+			<!-- 슬라이드 끝 -->
+		
 		</section>
+		<!-- 메인 이미지 슬라이드 끝 -->
 		<section class="main_img_slade">
 			<section class=sub_img_slage>윗쪽</section>
 			<section class=sub_img_slage>아래쪽</section>

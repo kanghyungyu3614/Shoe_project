@@ -197,6 +197,12 @@ a:visited{
 }
 /*메인 이미지 슬라이드 끝*/
 
+.main_img_content{
+	font-weight:700;
+	font-size: 24px;
+	font-family: 'SEBANG_Gothic_Bold';			
+	text-align: center;
+}
 
 
 
@@ -267,7 +273,9 @@ footer{
 	
 	
 /*슬라이드 끝*/
-/*슬라이드 시작*/
+
+/*브랜드 카테고리 슬라이드 시작*/ /*추가로 필요*/
+	
 	/* INPUT이 체크되면 변화값이 li까지 전달되는 스타일 */
 	.section [id="slide04"]:checked ~ .slidewrap .slidelist > li {transform:translateX(0%);}
 	.section [id="slide05"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-100%);}
@@ -278,5 +286,21 @@ footer{
 	.section [id="slide05"]:checked ~ .slidewrap .control02 {display:block;}
 	.section [id="slide06"]:checked ~ .slidewrap .control03 {display:block;}
 
-/*슬라이드 끝*/
+/*브랜드 카테고리 슬라이드 끝*/
 
+/*메인 이미지 슬라이드 시작*/
+	.main_img_slade .section .slidewrap {max-width:1170px;margin:0 auto;overflow:hidden;position:relative;}
+	.main_img_slade img{
+		width: 1170px; height: 570px;
+	}
+	/* INPUT이 체크되면 변화값이 li까지 전달되는 스타일 */
+	.section [id="slide07"]:checked ~ .slidewrap .slidelist > li {transform:translateX(0%);}
+	.section [id="slide08"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-100%);}
+	.section [id="slide09"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-200%);}
+	
+	/*  INPUT이 체크되면 변화값이 좌우 슬라이드 버튼을 담고 있는 div 까지 전달되는 스타일 */
+	.section [id="slide07"]:checked ~ .slidewrap .control01 {display:block;}
+	.section [id="slide08"]:checked ~ .slidewrap .control02 {display:block;}
+	.section [id="slide09"]:checked ~ .slidewrap .control03 {display:block;}
+
+/*메인 이미지 슬라이드 끝*/
