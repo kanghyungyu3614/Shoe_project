@@ -169,12 +169,12 @@
 						</li>
 						<li>
 							<a>
-								<img src="./img/1.jpg">
+								<img src="./img/2.jpg">
 							</a>
 						</li>
 						<li>
 							<a>
-								<img src="./img/1.jpg">
+								<img src="./img/3.jpg">
 							</a>
 						</li>
 					</ul>
