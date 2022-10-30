@@ -39,7 +39,7 @@ public class pregist extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String uploadpath = request.getSession().getServletContext().getRealPath("/pupload"); // 최상위경로의 pregist폴더
+		String uploadpath = request.getSession().getServletContext().getRealPath("/pupload"); // 최상위경로의 pupload폴더
 		
 		System.out.println(uploadpath);
 		
@@ -52,23 +52,20 @@ public class pregist extends HttpServlet {
 				);
 		
 		String ppurpose = multi.getParameter("ppurpose");
-		System.out.println(ppurpose);
 		String pcategory = multi.getParameter("pcategory");
-		System.out.println(pcategory);
 		String pbrand = multi.getParameter("pbrand");
-		System.out.println(pcategory);
 		String psize = multi.getParameter("psize");
-		System.out.println(pcategory);
+		int pprice = Integer.parseInt(multi.getParameter("pprice"));
 		String ptitle = multi.getParameter("ptitle");
-		System.out.println(ptitle);
 		String pcontent = multi.getParameter("pcontent");
-		System.out.println(pcontent);
 		
 		// 첨부파일 경로/이름 호출
 		String pimg = multi.getFilesystemName("pimg");
-		System.out.println(pimg);
 		
-		boolean result = PregistDao.getInstance().pregist(ppurpose , pcategory, pbrand, psize, ptitle, pcontent, pimg);
+		String pstatus = multi.getParameter("pstatus");
+		
+		
+		boolean result = PregistDao.getInstance().pregist(ppurpose , pcategory, pbrand, psize, pprice, ptitle, pcontent, pimg, pstatus);
 		
 		response.getWriter().print(result);
 		

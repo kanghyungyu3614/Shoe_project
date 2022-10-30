@@ -190,5 +190,4 @@ public class memberdao extends dao{
 		return false;
 	}
 	
-	
 }
