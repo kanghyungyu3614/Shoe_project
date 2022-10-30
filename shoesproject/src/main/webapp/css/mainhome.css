@@ -52,7 +52,6 @@ a:visited{
 #main{
 	border: 1px solid black;
 	width: 1200px;
-	height: 2300px;
 	margin: 0 auto;
 }
 /*main 끝*/ 
@@ -74,7 +73,7 @@ a:visited{
 
 
 /*이달의 인기 브랜드, 카테고리 끝*/
-/*이달의 인기 브랜드 , 카테고리 시작*/
+/*로그인 시작*/
 .login_modal{
 	border: 1px solid black;
 	width: 365px;
@@ -82,18 +81,106 @@ a:visited{
 	margin: 10px 10px 0 0;
 	float: right;
 }
+.login_content{
+	margin: 10px 0;
+	text-align: center;
+	font-weight:700;
+	font-size: 35px;
+	font-family: 'SEBANG_Gothic_Bold';
+}
+.id_content{
+	margin: 60px 0 10px 50px;
+	font-weight:700;
+	font-family: 'SEBANG_Gothic_Bold';
+}
+
+.id_input{
+	border: 1px solid black;
+	width: 280px;
+	height: 25px;
+	margin: 0 29px 0 50px;
+}
+.password_content{
+	margin: 20px 0 10px 50px;
+	font-weight:700;
+	font-family: 'SEBANG_Gothic_Bold';
+}
+
+.passoword_input{
+	border: 1px solid black;
+	width: 280px;
+	height: 25px;
+	margin: 0 29px 0 50px;	
+}
+/*아이디,비밀번호 상태 시작*/
+.alertp{
+	font-weight:700;
+	font-family: 'SEBANG_Gothic_Bold';
+	margin: 10px 29px 0 50px;		
+}
+
+/*아이디,비밀번호 상태 끝*/
+.login_button{
+	width: 140px;
+	height: 50px;
+	margin: 30px 110px 0 110px;
+	font-size: 20px;
+	font-weight: 700;
+	font-family: 'SEBANG_Gothic_Bold';
+	border: 1px solid black;
+}
+.login_button:hover{
+	background-color: #cfcdcd;
+	color: white;
+}
+.signup_find{
+	margin: 30px 0 0 0;
+	display: flex;
+	justify-content: center;
+}
+/*로그인 끝*/
+/*admin일때 로그인했을때 상태 시작*/
+.admin_content{
+	margin: 10px 0;
+	text-align: center;
+	font-weight:700;
+	font-size: 35px;
+	font-family: 'SEBANG_Gothic_Bold';	
+}
+.admin_find{
+	display: flex;
+	justify-content: center;
+	font-weight:700;
+	font-size: 30px;
+	font-family: 'SEBANG_Gothic_Bold';		
+}
+/*admin일때 로그인했을때 상태 끝*/
+/*고객이 로그인했을때 상태 시작*/
+.member_content{
+	margin: 10px 0;
+	text-align: center;
+	font-weight:700;
+	font-size: 35px;
+	font-family: 'SEBANG_Gothic_Bold';	
+}
+.member_find{
+	display: flex;
+	justify-content: center;
+	font-weight:700;
+	font-size: 24px;
+	font-family: 'SEBANG_Gothic_Bold';		
+}
 
 
 
-/*이달의 인기 브랜드, 카테고리 끝*/
+/*고객이 로그인했을때 상태 끝*/
 /*메인 이미지 슬라이드 시작*/
 .main_img_slade{
 	clear : both;
 	border: 1px solid black;
 	width: 1180px;
 	height: 600px;
-	margin: 10px 10px;
-	
+	margin: 10px 10px;	
 }
 /*메인 이미지 슬라이드 끝*/
 
@@ -103,12 +190,66 @@ a:visited{
 
 
 
+/*하단 시작*/
+footer{
+	width: 1200px;
+	height: 300px;
+	border: 1px solid black;
+	clear:both;
+	width:100%;
+	height: 200px;
+}
+/* GitLink*/
+.gitLink{
+	font-family: 'SEBANG_Gothic_Bold';
+	font-size:30px;
+	color: white;
+}
+.gitLink:hover, .gitLink:link , .gitLink:active , .gitLink:visited{
+	text-decoration: none;
+}
 
 
 
+/* footerURL  */
+#footerURL{
+	text-align:center;
+	padding-top: 60px;
+}
+/*하단 끝*/
+/* 모두 끝 */
 
 
+/*슬라이드 시작*/
 
+/* INPUT 가리기 */
+	.section [id*="slide"] {display:none;}
+	
+	img{
+		width: 800px; height: 200px;
+	}
+	/* 슬라이드 영역 - max-width 크기를 조절해주면 됩니다*/
+	.section .slidewrap {max-width:800px;margin:0 auto;overflow:hidden;position:relative;}
+	.section .slidelist {white-space:nowrap;font-size:0;}
+	.section .slidelist > li {display:inline-block;vertical-align:middle;width:100%;transition:all .5s;}
+	.section .slidelist > li > a {display:block;position:relative;}
 
+	/* 좌우로 넘기는 LABEL버튼에 대한 스타일 */
+	.section .slide-control {position:absolute;top:0;left:0;z-index:10;width:100%;height:100%;}
+	.section .slide-control label {position:absolute;z-index:1;top:50%;transform:translateY(-50%);padding:50px;cursor:pointer;}
+	.section .slide-control .left {left:30px;background:url('./img/left.png') center center / 100% no-repeat;}
+	.section .slide-control .right {right:30px;background:url('./img/right.png') center center / 100% no-repeat;}
+	.section .slide-control [class*="control"] {display:none;}
 
+	/* INPUT이 체크되면 변화값이 li까지 전달되는 스타일 */
+	.section [id="slide01"]:checked ~ .slidewrap .slidelist > li {transform:translateX(0%);}
+	.section [id="slide02"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-100%);}
+	.section [id="slide03"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-200%);}
+	
+	/*  INPUT이 체크되면 변화값이 좌우 슬라이드 버튼을 담고 있는 div 까지 전달되는 스타일 */
+	.section [id="slide01"]:checked ~ .slidewrap .control01 {display:block;}
+	.section [id="slide02"]:checked ~ .slidewrap .control02 {display:block;}
+	.section [id="slide03"]:checked ~ .slidewrap .control03 {display:block;}
+
+/*슬라이드 끝*/
 

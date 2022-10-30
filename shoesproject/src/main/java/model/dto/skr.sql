@@ -44,10 +44,12 @@ create table product(
     pcategory varchar(100),               -- 상품종류
     pbrand varchar(100),               -- 상품브랜드
     psize varchar(100),                  -- 상품사이즈
+    pprice int,                        -- 상품가격
     ptitle varchar(100),               -- 상품제목
     pcontent varchar(300),               -- 상품내용
     pdate datetime default now(),         -- 상품등록날짜
-    pimg varchar(1000)                  -- 상품이미지
+    pimg varchar(1000),                  -- 상품이미지
+    pstatus varchar(100)               -- 상품현재상태
 );
 
 ////////////////////////////////////////////////////
@@ -84,7 +86,15 @@ create table an(
 -- insert into an values (null, "admin", "admin", "admin", "000-0000-0000", "admin@naver.com", "admin", now());
 
 -- insert into an values (null,'1','1','1','1','1',1,now());
-
+//////////////////////////////////
+create table request(
+   rno   int auto_increment primary key,      -- 요청번호
+    rpurpose varchar(100),               -- 요청목적 (구매, 판매, 배송 등등)
+    rdetail varchar(100),               -- 요청세부사항
+    rtitle varchar(100),               -- 요청제목
+   rcontent varchar(300),               -- 요청내용
+    rdate datetime default now()         -- 요청날짜
+);
 
 
 
