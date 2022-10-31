@@ -87,6 +87,6 @@
 </form> -->
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 
-<script type="text/javascript" src="../js/회원가입.js"></script>
+<script type="text/javascript" src="../js/signup.js"></script>
 </body>
 </html>

@@ -55,12 +55,34 @@ function selupdate(snum){
 		type : 'put',
 		data : {"snum" : snum  },
 		success : function(re){
-			alert(re)
+			location.href="/shoesproject/board/realsellove.jsp"
 		}
 		
 		
 	})
 }
+function selloveupdate(snum){
+	let form  = document.querySelector(".updatesellob")
+	let formdata = new FormData(form)
+	
+	$.ajax({
+		url : "/shoesproject/board/write",
+	
+		processData : false, 
+		contentType : false, 
+		data : formdata,
+		type : "put",
+		success : function(re){
+			if(re==='true'){
+				alert("수정성공")
+			}else{
+				alert( "성공실패")
+			}
+		}
+		
+	})
+}
+
 
 
 

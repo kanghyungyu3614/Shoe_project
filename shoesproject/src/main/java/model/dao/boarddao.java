@@ -49,4 +49,20 @@ public class boarddao extends dao {
 		} catch (Exception e) {System.out.println(e);}
 		return list;}
 	
+	//셀럽 업데이트
+	
+	public boolean selupdata(String title,String content,String file, int snum) {
+		String sql ="update board set stitle= "+title+" ,scontent = "+content+" ,sfile="+file+" where snum= "+snum+"";
+		
+		try {
+			ps = con.prepareStatement(sql);
+			ps.executeUpdate();
+			return true;
+			
+		} catch (Exception e) {
+			System.out.println(e);
+		}return false;
+	}
+	
+	
 }
