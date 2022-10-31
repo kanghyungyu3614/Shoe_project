@@ -167,6 +167,7 @@
 		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 		<script type="text/javascript" src="../js/admin.js"></script>
 		<script type="text/javascript" src="../js/pload.js"></script>
+		<script type="text/javascript" src="../js/rload.js"></script>
 		
 	</div>
 	<!-- 마무리 -->

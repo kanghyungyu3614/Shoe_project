@@ -58,7 +58,7 @@ create table request(
     rdetail varchar(100),					-- 요청세부사항
     rtitle varchar(100),					-- 요청제목
 	rcontent varchar(300),					-- 요청내용
-    rdate datetime default now()			-- 요청날짜
+    rdate datetime default now(),			-- 요청날짜
     lnum int,								-- 회원아이디 연결
 	foreign key (lnum) references shoe(lnum)
 );

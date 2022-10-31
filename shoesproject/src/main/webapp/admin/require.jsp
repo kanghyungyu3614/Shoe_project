@@ -46,6 +46,7 @@
 				<button id="reset_button" type="reset">취소</button>  		
 	  		</div>
 		</form>
+		<table class="request"></table>
 		<!-- 공지사항 등록 끝 -->
 		
 		<!-- 푸터 시작 -->
@@ -64,6 +65,7 @@
 	<!-- 마무리 -->
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 	<script type="text/javascript" src="../js/notice.js"></script>
+	<script type="text/javascript" src="../js/rload.js"></script>
 	
 </body>
 </html>
