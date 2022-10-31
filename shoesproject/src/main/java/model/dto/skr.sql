@@ -47,12 +47,6 @@ create table product(
 	pno	int auto_increment primary key,		-- 상품번호
     ppurpose varchar(100),					-- 상품목적 (구매, 판매, 배송 등등)
     pcategory varchar(100),					-- 상품종류
-<<<<<<< HEAD
-    ptitle varchar(100),					-- 상품제목
-    pcontent varchar(300),					-- 상품내용
-    pdate datetime default now(),			-- 상품등록날짜
-    pimg varchar(1000)						-- 상품이미지
-=======
     pbrand varchar(100),					-- 상품브랜드
     psize varchar(100),						-- 상품사이즈
     pprice int,								-- 상품가격
@@ -94,46 +88,7 @@ create table product(
     pdate datetime default now(),         -- 상품등록날짜
     pimg varchar(1000),                  -- 상품이미지
     pstatus varchar(100)               -- 상품현재상태
->>>>>>> branch 'main' of https://github.com/ANTAESEOP/KIM-AN_project
 );
-<<<<<<< HEAD
-
-////////////////////////////////////////////////////
-
-
-
-
-
-
-select * from board;
-
-select * from shoe;
-select * from shoe where lid="rlarudwn900";
-select *from shoe where lid ="rlarudwn900" and lpw="kimkyu9000";
-select *from shoe where lid="rlarudwn900" and lname = "김경주"and lph="010-3956-1935";
-
-/////////////////////////////////////////////////
-
-drop database if exists an;
-create database an;
-use an;
-drop table if exists an;
-create table an(
-    ano int auto_increment primary key,
-	aname varchar(100),
-    aid varchar(100),
-    apassword varchar(100),
-    aphone varchar(100),
-    aemail varchar(100),
-    aaddress varchar(100),
-    adate datetime default now()
-);
-
--- insert into an values (null, "admin", "admin", "admin", "000-0000-0000", "admin@naver.com", "admin", now());
-
--- insert into an values (null,'1','1','1','1','1',1,now());
-
-=======
 drop table if exists request;
 create table request(
    rno   int auto_increment primary key,      -- 요청번호
@@ -143,8 +98,4 @@ create table request(
    rcontent varchar(300),               -- 요청내용
     rdate datetime default now()         -- 요청날짜
 );
->>>>>>> branch 'main' of https://github.com/ANTAESEOP/KIM-AN_project
-
-
-
 
