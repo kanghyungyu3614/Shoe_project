@@ -7,11 +7,10 @@ function  scroll1(){
 	});		
 }
 
-
-
 function notice() {
 	$.ajax({
 		url: "/shoesproject/nload",
+		data: { "type": "admin" },
 		success: function (re) {
 			if(re){
 				let list = JSON.parse(re)

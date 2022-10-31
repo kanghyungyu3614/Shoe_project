@@ -29,7 +29,29 @@ public class NoticeDao extends dao {
 	}
 	
 	public ArrayList<NoticeDto> nload() {
-		String sql = "select * from notice";
+		String sql = "select * from notice order by nno desc limit 6";
+		
+		JSONArray array = new JSONArray();
+		try {
+			ps = con.prepareStatement(sql);
+			rs = ps.executeQuery();
+			while(rs.next()) {
+				JSONObject object = new JSONObject();
+				object.put("nno", rs.getInt(1));
+				object.put("ntitle", rs.getString(2));
+				object.put("ncontent", rs.getString(3));
+				object.put("ndate", rs.getString(4));
+				array.add(object);
+			}
+			return array;
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+		return null;
+	}
+	
+	public ArrayList<NoticeDto> nloadDetail() {
+		String sql = "select * from notice order by nno desc";
 		
 		JSONArray array = new JSONArray();
 		try {

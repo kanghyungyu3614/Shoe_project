@@ -1,42 +1,32 @@
 package controll.admin;
 
 import java.io.IOException;
-import java.util.ArrayList;
-
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import model.dao.NoticeDao;
-import model.dto.NoticeDto;
+import model.dao.PregistDao;
 
 /**
- * Servlet implementation class nload
+ * Servlet implementation class pdelete
  */
-@WebServlet("/nload")
-public class nload extends HttpServlet {
+@WebServlet("/pdelete")
+public class pdelete extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		request.setCharacterEncoding("UTF-8");
-		String type = request.getParameter("type");
+		int pno = Integer.parseInt(request.getParameter("pno"));
 		
-		ArrayList<NoticeDto> array = new ArrayList<>();
-		if(type.equals("admin")) {
-			array = NoticeDao.getInstance().nload();
-		} else if(type.equals("adminDetail")) {
-			array = NoticeDao.getInstance().nloadDetail();
-		}
-		
-		response.setCharacterEncoding("UTF-8");
-		response.getWriter().print(array);
+		boolean result = PregistDao.getInstance().pdelete(pno);
+				
+		response.getWriter().print(result);
 	}
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public nload() {
+    public pdelete() {
         super();
         // TODO Auto-generated constructor stub
     }

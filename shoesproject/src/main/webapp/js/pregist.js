@@ -1,10 +1,10 @@
+// 상품등록
 function pregist() {
 	let form = document.querySelector('form')
 	let formdata = new FormData(form)
-	console.log(formdata)
 	
 	$.ajax({
-		url : "http://localhost:8080/shoesproject/pregist",
+		url : "/shoesproject/pregist",
 		data : formdata,
 		type : 'POST',
 		contentType : false,
@@ -13,7 +13,7 @@ function pregist() {
 		success : function(re) {
 			if(re === 'true') {
 				alert('등록성공!!');
-				window.location.href = "./pregist.jsp"
+				window.location.href = "./admin.jsp"
 			}
 			else {
 				alert('등록실패!!')

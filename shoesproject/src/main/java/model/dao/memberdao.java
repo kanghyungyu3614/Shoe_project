@@ -189,6 +189,6 @@ public class memberdao extends dao{
 		}catch (Exception e) {System.out.println(e);}
 		return false;
 	}
-	
-	
 }
+
+

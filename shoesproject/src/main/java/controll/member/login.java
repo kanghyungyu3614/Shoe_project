@@ -17,10 +17,14 @@ import model.dao.memberdao;
 public class login extends HttpServlet {
 	private static final long serialVersionUID = 1L;
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
+	
+
+    	
      String lid = request.getParameter("lid");
      String lpw = request.getParameter("lpw");
     
+	 int lnum = memberdao.getInstance().getlnum(lid);
+	 request.getSession().setAttribute("lnum",lnum );	
      
      int result = memberdao.getInstance().M_login(lid,lpw);
      
