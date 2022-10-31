@@ -49,4 +49,32 @@ public class boarddao extends dao {
 		} catch (Exception e) {System.out.println(e);}
 		return list;}
 	
-}
+	/*---------------------------------2022-10-28[안태섭] 문의사항 등록-----------------------------*/
+	public boolean qnawrite(String qtitle , String qcontent , String qfile , int lnum) {
+		String sql ="insert into qndboard(qtitle , qcontent , qfile , lnum)"
+				+ " values(?,?,?,?)";
+		try {
+			ps = con.prepareStatement(sql);
+			ps.setString( 1 , qtitle );	ps.setString( 2 , qcontent );
+			ps.setString( 3 , qfile);		ps.setInt( 4 , lnum );
+			ps.executeUpdate(); return true;
+		}catch (Exception e) {System.out.println( e );}
+		return false;
+	}
+	/*---------------------------------2022-10-28[안태섭] 회원아이디 --> 회원번호 -----------------------------*/
+	public int getlnum(String mid) {
+		String sql = "select lnum from qnaboard where mid = ?";
+		try {
+			ps = con.prepareStatement(sql);
+			ps.setString(1, mid);
+			rs = ps.executeQuery();
+			// if (1개) vs while (여러개)
+			if(rs.next() ) return rs.getInt(1);
+		}catch (Exception e) {} return 0;
+	}
+	
+	
+	
+	
+	
+}// class end
