@@ -6,6 +6,16 @@
 	box-sizing: border-box;
 }
 /*초기화 끝*/
+
+/*눈누에서 세방고딕 글씨체 시작 font-weight:700이랑 같이 쓰자*/
+@font-face {
+    font-family: 'SEBANG_Gothic_Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/SEBANG_Gothic_Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/*눈누에서 세방고딕 글씨체 끝*/
+
 /* 전체 시작*/
 #main {
 	margin: 0 auto;
@@ -58,7 +68,7 @@ a:visited{
 #form_component{
 	border: 1px solid black;
 	width: 500px;
-	height: 500px;
+	height: 540px;
 	margin: 200px auto;
 	font-weight: 700;
 	font-size: 20px;
@@ -135,7 +145,7 @@ footer{
 }
 /* GitLink*/
 .gitLink{
-	font-family: 'YdestreetB';
+	font-family: 'SEBANG_Gothic_Bold';
 	font-size:30px;
 	color: white;
 }

@@ -6,43 +6,40 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<link href="../css/productDetail.css" rel="stylesheet">
+<link href="../../css/noticeDetail.css" rel="stylesheet">
 </head>
 <body>
 	<div id="main">
-		<div id="main_title"> <!-- 테스트 -->
-			<div class="title_content"><a href="../admin/product.jsp">상품등록</a></div>
-			<div class="title_content"><a href="../admin/require.jsp">상품문의등록</a></div>
-			<div class="title_content"><a href="../admin/notice.jsp">공지사항등록</a></div>
+		<div id="main_title"> <!-- 테스트가 되겠지?-->
+			<div class="title_content"><a href="../product.jsp">상품등록</a></div>
+			<div class="title_content"><a href="../require.jsp">상품문의등록</a></div>
+			<div class="title_content"><a href="../notice.jsp">공지사항등록</a></div>
 			<div class="title_content" onclick="logout()">로그아웃</div>
 		</div>
 		<div class="nav_title">
 			<div class="nav_content1">
-			<span class="nav_detail"><a href="../admin/admin.jsp">관리자게시판</a></span>
-			<span id="notice">상품 등록</span>
-			<table id="product_regist"> <!--  이름, 전화번호, 사이즈, 상품이름, 모델번호, 컬러, 상품상세설명, 상품브랜드, 출시일, 가격 -->
-				<tr>
-					<th >상품이름</th>
-					<th >모델번호</th>
-					<th >사이즈</th>
-					<th >상품브랜드</th>
-					<th >가격</th>
-					<th >출시일</th>
-					<th >상품상세설명</th>
-				</tr>
-				<tr>
-					<th >상품이름</th>
-					<th >모델번호</th>
-					<th >사이즈</th>
-					<th >상품브랜드</th>
-					<th >가격</th>
-					<th >출시일</th>
-					<th >상품상세설명</th>
-				</tr>
-
-			</table>
+			<span class="nav_detail"><a href="../admin.jsp">관리자게시판</a></span>
+			<span id="notice">공지사항</span>
+				<div id="notice_table_component">
+					<table class="notice">	
+						<tr>
+							<td>제목</td>
+							<td>내용</td>
+						</tr>
+						<tr>
+							<td>제목</td>
+							<td>내용</td>
+						</tr>
+					</table>
+				
+				</div>
 			</div>
 		</div>
+		
+		
+		
+		
+		
 		
 		<!-- 푸터 시작 -->
 		<footer>

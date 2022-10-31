@@ -26,7 +26,13 @@
 	display: flex;
 	margin-top: 20px;
 }
-/*공지사항,상담문의 시작*/
+
+
+
+
+
+
+/*상품등록 시작*/
 .nav_content1{ 
 	width: 1150px;
 	margin: 0 auto;
@@ -61,24 +67,19 @@ a:visited{
 	color:black;
 }
 /*공지사항등록버튼 색 조정 끝*/
-/*공지사항 글짜 시작*/
-.nav_content1 #notice{
-	font-size: 28px;
-	font-weight: 700;
-	position: relative;
-	left: 40px;
-}
-/*공지사항 글짜 끝*/
 
-/*공지사항 글짜 시작*/
+
+/*상품등록 글짜 시작*/
 .nav_content1 #notice{
 	font-size: 33px;
 	font-weight: 700;
 	position: relative;
 	left: 40px;
 }
-/*공지사항 글짜 끝*/
-/*공지사항 안의 상세보기 글자 시작*/
+/*상품등록 글짜 끝*/
+
+
+/*상품등록 안의 관리자계시판 글자 시작*/
 .nav_content1 .nav_detail{
 	float: right;
 	font-size: 17px;
@@ -86,36 +87,52 @@ a:visited{
 	margin-right: 10px;
 	
 }
-/*공지사항 안의 상세보기 글자 끝*/
+/*상품등록 안의 관리자계시판 글자 끝*/
 
-/*상품등록페이지 시작*/
-.section_title{
-	 height: 800px; 
-	 width: 1150px;
-	 margin: 0 auto;
-	 margin-top: 25px;
-	 margin-bottom: 25px;
-	 border: 1px solid black;
+/* 상품등록게시판 시작*/
+#product_regist{
+	width: 1150px;
+	border-collapse: collapse;
 }
 
-
-.section_title .advice_table {
-	width: 200px;
-	font-size: 33px;
+.notice tr{
+	border: 1px solid black;
+}
+table{
+	border-collapse: collapse;
+}
+.nav_content1 tr th{
+	font-size: 20px;
+}
+td{
+	border: 1px solid black;
+	height: 20px;
+	font-size: 20px;
 	font-weight: 700;
-	position: relative;
-	left: 470px;
-	margin-top: 15px;
-	margin-bottom: 10px;
+}
+.notice tr:nth-child(1) td:nth-child(1){
+	border: 1px solid black;
+	width: 300px;
+	height : 50px;
+	font-weight: 700;
+	font-size: 32px;
+}
+.notice tr:nth-child(1) td:nth-child(2){
+	border: 1px solid black;
+	width: 900px;
+	height : 50px;
+	font-weight: 700;
+	font-size: 28px;
 }
 
-.section_title .nav_detail{
-	float: right;
-	font-size: 17px;
-	font-weight: 700;
-	margin-right: 10px;
-	margin-top: 10px;		
+th{
+	border: 1px solid black;
 }
+
+
+
+/* 상품등록게시판 끝*/
+
 
 /*테이블 크기 조정 시작*/
 #product_regist tr:nth-child(1) th:nth-child(1){
