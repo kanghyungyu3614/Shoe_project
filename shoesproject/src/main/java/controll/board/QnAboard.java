@@ -50,9 +50,6 @@ public class QnAboard extends HttpServlet {
 		// 응답
 		response.getWriter().print(result);
 
-
-
-
 	}
 
 }
