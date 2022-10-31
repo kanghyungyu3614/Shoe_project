@@ -29,7 +29,7 @@ $(document).ready(function() {
 				$(this).children().removeClass('active');
 			});
 			
-			/* 햄버거 메뉴 */
+			/* 햄버거 메뉴  */
 			$('.menu_bar').click(function(){
 				$(this).toggleClass('active');
 				$('.menu_open').slideToggle();
