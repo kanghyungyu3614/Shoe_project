@@ -41,7 +41,7 @@
 				<span class="nav_detail"><a href="./detail/requireDetail.jsp">상세보기</a></span>
 				<!-- 게시판 시작 -->
 				<div id="advice_notice_table_component">
-					<table id="advice_notice_table">
+					<table class="request">
 						<tr>
 							<th>문의 유형</th>
 							<th>문의 세부유형</th>
@@ -66,7 +66,7 @@
 			<div class="advice_table">상품 등록
 			</div>
 			
-			<table id="product_regist"> <!--  이름, 전화번호, 사이즈, 상품이름, 모델번호, 컬러, 상품상세설명, 상품브랜드, 출시일, 가격 -->
+			<table class="regist"> <!--  이름, 전화번호, 사이즈, 상품이름, 모델번호, 컬러, 상품상세설명, 상품브랜드, 출시일, 가격 -->
 				<tr>
 					<th >상품이름</th>
 					<th >모델번호</th>

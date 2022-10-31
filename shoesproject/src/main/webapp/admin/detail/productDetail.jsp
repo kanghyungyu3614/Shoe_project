@@ -20,7 +20,7 @@
 			<div class="nav_content1">
 			<span class="nav_detail"><a href="../admin.jsp">관리자게시판</a></span>
 			<span id="notice">상품 등록</span>
-			<table id="product_regist"> <!--  이름, 전화번호, 사이즈, 상품이름, 모델번호, 컬러, 상품상세설명, 상품브랜드, 출시일, 가격 -->
+			<table class="regist"> <!--  이름, 전화번호, 사이즈, 상품이름, 모델번호, 컬러, 상품상세설명, 상품브랜드, 출시일, 가격 -->
 				<tr>
 					<th >상품이름</th>
 					<th >모델번호</th>
@@ -58,7 +58,7 @@
 		<!-- 푸터 끝 -->
 		
 		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-		<script type="text/javascript" src="../js/admin.js"></script>
+		<script type="text/javascript" src="../../js/ploadDetail.js"></script>
 		
 	</div>
 	<!-- 마무리 -->

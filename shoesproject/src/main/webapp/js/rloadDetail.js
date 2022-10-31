@@ -1,8 +1,8 @@
-rload()
-function rload() {
+rloadDetail()
+function rloadDetail() {
 	$.ajax({
 		url : "/shoesproject/rload",
-		data : { "type" : "admin" },
+		data : { "type" : "adminDetail" },
 		success : function (re) {
 			if(re){
 				let list = JSON.parse(re)
@@ -18,7 +18,7 @@ function rload() {
 							+ "<td>"+r.rtitle+"</td>"
 							+ "<td>"+r.rcontent+"</td>"
 							+ "<td>"+r.rdate+"</td>"
-							+ "<td><button type='button' onclick='rdelete("+r.rno+")'>삭제</button></td>"
+							+ "<td><button type='button' onclick='ndelete("+r.rno+")'>삭제</button></td>"
 						+ "</tr>"
 					document.querySelector('.request').innerHTML += html
 				}

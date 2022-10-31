@@ -20,7 +20,7 @@
 			<div class="nav_content1">
 			<span class="nav_detail"><a href="../admin.jsp">관리자게시판</a></span>
 			<span id="notice">공지사항</span>
-				<div id="notice_table_component">
+				<div class="notice">
 					<table class="notice">	
 						<tr>
 							<td>제목</td>
@@ -55,7 +55,7 @@
 		<!-- 푸터 끝 -->
 		
 		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-		<script type="text/javascript" src="../js/admin.js"></script>
+		<script type="text/javascript" src="../../js/noticeDetail.js"></script>
 		
 	</div>
 	<!-- 마무리 -->

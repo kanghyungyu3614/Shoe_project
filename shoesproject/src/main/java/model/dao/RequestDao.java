@@ -74,4 +74,32 @@ public class RequestDao extends dao {
 		return list;
 	}
 	
+	public boolean rdelete(int rno) {
+		String sql = "delete from request where rno="+rno;
+		
+		try {
+			ps = con.prepareStatement(sql);
+			ps.executeUpdate();
+			return true;
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+		return false;
+	}
+	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
