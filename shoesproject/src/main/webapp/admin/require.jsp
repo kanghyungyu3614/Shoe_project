@@ -9,6 +9,13 @@
 <link href="../css/require.css" rel="stylesheet"> 
 </head>
 <body>
+
+	<%String lid = (String)session.getAttribute("lid");
+	if(lid == null) {
+		response.sendRedirect("/shoesproject/main/mainhome.jsp");
+	} else if(!lid.equals("admin")) {
+		response.sendRedirect("/shoesproject/main/mainhome.jsp");
+	}%>
   	<div id="main">
 		<!-- 네비게이션 시작 -->
 		<div id="main_title">

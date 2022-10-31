@@ -8,6 +8,14 @@
 <link href="../css/admin.css" rel="stylesheet">
 </head>
 <body>
+	
+	<!-- admin만 접근가능 -->
+	<%String lid = (String)session.getAttribute("lid");
+	if(lid == null) {
+		response.sendRedirect("/shoesproject/main/mainhome.jsp");
+	} else if(!lid.equals("admin")) {
+		response.sendRedirect("/shoesproject/main/mainhome.jsp");
+	}%>
 	<div id="main">
 		<div id="main_title"> <!-- 테스트 -->
 			<div class="title_content"><a href="./product.jsp">상품등록</a></div>

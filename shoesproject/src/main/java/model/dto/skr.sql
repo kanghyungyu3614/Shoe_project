@@ -68,6 +68,14 @@ create table request(
 	foreign key (lnum) references signup(lnum)
 );
 
+create table comment(
+	cno int auto_increment primary key,		-- 댓글번호
+	ctitle varchar(100),					-- 댓글제목
+    ccontent varchar(300),					-- 댓글내용
+    cdate datetime default now(),			-- 댓글날짜
+    rno int,								-- 요청번호 연결
+    foreign key (rno) references request(rno)
+);
 
 
 

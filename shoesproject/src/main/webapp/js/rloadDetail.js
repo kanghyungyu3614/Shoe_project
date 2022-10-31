@@ -13,13 +13,16 @@ function rloadDetail() {
 				
 				for(let i = 0 ; i<list.length ; i++) {
 					r = list[i]
-					html = "<tr>"
-							+ "<td>"+r.rno+"</td>"
-							+ "<td>"+r.rtitle+"</td>"
-							+ "<td>"+r.rcontent+"</td>"
-							+ "<td>"+r.rdate+"</td>"
-							+ "<td><button type='button' onclick='ndelete("+r.rno+")'>삭제</button></td>"
-						+ "</tr>"
+					html = `<tr>
+								<td>${r.rno}</td>
+								<td>${r.rtitle}</td>
+								<td>${r.rcontent}</td>
+								<td>${r.rdate}</td>
+								<td><button type="button" onclick="commentform(${r.rno})">답변하기</td>
+								<td><button type="button" onclick="rdelete(${r.rno})">삭제</button></td>
+							</tr>
+							<tr class="commentform${r.rno}"></tr>
+							`
 					document.querySelector('.request').innerHTML += html
 				}
 			}
@@ -28,19 +31,24 @@ function rloadDetail() {
 }
 
 function rdelete(rno) {
-	$.ajax({
-		url : "/shoesproject/rdelete",
-		data : { "rno" : rno },
-		success : function (re) {
-			if(re == 'true') {
-				alert('삭제 완료!!')
-				window.location.reload()
-			} else {
-				alert('삭제 실패!!')
-				window.location.reload()
+	
+	if(confirm("정말 삭제하시겠습니까?")){		
+		$.ajax({
+			url : "/shoesproject/rdelete",
+			data : { "rno" : rno },
+			success : function (re) {
+				if(re == 'true') {
+					alert('삭제 완료!!')
+					window.location.reload()
+				} else {
+					alert('삭제 실패!!')
+					window.location.reload()
+				}
 			}
-		}
-	})
+		})
+	} else {
+		return;
+	}
 }
 
 function logout() {
@@ -53,3 +61,38 @@ function logout() {
 		}
 	})
 }
+
+// 답글 폼 생성
+function commentform(rno) {
+	html = `<tr>
+				<td colspan="6" style="height: 500px;">
+					제목 : <input type="text" class="ctitle" style="border: 1px solid black;"> <br>
+					내용 : <input type="text" class="ccontent" style="border: 1px solid black;"> <br>
+					<button type="button">답변하기</button>
+				</td>
+			</tr>`
+	document.querySelector(`.commentform${rno}`).innerHTML = html
+}
+
+// 답글 요청
+function comment(rno) {
+	$.ajax({
+		url : "/shoeproject/comment",
+		data : {"rno" : rno},
+		success : function (re) {
+			if(re) {
+				window.location.reload()
+			}
+		}
+	})
+}
+
+
+
+
+
+
+
+
+
+
