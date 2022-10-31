@@ -1,9 +1,4 @@
 
-
-
-
-
-
 let cocl3 = document.querySelectorAll('.cocl3')
 
 

@@ -1,3 +1,4 @@
+<%@page import="model.dao.memberdao"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -8,6 +9,7 @@
 <link href="../css/mainhome.css" rel="stylesheet">
 </head>
 <body>
+
 	<header class="header">
 		<div id="header_logo">
 			<a href="">shoes</a>
@@ -95,6 +97,15 @@
 				<div class="member_page">&nbsp;<a href="../view/mypage.jsp">나의정보</a> |</div><br>
 				<div class="member_selovelist">&nbsp;<a href="../board/selovelist.jsp">셀렙들의정보</a> |</div>
 				<div class="member_logout">&nbsp;<a href="../view/logout.jsp">로그아웃</a></div>
+				<div>				
+					<form>
+						문의유형 : <input type="text" class="rpurpose" name="rpurpose"> <br>
+						문의세부유형 : <input type="text" class="rdetail" name="rdetail"> <br>
+						문의제목 : <input type="text" class="rtitle" name="rtitle"> <br>
+						문의내용 : <input type="text" class="rcontent" name="rcontent"> <br>
+						<button type="button" onclick="request()">문의하기</button> <br>
+					</form>
+				</div>
 			</div>			
 		<%}%>
 		</section>
@@ -219,6 +230,8 @@
 		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 		<script type="text/javascript" src="../js/login.js"></script>
 		<script type="text/javascript" src="../js/mainhome.js"></script>
+		<script type="text/javascript" src="../js/request.js"></script>
 	</div>
+
 </body>
 </html>

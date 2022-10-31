@@ -5,6 +5,7 @@ getsellob()
 let json =''
 let img = ''
 let html = ''
+let snum=''
 function getsellob(){
 	$.ajax({
 		url : "/shoesproject/board/write",
@@ -17,14 +18,14 @@ function getsellob(){
 			
 			for(let i = 0; i<json.length; i++){
 				img = '/shoesproject/supload/'+json[i].sfile
-					
+				snum = json[i].snum
 				 html +=  '<div class="card col-sm-2" >'+
 						'  <img src ="'+img+'" onclick="sellobview('+i+')"  class="card-img-top" >'+
 						'  <div class="card-body">'+
 						'    <h5 class="card-title">'+json[i].lid+'님</h5>'+
 						'    <p class="card-text">'+json[i].stitle+'</p>'+
 						'	 <p class="card'+i+'"></p>'+
-						
+						'    <p class="delete'+i+'"></p>'+
 						'  </div>'+
 						'</div>';
 						
@@ -42,10 +43,24 @@ function getsellob(){
 }
 
 function sellobview(i){
-
+	
+	document.querySelector(".delete"+i).innerHTML = "<button >삭제하기</button><button type='button' onclick='selupdate("+snum+")'>수정하기</button>"
 	document.querySelector('.card'+i).innerHTML = json[i].scontent;
+	
 }
 
+function selupdate(snum){
+	$.ajax({
+		url : "/shoesproject/board/write",
+		type : 'put',
+		data : {"snum" : snum  },
+		success : function(re){
+			alert(re)
+		}
+		
+		
+	})
+}
 
 
 

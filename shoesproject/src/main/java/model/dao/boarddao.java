@@ -31,7 +31,7 @@ public class boarddao extends dao {
 	
 	public ArrayList<seldto>getsellove(){
 		ArrayList<seldto>list = new ArrayList<>();
-		String sql="select b.* , s.lid from shoe s , board b where s.lnum = b.lnum";
+		String sql="select b.* , s.lid from signup s , board b where s.lnum = b.lnum";
 		try {
 			ps = con.prepareStatement(sql);
 			rs = ps.executeQuery();

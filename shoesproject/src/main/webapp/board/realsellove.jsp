@@ -14,8 +14,9 @@
 
 
 
-	
 
+	
+<script type="text/javascript" src="../boardjs/selloveupdate.js"></script>
 
 </body>
 </html>

@@ -20,6 +20,7 @@
 	<div>	
 	<a href="write.jsp"><button>셀럽만들기</button></a>
 		
+		
 	<div class="selove5 row">
 		
 	</div>
