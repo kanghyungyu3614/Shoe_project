@@ -21,6 +21,7 @@ create table signup(
 	lday datetime default now(),
 	constraint lum_pk primary key(lnum)
 );
+
 insert into signup values(null,"admin","admin","admin","admin","admin","admin",now());
 drop table if exists board;
 create table board(
@@ -31,8 +32,6 @@ create table board(
   lnum int,
   foreign key (lnum) references signup(lnum)
 );
-
-select b.* , s.lid from signup s , board b where s.lnum = b.lnum;
 
 -- //////////////// Admin ///////////////////////////
 
@@ -66,10 +65,8 @@ create table request(
 	rcontent varchar(300),					-- 요청내용
     rdate datetime default now(),			-- 요청날짜
     lnum int,								-- 회원아이디 연결
-	foreign key (lnum) references shoe(lnum)
+	foreign key (lnum) references signup(lnum)
 );
-
-//////////////// Admin ///////////////////////////
 
 drop table if exists notice;
 create table notice(
@@ -78,7 +75,7 @@ create table notice(
     ncontent varchar(300),					-- 공지내용
     ndate datetime default now()			-- 공지날짜
 );
-
+drop table if exists product;
 create table product(
    pno   int auto_increment primary key,      -- 상품번호
     ppurpose varchar(100),               -- 상품목적 (구매, 판매, 배송 등등)
@@ -92,21 +89,7 @@ create table product(
     pimg varchar(1000),                  -- 상품이미지
     pstatus varchar(100)               -- 상품현재상태
 );
-
-////////////////////////////////////////////////////
-
-
-
-select * from board;
-
-///////////////////////////////////////////////
-
-
-
--- insert into an values (null, "admin", "admin", "admin", "000-0000-0000", "admin@naver.com", "admin", now());
-
--- insert into an values (null,'1','1','1','1','1',1,now());
-//////////////////////////////////
+drop table if exists request;
 create table request(
    rno   int auto_increment primary key,      -- 요청번호
     rpurpose varchar(100),               -- 요청목적 (구매, 판매, 배송 등등)

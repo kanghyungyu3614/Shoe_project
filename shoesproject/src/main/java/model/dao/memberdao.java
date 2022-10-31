@@ -61,7 +61,7 @@ public class memberdao extends dao{
 			ps.setString(1, lid);
 			rs = ps.executeQuery();
 				if(rs.next()) {
-					sql ="select * from shoe where lid = ? and lpw = ?";
+					sql ="select * from signup where lid = ? and lpw = ?";
 					ps = con.prepareStatement(sql);
 					ps.setString(1, rs.getString(3));
 					ps.setString(2, lpw);
