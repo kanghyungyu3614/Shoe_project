@@ -12,7 +12,7 @@ public class memberdao extends dao{
 	//가입하기
 	
 	public boolean lsignup(dto dto) {
-		String sql ="insert into shoe(lname ,lid , lpw, lph, lemail ,lsize)values(?,?,?,?,?,?)";
+		String sql ="insert into signup(lname ,lid , lpw, lph, lemail ,lsize)values(?,?,?,?,?,?)";
 		try {
 			ps = con.prepareStatement(sql);
 			ps.setString(1,dto.getLname());
@@ -42,7 +42,7 @@ public class memberdao extends dao{
 	
 	// 아이디 검사
 	public boolean check(String lid ,String lname) {
-		String sql ="select * from shoe where lid =? and lname=?";
+		String sql ="select * from signup where lid =? and lname=?";
 		try {
 			ps= con.prepareStatement(sql);
 		    ps.setString(1,lid);
@@ -55,7 +55,7 @@ public class memberdao extends dao{
 	
 	// 로그인
 	public int M_login(String lid ,String lpw) {
-		String sql = "select * from shoe where lid=?";
+		String sql = "select * from signup where lid=?";
 		try {
 			ps = con.prepareStatement(sql);
 			ps.setString(1, lid);
@@ -76,7 +76,7 @@ public class memberdao extends dao{
 	}
 	//아이디 찾기
 	public String findid(String findname, String findph) {
-		String sql = "select * from shoe where lname=? and lph=?";
+		String sql = "select * from signup where lname=? and lph=?";
 		try {
 			ps = con.prepareStatement(sql);
 			ps.setString(1, findname);
@@ -92,7 +92,7 @@ public class memberdao extends dao{
 	//비번 찾기 난수
 	public boolean findpw(String id,String name,String ph) {
 		
-		String sql = "select *from shoe where lid=? and lname=? and lph=?";
+		String sql = "select *from signup where lid=? and lname=? and lph=?";
 		try {
 			ps =con.prepareStatement(sql);
 			ps.setString(1, id);
@@ -110,7 +110,7 @@ public class memberdao extends dao{
 	
 	//임시비번 업데이트
 	public boolean pwch(String id, String rand) {
-		String sql ="update shoe set lpw= ? where lid= ?";
+		String sql ="update signup set lpw= ? where lid= ?";
 		try {
 			ps = con.prepareStatement(sql);
 			ps.setString(1, rand);
@@ -128,7 +128,7 @@ public class memberdao extends dao{
 	
 	public dto getpage(String lid) {
 		dto dto = null;
-		String sql = "select * from shoe where lid = ?";
+		String sql = "select * from signup where lid = ?";
 		try {
 			ps = con.prepareStatement(sql);
 			ps.setString(1, lid);
@@ -148,7 +148,7 @@ public class memberdao extends dao{
 	// 탈퇴
 	
 	public boolean memberdelete(String lid,String lpw) {
-		String sql = "delete from shoe where lid = ? and lpw =?";
+		String sql = "delete from signup where lid = ? and lpw =?";
 		try {
 			ps = con.prepareStatement(sql);
 			ps.setString(1, lid);
@@ -164,7 +164,7 @@ public class memberdao extends dao{
 
 	//아이디를 번호로 
 	public int getlnum(String lid) {
-		String sql = "select * from shoe where lid =?";
+		String sql = "select * from signup where lid =?";
 		try {
 			ps = con.prepareStatement(sql);
 			ps.setString(1, lid);
@@ -177,7 +177,7 @@ public class memberdao extends dao{
 
 	// 회원정보 수정 2022-10-28 안태섭
 	public boolean updatemember (String lpw , String lph , String lemail , String lsize , int lnum) {
-		String sql = "update shoe set lpw = ? , lph = ? , lemail = ? , lsize = ? where lnum = ?";
+		String sql = "update signup set lpw = ? , lph = ? , lemail = ? , lsize = ? where lnum = ?";
 		try {
 			ps = con.prepareStatement(sql);
 			ps.setString(1, lpw);
