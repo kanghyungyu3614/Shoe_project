@@ -17,14 +17,14 @@ public class updatemember extends HttpServlet {
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		
+		String
 		
 		String lpw = request.getParameter("lpw");
 		String lph = request.getParameter("lph");
 		String lemail = request.getParameter("lemail");
 		String lsize = request.getParameter("lsize");
 		
-		boolean result = memberdao.getInstance().updatemember(lpw, lph, lemail, lsize, 0);
+		boolean result = memberdao.getInstance().updatemember(lpw, lph, lemail, lsize, 0)
 		
 	}
 	private static final long serialVersionUID = 1L;

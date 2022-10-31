@@ -18,7 +18,7 @@
 		<div class="nav_title">
 			<div class="nav_content1">
 			<span id="notice">공지사항</span>
-			<span class="nav_detail"><a href="./detail/noticeDetail.jsp">상세보기</a></span>
+			<span class="nav_detail"><a href="../detail/noticeDetail.jsp">상세보기</a></span>
 				<div id="notice_table_component">
 					<table class="notice">
 						<tr>
@@ -38,7 +38,7 @@
 		<div class="nav_title">
 			<div class="nav_content2">
 				<span class="advice_table">상품 문의 게시판</span>
-				<span class="nav_detail"><a href="./detail/requireDetail.jsp">상세보기</a></span>
+				<span class="nav_detail"><a href="../detail/requireDetail.jsp">상세보기</a></span>
 				<!-- 게시판 시작 -->
 				<div id="advice_notice_table_component">
 					<table id="advice_notice_table">
@@ -62,7 +62,7 @@
 		</div>
 	
 		<div class="section_title"> 
-			<span class="nav_detail"><a href="./detail/productDetail.jsp">상세보기</a></span>
+			<span class="nav_detail"><a href="../detail/productDetail.jsp">상세보기</a></span>
 			<div class="advice_table">상품 등록
 			</div>
 			
