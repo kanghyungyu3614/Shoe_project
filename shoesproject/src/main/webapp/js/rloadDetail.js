@@ -52,6 +52,7 @@ function rdelete(rno) {
 }
 
 function logout() {
+	
 	$.ajax({
 		url : "/shoesproject/logout",
 		success: function (re) {
@@ -62,6 +63,7 @@ function logout() {
 	})
 }
 let rloadstate = false /* 답변하기 폼 열고닫기 상태 저장하는 변수 */
+
 // 답글 폼 생성
 function commentform(rno) {
 	
@@ -81,22 +83,22 @@ function commentform(rno) {
 	document.querySelector(`.commentform${rno}`).innerHTML = html
 }
 
-// 답글 요청
+// 답글 하기
 function comment(rno) {
+	
 	$.ajax({
 		url : "/shoeproject/comment",
-		data : {"rno" : rno},
+		data : { "rno" : rno },
 		success : function (re) {
-			if(re) {
-				window.location.reload()
+			if(re === 'true') {
+				alert('답글 작성 완료')
+			}else{ ( alert ( '답글 작성 실패'))
 			}
 		}
 	})
 }
-// 답변 보기
-function rview(){
-	
-}
+
+
 
 
 
