@@ -8,6 +8,14 @@
 <link href="../css/admin.css" rel="stylesheet">
 </head>
 <body>
+	
+	<!-- admin만 접근가능 -->
+	<%String lid = (String)session.getAttribute("lid");
+	if(lid == null) {
+		response.sendRedirect("/shoesproject/main/mainhome.jsp");
+	} else if(!lid.equals("admin")) {
+		response.sendRedirect("/shoesproject/main/mainhome.jsp");
+	}%>
 	<div id="main">
 		<div id="main_title"> <!-- 테스트 -->
 			<div class="title_content"><a href="./product.jsp">상품등록</a></div>
@@ -41,7 +49,7 @@
 				<span class="nav_detail"><a href="./detail/requireDetail.jsp">상세보기</a></span>
 				<!-- 게시판 시작 -->
 				<div id="advice_notice_table_component">
-					<table id="advice_notice_table">
+					<table class="request">
 						<tr>
 							<th>문의 유형</th>
 							<th>문의 세부유형</th>
@@ -66,7 +74,7 @@
 			<div class="advice_table">상품 등록
 			</div>
 			
-			<table id="product_regist"> <!--  이름, 전화번호, 사이즈, 상품이름, 모델번호, 컬러, 상품상세설명, 상품브랜드, 출시일, 가격 -->
+			<table class="regist"> <!--  이름, 전화번호, 사이즈, 상품이름, 모델번호, 컬러, 상품상세설명, 상품브랜드, 출시일, 가격 -->
 				<tr>
 					<th >상품이름</th>
 					<th >모델번호</th>

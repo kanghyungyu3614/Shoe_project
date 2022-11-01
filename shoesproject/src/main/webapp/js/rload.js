@@ -18,10 +18,37 @@ function rload() {
 							+ "<td>"+r.rtitle+"</td>"
 							+ "<td>"+r.rcontent+"</td>"
 							+ "<td>"+r.rdate+"</td>"
-							+ "<td><button type='button' onclick='ndelete("+r.rno+")'>삭제</button></td>"
+							+ "<td><button type='button' onclick='rdelete("+r.rno+")'>삭제</button></td>"
 						+ "</tr>"
 					document.querySelector('.request').innerHTML += html
 				}
+			}
+		}
+	})
+}
+
+function rdelete(rno) {
+	$.ajax({
+		url : "/shoesproject/rdelete",
+		data : { "rno" : rno },
+		success : function (re) {
+			if(re == 'true') {
+				alert('삭제 완료!!')
+				window.location.reload()
+			} else {
+				alert('삭제 실패!!')
+				window.location.reload()
+			}
+		}
+	})
+}
+
+function logout() {
+	$.ajax({
+		url : "/shoesproject/logout",
+		success: function (re) {
+			if(re) {
+				window.location.href="/shoesproject/main/mainhome.jsp"
 			}
 		}
 	})

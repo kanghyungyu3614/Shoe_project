@@ -18,53 +18,204 @@
 	<div id= main>
 		<section class="brand">
 			<div class="brand_content">이달의 인기 브랜드</div> 
-			<!-- 슬라이드 시작 -->
-			<div class="section">
-				<input type="radio" name="slide1" id="slide01" checked>
-				<input type="radio" name="slide1" id="slide02">
-				<input type="radio" name="slide1" id="slide03">
-				<div class="slidewrap">
-					<ul class="slidelist">
-						<li>
-							<a>
-								<img src="./img/1.jpg">
-								<img src="./img/2.jpg">
-								<img src="./img/3.jpg">
-							</a>
+			<div class="month_popular_brand">
+				<div>1.Nike&nbsp;&nbsp;&nbsp;</div>
+				<div>2.밀레&nbsp;&nbsp;&nbsp;</div>
+				<div>3.THE NORTH FACE&nbsp;&nbsp;&nbsp;</div>
+				<div>4.Adidas&nbsp;&nbsp;</div>
+<!-- 				<div>5등:NEPA&nbsp;&nbsp;</div> -->
+<!-- 				<div>6등:NEW BALANCE&nbsp;&nbsp;</div> -->
+<!-- 				<div>Crocs&nbsp;&nbsp;</div> -->
+<!-- 				<div>Discovery&nbsp;&nbsp;</div> -->
+<!-- 				<div>BLACKYAK&nbsp;&nbsp;</div> -->
+<!-- 				<div>K2&nbsp;&nbsp;</div> -->
+<!-- 				<div>KOLPING&nbsp;&nbsp;</div> -->
+<!-- 				<div>NATIONAL GEOGRAPIC&nbsp;&nbsp;</div> -->
+				
+		 <ul id="gnb">
+			<li class="dept1">
+				<ul class="inner_menu">
+					<li class="dept2">
+						<a href="#">메뉴2</a>
+					</li>
+					<li class="dept2">
+						<a href="#">메뉴2</a>
+					</li>
+					<li class="dept2">
+						<a href="#">메뉴2</a>
+					</li>
+					<li class="dept2">
+						<a href="#">메뉴2</a>
+					</li>
+				</ul>
+			</li>
+			
+			<li class="dept1">
+				
+				<ul class="inner_menu">
+					<li class="dept2">
+						<a href="#">메뉴2</a>
+					</li>
+					<li class="dept2">
+						<a href="#">메뉴2</a>
+					</li>
+					<li class="dept2">
+						<a href="#">메뉴2</a>
+					</li>
+					<li class="dept2">
+						<a href="#">메뉴2</a>
+					</li>
+				</ul>
+			</li>
+			<li class="dept1">
+				<ul class="inner_menu">
+					<li class="dept2">
+						<a href="#">메뉴2</a>
+					</li>
+					<li class="dept2">
+						<a href="#">메뉴2</a>
+					</li>
+					<li class="dept2">
+						<a href="#">메뉴2</a>
+					</li>
+				</ul>
+			</li>
+			<li class="dept1">
+				<ul class="inner_menu">
+					<li class="dept2">
+						<a href="#">메뉴2</a>
+					</li>
+					<li class="dept2">
+						<a href="#">메뉴2</a>
+					</li>
+					<li class="dept2">
+						<a href="#">메뉴2</a>
+					</li>
+				</ul>
+			</li>
+			<li class="dept1">
+				<ul class="inner_menu">
+					<li class="dept2">
+						<a href="#">메뉴2</a>
+					</li>
+					<li class="dept2">
+						<a href="#">메뉴2</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+
+		<a href="#" class="menu_bar">
+			<span></span>
+			<span></span>
+			<span></span>
+		</a>
+
+		<div class="menu_open">
+			<ul>
+				<li class="dept1">
+					<a href="#">메뉴</a>
+					<ul>
+						<li class="dept2">
+							<a href="#">메뉴2</a>
 						</li>
-						<li>
-							<a>
-								<img src="./img/1.jpg">
-								<img src="./img/2.jpg">
-								<img src="./img/3.jpg">
-							</a>
+						<li class="dept2">
+							<a href="#">메뉴2</a>
 						</li>
-						<li>
-							<a>
-								<img src="./img/1.jpg">
-								<img src="./img/2.jpg">
-								<img src="./img/3.jpg">
-							</a>
+						<li class="dept2">
+							<a href="#">메뉴2</a>
+						</li>
+						<li class="dept2">
+							<a href="#">메뉴2</a>
 						</li>
 					</ul>
-			
-					<div class="slide-control">
-						<div class="control01">
-							<label for="slide03" class="left"></label>
-							<label for="slide02" class="right"></label>
-						</div>
-						<div class="control02">
-							<label for="slide01" class="left"></label>
-							<label for="slide03" class="right"></label>
-						</div>
-						<div class="control03">
-							<label for="slide02" class="left"></label>
-							<label for="slide01" class="right"></label>
-						</div>
-					</div>
-				</div>
-			</div>	
-			<!-- 슬라이드 끝 -->
+				</li>
+				<li class="dept1">
+					<a href="#">메뉴</a>
+					<ul>
+						<li class="dept2">
+							<a href="#">메뉴2</a>
+						</li>
+						<li class="dept2">
+							<a href="#">메뉴2</a>
+						</li>
+						<li class="dept2">
+							<a href="#">메뉴2</a>
+						</li>
+						<li class="dept2">
+							<a href="#">메뉴2</a>
+						</li>
+					</ul>
+				</li>
+				<li class="dept1">
+					<a href="#">메뉴</a>
+					<ul>
+						<li class="dept2">
+							<a href="#">메뉴2</a>
+						</li>
+						<li class="dept2">
+							<a href="#">메뉴2</a>
+						</li>
+						<li class="dept2">
+							<a href="#">메뉴2</a>
+						</li>
+					</ul>
+				</li>
+				<li class="dept1">
+					<a href="#">메뉴</a>
+					<ul>
+						<li class="dept2">
+							<a href="#">메뉴2</a>
+						</li>
+						<li class="dept2">
+							<a href="#">메뉴2</a>
+						</li>
+						<li class="dept2">
+							<a href="#">메뉴2</a>
+						</li>
+					</ul>
+				</li>
+				<li class="dept1">
+					<a href="#">메뉴</a>
+					<ul>
+						<li class="dept2">
+							<a href="#">메뉴2</a>
+						</li>
+						<li class="dept2">
+							<a href="#">메뉴2</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+
+		<div class="hd_bg"></div>
+				
+				
+				
+<!-- 				<div>킹가루스</div> -->
+<!-- 				<div>돔바</div> -->
+<!-- 				<div>가데</div> -->
+<!-- 				<div>매드풋</div> -->
+<!-- 				<div>루릭</div> -->
+<!-- 				<div>스코노</div> -->
+<!-- 				<div>스프리스</div> -->
+<!-- 				<div>어그</div>  -->
+<!-- 				<div>반스</div> -->
+<!-- 				<div>더헌드레드</div> -->
+<!-- 				<div>유비크</div> -->
+<!-- 				<div>이메리카</div> -->
+<!-- 				<div>이에스</div> -->
+<!-- 				<div>에트니스</div> -->
+<!-- 				<div>SPX</div> -->
+<!-- 				<div>포니</div> -->
+<!-- 				<div>프레드메리</div> -->
+<!-- 				<div>라코스테</div> -->
+<!-- 				<div>프리데릭데테</div> -->
+<!-- 				<div>비토이</div> -->
+<!-- 				<div>듀드</div> -->
+<!-- 				<div>레디아이</div> -->
+			</div>
 		</section>
 		<section class="login_modal">
 		
@@ -111,7 +262,7 @@
 		</section>
 		<!-- 브랜드 카테고리 시작 -->
 		<section class="category">
-			<div class="category_content">브랜드 카테고리 </div>
+			<div class="category_content">오늘의 브랜드 베스트 </div>
 			
 			<!-- 슬라이드 시작 -->
 			<div class="section">
@@ -231,6 +382,8 @@
 		<script type="text/javascript" src="../js/login.js"></script>
 		<script type="text/javascript" src="../js/mainhome.js"></script>
 		<script type="text/javascript" src="../js/request.js"></script>
+		<script type="text/javascript" src="../js/dropdown.js"></script>
+		
 	</div>
 
 </body>

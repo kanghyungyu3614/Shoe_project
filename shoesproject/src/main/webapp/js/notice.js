@@ -21,3 +21,14 @@ function nwrite() {
 		}
 	})
 }
+
+function logout() {
+	$.ajax({
+		url : "/shoesproject/logout",
+		success: function (re) {
+			if(re) {
+				window.location.href="/shoesproject/main/mainhome.jsp"
+			}
+		}
+	})
+}

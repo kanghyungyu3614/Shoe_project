@@ -30,7 +30,7 @@ function pload() {
 							<td><button type="button" onclick="pdelete(${p.pno})">삭제</button></td>
 						</tr>`
 			}
-			document.querySelector('#product_regist').innerHTML = html
+			document.querySelector('.regist').innerHTML = html
 		}
 	})
 }
@@ -46,11 +46,13 @@ function pdelete(i) {
 	})
 }
 
-
-
-
-
-
-
-
-
+function logout() {
+	$.ajax({
+		url : "/shoesproject/logout",
+		success: function (re) {
+			if(re) {
+				window.location.href="/shoesproject/main/mainhome.jsp"
+			}
+		}
+	})
+}

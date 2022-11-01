@@ -26,7 +26,7 @@ function findid(){
 function loginview(){
 	let check = confirm("로그인하시겠습니까?")
 	if(check ===true){
-		location.href="login.jsp"
+		location.href="/shoesproject/main/mainhome.jsp"
 	}else{
 		alert("돌아갑니다")
 	}

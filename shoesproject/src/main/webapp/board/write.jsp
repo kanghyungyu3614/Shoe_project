@@ -8,8 +8,8 @@
 </head>
 <body>
 
-<%@ include file="/main/mainhome.jsp"%>
 
+<%String lid = (String)session.getAttribute("lid");%>
 <% if(lid==null){response.sendRedirect("/shoesproject/view/login.jsp");} %>
 	
 	

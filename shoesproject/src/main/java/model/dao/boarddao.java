@@ -49,6 +49,7 @@ public class boarddao extends dao {
 		} catch (Exception e) {System.out.println(e);}
 		return list;}
 	
+
 	/*---------------------------------2022-10-28[안태섭] 문의사항 등록-----------------------------*/
 	public boolean qnawrite(String qtitle , String qcontent , String qfile) {
 		String sql = "insert into qnaboard(qtitle , qcontent , qfile) values (?,?,?)";
@@ -72,8 +73,24 @@ public class boarddao extends dao {
 		}catch (Exception e) {} return 0;
 	}
 	
+
+	//셀럽 업데이트
 	
-	
-	
-	
-}// class end
+	public boolean selupdata(String title,String content,String file, int snum) {
+		String sql ="update board set stitle= "+title+" ,scontent = "+content+" ,sfile="+file+" where snum= "+snum+"";
+		
+		try {
+			ps = con.prepareStatement(sql);
+			ps.executeUpdate();
+			return true;
+			
+		} catch (Exception e) {
+			System.out.println(e);
+		}return false;
+	}
+	//셀럽 삭제
+	public boolean seldelete(int snum) {
+		String sql ="delete from board where snum ="+snum;
+		
+	}
+

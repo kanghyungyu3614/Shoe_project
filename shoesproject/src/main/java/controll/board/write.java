@@ -86,16 +86,52 @@ public class write extends HttpServlet {
 
 	@Override
 	protected void doPut(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-	int snum =	Integer.parseInt(request.getParameter("snum"));
+	
+	
+	String uploadpath = request.getSession().getServletContext().getRealPath("/supload");
+	MultipartRequest multi = new MultipartRequest(
+				request,
+				uploadpath,
+				1024*1024*10,
+				"UTF-8" , 					
+				new DefaultFileRenamePolicy()
+			
+			);
+	
+		
+	String title = multi.getParameter("title");
+	String content = multi.getParameter("content");
+	String file = multi.getFilesystemName("sfile");
+	int snum =	Integer.parseInt(multi.getParameter("snum"));
 	HttpSession session = request.getSession();
 	
 	session.setAttribute("snum", snum);
 	
 	String lid =(String)session.getAttribute("lid");
 	System.out.println("잘옴");	
+	
+	boolean result = boarddao.getInstance().selupdata(title, content, file, snum);
+	System.out.println(result);
+	response.getWriter().print(result);}
+
+	
+	
+	@Override
+	protected void doDelete(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		int snum = Integer.parseInt(request.getParameter("snum"));
+		System.out.println(snum);
+		
+		boolean result = boarddao.getInstance().seldelete(snum);
+		
+		response.getWriter().print(result);
 	}
 	
+	}
+
 	
-}
+	
+	
+
 
 
