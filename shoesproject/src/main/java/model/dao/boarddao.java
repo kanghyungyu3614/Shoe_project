@@ -63,6 +63,10 @@ public class boarddao extends dao {
 			System.out.println(e);
 		}return false;
 	}
-	
+	//셀럽 삭제
+	public boolean seldelete(int snum) {
+		String sql ="delete from board where snum ="+snum;
+		
+	}
 	
 }

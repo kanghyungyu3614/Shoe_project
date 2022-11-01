@@ -116,7 +116,20 @@ public class write extends HttpServlet {
 
 	
 	
+	@Override
+	protected void doDelete(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		int snum = Integer.parseInt(request.getParameter("snum"));
+		System.out.println(snum);
+		
+		boolean result = boarddao.getInstance().seldelete(snum);
+		
+		response.getWriter().print(result);
 	}
+	
+	}
+
+	
 	
 	
 

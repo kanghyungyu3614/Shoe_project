@@ -44,7 +44,7 @@ function getsellob(){
 
 function sellobview(i){
 	
-	document.querySelector(".delete"+i).innerHTML = "<button >삭제하기</button><button type='button' onclick='selupdate("+snum+")'>수정하기</button>"
+	document.querySelector(".delete"+i).innerHTML = "<button onclick='seldele("+snum+")'>삭제하기</button><button type='button' onclick='selupdate("+snum+")'>수정하기</button>"
 	document.querySelector('.card'+i).innerHTML = json[i].scontent;
 	
 }
@@ -84,7 +84,17 @@ function selloveupdate(snum){
 }
 
 
-
+function seldele(snum){
+	$.ajax({
+		url : "/shoesproject/board/write",
+		type : 'delete',
+		data : {snum},
+		success : p=>{
+			alert(p)
+		}
+		
+	})
+}
 
 //	for(let i = 0; i<snum.length; i++){
 //				img = '/shoesproject/supload/'+json[i].sfile
