@@ -68,6 +68,7 @@ a:visited{
 	display: flex;
 	font-weight: 700;
 	font-family: 'SEBANG_Gothic_Bold';
+	justify-content: center;
 }
 
 
@@ -340,16 +341,16 @@ a{text-decoration: none;color: inherit;}
 #gnb  .dept2 > a:hover,
 #gnb  .dept2 > a:active,
 #gnb  .dept2 > a:focus {font-weight: bold}
-
-.menu_bar {margin-left: auto;z-index: 9999;position: relative;}
+/*.menu_bar  {margin-left: auto;}*/
+.menu_bar {z-index: 9999;position: relative; left: 46px; bottom: 7px;}
 .menu_bar.active span:nth-child(1){display: none}
 .menu_bar.active span:nth-child(2){transform:rotate(130deg)}
 .menu_bar.active span:nth-child(3){transform: rotate(45deg);top: 0px;position: absolute}
 .menu_bar span{width: 22px;height: 2px;background: #555;display: block;margin: 6px}
 /* 햄버거 버튼을 열었을때 하부칸들 눌렀을때 크기는 얘를 줄이면 된다. */
-.menu_open{position: fixed;width: 740px;height: 37.5vh;background: #e4b0b0;top: 134px;left: 363px;z-index: 999;padding: 3rem;display: none}
+.menu_open{position: fixed;width: 740px;height: 37.5vh;background: #ffffff;top: 134px;left: 362px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
 .menu_open > ul{display: flex;}
-.menu_open > ul li{width: 20%;}
+.menu_open > ul li{width: 100%;}
 
 .hd_bg{background: #fff;width: 100%;height: 0;left: 0;z-index: 1;position: absolute;}
 

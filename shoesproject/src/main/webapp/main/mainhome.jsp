@@ -9,6 +9,7 @@
 <link href="../css/mainhome.css" rel="stylesheet">
 </head>
 <body>
+	<%String lid = (String)session.getAttribute("lid");%>
 
 	<header class="header">
 		<div id="header_logo">
@@ -22,89 +23,11 @@
 				<div>1.Nike&nbsp;&nbsp;&nbsp;</div>
 				<div>2.밀레&nbsp;&nbsp;&nbsp;</div>
 				<div>3.THE NORTH FACE&nbsp;&nbsp;&nbsp;</div>
-				<div>4.Adidas&nbsp;&nbsp;</div>
-<!-- 				<div>5등:NEPA&nbsp;&nbsp;</div> -->
-<!-- 				<div>6등:NEW BALANCE&nbsp;&nbsp;</div> -->
-<!-- 				<div>Crocs&nbsp;&nbsp;</div> -->
-<!-- 				<div>Discovery&nbsp;&nbsp;</div> -->
-<!-- 				<div>BLACKYAK&nbsp;&nbsp;</div> -->
-<!-- 				<div>K2&nbsp;&nbsp;</div> -->
-<!-- 				<div>KOLPING&nbsp;&nbsp;</div> -->
-<!-- 				<div>NATIONAL GEOGRAPIC&nbsp;&nbsp;</div> -->
-				
-		 <ul id="gnb">
-			<li class="dept1">
-				<ul class="inner_menu">
-					<li class="dept2">
-						<a href="#">메뉴2</a>
-					</li>
-					<li class="dept2">
-						<a href="#">메뉴2</a>
-					</li>
-					<li class="dept2">
-						<a href="#">메뉴2</a>
-					</li>
-					<li class="dept2">
-						<a href="#">메뉴2</a>
-					</li>
-				</ul>
-			</li>
-			
-			<li class="dept1">
-				
-				<ul class="inner_menu">
-					<li class="dept2">
-						<a href="#">메뉴2</a>
-					</li>
-					<li class="dept2">
-						<a href="#">메뉴2</a>
-					</li>
-					<li class="dept2">
-						<a href="#">메뉴2</a>
-					</li>
-					<li class="dept2">
-						<a href="#">메뉴2</a>
-					</li>
-				</ul>
-			</li>
-			<li class="dept1">
-				<ul class="inner_menu">
-					<li class="dept2">
-						<a href="#">메뉴2</a>
-					</li>
-					<li class="dept2">
-						<a href="#">메뉴2</a>
-					</li>
-					<li class="dept2">
-						<a href="#">메뉴2</a>
-					</li>
-				</ul>
-			</li>
-			<li class="dept1">
-				<ul class="inner_menu">
-					<li class="dept2">
-						<a href="#">메뉴2</a>
-					</li>
-					<li class="dept2">
-						<a href="#">메뉴2</a>
-					</li>
-					<li class="dept2">
-						<a href="#">메뉴2</a>
-					</li>
-				</ul>
-			</li>
-			<li class="dept1">
-				<ul class="inner_menu">
-					<li class="dept2">
-						<a href="#">메뉴2</a>
-					</li>
-					<li class="dept2">
-						<a href="#">메뉴2</a>
-					</li>
-				</ul>
-			</li>
-		</ul>
-
+				<div>4.Adidas&nbsp;&nbsp;&nbsp;</div>
+				<div>5등:NEPA&nbsp;&nbsp;&nbsp;</div>
+				<div>6등:NEW BALANCE&nbsp;&nbsp;&nbsp;</div>
+				<div>7등:클락스&nbsp;&nbsp;&nbsp;</div>
+		<!-- 여기서부터 햄버거 드롭다운 바 시작 -->
 		<a href="#" class="menu_bar">
 			<span></span>
 			<span></span>
@@ -114,112 +37,153 @@
 		<div class="menu_open">
 			<ul>
 				<li class="dept1">
-					<a href="#">메뉴</a>
+					<a href="#">1~10순위</a>
 					<ul>
 						<li class="dept2">
-							<a href="#">메뉴2</a>
+							<a href="#">1.Nike&nbsp;&nbsp;&nbsp;</a>
 						</li>
 						<li class="dept2">
-							<a href="#">메뉴2</a>
+							<a href="#">2.밀레&nbsp;&nbsp;&nbsp;</a>
 						</li>
 						<li class="dept2">
-							<a href="#">메뉴2</a>
+							<a href="#">3.THE NORTH FACE&nbsp;&nbsp;&nbsp;</a>
 						</li>
 						<li class="dept2">
-							<a href="#">메뉴2</a>
+							<a href="#">4.Adidas&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">5.NEPA&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">6.NEW BALANCE&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">7.클락스&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">8.킹가루스&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">9.돔바&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">10.가데&nbsp;&nbsp;&nbsp;</a>
 						</li>
 					</ul>
 				</li>
 				<li class="dept1">
-					<a href="#">메뉴</a>
+					<a href="#">11~20순위</a>
 					<ul>
 						<li class="dept2">
-							<a href="#">메뉴2</a>
+							<a href="#">11.매드풋&nbsp;&nbsp;&nbsp;</a>
 						</li>
 						<li class="dept2">
-							<a href="#">메뉴2</a>
+							<a href="#">12.루릭&nbsp;&nbsp;&nbsp;</a>
 						</li>
 						<li class="dept2">
-							<a href="#">메뉴2</a>
+							<a href="#">13.스코노&nbsp;&nbsp;&nbsp;</a>
 						</li>
 						<li class="dept2">
-							<a href="#">메뉴2</a>
+							<a href="#">14.스프리스&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">15.어그&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">16.반스&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">17.더헌드레드&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">18.유비크&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">19.이메리카&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">20.이에스&nbsp;&nbsp;&nbsp;</a>
 						</li>
 					</ul>
 				</li>
 				<li class="dept1">
-					<a href="#">메뉴</a>
+					<a href="#">21~30순위</a>
 					<ul>
-						<li class="dept2">
-							<a href="#">메뉴2</a>
+											<li class="dept2">
+							<a href="#">21.에트니스&nbsp;&nbsp;&nbsp;</a>
 						</li>
 						<li class="dept2">
-							<a href="#">메뉴2</a>
+							<a href="#">22.SPX&nbsp;&nbsp;&nbsp;</a>
 						</li>
 						<li class="dept2">
-							<a href="#">메뉴2</a>
+							<a href="#">23.포니&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">24.프레드메리&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">25.라코스테&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">26.프리데릭데테&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">27.비토이&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">28.듀드&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">29.레디아이&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">30.BSQT&nbsp;&nbsp;&nbsp;</a>
 						</li>
 					</ul>
 				</li>
 				<li class="dept1">
-					<a href="#">메뉴</a>
+					<a href="#">31~40순위</a>
 					<ul>
-						<li class="dept2">
-							<a href="#">메뉴2</a>
+												<li class="dept2">
+							<a href="#">31.사운트&nbsp;&nbsp;&nbsp;</a>
 						</li>
 						<li class="dept2">
-							<a href="#">메뉴2</a>
+							<a href="#">32.트루릴리젼&nbsp;&nbsp;&nbsp;</a>
 						</li>
 						<li class="dept2">
-							<a href="#">메뉴2</a>
+							<a href="#">33.베어파우&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">34.버켄스탁&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">35.사쿤&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">36.디젤&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">37.스걸리즘&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">38.무다&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">39.쯔보&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">40.도나카란뉴욕&nbsp;&nbsp;&nbsp;</a>
 						</li>
 					</ul>
 				</li>
-				<li class="dept1">
-					<a href="#">메뉴</a>
-					<ul>
-						<li class="dept2">
-							<a href="#">메뉴2</a>
-						</li>
-						<li class="dept2">
-							<a href="#">메뉴2</a>
-						</li>
-					</ul>
-				</li>
+				
 			</ul>
 		</div>
-
-		<div class="hd_bg"></div>
-				
-				
-				
-<!-- 				<div>킹가루스</div> -->
-<!-- 				<div>돔바</div> -->
-<!-- 				<div>가데</div> -->
-<!-- 				<div>매드풋</div> -->
-<!-- 				<div>루릭</div> -->
-<!-- 				<div>스코노</div> -->
-<!-- 				<div>스프리스</div> -->
-<!-- 				<div>어그</div>  -->
-<!-- 				<div>반스</div> -->
-<!-- 				<div>더헌드레드</div> -->
-<!-- 				<div>유비크</div> -->
-<!-- 				<div>이메리카</div> -->
-<!-- 				<div>이에스</div> -->
-<!-- 				<div>에트니스</div> -->
-<!-- 				<div>SPX</div> -->
-<!-- 				<div>포니</div> -->
-<!-- 				<div>프레드메리</div> -->
-<!-- 				<div>라코스테</div> -->
-<!-- 				<div>프리데릭데테</div> -->
-<!-- 				<div>비토이</div> -->
-<!-- 				<div>듀드</div> -->
-<!-- 				<div>레디아이</div> -->
+		<!-- 여기서부터 햄버거 드롭다운 바 끝 -->
 			</div>
 		</section>
 		<section class="login_modal">
 		
-		<%String lid = (String)session.getAttribute("lid");%>
 		
 		<%if(lid==null){%>
 			<div class="login_content">로그인</div>
@@ -232,7 +196,7 @@
 			
 			<button onclick="login()" class="login_button" type="button">로그인하기</button>
 			<div class="signup_find">
-				<div><a href="../view/회원가입.jsp">회원가입</a> |</div>
+				<div><a href="../view/signup.jsp">회원가입</a> |</div>
 				<div>&nbsp;<a href="../view/find.jsp">아이디찾기</a> |</div>
 				<div>&nbsp;<a href="../view/findpw.jsp">비밀번호찾기</a></div>
 			</div> 
@@ -249,13 +213,6 @@
 				<div class="member_selovelist">&nbsp;<a href="../board/selovelist.jsp">셀렙들의정보</a> |</div>
 				<div class="member_logout">&nbsp;<a href="../view/logout.jsp">로그아웃</a></div>
 				<div>				
-					<form>
-						문의유형 : <input type="text" class="rpurpose" name="rpurpose"> <br>
-						문의세부유형 : <input type="text" class="rdetail" name="rdetail"> <br>
-						문의제목 : <input type="text" class="rtitle" name="rtitle"> <br>
-						문의내용 : <input type="text" class="rcontent" name="rcontent"> <br>
-						<button type="button" onclick="request()">문의하기</button> <br>
-					</form>
 				</div>
 			</div>			
 		<%}%>
@@ -380,8 +337,6 @@
 		
 		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 		<script type="text/javascript" src="../js/login.js"></script>
-		<script type="text/javascript" src="../js/mainhome.js"></script>
-		<script type="text/javascript" src="../js/request.js"></script>
 		<script type="text/javascript" src="../js/dropdown.js"></script>
 		
 	</div>

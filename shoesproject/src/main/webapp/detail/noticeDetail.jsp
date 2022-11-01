@@ -35,12 +35,6 @@
 				</div>
 			</div>
 		</div>
-		
-		
-		
-		
-		
-		
 		<!-- 푸터 시작 -->
 		<footer>
 	        <div id="footerURL">

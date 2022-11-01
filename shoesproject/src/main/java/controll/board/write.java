@@ -122,9 +122,9 @@ public class write extends HttpServlet {
 		int snum = Integer.parseInt(request.getParameter("snum"));
 		System.out.println(snum);
 		
-		boolean result = boarddao.getInstance().seldelete(snum);
+//		boolean result = boarddao.getInstance().seldelete(snum);
 		
-		response.getWriter().print(result);
+//		response.getWriter().print(result);
 	}
 	
 	}
