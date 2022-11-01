@@ -70,9 +70,9 @@ function commentform(rno) {
 	if( rloadstate == false  ){ // 답변하기 폼이 열려있으면 답변하기 상세페이지 오픈
 		html = `<tr>
 				<td colspan="6" style="height: 500px; border: 1px solid black;">
-					제목 : <input type="text" class="ctitle" style="border: 1px solid black; width: 300px; height: 30px; margin-bottom: 20px;"> <br>
-					내용 : <input type="text" class="ccontent" style="border: 1px solid black; width: 300px; height: 200px; margin-bottom: 20px;"> <br>
-					<button type="button" style="width: 100px; height:50px; border: 1px solid black; margin-left: 48px;" onclick="comment()">답변하기</button>
+					제목 : <input type="text"  class="ctitle" id="ctitle" style="border: 1px solid black; width: 300px; height: 30px; margin-bottom: 20px;"> <br>
+					내용 : <input type="text" class="ccontent" id="ccontent" style="border: 1px solid black; width: 300px; height: 200px; margin-bottom: 20px;"> <br>
+					<button type="button" style="width: 100px; height:50px; border: 1px solid black; margin-left: 48px;" onclick="comment(${rno})">답변하기</button>
 				</td>
 			</tr>`
 		rloadstate = true; // 답변하기 열리면 true 전환
@@ -83,16 +83,23 @@ function commentform(rno) {
 	document.querySelector(`.commentform${rno}`).innerHTML = html
 }
 
-// 답글 하기
+// 문의 답변하기 안태섭
 function comment(rno) {
 	
+	let ctitle = document.querySelector('.ctitle').value
+	let ccontent = document.querySelector('.ccontent').value
+	
 	$.ajax({
-		url : "/shoeproject/comment",
-		data : { "rno" : rno },
+		url : "http://localhost:8080/shoesproject/comment",
+		data : {"rno" : rno , "ctitle" : ctitle , "ccontent" : ccontent },
+		type : 'post',
 		success : function (re) {
-			if(re === 'true') {
+			alert('z')
+			alert(re)
+			if(re == 'true') {
 				alert('답글 작성 완료')
-			}else{ ( alert ( '답글 작성 실패'))
+			}else{ 
+				( alert ( '답글 작성 실패'))
 			}
 		}
 	})

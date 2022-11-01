@@ -12,8 +12,8 @@ public class CommentDao extends dao {
 		try {
 			ps = con.prepareStatement(sql);
 			ps.setString(1, dto.getCtitle());
-			ps.setString(2, dto.getCcontent());
-			ps.setInt(3, dto.getRno());
+			ps.setString(2 , dto.getCcontent());
+			ps.setInt(3 , dto.getRno());
 			ps.executeUpdate();
 			return true;
 		}catch (Exception e) {System.out.println("문의답변 오류 " + e);}

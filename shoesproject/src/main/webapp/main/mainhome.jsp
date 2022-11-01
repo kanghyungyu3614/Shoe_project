@@ -232,7 +232,7 @@
 			
 			<button onclick="login()" class="login_button" type="button">로그인하기</button>
 			<div class="signup_find">
-				<div><a href="../view/회원가입.jsp">회원가입</a> |</div>
+				<div><a href="../view/signup.jsp">회원가입</a> |</div>
 				<div>&nbsp;<a href="../view/find.jsp">아이디찾기</a> |</div>
 				<div>&nbsp;<a href="../view/findpw.jsp">비밀번호찾기</a></div>
 			</div> 
@@ -383,7 +383,7 @@
 		<script type="text/javascript" src="../js/mainhome.js"></script>
 		<script type="text/javascript" src="../js/request.js"></script>
 		<script type="text/javascript" src="../js/dropdown.js"></script>
-		
+		<script type="text/javascript" src="../js/rloadDetail.js"></script>
 	</div>
 
 </body>
