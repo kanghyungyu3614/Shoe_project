@@ -9,6 +9,13 @@
 <link href="../css/require.css" rel="stylesheet"> 
 </head>
 <body>
+
+	<%String lid = (String)session.getAttribute("lid");
+	if(lid == null) {
+		response.sendRedirect("/shoesproject/main/mainhome.jsp");
+	} else if(!lid.equals("admin")) {
+		response.sendRedirect("/shoesproject/main/mainhome.jsp");
+	}%>
   	<div id="main">
 		<!-- 네비게이션 시작 -->
 		<div id="main_title">
@@ -65,7 +72,7 @@
 	<!-- 마무리 -->
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 	<script type="text/javascript" src="../js/notice.js"></script>
-	<script type="text/javascript" src="../js/rload.js"></script>
+	<script type="text/javascript" src="../js/rloadDetail.js"></script>
 	
 </body>
 </html>

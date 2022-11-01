@@ -9,6 +9,13 @@
 <link href="../../css/requireDetail.css" rel="stylesheet">
 </head>
 <body>
+
+	<%String lid = (String)session.getAttribute("lid");
+	if(lid == null) {
+		response.sendRedirect("/shoesproject/main/mainhome.jsp");
+	} else if(!lid.equals("admin")) {
+		response.sendRedirect("/shoesproject/main/mainhome.jsp");
+	}%>
 	<div id="main">
 		<div id="main_title"> <!-- 테스트 -->
 			<div class="title_content"><a href="../product.jsp">상품등록</a></div>
@@ -21,7 +28,7 @@
 			<span class="nav_detail"><a href="../admin.jsp">관리자게시판</a></span>
 			<span id="notice">상품문의 게시판</span>
 				<div id="notice_table_component">
-					<table id="advice_notice_table">
+					<table class="request">
 						<tr>
 							<th>문의 유형</th>
 							<th>문의 세부유형</th>
@@ -54,7 +61,7 @@
 		<!-- 푸터 끝 -->
 		
 		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-		<script type="text/javascript" src="../js/admin.js"></script>
+		<script type="text/javascript" src="../../js/rloadDetail.js"></script>
 		
 	</div>
 	<!-- 마무리 -->

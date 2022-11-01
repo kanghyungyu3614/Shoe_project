@@ -39,8 +39,22 @@ function ndelete(i) {
 		url: "/shoesproject/ndelete",
 		data: {"nno" : i},
 		success: function (re) {
-			if(re == 'true') {			
+			if(re == 'true') {
+				alert("삭제 완료!!")
 				window.location.reload()
+			} else {
+				alert("삭제 실패!!")
+			}
+		}
+	})
+}
+
+function logout() {
+	$.ajax({
+		url : "/shoesproject/logout",
+		success: function (re) {
+			if(re) {
+				window.location.href="/shoesproject/main/mainhome.jsp"
 			}
 		}
 	})
