@@ -30,6 +30,8 @@ public class pload extends HttpServlet {
 			list = PregistDao.getInstance().pload();
 		} else if(type.equals("adminDetail")) {
 			list = PregistDao.getInstance().ploadDetail();
+		} else if(type.equals("main")) {
+			list = PregistDao.getInstance().ploadMain();
 		}
 		
 		JSONArray array = new JSONArray();

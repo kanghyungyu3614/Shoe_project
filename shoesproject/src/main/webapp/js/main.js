@@ -2,7 +2,7 @@ pload()
 function pload() {
 	$.ajax({
 		url : "/shoesproject/pload",
-		data : { "type" : "admin" },
+		data : { "type" : "main" },
 		success : function (re) {
 			let product = JSON.parse(re)
 			let html = ""
@@ -28,6 +28,15 @@ function pload() {
 	})
 }
 
+// 세션 저장하고 디테일페이지 리로드
 function product(i) {
-	alert(i + "번째 게시글 입니다.")
+	$.ajax({
+		url : "/shoesproject/product/psession",
+		data : { "pno" : i },
+		success : function (re) {
+			if(re == "true") {
+				window.location.href="/shoesproject/product/detail.jsp"
+			}
+		}
+	})
 }
