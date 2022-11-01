@@ -13,9 +13,7 @@
 	<%String lid = (String)session.getAttribute("lid");
 	if(lid == null) {
 		response.sendRedirect("/shoesproject/main/mainhome.jsp");
-	} else if(!lid.equals("admin")) {
-		response.sendRedirect("/shoesproject/main/mainhome.jsp");
-	}%>
+	}%> 
 <!-- 	<form> -->
 <!-- 		문의유형 : <input type="text" class="rpurpose" name="rpurpose"> <br> -->
 <!-- 		문의세부유형 : <input type="text" class="rdetail" name="rdetail"> <br> -->

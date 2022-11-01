@@ -10,13 +10,14 @@
 </head>
 <body>
 	<%String lid = (String)session.getAttribute("lid");%>
-
+	<!-- 로그인을 안했을때 시작 -->
+	<%if(lid==null){%>
 	<header class="header">
 		<div id="header_logo">
 			<a href="">shoes</a>
 		</div>
 	</header>
-	<div id= main>
+	<div id= main> <!-- 메인에서 얘러뜨는거 원래 그런겁니다.  -->
 		<section class="brand">
 			<div class="brand_content">이달의 인기 브랜드</div> 
 			<div class="month_popular_brand">
@@ -33,7 +34,7 @@
 			<span></span>
 			<span></span>
 		</a>
-
+	
 		<div class="menu_open">
 			<ul>
 				<li class="dept1">
@@ -109,7 +110,7 @@
 				<li class="dept1">
 					<a href="#">21~30순위</a>
 					<ul>
-											<li class="dept2">
+						<li class="dept2">
 							<a href="#">21.에트니스&nbsp;&nbsp;&nbsp;</a>
 						</li>
 						<li class="dept2">
@@ -180,12 +181,13 @@
 			</ul>
 		</div>
 		<!-- 여기서부터 햄버거 드롭다운 바 끝 -->
-			</div>
+		</div>
 		</section>
+		
+		<!-- 로그인 컴포넌트 시작 -->
 		<section class="login_modal">
 		
 		
-		<%if(lid==null){%>
 			<div class="login_content">로그인</div>
 			<div class="id_content">아이디</div>
 			<input id="lid" class="id_input" type="text" placeholder="아이디를 입력해주세요."> 
@@ -200,26 +202,66 @@
 				<div>&nbsp;<a href="../view/find.jsp">아이디찾기</a> |</div>
 				<div>&nbsp;<a href="../view/findpw.jsp">비밀번호찾기</a></div>
 			</div> 
-		<%}else if(lid.equals("admin")){%>
-			<div class="admin_content">관리자님 안녕하세요.</div>
-			<div class="admin_find">
-				<div><a href="../admin/admin.jsp">관리자페이지</a> |</div>
-				<div class="admin_logout">&nbsp;<a href="../view/logout.jsp">로그아웃</a></div>
-			</div>
-		<%}else{%>
-			<div class="member_content"><%=lid%>님 안녕하세요.</div>
-			<div class="member_find">
-				<div class="member_page">&nbsp;<a href="../view/mypage.jsp">나의정보</a> |</div><br>
-				<div class="member_selovelist">&nbsp;<a href="../board/selovelist.jsp">셀렙들의정보</a> |</div>
-				<div class="member_logout">&nbsp;<a href="../view/logout.jsp">로그아웃</a></div>
-				<div>				
-				</div>
-			</div>			
-		<%}%>
-		</section>
-		<!-- 브랜드 카테고리 시작 -->
+			</section>
+			<!--  로그인 컴포넌트 끝 -->
+			
+			<!-- 오늘의 브랜드 베스트 시작 -->
 		<section class="category">
 			<div class="category_content">오늘의 브랜드 베스트 </div>
+			
+			<!-- 슬라이드 시작 -->
+			<div class="section">
+				<input type="radio" name="slide1" id="slide01" checked>
+				<input type="radio" name="slide1" id="slide02">
+				<input type="radio" name="slide1" id="slide03">
+				<div class="slidewrap">
+					<ul class="slidelist">
+						<li>
+							<a>
+								<img src="./img/brand/1.jpg">
+								<img src="./img/brand/2.jpg">
+								<img src="./img/brand/3.jpg">
+							</a>
+						</li>
+						<li>
+							<a>
+								<img src="./img/brand/1.jpg">
+								<img src="./img/brand/2.jpg">
+								<img src="./img/brand/3.jpg">
+							</a>
+						</li>
+						<li>
+							<a>
+								<img src="./img/brand/1.jpg">
+								<img src="./img/brand/2.jpg">
+								<img src="./img/brand/3.jpg">
+							</a>
+						</li>
+					</ul>
+			
+					<div class="slide-control">
+						<div class="control01">
+							<label for="slide03" class="left"></label>
+							<label for="slide02" class="right"></label>
+						</div>
+						<div class="control02">
+							<label for="slide01" class="left"></label>
+							<label for="slide03" class="right"></label>
+						</div>
+						<div class="control03">
+							<label for="slide02" class="left"></label>
+							<label for="slide01" class="right"></label>
+						</div>
+					</div>
+				</div>
+				<div class="admin_category_sldie_content">
+					<div>인기 럭셔리</div>
+					<div>럭키드로우</div>
+					<div>정가아래</div>
+				</div>
+			</div>	
+			<!-- 슬라이드 끝 -->
+			
 			
 			<!-- 슬라이드 시작 -->
 			<div class="section">
@@ -228,25 +270,25 @@
 				<input type="radio" name="slide2" id="slide06">
 				<div class="slidewrap">
 					<ul class="slidelist">
-						<li>
+												<li>
 							<a>
-								<img src="./img/1.jpg">
-								<img src="./img/2.jpg">
-								<img src="./img/3.jpg">
+								<img src="./img/brand/5.jpg">
+								<img src="./img/brand/6.jpg">
+								<img src="./img/brand/7.jpg">
 							</a>
 						</li>
 						<li>
 							<a>
-								<img src="./img/1.jpg">
-								<img src="./img/2.jpg">
-								<img src="./img/3.jpg">
+								<img src="./img/brand/5.jpg">
+								<img src="./img/brand/6.jpg">
+								<img src="./img/brand/7.jpg">
 							</a>
 						</li>
 						<li>
 							<a>
-								<img src="./img/1.jpg">
-								<img src="./img/2.jpg">
-								<img src="./img/3.jpg">
+								<img src="./img/brand/5.jpg">
+								<img src="./img/brand/6.jpg">
+								<img src="./img/brand/7.jpg">
 							</a>
 						</li>
 					</ul>
@@ -265,20 +307,644 @@
 							<label for="slide04" class="right"></label>
 						</div>
 					</div>
+					<div class="admin_category_sldie_content">
+						<div>브랜드관 오픈</div>
+						<div>집꾸미기</div>
+						<div>남성 추천</div>
+					</div>
 				</div>
 			</div>	
 			<!-- 슬라이드 끝 -->
 			
+			
 		</section>
-		<!-- 브랜드 카테고리 끝 -->
+		<!-- 오늘의 브랜드 베스트 끝-->
+			
+	<!-- 로그인을 안했을때 끝 -->
+	<!-- admin으로 로그인했을때 시작 -->
+		<%}else if(lid.equals("admin")){%>
+		<header class="header">
+			<div id="header_logo">
+				<a href="">shoes</a>
+				<span class="admin_content">관리자님 안녕하세요.</span>
+				<span class="admin_find">
+				<span><a href="../admin/admin.jsp">관리자페이지</a> |</span>
+				<span class="admin_logout">&nbsp;<a href="../view/logout.jsp">로그아웃</a></span>
+				</span>
+			</div>
+		</header>
+	<div id= main>  <!-- 메인에서 얘러뜨는거 원래 그런겁니다.  -->
+		<section class="admin_brand">
+			<div class="admin_brand_content">이달의 인기 브랜드</div> 
+			<div class="admin_month_popular_brand">
+				<div>1.Nike&nbsp;&nbsp;&nbsp;</div>
+				<div>2.밀레&nbsp;&nbsp;&nbsp;</div>
+				<div>3.THE NORTH FACE&nbsp;&nbsp;&nbsp;</div>
+				<div>4.Adidas&nbsp;&nbsp;&nbsp;</div>
+				<div>5등:NEPA&nbsp;&nbsp;&nbsp;</div>
+				<div>6등:NEW BALANCE&nbsp;&nbsp;&nbsp;</div>
+				<div>7등:클락스&nbsp;&nbsp;&nbsp;</div>
+		<!-- 여기서부터 햄버거 드롭다운 바 시작 -->
+		<a href="#" class="admin_menu_bar">
+			<span></span>
+			<span></span>
+			<span></span>
+		</a>
+
+		<div class="admin_menu_open">
+			<ul>
+				<li class="dept1">
+					<a href="#">1~10순위</a>
+					<ul>
+						<li class="dept2">
+							<a href="#">1.Nike&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">2.밀레&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">3.THE NORTH FACE&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">4.Adidas&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">5.NEPA&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">6.NEW BALANCE&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">7.클락스&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">8.킹가루스&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">9.돔바&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">10.가데&nbsp;&nbsp;&nbsp;</a>
+						</li>
+					</ul>
+				</li>
+				<li class="dept1">
+					<a href="#">11~20순위</a>
+					<ul>
+						<li class="dept2">
+							<a href="#">11.매드풋&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">12.루릭&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">13.스코노&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">14.스프리스&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">15.어그&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">16.반스&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">17.더헌드레드&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">18.유비크&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">19.이메리카&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">20.이에스&nbsp;&nbsp;&nbsp;</a>
+						</li>
+					</ul>
+				</li>
+				<li class="dept1">
+					<a href="#">21~30순위</a>
+					<ul>
+						<li class="dept2">
+							<a href="#">21.에트니스&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">22.SPX&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">23.포니&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">24.프레드메리&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">25.라코스테&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">26.프리데릭데테&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">27.비토이&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">28.듀드&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">29.레디아이&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">30.BSQT&nbsp;&nbsp;&nbsp;</a>
+						</li>
+					</ul>
+				</li>
+				<li class="dept1">
+					<a href="#">31~40순위</a>
+					<ul>
+												<li class="dept2">
+							<a href="#">31.사운트&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">32.트루릴리젼&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">33.베어파우&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">34.버켄스탁&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">35.사쿤&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">36.디젤&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">37.스걸리즘&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">38.무다&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">39.쯔보&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">40.도나카란뉴욕&nbsp;&nbsp;&nbsp;</a>
+						</li>
+					</ul>
+				</li>
+				
+			</ul>
+		</div>
+		<!-- 여기서부터 햄버거 드롭다운 바 끝 -->
+			</div>	
+			</section>
+		<!-- 오늘의 브랜드 베스트 시작 -->
+		<section class="admin_category">
+			<div class="admin_category_content">오늘의 브랜드 베스트 </div>
+			
+			<!-- 슬라이드 시작 -->
+			<div class="section">
+				<input type="radio" name="slide1" id="slide01" checked>
+				<input type="radio" name="slide1" id="slide02">
+				<input type="radio" name="slide1" id="slide03">
+				<div class="slidewrap">
+					<ul class="slidelist">
+						<li>
+							<a>
+								<img src="./img/brand/1.jpg">
+								<img src="./img/brand/2.jpg">
+								<img src="./img/brand/3.jpg">
+								<img src="./img/brand/4.jpg">
+							</a>
+						</li>
+						<li>
+							<a>
+								<img src="./img/brand/1.jpg">
+								<img src="./img/brand/2.jpg">
+								<img src="./img/brand/3.jpg">
+								<img src="./img/brand/4.jpg">
+							</a>
+						</li>
+						<li>
+							<a>
+								<img src="./img/brand/1.jpg">
+								<img src="./img/brand/2.jpg">
+								<img src="./img/brand/3.jpg">
+								<img src="./img/brand/4.jpg">
+							</a>
+						</li>
+					</ul>
+			
+					<div class="slide-control">
+						<div class="control01">
+							<label for="slide03" class="left"></label>
+							<label for="slide02" class="right"></label>
+						</div>
+						<div class="control02">
+							<label for="slide01" class="left"></label>
+							<label for="slide03" class="right"></label>
+						</div>
+						<div class="control03">
+							<label for="slide02" class="left"></label>
+							<label for="slide01" class="right"></label>
+						</div>
+					</div>
+				</div>
+				<div class="admin_category_sldie_content">
+					<div>인기 럭셔리</div>
+					<div>럭키드로우</div>
+					<div>정가아래</div>
+					<div>셀럽픽</div>
+				</div>
+			</div>	
+			<!-- 슬라이드 끝 -->
+			
+			
+			<!-- 슬라이드 시작 -->
+			<div class="section">
+				<input type="radio" name="slide2" id="slide04" checked>
+				<input type="radio" name="slide2" id="slide05">
+				<input type="radio" name="slide2" id="slide06">
+				<div class="slidewrap">
+					<ul class="slidelist">
+												<li>
+							<a>
+								<img src="./img/brand/5.jpg">
+								<img src="./img/brand/6.jpg">
+								<img src="./img/brand/7.jpg">
+								<img src="./img/brand/8.jpg">
+							</a>
+						</li>
+						<li>
+							<a>
+								<img src="./img/brand/5.jpg">
+								<img src="./img/brand/6.jpg">
+								<img src="./img/brand/7.jpg">
+								<img src="./img/brand/8.jpg">
+							</a>
+						</li>
+						<li>
+							<a>
+								<img src="./img/brand/5.jpg">
+								<img src="./img/brand/6.jpg">
+								<img src="./img/brand/7.jpg">
+								<img src="./img/brand/8.jpg">
+							</a>
+						</li>
+					</ul>
+			
+					<div class="slide-control">
+						<div class="control01">
+							<label for="slide06" class="left"></label>
+							<label for="slide05" class="right"></label>
+						</div>
+						<div class="control02">
+							<label for="slide04" class="left"></label>
+							<label for="slide06" class="right"></label>
+						</div>
+						<div class="control03">
+							<label for="slide05" class="left"></label>
+							<label for="slide04" class="right"></label>
+						</div>
+					</div>
+					<div class="admin_category_sldie_content">
+						<div>브랜드관 오픈</div>
+						<div>집꾸미기</div>
+						<div>남성 추천</div>
+						<div>여성 추천</div>
+					</div>
+				</div>
+			</div>	
+			<!-- 슬라이드 끝 -->
+			
+			
+			
+		</section>
+		<!-- 오늘의 브랜드 베스트 끝-->	
+			
+			
+			
+		<!-- admin 으로 로그인했을때 끝 -->
+		<!-- member가 로그인에 성공했을떄 시작 -->	
+		<%}else{%>
+	
+	<header class="header">
+		<div id="header_logo">
+			<a href="">shoes</a>
+			 <span class="member_content"><%=lid%>님 안녕하세요.</span>
+		     <span class="member_find">
+				<span class="member_page">&nbsp;<a href="../view/mypage.jsp">나의정보</a> |</span><br>
+				<span class="member_selovelist">&nbsp;<a href="../board/selovelist.jsp">셀렙들의정보</a> |</span>
+				<span class="member_selovelist">&nbsp;<a href="../admin/require.jsp">문의사항</a> |</span>
+				<span class="member_logout">&nbsp;<a href="../view/logout.jsp">로그아웃</a></span>
+			</span>
+		</div>
+	</header>
+	<div id= main>
+		<section class="member_brand">
+			<div class="member_brand_content">이달의 인기 브랜드</div> 
+			<div class="member_month_popular_brand">
+				<div>1.Nike&nbsp;&nbsp;&nbsp;</div>
+				<div>2.밀레&nbsp;&nbsp;&nbsp;</div>
+				<div>3.THE NORTH FACE&nbsp;&nbsp;&nbsp;</div>
+				<div>4.Adidas&nbsp;&nbsp;&nbsp;</div>
+				<div>5등:NEPA&nbsp;&nbsp;&nbsp;</div>
+				<div>6등:NEW BALANCE&nbsp;&nbsp;&nbsp;</div>
+				<div>7등:클락스&nbsp;&nbsp;&nbsp;</div>
+		<!-- 여기서부터 햄버거 드롭다운 바 시작 -->
+		<a href="#" class="member_menu_bar">
+			<span></span>
+			<span></span>
+			<span></span>
+		</a>
+
+		<div class="member_menu_open">
+			<ul>
+				<li class="dept1">
+					<a href="#">1~10순위</a>
+					<ul>
+						<li class="dept2">
+							<a href="#">1.Nike&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">2.밀레&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">3.THE NORTH FACE&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">4.Adidas&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">5.NEPA&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">6.NEW BALANCE&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">7.클락스&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">8.킹가루스&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">9.돔바&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">10.가데&nbsp;&nbsp;&nbsp;</a>
+						</li>
+					</ul>
+				</li>
+				<li class="dept1">
+					<a href="#">11~20순위</a>
+					<ul>
+						<li class="dept2">
+							<a href="#">11.매드풋&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">12.루릭&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">13.스코노&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">14.스프리스&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">15.어그&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">16.반스&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">17.더헌드레드&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">18.유비크&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">19.이메리카&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">20.이에스&nbsp;&nbsp;&nbsp;</a>
+						</li>
+					</ul>
+				</li>
+				<li class="dept1">
+					<a href="#">21~30순위</a>
+					<ul>
+						<li class="dept2">
+							<a href="#">21.에트니스&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">22.SPX&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">23.포니&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">24.프레드메리&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">25.라코스테&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">26.프리데릭데테&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">27.비토이&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">28.듀드&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">29.레디아이&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">30.BSQT&nbsp;&nbsp;&nbsp;</a>
+						</li>
+					</ul>
+				</li>
+				<li class="dept1">
+					<a href="#">31~40순위</a>
+					<ul>
+												<li class="dept2">
+							<a href="#">31.사운트&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">32.트루릴리젼&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">33.베어파우&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">34.버켄스탁&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">35.사쿤&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">36.디젤&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">37.스걸리즘&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">38.무다&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">39.쯔보&nbsp;&nbsp;&nbsp;</a>
+						</li>
+						<li class="dept2">
+							<a href="#">40.도나카란뉴욕&nbsp;&nbsp;&nbsp;</a>
+						</li>
+					</ul>
+				</li>
+				
+			</ul>
+		</div>
+		<!-- 여기서부터 햄버거 드롭다운 바 끝 -->
+		</div>				
+			
+		</section>
+		
+		<!-- 오늘의 브랜드 베스트 시작 -->
+		<section class="member_category">
+			<div class="member_category_content">오늘의 브랜드 베스트 </div>
+			
+		<!-- 슬라이드 시작 -->
+			<div class="section">
+				<input type="radio" name="slide1" id="slide01" checked>
+				<input type="radio" name="slide1" id="slide02">
+				<input type="radio" name="slide1" id="slide03">
+				<div class="slidewrap">
+					<ul class="slidelist">
+						<li>
+							<a>
+								<img src="./img/brand/1.jpg">
+								<img src="./img/brand/2.jpg">
+								<img src="./img/brand/3.jpg">
+								<img src="./img/brand/4.jpg">
+							</a>
+						</li>
+						<li>
+							<a>
+								<img src="./img/brand/1.jpg">
+								<img src="./img/brand/2.jpg">
+								<img src="./img/brand/3.jpg">
+								<img src="./img/brand/4.jpg">
+							</a>
+						</li>
+						<li>
+							<a>
+								<img src="./img/brand/1.jpg">
+								<img src="./img/brand/2.jpg">
+								<img src="./img/brand/3.jpg">
+								<img src="./img/brand/4.jpg">
+							</a>
+						</li>
+					</ul>
+			
+					<div class="slide-control">
+						<div class="control01">
+							<label for="slide03" class="left"></label>
+							<label for="slide02" class="right"></label>
+						</div>
+						<div class="control02">
+							<label for="slide01" class="left"></label>
+							<label for="slide03" class="right"></label>
+						</div>
+						<div class="control03">
+							<label for="slide02" class="left"></label>
+							<label for="slide01" class="right"></label>
+						</div>
+					</div>
+				</div>
+				<div class="admin_category_sldie_content">
+					<div>인기 럭셔리</div>
+					<div>럭키드로우</div>
+					<div>정가아래</div>
+					<div>셀럽픽</div>
+				</div>
+			</div>	
+			<!-- 슬라이드 끝 -->
+			
+			
+			<!-- 슬라이드 시작 -->
+			<div class="section">
+				<input type="radio" name="slide2" id="slide04" checked>
+				<input type="radio" name="slide2" id="slide05">
+				<input type="radio" name="slide2" id="slide06">
+				<div class="slidewrap">
+					<ul class="slidelist">
+												<li>
+							<a>
+								<img src="./img/brand/5.jpg">
+								<img src="./img/brand/6.jpg">
+								<img src="./img/brand/7.jpg">
+								<img src="./img/brand/8.jpg">
+							</a>
+						</li>
+						<li>
+							<a>
+								<img src="./img/brand/5.jpg">
+								<img src="./img/brand/6.jpg">
+								<img src="./img/brand/7.jpg">
+								<img src="./img/brand/8.jpg">
+							</a>
+						</li>
+						<li>
+							<a>
+								<img src="./img/brand/5.jpg">
+								<img src="./img/brand/6.jpg">
+								<img src="./img/brand/7.jpg">
+								<img src="./img/brand/8.jpg">
+							</a>
+						</li>
+					</ul>
+			
+					<div class="slide-control">
+						<div class="control01">
+							<label for="slide06" class="left"></label>
+							<label for="slide05" class="right"></label>
+						</div>
+						<div class="control02">
+							<label for="slide04" class="left"></label>
+							<label for="slide06" class="right"></label>
+						</div>
+						<div class="control03">
+							<label for="slide05" class="left"></label>
+							<label for="slide04" class="right"></label>
+						</div>
+					</div>
+					<div class="admin_category_sldie_content">
+						<div>브랜드관 오픈</div>
+						<div>집꾸미기</div>
+						<div>남성 추천</div>
+						<div>여성 추천</div>
+					</div>
+				</div>
+			</div>	
+			<!-- 슬라이드 끝 -->
+			
+			
+			
+		</section>
+		<!-- 오늘의 브랜드 베스트 끝-->
+		
+		<%}%>
+		<!-- member가 로그인에 성공했을떄 끝 -->	
+	<!-- 로그인 컴포넌트 끝 -->
+		
 		<!-- 메인 이미지 슬라이드 시작 -->
 		<section class="main_img_slade">
 			<div class="main_img_content">메인 이미지 슬라이드</div>
-					<!-- 슬라이드 시작 -->
+			<!-- 슬라이드 시작 -->
 			<div class="section">
-				<input type="radio" name="slide" id="slide07" checked>
-				<input type="radio" name="slide" id="slide08">
-				<input type="radio" name="slide" id="slide09">
+				<input type="radio" name="slide" id="slide10">
+				<input type="radio" name="slide" id="slide11"checked>
+				<input type="radio" name="slide" id="slide12">
 				<div class="slidewrap">
 					<ul class="slidelist">
 						<li>
@@ -300,16 +966,16 @@
 			
 					<div class="slide-control">
 						<div class="control01">
-							<label for="slide09" class="left"></label>
-							<label for="slide08" class="right"></label>
+							<label for="slide12" class="left"></label>
+							<label for="slide11" class="right"></label>
 						</div>
 						<div class="control02">
-							<label for="slide07" class="left"></label>
-							<label for="slide09" class="right"></label>
+							<label for="slide10" class="left"></label>
+							<label for="slide12" class="right"></label>
 						</div>
 						<div class="control03">
-							<label for="slide08" class="left"></label>
-							<label for="slide07" class="right"></label>
+							<label for="slide11" class="left"></label>
+							<label for="slide10" class="right"></label>
 						</div>
 					</div>
 				</div>
