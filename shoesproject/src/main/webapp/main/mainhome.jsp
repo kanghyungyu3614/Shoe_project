@@ -985,135 +985,117 @@
 		
 		</section>
 		<!-- 메인 이미지 슬라이드 끝 -->
-		
-		<!-- 제품 이미지 슬라이드 시작 -->
-		<section class="product_img_slade">
+		<section class="main_img_slade">
 		<div class="product_img_content">인기상품</div>
-
-			<!-- 슬라이드 시작 -->
-			<div class="section">
-				<input type="radio" name="slide4" id="slide13"checked>
-				<input type="radio" name="slide4" id="slide14">
-				<input type="radio" name="slide4" id="slide15">
-				<div class="slidewrap">
-					<ul class="slidelist">
-						<li>
-							<a>
-								<img src="./img/product/1.jpg">
-								<img src="./img/product/2.jpg">
-								<img src="./img/product/3.jpg">
-								<img src="./img/product/4.jpg">
-							</a>
-						</li>
-						<li>
-							<a>
-								<img src="./img/product/5.jpg">
-								<img src="./img/product/6.jpg">
-								<img src="./img/product/7.jpg">
-								<img src="./img/product/8.jpg">
-							</a>
-						</li>
-						<li>
-							<a>
-								<img src="./img/product/9.jpg">
-								<img src="./img/product/10.jpg">
-								<img src="./img/product/11.jpg">
-								<img src="./img/product/12.jpg">
-							</a>
-						</li>
-					</ul>
+			<span class="product_img">
+			    <img src="./img/product/1.jpg">
+			    <div>Louis Vuitton</div>
+			</span>	
+			<span class="product_img">
+				<img src="./img/product/2.jpg">
+				<div>Adidas Yeezy Boost</div>
+				
+			</span>	
+			<span class="product_img">
+				<img src="./img/product/3.jpg">
+				<div>Asics x Jessica</div>
+				
+			</span>	
+			<span class="product_img">
+				<img src="./img/product/4.jpg">
+				<div>Asics x Andersson Bell </div>
+				
+			</span>	
+			<span class="product_img">
+				<img src="./img/product/5.jpg">
+				<div>Jordan 4 Retro</div>
+			</span>	
+			<span class="product_img">
+				<img src="./img/product/6.jpg">
+				<div>Nike Air Force</div>
+			</span>	
 			
-					<div class="slide-control">
-						<div class="control01">
-							<label for="slide15" class="left"></label>
-							<label for="slide14" class="right"></label>
-						</div>
-						<div class="control02">
-							<label for="slide13" class="left"></label>
-							<label for="slide15" class="right"></label>
-						</div>
-						<div class="control03">
-							<label for="slide14" class="left"></label>
-							<label for="slide13" class="right"></label>
-						</div>
-					</div>
-					<div class="admin_category_sldie_content">
-						<div>브랜드관 오픈</div>
-						<div>집꾸미기</div>
-						<div>남성 추천</div>
-						<div>여성 추천</div>
-					</div>
-				</div>
-			</div>	
-			<!-- 슬라이드 끝 -->
-				<!-- 슬라이드 시작 -->
-			<div class="section">
-				<input type="radio" name="slide5" id="slide16">
-				<input type="radio" name="slide5" id="slide17"checked>
-				<input type="radio" name="slide5" id="slide18">
-				<div class="slidewrap">
-					<ul class="slidelist">
-						<li>
-							<a>
-								<img src="./img/product/1.jpg">
-								<img src="./img/product/2.jpg">
-								<img src="./img/product/3.jpg">
-								<img src="./img/product/4.jpg">
-							</a>
-						</li>
-						<li>
-							<a>
-								<img src="./img/product/5.jpg">
-								<img src="./img/product/6.jpg">
-								<img src="./img/product/7.jpg">
-								<img src="./img/product/8.jpg">
-							</a>
-						</li>
-						<li>
-							<a>
-								<img src="./img/product/9.jpg">
-								<img src="./img/product/10.jpg">
-								<img src="./img/product/11.jpg">
-								<img src="./img/product/12.jpg">
-							</a>
-						</li>
-					</ul>
-			
-					<div class="slide-control">
-						<div class="control01">
-							<label for="slide18" class="left"></label>
-							<label for="slide17" class="right"></label>
-						</div>
-						<div class="control02">
-							<label for="slide16" class="left"></label>
-							<label for="slide18" class="right"></label>
-						</div>
-						<div class="control03">
-							<label for="slide17" class="left"></label>
-							<label for="slide16" class="right"></label>
-						</div>
-					</div>
-					<div class="admin_category_sldie_content">
-						<div>브랜드관 오픈</div>
-						<div>집꾸미기</div>
-						<div>남성 추천</div>
-						<div>여성 추천</div>
-					</div>
-				</div>
-			</div>	
-			<!-- 슬라이드 끝 -->
-
-
+			<span class="product_img">
+			    <img src="./img/product/7.jpg">
+			    <div>Nike x Neckface </div>
+				
+			</span>	
+			<span class="product_img">
+				<img src="./img/product/8.jpg">
+				<div>Louis Vuitton LV Trainer</div>
+				
+			</span>	
+			<span class="product_img">
+				<img src="./img/product/9.jpg">
+				<div>Louis Vuitton</div>
+			</span>	
+			<span class="product_img">
+				<img src="./img/product/10.jpg">
+				<div>Louis Vuitton</div>
+			</span>	
+			<span class="product_img">
+				<img src="./img/product/11.jpg">
+				<div>New Balance 1906R</div>
+			</span>	
+			<span class="product_img">
+				<img src="./img/product/12.jpg">
+				<div>New Balance 1906R</div>
+			</span>	
 		</section>
+		
+			<!-- 슬라이드 끝 -->
+		
 		<!-- 제품 이미지 슬라이드 끝 -->
 		
 		<!-- 셀럽 이미지 슬라이드 시작 -->
 		<section class="product_img_slade">
 		<div class="product_img_content">셀렙 이미지</div>
-
-	
-
-
+		<span class="product_img">
+			    <img src="./img/celeb/1.jpg">
+			    <div>Louis Vuitton</div>
+			</span>	
+			<span class="product_img">
+				<img src="./img/celeb/2.jpg">
+				<div>Adidas Yeezy Boost</div>
+				
+			</span>	
+			<span class="product_img">
+				<img src="./img/celeb/3.jpg">
+				<div>Asics x Jessica</div>
+				
+			</span>	
+			<span class="product_img">
+				<img src="./img/celeb/4.jpg">
+				<div>Asics x Andersson Bell </div>
+				
+			</span>	
+			<span class="product_img">
+				<img src="./img/celeb/5.jpg">
+				<div>Jordan 4 Retro</div>
+			</span>	
+			
+			<span class="product_img">
+			    <img src="./img/celeb/1.jpg">
+			    <div>Nike x Neckface </div>
+				
+			</span>	
+			<span class="product_img">
+				<img src="./img/celeb/2.jpg">
+				<div>Louis Vuitton LV Trainer</div>
+				
+			</span>	
+			<span class="product_img">
+				<img src="./img/celeb/3.jpg">
+				<div>Louis Vuitton</div>
+			</span>	
+			<span class="product_img">
+				<img src="./img/celeb/4.jpg">
+				<div>Louis Vuitton</div>
+			</span>	
+			<span class="product_img">
+				<img src="./img/celeb/5.jpg">
+				<div>New Balance 1906R</div>
+			</span>
 		</section>
 		<!--셀럽 이미지 슬라이드 끝 -->
 		
