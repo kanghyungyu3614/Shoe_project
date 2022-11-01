@@ -9,7 +9,7 @@ function rloadDetail() {
 				console.log(list)
 				
 				document.querySelector('.request').innerHTML = 
-				"<tr><th>번호</th><th>제목</th><th>내용</th><th>날짜</th><th></th></tr>"
+				"<tr><th>번호</th><th>제목</th><th>내용</th><th>날짜</th><th></th><th></th></tr>"
 				
 				for(let i = 0 ; i<list.length ; i++) {
 					r = list[i]
@@ -65,10 +65,10 @@ function logout() {
 // 답글 폼 생성
 function commentform(rno) {
 	html = `<tr>
-				<td colspan="6" style="height: 500px;">
-					제목 : <input type="text" class="ctitle" style="border: 1px solid black;"> <br>
-					내용 : <input type="text" class="ccontent" style="border: 1px solid black;"> <br>
-					<button type="button">답변하기</button>
+				<td colspan="6" style="height: 500px; border: 1px solid black;">
+					제목 : <input type="text" class="ctitle" style="border: 1px solid black; width: 300px; height: 30px; margin-bottom: 20px;"> <br>
+					내용 : <input type="text" class="ccontent" style="border: 1px solid black; width: 300px; height: 200px; margin-bottom: 20px;"> <br>
+					<button type="button" style="width: 100px; height:50px; border: 1px solid black; margin-left: 48px;">답변하기</button>
 				</td>
 			</tr>`
 	document.querySelector(`.commentform${rno}`).innerHTML = html
