@@ -20,7 +20,7 @@ function getsellob(){
 				img = '/shoesproject/supload/'+json[i].sfile
 				snum = json[i].snum
 				 html +=  '<div class="card col-sm-2" >'+
-						'  <img src ="'+img+'" onclick="sellobview('+i+')"  class="card-img-top" >'+
+						'  <img src ="'+img+'" onclick="sellobview('+snum+','+i+')"  class="card-img-top" >'+
 						'  <div class="card-body">'+
 						'    <h5 class="card-title">'+json[i].lid+'님</h5>'+
 						'    <p class="card-text">'+json[i].stitle+'</p>'+
@@ -42,49 +42,15 @@ function getsellob(){
 	
 }
 
-function sellobview(i){
+function sellobview(snum , i){
 	
-	document.querySelector(".delete"+i).innerHTML = "<button onclick='seldele("+snum+")'>삭제하기</button><button type='button' onclick='selupdate("+snum+")'>수정하기</button>"
+	document.querySelector(".delete"+i).innerHTML = "<button onclick='seldele("+snum+")'>삭제하기</button>"+
+													"<a href='/shoesproject/board/realsellove.jsp?snum="+snum+"'><button type='button' >수정하기</button></a>"
+	
 	document.querySelector('.card'+i).innerHTML = json[i].scontent;
-	
 }
 
-function selupdate(snum){
-	//document.querySelector('#chimg').src = 
-	$.ajax({
-		url : "/shoesproject/board/write",
-		type : 'put',
-		data : {"snum" : snum  },
-		success : function(re){
-			
-			
-			location.href="/shoesproject/board/realsellove.jsp"
-		}
-		
-		
-	})
-}
-function selloveupdate(snum){
-	let form  = document.querySelector(".updatesellob")
-	let formdata = new FormData(form)
-	
-	$.ajax({
-		url : "/shoesproject/board/write",
-	
-		processData : false, 
-		contentType : false, 
-		data : formdata,
-		type : "put",
-		success : function(re){
-			if(re==='true'){
-				alert("수정성공")
-			}else{
-				alert( "성공실패")
-			}
-		}
-		
-	})
-}
+
 
 
 function seldele(snum){

@@ -52,7 +52,6 @@ public class write extends HttpServlet {
 			o.put("sfile", list.get(i).getSfile());
 			o.put("lid", list.get(i).getLid());
 			a.add(o);
-			System.out.println(o);
 			
 		}
 		response.setCharacterEncoding("UTF-8");
@@ -81,30 +80,30 @@ public class write extends HttpServlet {
 		int lnum = memberdao.getInstance().getlnum(lid);
 		
 		boolean result = boarddao.getInstance().sdraw(title, content, file, lnum);
-		System.out.println(result);
+		
 		response.getWriter().print(result);}
 
 	@Override
 	protected void doPut(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-	
-	
-
-	
+	MultipartRequest multi = new MultipartRequest(
+				request,
+				request.getServletContext().getRealPath("/supload"),
+				1024*1024*10,
+				"UTF-8",
+				new DefaultFileRenamePolicy());
+		
 		
 		/*
 		 * String title = .getParameter("title"); String content =
 		 * multi.getParameter("content"); String file =
 		 * multi.getFilesystemName("sfile"); int snum =
 		 */
-	int snum =  Integer.parseInt(request.getParameter("snum"));
-		 
-		 
-	HttpSession session = request.getSession();
 	
-	session.setAttribute("snum", snum);
-	
-	String lid =(String)session.getAttribute("lid");
-	System.out.println("잘옴");	
+		 
+	int snum =  Integer.parseInt(multi.getParameter("snum").trim());
+//	String title = request.getParameter("title");
+//	String content = request.getParameter("content");
+	System.out.println(snum);
 	
 	/*boolean result = boarddao.getInstance().selupdata(snum);
 	System.out.println(result);
