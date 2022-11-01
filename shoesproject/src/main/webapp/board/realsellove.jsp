@@ -9,7 +9,7 @@
 <body>
 
 
-<h1>상세 게시물 수정</h1>
+
 
 
 <%String lid = (String)session.getAttribute("lid");%>

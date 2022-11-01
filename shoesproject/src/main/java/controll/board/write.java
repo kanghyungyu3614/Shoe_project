@@ -88,21 +88,17 @@ public class write extends HttpServlet {
 	protected void doPut(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 	
 	
-	String uploadpath = request.getSession().getServletContext().getRealPath("/supload");
-	MultipartRequest multi = new MultipartRequest(
-				request,
-				uploadpath,
-				1024*1024*10,
-				"UTF-8" , 					
-				new DefaultFileRenamePolicy()
-			
-			);
+
 	
 		
-	String title = multi.getParameter("title");
-	String content = multi.getParameter("content");
-	String file = multi.getFilesystemName("sfile");
-	int snum =	Integer.parseInt(multi.getParameter("snum"));
+		/*
+		 * String title = .getParameter("title"); String content =
+		 * multi.getParameter("content"); String file =
+		 * multi.getFilesystemName("sfile"); int snum =
+		 */
+	int snum =  Integer.parseInt(request.getParameter("snum"));
+		 
+		 
 	HttpSession session = request.getSession();
 	
 	session.setAttribute("snum", snum);
@@ -110,9 +106,10 @@ public class write extends HttpServlet {
 	String lid =(String)session.getAttribute("lid");
 	System.out.println("잘옴");	
 	
-	boolean result = boarddao.getInstance().selupdata(title, content, file, snum);
+	/*boolean result = boarddao.getInstance().selupdata(snum);
 	System.out.println(result);
-	response.getWriter().print(result);}
+	response.getWriter().print(result);}*/
+	}
 
 	
 	

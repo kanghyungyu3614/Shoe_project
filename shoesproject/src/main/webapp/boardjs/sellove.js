@@ -50,11 +50,14 @@ function sellobview(i){
 }
 
 function selupdate(snum){
+	//document.querySelector('#chimg').src = 
 	$.ajax({
 		url : "/shoesproject/board/write",
 		type : 'put',
 		data : {"snum" : snum  },
 		success : function(re){
+			
+			
 			location.href="/shoesproject/board/realsellove.jsp"
 		}
 		
@@ -89,8 +92,13 @@ function seldele(snum){
 		url : "/shoesproject/board/write",
 		type : 'delete',
 		data : {snum},
-		success : p=>{
-			alert(p)
+		success : (re)=>{
+			if(re==='true'){
+				alert("삭제성공")
+				location.reload()
+			}else{
+				alert("삭제실패")
+			}
 		}
 		
 	})
