@@ -59,7 +59,7 @@ public class signup extends HttpServlet {
 		  
 		  boolean result = memberdao.getInstance().lsignup(dto); 
 		  if(result) {
-			  response.sendRedirect("/shoesproject/view/login.jsp"); 
+			  response.sendRedirect("/shoesproject/main/mainhome.jsp"); 
 		  }
 		  else {
 			  System.out.println("실패"); return; }

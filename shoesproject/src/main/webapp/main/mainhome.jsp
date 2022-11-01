@@ -17,7 +17,13 @@
 	</header>
 	<div id= main>
 		<section class="brand">
-			<div class="brand_content">이달의 인기 브랜드</div> 
+			<!-- <div class="brand_content">이달의 인기 브랜드</div>  -->
+		 <p>
+	<MARQUEE  hspace="100" vspace="100" direction="up" scrollamount="2">
+  	이달의 급상승 브랜드
+  </MARQUEE>
+	<!-- 스크롤 방향 설정, 속도 -->
+    </p>
 			<!-- 슬라이드 시작 -->
 			<div class="section">
 				<input type="radio" name="slide1" id="slide01" checked>
@@ -81,7 +87,7 @@
 			
 			<button onclick="login()" class="login_button" type="button">로그인하기</button>
 			<div class="signup_find">
-				<div><a href="../view/회원가입.jsp">회원가입</a> |</div>
+				<div><a href="/shoesproject/view/signup.jsp">회원가입</a> |</div>
 				<div>&nbsp;<a href="../view/find.jsp">아이디찾기</a> |</div>
 				<div>&nbsp;<a href="../view/findpw.jsp">비밀번호찾기</a></div>
 			</div> 
