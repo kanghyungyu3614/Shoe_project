@@ -294,9 +294,6 @@ a:visited{
 	top: 36px;
 	left : 244px
 }
-
-
-
 /*고객이 로그인했을때 상태 끝*/
 /*메인 이미지 슬라이드 시작*/
 .main_img_slade{
@@ -306,7 +303,6 @@ a:visited{
 	height: 600px;
 	margin: 10px 10px;	
 }
-/*메인 이미지 슬라이드 끝*/
 
 .main_img_content{
 	font-weight:700;
@@ -315,8 +311,30 @@ a:visited{
 	text-align: center;
 }
 
+/*메인 이미지 슬라이드 끝*/
 
+/*제품 이미지 슬라이드 시작*/
+.product_img_slade{
+	clear : both;
+	border: 1px solid black;
+	width: 1180px;
+	height: 600px;
+	margin: 10px 10px;		
+}
 
+.product_img_content{
+	font-weight:700;
+	font-size: 24px;
+	font-family: 'SEBANG_Gothic_Bold';			
+	text-align: center;
+}
+
+/*제품 이미지 슬라이드 끝*/
+/*제품 이미지 크기 시작*/
+.product_img_slade .section img{
+	width: 300px; height: 255px;	
+}
+/*제품 이미지 크기 끝*/
 
 
 
@@ -366,17 +384,38 @@ footer{
 		width: 300px; height: 155px;
 	}
 	/*admin이 로그인했을때 이미지들 크기 끝*/	
+	/*로그인 안했을때 카테고리 이미지 끝*/
 	.category img{
 		width: 270px; height: 155px;
 	}
-	/* 슬라이드 영역 - max-width 크기를 조절해주면 됩니다*/
+	/*로그인 안했을때 카테고리 이미지 끝*/
+
+	/* 인기제품 이미지 시작 */
+	.product_img_slade img{
+		width: 270px; height: 155px;
+	}
+	/* 인기제품 이미지 끝 */
 	
-	/*로그인을 안했을때 상태*/
+	
+	/*로그인을 안했을때 상태 시작*/
+	/* 슬라이드 영역 - max-width 크기를 조절해주면 됩니다*/
 	.category .section .slidewrap {max-width:900px;margin:0 auto;overflow:hidden;position:relative;}
-	/* member가 로그인 했을때 상태*/
+	/*로그인을 안했을때 상태 끝*/
+	
+	/* member가 로그인 했을때 상태 시작*/
 	.member_category .section .slidewrap {margin:0 auto;overflow:hidden;position:relative;}
-	/* admin이 로그인 했을때 상태*/
+	/* member가 로그인 했을때 상태 끝*/
+	/* admin이 로그인 했을때 상태 시작*/
 	.admin_category .section .slidewrap {margin:0 auto;overflow:hidden;position:relative;}
+	/* admin이 로그인 했을때 상태 끝*/
+
+	/* 메인이미지 이미지 상태 시작*/
+	.main_img_slade .section .slidewrap {margin:0 auto;overflow:hidden;position:relative;}
+	/* 메인이미지  상태 끝*/
+
+	/* 인기상품 이미지 상태 시작*/
+	.product_img_slade .section .slidewrap {margin:0 auto;overflow:hidden;position:relative;}
+	/* 인기상품 상태 끝*/
 	
 	
 	.section .slidelist {white-space:nowrap;font-size:0; padding: 0;}
@@ -393,6 +432,9 @@ footer{
 		font-size:20px;
 	}
 	/* admin 오늘의 브랜드 베스트 내용 끝*/
+	
+	
+	
 	/*.admin_category .section .slide-control {position:absolute;top:0;left:0;z-index:10;width:100%;height:100%;}*/
 	
 	.section .slide-control label {position:absolute;z-index:1;top:50%;transform:translateY(-50%);padding:50px;cursor:pointer;}
@@ -440,6 +482,31 @@ footer{
 	.section [id="slide09"]:checked ~ .slidewrap .control03 {display:block;}
 	/*로그인 했을때 슬라이드 밑에 추가된거 끝*/
 
+	/*메인이미지 슬라이드 밑에 추가된거 시작*/
+	/* INPUT이 체크되면 변화값이 li까지 전달되는 스타일 */
+	.section [id="slide10"]:checked ~ .slidewrap .slidelist > li {transform:translateX(0%);}
+	.section [id="slide11"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-100%);}
+	.section [id="slide12"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-200%);}
+	
+	/*  INPUT이 체크되면 변화값이 좌우 슬라이드 버튼을 담고 있는 div 까지 전달되는 스타일 */
+	.section [id="slide10"]:checked ~ .slidewrap .control01 {display:block;}
+	.section [id="slide11"]:checked ~ .slidewrap .control02 {display:block;}
+	.section [id="slide12"]:checked ~ .slidewrap .control03 {display:block;}
+	/*로그인 했을때 슬라이드 밑에 추가된거 끝*/
+	
+	/*인기제품 이미지 슬라이드 밑에 추가된거 시작*/
+	/* INPUT이 체크되면 변화값이 li까지 전달되는 스타일 */
+	.section [id="slide13"]:checked ~ .slidewrap .slidelist > li {transform:translateX(0%);}
+	.section [id="slide14"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-100%);}
+	.section [id="slide15"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-200%);}
+	
+	/*  INPUT이 체크되면 변화값이 좌우 슬라이드 버튼을 담고 있는 div 까지 전달되는 스타일 */
+	.section [id="slide13"]:checked ~ .slidewrap .control01 {display:block;}
+	.section [id="slide14"]:checked ~ .slidewrap .control02 {display:block;}
+	.section [id="slide15"]:checked ~ .slidewrap .control03 {display:block;}
+	/*로그인 했을때 슬라이드 밑에 추가된거 끝*/
+	
+
 
 /*브랜드 카테고리 슬라이드 끝*/
 
@@ -460,8 +527,26 @@ footer{
 
 /*메인 이미지 슬라이드 끝*/
 
+/*제품 이미지 슬라이드 시작*/
+	.product_img_slade .section .slidewrap {max-width:1170px;margin:0 auto;overflow:hidden;position:relative;}
+	.product_img_slade img{
+		width: 1170px; height: 570px;
+	}
+	/* INPUT이 체크되면 변화값이 li까지 전달되는 스타일 */
+	.section [id="slide13"]:checked ~ .slidewrap .slidelist > li {transform:translateX(0%);}
+	.section [id="slide14"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-100%);}
+	.section [id="slide15"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-200%);}
+	
+	/*  INPUT이 체크되면 변화값이 좌우 슬라이드 버튼을 담고 있는 div 까지 전달되는 스타일 */
+	.section [id="slide13"]:checked ~ .slidewrap .control01 {display:block;}
+	.section [id="slide14"]:checked ~ .slidewrap .control02 {display:block;}
+	.section [id="slide15"]:checked ~ .slidewrap .control03 {display:block;}
+
+/*제품 이미지 슬라이드 끝*/
 
 
+
+/*  드롭다운 시작 */
 /* reset css */
 html{font-size: 10px}
 body{font-size: 1.6rem}
@@ -519,6 +604,7 @@ a{text-decoration: none;color: inherit;}
 
 .visual{background:#ccd1f1;width: 100%;height: 100vh;}
 
+/*  드롭다운 끝 */
 
 
 

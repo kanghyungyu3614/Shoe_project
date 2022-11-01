@@ -937,13 +937,13 @@
 		<!-- member가 로그인에 성공했을떄 끝 -->	
 	<!-- 로그인 컴포넌트 끝 -->
 		
-		<!-- 메인 이미지 슬라이드 시작 -->
+				<!-- 메인 이미지 슬라이드 시작 -->
 		<section class="main_img_slade">
 			<div class="main_img_content">메인 이미지 슬라이드</div>
 			<!-- 슬라이드 시작 -->
 			<div class="section">
-				<input type="radio" name="slide" id="slide10">
-				<input type="radio" name="slide" id="slide11"checked>
+				<input type="radio" name="slide" id="slide10"checked>
+				<input type="radio" name="slide" id="slide11">
 				<input type="radio" name="slide" id="slide12">
 				<div class="slidewrap">
 					<ul class="slidelist">
@@ -984,10 +984,77 @@
 		
 		</section>
 		<!-- 메인 이미지 슬라이드 끝 -->
-		<section class="main_img_slade">
-			<section class=sub_img_slage>윗쪽</section>
-			<section class=sub_img_slage>아래쪽</section>
+		
+		<!-- 제품 이미지 슬라이드 시작 -->
+		<section class="product_img_slade">
+		<div class="product_img_content">인기상품</div>
+
+			<!-- 슬라이드 시작 -->
+			<div class="section">
+				<input type="radio" name="slide" id="slide13"checked>
+				<input type="radio" name="slide" id="slide14">
+				<input type="radio" name="slide" id="slide15">
+				<div class="slidewrap">
+					<ul class="slidelist">
+						<li>
+							<a>
+								<img src="./img/product/1.jpg">
+								<img src="./img/product/2.jpg">
+								<img src="./img/product/3.jpg">
+								<img src="./img/product/4.jpg">
+							</a>
+						</li>
+						<li>
+							<a>
+								<img src="./img/product/5.jpg">
+								<img src="./img/product/6.jpg">
+								<img src="./img/product/7.jpg">
+								<img src="./img/product/8.jpg">
+							</a>
+						</li>
+						<li>
+							<a>
+								<img src="./img/product/9.jpg">
+								<img src="./img/product/10.jpg">
+								<img src="./img/product/11.jpg">
+								<img src="./img/product/12.jpg">
+							</a>
+						</li>
+					</ul>
+			
+					<div class="slide-control">
+						<div class="control01">
+							<label for="slide15" class="left"></label>
+							<label for="slide14" class="right"></label>
+						</div>
+						<div class="control02">
+							<label for="slide13" class="left"></label>
+							<label for="slide15" class="right"></label>
+						</div>
+						<div class="control03">
+							<label for="slide14" class="left"></label>
+							<label for="slide13" class="right"></label>
+						</div>
+					</div>
+				</div>
+			</div>	
+			<!-- 슬라이드 끝 -->
+	
+
+
 		</section>
+		<!-- 제품 이미지 슬라이드 끝 -->
+		
+		<!-- 셀럽 이미지 슬라이드 시작 -->
+		<section class="product_img_slade">
+		<div class="product_img_content">셀렙 이미지</div>
+
+	
+
+
+		</section>
+		<!--셀럽 이미지 슬라이드 끝 -->
+		
 		<!-- 푸터 시작 -->
 		<footer>
 	        <div id="footerURL">
