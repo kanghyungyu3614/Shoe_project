@@ -1051,49 +1051,49 @@
 		<section class="product_img_slade">
 		<div class="product_img_content">셀렙 이미지</div>
 		<span class="product_img">
-			    <img src="./img/celeb/1.jpg">
+			    <img src="./img/1.jpg">
 			    <div>Louis Vuitton</div>
 			</span>	
 			<span class="product_img">
-				<img src="./img/celeb/2.jpg">
+				<img src="./img/2.jpg">
 				<div>Adidas Yeezy Boost</div>
 				
 			</span>	
 			<span class="product_img">
-				<img src="./img/celeb/3.jpg">
+				<img src="./img/3.jpg">
 				<div>Asics x Jessica</div>
 				
 			</span>	
 			<span class="product_img">
-				<img src="./img/celeb/4.jpg">
+				<img src="./img/4.jpg">
 				<div>Asics x Andersson Bell </div>
 				
 			</span>	
 			<span class="product_img">
-				<img src="./img/celeb/5.jpg">
+				<img src="./img/product/1.jpg">
 				<div>Jordan 4 Retro</div>
 			</span>	
 			
 			<span class="product_img">
-			    <img src="./img/celeb/1.jpg">
+			    <img src="./img/1.jpg">
 			    <div>Nike x Neckface </div>
 				
 			</span>	
 			<span class="product_img">
-				<img src="./img/celeb/2.jpg">
+				<img src="./img/2.jpg">
 				<div>Louis Vuitton LV Trainer</div>
 				
 			</span>	
 			<span class="product_img">
-				<img src="./img/celeb/3.jpg">
+				<img src="./img/3.jpg">
 				<div>Louis Vuitton</div>
 			</span>	
 			<span class="product_img">
-				<img src="./img/celeb/4.jpg">
+				<img src="./img/4.jpg">
 				<div>Louis Vuitton</div>
 			</span>	
 			<span class="product_img">
-				<img src="./img/celeb/5.jpg">
+				<img src="./img/product/1.jpg">
 				<div>New Balance 1906R</div>
 			</span>
 		</section>
