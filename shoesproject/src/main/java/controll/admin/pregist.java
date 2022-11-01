@@ -46,7 +46,7 @@ public class pregist extends HttpServlet {
 		MultipartRequest multi = new MultipartRequest(
 					request,		// 요청방식
 					uploadpath,		// 저장 경로
-					1024 * 1024,	// 1MB
+					1024 * 1024 * 1024,	// 1MB
 					"UTF-8",		// 인코딩
 					new DefaultFileRenamePolicy()	// 중복이면 자동이름변경
 				);
