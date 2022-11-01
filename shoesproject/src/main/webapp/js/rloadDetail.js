@@ -72,7 +72,7 @@ function commentform(rno) {
 				<td colspan="6" style="height: 500px; border: 1px solid black;">
 					제목 : <input type="text" class="ctitle" style="border: 1px solid black; width: 300px; height: 30px; margin-bottom: 20px;"> <br>
 					내용 : <input type="text" class="ccontent" style="border: 1px solid black; width: 300px; height: 200px; margin-bottom: 20px;"> <br>
-					<button type="button" style="width: 100px; height:50px; border: 1px solid black; margin-left: 48px;">답변하기</button>
+					<button type="button" style="width: 100px; height:50px; border: 1px solid black; margin-left: 48px;" onclick="comment()">답변하기</button>
 				</td>
 			</tr>`
 		rloadstate = true; // 답변하기 열리면 true 전환
