@@ -527,7 +527,7 @@ footer{
 
 /*메인 이미지 슬라이드 끝*/
 
-/*제품 이미지 슬라이드 시작*/
+/*인기상품 이미지 슬라이드 시작*/
 	.product_img_slade .section .slidewrap {max-width:1170px;margin:0 auto;overflow:hidden;position:relative;}
 	.product_img_slade img{
 		width: 1170px; height: 570px;
@@ -542,7 +542,17 @@ footer{
 	.section [id="slide14"]:checked ~ .slidewrap .control02 {display:block;}
 	.section [id="slide15"]:checked ~ .slidewrap .control03 {display:block;}
 
-/*제품 이미지 슬라이드 끝*/
+	/* INPUT이 체크되면 변화값이 li까지 전달되는 스타일 */
+	.section [id="slide16"]:checked ~ .slidewrap .slidelist > li {transform:translateX(0%);}
+	.section [id="slide17"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-100%);}
+	.section [id="slide18"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-200%);}
+	
+	/*  INPUT이 체크되면 변화값이 좌우 슬라이드 버튼을 담고 있는 div 까지 전달되는 스타일 */
+	.section [id="slide16"]:checked ~ .slidewrap .control01 {display:block;}
+	.section [id="slide17"]:checked ~ .slidewrap .control02 {display:block;}
+	.section [id="slide18"]:checked ~ .slidewrap .control03 {display:block;}
+
+/*인기상품 이미지 슬라이드 끝*/
 
 
 
@@ -605,7 +615,6 @@ a{text-decoration: none;color: inherit;}
 .visual{background:#ccd1f1;width: 100%;height: 100vh;}
 
 /*  드롭다운 끝 */
-
 
 
 
