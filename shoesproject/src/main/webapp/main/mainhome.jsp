@@ -878,7 +878,7 @@
 				<input type="radio" name="slide2" id="slide06">
 				<div class="slidewrap">
 					<ul class="slidelist">
-												<li>
+						<li>
 							<a>
 								<img src="./img/brand/5.jpg">
 								<img src="./img/brand/6.jpg">
@@ -928,6 +928,7 @@
 			</div>	
 			<!-- 슬라이드 끝 -->
 			
+
 			
 			
 		</section>
