@@ -9,14 +9,26 @@
 <link href="../css/mainhome.css" rel="stylesheet">
 </head>
 <body>
-	<%String lid = (String)session.getAttribute("lid");%>
+
+	<%@ include file="mainbaner.jsp" %>
+	
+	
 	<!-- 로그인을 안했을때 시작 -->
-	<%if(lid==null){%>
+	 <%if(lid==null){%> 
+	
+	
+	
+	<!-- -------------------------------------------------------------------------- -->
 	<header class="header">
 		<div id="header_logo">
 			<a href="">shoes</a>
 		</div>
 	</header>
+	
+	
+	<!-- ----------------------------------------------------------------------------- -->
+	
+	
 	<div id= main> <!-- 메인에서 얘러뜨는거 원래 그런겁니다.  -->
 		<section class="brand">
 			<div class="brand_content">이달의 인기 브랜드</div> 
@@ -323,16 +335,17 @@
 	<!-- 로그인을 안했을때 끝 -->
 	<!-- admin으로 로그인했을때 시작 -->
 		<%}else if(lid.equals("admin")){%>
-		<header class="header">
-			<div id="header_logo">
-				<a href="">shoes</a>
-				<span class="admin_content">관리자님 안녕하세요.</span>
-				<span class="admin_find">
-				<span><a href="../admin/admin.jsp">관리자페이지</a> |</span>
-				<span class="admin_logout">&nbsp;<a href="../view/logout.jsp">로그아웃</a></span>
-				</span>
-			</div>
-		</header>
+		
+		
+	<!-- ----------------------------------------------------------------------------- -->	
+	
+	
+	<!-- ----------------------------------------------------------------------------- -->
+	
+	
+	
+	
+		
 	<div id= main>  <!-- 메인에서 얘러뜨는거 원래 그런겁니다.  -->
 		<section class="admin_brand">
 			<div class="admin_brand_content">이달의 인기 브랜드</div> 
@@ -628,19 +641,16 @@
 		<!-- admin 으로 로그인했을때 끝 -->
 		<!-- member가 로그인에 성공했을떄 시작 -->	
 		<%}else{%>
+	<!-- ----------------------------------------------------------------------------- -->
+
 	
-	<header class="header">
-		<div id="header_logo">
-			<a href="">shoes</a>
-			 <span class="member_content"><%=lid%>님 안녕하세요.</span>
-		     <span class="member_find">
-				<span class="member_page">&nbsp;<a href="../view/mypage.jsp">나의정보</a> |</span><br>
-				<span class="member_selovelist">&nbsp;<a href="../board/selovelist.jsp">셀렙들의정보</a> |</span>
-				<span class="member_selovelist">&nbsp;<a href="../admin/require.jsp">문의사항</a> |</span>
-				<span class="member_logout">&nbsp;<a href="../view/logout.jsp">로그아웃</a></span>
-			</span>
-		</div>
-	</header>
+	
+	
+	
+	<!-- ----------------------------------------------------------------------------- -->
+	
+	
+	
 	<div id= main>
 		<section class="member_brand">
 			<div class="member_brand_content">이달의 인기 브랜드</div> 
