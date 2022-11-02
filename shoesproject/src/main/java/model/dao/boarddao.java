@@ -24,7 +24,6 @@ public class boarddao extends dao {
 			System.out.println(e);
 		}return false;
 		
-		
 	}
 	
 	// 출력 r
