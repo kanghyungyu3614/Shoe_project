@@ -35,7 +35,7 @@ function product(i) {
 		data : { "pno" : i },
 		success : function (re) {
 			if(re == "true") {
-				window.location.href="/shoesproject/product/detail.jsp"
+				window.location.href=`/shoesproject/product/detail.jsp?pno=${i}`
 			}
 		}
 	})

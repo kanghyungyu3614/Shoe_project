@@ -18,8 +18,13 @@ import model.dto.PregistDto;
 @WebServlet("/product/detail")
 public class detail extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
-		int pno = (Integer)request.getSession().getAttribute("pno");
+		Object pvalue = request.getSession().getAttribute("pno");
+		int pno = 0;
+		if(pvalue == null) { // int는 null값을 체크 못하니까 세션을 객체로 변환해서 null을 체크한다.
+			response.sendRedirect("mainhome.jsp");
+		}else {
+			pno = (Integer)pvalue;
+		}
 		
 		PregistDto dto = DetailDao.getInstance().detail(pno);
 		
