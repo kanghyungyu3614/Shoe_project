@@ -562,7 +562,8 @@ a{text-decoration: none;color: inherit;}
 .menu_bar.active span:nth-child(3){transform: rotate(45deg);top: 0px;position: absolute}
 .menu_bar span{width: 22px;height: 2px;background: #555;display: block;margin: 6px}
 /* 햄버거 버튼을 열었을때 하부칸들 눌렀을때 크기는 얘를 줄이면 된다. */
-.menu_open{position: fixed;width: 740px;height: 37.7vh;background: #ffffff;top: 134px;left: 363px;z-index: 999;padding: 3rem;display: none}
+/*276px*/
+.menu_open{position: fixed;width: 740px;height: 37.7vh;background: #ffffff;top: 134px;left: 276px;z-index: 999;padding: 3rem;display: none}
 .menu_open > ul{display: flex; justify-content: center;}
 .menu_open > ul li{width: 150px;}
 
