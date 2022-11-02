@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<%@ include file="/main/mainhome.jsp"%>
+<%@ include file="/main/mainbaner.jsp"%>
 
 <%session.setAttribute("lid", null); 
 
