@@ -12,54 +12,49 @@ import javax.servlet.http.HttpServletResponse;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
-import model.dao.RequestDao;
+import model.dao.CommentDao;
 import model.dto.CommentDto;
-import model.dto.RequestDto;
 
-/**
- * Servlet implementation class cload
- */
-@WebServlet("/cload")
+
+
+
+@WebServlet("/admin/cload")
 public class cload extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
+
     public cload() {
         super();
         // TODO Auto-generated constructor stub
     }
 
-	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
-	 */
+
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
-		ArrayList<CommentDto> list = new ArrayList<>();
-		
-		
+		int rno = Integer.parseInt(request.getParameter("rno"));
+		System.out.println(rno);
+		ArrayList<CommentDto> list = new CommentDao().getInstance().getboard(rno);
+		System.out.println(list);
 		JSONArray array = new JSONArray();
-		for(int i = 0 ; i<list.size() ; i++) {
+		for(int i = 0 ; i<list.size(); i++ ) {
 			JSONObject object = new JSONObject();
-			object.put("ctitle", list.get(i).getCtitle());
-			object.put("ccontent", list.get(i).getCdate());
-			object.put("cdate", list.get(i).getCdate());
-			object.put("rno", list.get(i).getRno());
+			object.put("cno" , list.get(i).getCno());
+			object.put("ctitle" , list.get(i).getCtitle());
+			object.put("ccontent" , list.get(i).getCcontent());
+			object.put("cdate" , list.get(i).getCdate());
+			object.put("rno" , list.get(i).getRno());
 			array.add(object);
 		}
-		
 		response.setCharacterEncoding("UTF-8");
 		response.getWriter().print(array);
+		System.out.println(rno);
+		System.out.println(array);
 	}
-
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		doGet(request, response);
+
 	}
 
 }

@@ -1,4 +1,9 @@
+
+
+
 rloadDetail()
+
+let rnum = ''
 function rloadDetail() {
 	$.ajax({
 		url : "/shoesproject/rload",
@@ -12,14 +17,15 @@ function rloadDetail() {
 				"<tr><th>번호</th><th>제목</th><th>내용</th><th>날짜</th><th></th><th></th></tr>"
 				
 				for(let i = 0 ; i<list.length ; i++) {
-					r = list[i]
+					 r = list[i]
+					rnum = list[i].rno
 					html = `<tr>
 								<td>${r.rno}</td>
 								<td>${r.rtitle}</td>
 								<td>${r.rcontent}</td>
 								<td>${r.rdate}</td>
 								<td><button type="button" onclick="commentform(${r.rno})">답변하기</td>
-								<td><button type="button" onclick="viewcomment(${r.rno})">답변보기</td>
+								<td><button type="button" onclick="commentview(${r.rno})">답변보기</td>
 								<td><button type="button" onclick="rdelete(${r.rno})">삭제</button></td>
 							</tr>
 							<tr class="commentform${r.rno}"></tr>
@@ -86,25 +92,23 @@ function commentform(rno) {
 
 // 답변내용 보기 폼 생성
 function commentview(rno){
-				if( rloadstate == false  ){ // 답변하기 폼이 열려있으면 답변하기 상세페이지 오픈
-					html = `<tr>
-							<td colspan="6" style="height: 500px; border: 1px solid black;">
-								<div>
-								답변 내용
-								
-								</div>
-							</td>
-						</tr>`
-					rloadstate = true; // 답변하기 열리면 true 전환
-				}else{ // 답변내용 보기 폼이 열려있을때 다시 버튼을 눌러주면
-					html = ""; // 공백처리
-					rloadstate = false; // 닫히면 false 전환 
-				}
-			alert( html )
-			document.querySelector(`.commentform${rno}`).innerHTML = html
+	alert(rno)
+	$.ajax({
+		url :"/http://localhost:8080/shoesproject/admin/cload",
+		data : {"rno" : rno},
+		success : function(re) { console.log( re ) 
+		let list = JSON.parse(re)
+		console.log(list)
+		
+		
 		}
 		
+		
+		
 
+	})	
+}
+		
 // 문의 답변하기 []안태섭]
 function comment(rno) {
 	let ctitle = document.querySelector('.ctitle').value
@@ -122,35 +126,7 @@ function comment(rno) {
 		}
 	})
 }
-function viewcomment(rno){
-	$.ajax({
-		url : "http://localhost:8080/shoesproject/cload",
-		type : 'get',
-		success : function( re ) { alert( re )
-			if(re){
-				let view = JSON.parse(re)
-				console.log(view)
-				console.log(re)
-				for(let i = 0 ; i<view.length; i++){
-				let v = view[i]
-				html = `<tr>` 
-					`${r.cno}`
-					`${r.ctitle}`
-					`${r.ccontent}`
-					`</tr>`
-				console.log(r.cno)
-				console.log(r.ctitle)
-				console.log(r.ccontent)
-				};
 
-			}
-
-		}
-
-	
-	})
-	
-}
 
 
 

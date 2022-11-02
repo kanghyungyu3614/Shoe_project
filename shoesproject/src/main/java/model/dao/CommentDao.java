@@ -2,7 +2,6 @@ package model.dao;
 
 import java.util.ArrayList;
 
-import controll.admin.comment;
 import model.dto.CommentDto;
 import model.dto.RequestDto;
 
@@ -23,28 +22,28 @@ public class CommentDao extends dao {
 		}catch (Exception e) {System.out.println("문의답변 오류 " + e);}
 		return false;
 	}
-
-	
-	public ArrayList<CommentDto> viewcomment() {
+	// 3. 글 조회
+	public ArrayList<CommentDto> getboard(int rno) {
 		ArrayList<CommentDto> list = new ArrayList<>();
-		String sql = "select * from comment";
+		String sql ="select * from comment where = ? "; 
 		try {
 			ps = con.prepareStatement(sql);
+			ps.setInt(1, rno);
 			rs = ps.executeQuery();
-			while(rs.next()) {
+			if( rs.next() ) {
 				CommentDto dto = new CommentDto(
-						rs.getInt(1) , rs.getString(2),
-						rs.getString(3) , rs.getString(4),
-						rs.getInt(5)
-						);
-				list.add(dto);
+						rs.getInt(1), rs.getString(2),
+						rs.getString(3), rs.getString(4),
+						rs.getInt(5));
+				return list;
 			}
-			return list;
 		}catch (Exception e) {System.out.println(e);}
 		return list;
+	}
+	
 
 		
-	}
+	
 	
 	
 	
