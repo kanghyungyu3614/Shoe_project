@@ -90,6 +90,7 @@ public class boarddao extends dao {
 	//셀럽 삭제
 	public boolean seldelete(int snum) {
 		String sql ="delete from board where snum ="+snum;
+		return false;
 		
 	}
-
+}

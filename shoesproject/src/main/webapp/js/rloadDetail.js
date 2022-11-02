@@ -19,6 +19,7 @@ function rloadDetail() {
 								<td>${r.rcontent}</td>
 								<td>${r.rdate}</td>
 								<td><button type="button" onclick="commentform(${r.rno})">답변하기</td>
+								<td><button type="button" onclick="commentview(${r.rno})">답변보기</td>
 								<td><button type="button" onclick="rdelete(${r.rno})">삭제</button></td>
 							</tr>
 							<tr class="commentform${r.rno}"></tr>
@@ -83,19 +84,50 @@ function commentform(rno) {
 	document.querySelector(`.commentform${rno}`).innerHTML = html
 }
 
-// 문의 답변하기 안태섭
-function comment(rno) {
-	
-	let ctitle = document.querySelector('.ctitle').value
-	let ccontent = document.querySelector('.ccontent').value
+// 답글 상세보기 폼 생성
+function commentview(rno){
 	
 	$.ajax({
-		url : "http://localhost:8080/shoesproject/comment",
+		
+	})
+	
+	
+	if( rloadstate == false  ){ // 답변하기 폼이 열려있으면 답변하기 상세페이지 오픈
+		html = `<tr>
+				<td colspan="6" style="height: 500px; border: 1px solid black;">
+					<div>
+						문의내용 <br>
+							${r.rno}
+							${r.rtitle}
+							${r.rcontent}
+							${r.rdate}
+					</div>
+					
+					<div>
+					답변내용
+					</div>
+				</td>
+			</tr>`
+		rloadstate = true; // 답변하기 열리면 true 전환
+	}else{ // 답변하기 폼이 열려있을때 다시 버튼을 눌러주면
+		html = ""; // 공백처리
+		rloadstate = false; // 닫히면 false 전환 
+	}
+	document.querySelector(`.commentform${rno}`).innerHTML = html
+}
+	
+
+
+
+// 문의 답변하기 []안태섭]
+function comment(rno) {
+	let ctitle = document.querySelector('.ctitle').value
+	let ccontent = document.querySelector('.ccontent').value
+	$.ajax({
+		url : "/shoesproject/comment",
 		data : {"rno" : rno , "ctitle" : ctitle , "ccontent" : ccontent },
 		type : 'post',
 		success : function (re) {
-			alert('z')
-			alert(re)
 			if(re == 'true') {
 				alert('답글 작성 완료')
 			}else{ 

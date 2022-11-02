@@ -7,7 +7,7 @@ public class CommentDao extends dao {
 	private static CommentDao dao = new CommentDao();
 	public static CommentDao getInstance() { return dao; }
 	
-	public boolean writrecomment(CommentDto dto) {
+	public boolean writrecomment(CommentDto dto) { /* 문의 답변 DAO */
 		String sql = "insert into comment (ctitle , ccontent , rno) values ( ? , ? , ? )";
 		try {
 			ps = con.prepareStatement(sql);
@@ -19,4 +19,13 @@ public class CommentDao extends dao {
 		}catch (Exception e) {System.out.println("문의답변 오류 " + e);}
 		return false;
 	}
+
+	
+	//public boolean viewcomment() {
+		
+	//}
+	
+	
+	
+	
 }
