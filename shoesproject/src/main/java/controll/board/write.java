@@ -72,6 +72,8 @@ public class write extends HttpServlet {
 				
 				);
 		
+		
+		
 		String lid = multi.getParameter("lid");
 		
 		String title = multi.getParameter("title");
@@ -85,30 +87,23 @@ public class write extends HttpServlet {
 
 	@Override
 	protected void doPut(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-	MultipartRequest multi = new MultipartRequest(
-				request,
-				request.getServletContext().getRealPath("/supload"),
-				1024*1024*10,
-				"UTF-8",
-				new DefaultFileRenamePolicy());
-		
+	
 		
 		/*
 		 * String title = .getParameter("title"); String content =
 		 * multi.getParameter("content"); String file =
 		 * multi.getFilesystemName("sfile"); int snum =
 		 */
+		
+		int snum =  Integer.parseInt(request.getParameter("snum"));
+		String title = request.getParameter("title");
+		String content = request.getParameter("content");
+		System.out.println(snum);
 	
-		 
-	int snum =  Integer.parseInt(multi.getParameter("snum").trim());
-//	String title = request.getParameter("title");
-//	String content = request.getParameter("content");
-	System.out.println(snum);
-	
-	/*boolean result = boarddao.getInstance().selupdata(snum);
+	boolean result = boarddao.getInstance().selupdata( title ,content ,snum);
 	System.out.println(result);
-	response.getWriter().print(result);}*/
-	}
+	response.getWriter().print(result);}
+	
 
 	
 	

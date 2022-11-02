@@ -17,9 +17,8 @@
 
 <% int snum = Integer.parseInt( request.getParameter("snum") ); %>
 
-	<form id="updatesellob" enctype="application/x-www-form-urlencoded">
 	<h1>상세 게시물 수정</h1>
-		<input type="hidden" class="snum" value="<%=snum%>">
+		<input type="hidden" class="snum" name="snum" id="snum" value="<%=snum%>">
 		<div>
 			<img alt="" src="" id="chimg" width="20%">
 		</div>
@@ -28,7 +27,7 @@
 			<textarea placeholder="내용" id="content" name="content"></textarea><br>
 			
 		<button type="button" onclick="selloveupdate()">글수정하기</button>
-	</form>	
+ 	
 
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 	

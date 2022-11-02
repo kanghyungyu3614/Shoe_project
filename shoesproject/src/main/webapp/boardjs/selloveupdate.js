@@ -1,34 +1,34 @@
 let snum = document.querySelector('.snum').value 
-/*
+
 $.ajax({
 	url : "/shoesproject/board/write",
 	type :"get",
 	data : {"snum" : snum},
 	success : re=>{
 		let json = JSON.parse(re)
-		console.log(json)
-		document.querySelector("#chimg").src='/shoesproject/src/main/webapp/supload/'+json.sfile
+		document.querySelector("#chimg").src='/shoesproject/supload/'+json[0].sfile
 	}
 })
-*/
+
 function selloveupdate(){
 	
-	let form  = document.querySelector("#updatesellob")
-	alert(snum)
-	let formdata = new FormData(form)
-		console.log(formdata)
-		
+	let info = {
+		snum : document.querySelector('#snum').value , 
+		title : document.querySelector('#title').value , 
+		content : document.querySelector('#content').value ,  		
+	}
+	
 	$.ajax({
 		url : "/shoesproject/board/write",
-		data : formdata,
-		type : "put",
-		contentType: false, 
-		processData: false, 
+		data : info,
+		type : "put",  
 		success : function(re){
-			let json = JSON.parse(re)
-			alert(json)
-			if(json==='true'){
-				alert("수정성공")
+			if( re ==='true'){
+				alert("수정완료")
+				let con = confirm("셀럽들의 정보로 이동할까요?")
+					if(con===true){
+						location.href="/shoesproject/board/selovelist.jsp";
+					}
 			}else{
 				alert( "성공실패")
 			}

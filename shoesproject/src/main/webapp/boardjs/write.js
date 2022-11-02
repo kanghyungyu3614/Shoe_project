@@ -13,7 +13,7 @@
 	try{
 		let filename =  document.querySelector(".sfile").files[0].name
 	}catch(e){ 
-		alert('이미지 넣어라 ')
+		alert('이미지를 첨부해주세요')
 		return;
 	}
 	

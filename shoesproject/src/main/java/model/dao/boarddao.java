@@ -51,8 +51,8 @@ public class boarddao extends dao {
 	
 	//셀럽 업데이트
 	
-	public boolean selupdata(String title,String content,String file, int snum) {
-		String sql ="update board set stitle= "+title+" ,scontent = "+content+" ,sfile="+file+" where snum= "+snum+"";
+	public boolean selupdata(String title,String content, int snum) {
+		String sql ="update board set stitle= '"+title+"' ,scontent = '"+content+"' where snum= "+snum;
 		
 		try {
 			ps = con.prepareStatement(sql);
