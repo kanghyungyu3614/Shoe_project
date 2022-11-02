@@ -14,7 +14,7 @@
 	<%if(lid==null){%>
 	<header class="header">
 		<div id="header_logo">
-			<a href="">shoes</a>
+			<a href="../main/mainhome.jsp">shoes</a>
 		</div>
 	</header>
 	<div id= main> <!-- 메인에서 얘러뜨는거 원래 그런겁니다.  -->
