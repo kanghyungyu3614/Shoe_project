@@ -7,6 +7,10 @@ let img = ''
 let html = ''
 let snum=''
 function getsellob(){
+	
+	
+	
+
 	$.ajax({
 		url : "/shoesproject/board/write",
 		type : 'get',
@@ -14,6 +18,8 @@ function getsellob(){
 		
 			 json = JSON.parse(re);
 		
+		
+			
 			
 			
 			for(let i = 0; i<json.length; i++){
@@ -24,12 +30,14 @@ function getsellob(){
 						'  <div class="card-body">'+
 						'    <h5 class="card-title">'+json[i].lid+'님</h5>'+
 						'    <p class="card-text">'+json[i].stitle+'</p>'+
+						
+						
 						'	 <p class="card'+i+'"></p>'+
 						'    <p class="delete'+i+'"></p>'+
 						'  </div>'+
 						'</div>';
 						
-						
+						//alert( Boolean( lid == json[i].lid))
 						
 						// SFILE IF문이 안들어가는 이유 물어보기 
 						// 페이지 전환처럼 안보이고 바로 클릭하면 리스트가 나오게하기 
@@ -43,10 +51,12 @@ function getsellob(){
 }
 
 function sellobview(snum , i){
+	let lid = document.querySelector(".lid").value
+	if(lid == json[i].lid){
 	
 	document.querySelector(".delete"+i).innerHTML = "<button onclick='seldele("+snum+")'>삭제하기</button>"+
 													"<a href='/shoesproject/board/realsellove.jsp?snum="+snum+"'><button type='button' >수정하기</button></a>"
-	
+	}
 	document.querySelector('.card'+i).innerHTML = json[i].scontent;
 }
 

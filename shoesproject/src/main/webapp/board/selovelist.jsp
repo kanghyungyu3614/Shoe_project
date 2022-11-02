@@ -19,7 +19,7 @@
 
 	<div>	
 	<a href="write.jsp"><button>셀럽만들기</button></a>
-		
+	<input type="hidden" value="${lid}" class="lid">
 		
 	<div class="selove5 row">
 		

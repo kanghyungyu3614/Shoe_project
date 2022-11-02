@@ -11,8 +11,7 @@
 
 <%String lid = (String)session.getAttribute("lid");%>
 <% if(lid==null){response.sendRedirect("/shoesproject/view/mainhome.jsp");} %>
-	
-	
+
 	
 	
 	
