@@ -86,38 +86,28 @@ function commentform(rno) {
 
 // 답글 상세보기 폼 생성
 function commentview(rno){
-	
-	$.ajax({
+				if( rloadstate == false  ){ // 답변하기 폼이 열려있으면 답변하기 상세페이지 오픈
+					html += `<tr>
+							<td colspan="6" style="height: 500px; border: 1px solid black;">
+								<div>
+									문의내용 <br>
+										${r.rno}번 <br>
+									제목 ${r.rtitle} <br>
+									내용	${r.rcontent}<br>
+								문의 날짜 	${r.rdate}
+								</div>
+							</td>
+						</tr>`
+					rloadstate = true; // 답변하기 열리면 true 전환
+				}else{ // 답변하기 폼이 열려있을때 다시 버튼을 눌러주면
+					html = ""; // 공백처리
+					rloadstate = false; // 닫히면 false 전환 
+				}
+			
+			alert( html )
+			document.querySelector(`.commentform${rno}`).innerHTML = html
+		}
 		
-	})
-	
-	
-	if( rloadstate == false  ){ // 답변하기 폼이 열려있으면 답변하기 상세페이지 오픈
-		html = `<tr>
-				<td colspan="6" style="height: 500px; border: 1px solid black;">
-					<div>
-						문의내용 <br>
-							${r.rno}
-							${r.rtitle}
-							${r.rcontent}
-							${r.rdate}
-					</div>
-					
-					<div>
-					답변내용
-					</div>
-				</td>
-			</tr>`
-		rloadstate = true; // 답변하기 열리면 true 전환
-	}else{ // 답변하기 폼이 열려있을때 다시 버튼을 눌러주면
-		html = ""; // 공백처리
-		rloadstate = false; // 닫히면 false 전환 
-	}
-	document.querySelector(`.commentform${rno}`).innerHTML = html
-}
-	
-
-
 
 // 문의 답변하기 []안태섭]
 function comment(rno) {

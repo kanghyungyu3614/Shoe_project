@@ -1,5 +1,6 @@
 package model.dao;
 
+import controll.admin.comment;
 import model.dto.CommentDto;
 
 public class CommentDao extends dao {
@@ -21,9 +22,15 @@ public class CommentDao extends dao {
 	}
 
 	
-	//public boolean viewcomment() {
+	public boolean viewcomment(CommentDto dto) {
+		String sql = "select * from comment";
+		try {
+			ps = con.prepareStatement(sql);
+			ps.executeQuery(); return true;
+		}catch (Exception e) {System.out.println(e);}
+		return false;
 		
-	//}
+	}
 	
 	
 	

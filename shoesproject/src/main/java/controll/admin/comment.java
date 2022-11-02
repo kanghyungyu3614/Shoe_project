@@ -20,7 +20,7 @@ public class comment extends HttpServlet {
     }
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
+		
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
@@ -35,7 +35,7 @@ public class comment extends HttpServlet {
 		System.out.println(ctitle);
 		System.out.println(ccontent);
 		
-		CommentDto dto = new CommentDto(0, ctitle, ccontent, null, rno);
+		CommentDto dto = new CommentDto(rno, ctitle, ccontent, null, 0);
 		
 		System.out.println(dto);
 		
