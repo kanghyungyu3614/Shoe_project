@@ -21,7 +21,7 @@ import model.dto.PregistDto;
 @WebServlet("/pload")
 public class pload extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
+		System.out.println("통신");
 		String type = request.getParameter("type");
 		
 		ArrayList<PregistDto> list = new ArrayList<>();
@@ -30,6 +30,8 @@ public class pload extends HttpServlet {
 			list = PregistDao.getInstance().pload();
 		} else if(type.equals("adminDetail")) {
 			list = PregistDao.getInstance().ploadDetail();
+		} else if(type.equals("main")) {
+			list = PregistDao.getInstance().ploadMain();
 		}
 		
 		JSONArray array = new JSONArray();

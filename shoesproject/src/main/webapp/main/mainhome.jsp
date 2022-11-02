@@ -340,6 +340,10 @@
 							</a>
 						</li>
 					</ul>
+					
+					<div class="list" style="display: flex; flex-wrap: wrap;">
+						
+					</div>
 			
 					<div class="slide-control">
 						<div class="control01">
@@ -379,8 +383,8 @@
 		<!-- 푸터 끝 -->
 		
 		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+		<script type="text/javascript" src="../js/main.js"></script>
 		<script type="text/javascript" src="../js/login.js"></script>
-		<script type="text/javascript" src="../js/mainhome.js"></script>
 		<script type="text/javascript" src="../js/request.js"></script>
 		<script type="text/javascript" src="../js/dropdown.js"></script>
 		
