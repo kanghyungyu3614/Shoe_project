@@ -12,7 +12,9 @@
 
 
 
-<%String lid = (String)session.getAttribute("lid");%>
+<%@include file="../main/mainbaner.jsp" %>
+
+
 <% if(lid==null){response.sendRedirect("/shoesproject/view/login.jsp");} %>
 
 <% int snum = Integer.parseInt( request.getParameter("snum") ); %>

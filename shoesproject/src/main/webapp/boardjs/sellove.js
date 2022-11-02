@@ -17,11 +17,7 @@ function getsellob(){
 		success : function(re){
 		
 			 json = JSON.parse(re);
-		
-		
-			
-			
-			
+			 
 			for(let i = 0; i<json.length; i++){
 				img = '/shoesproject/supload/'+json[i].sfile
 				snum = json[i].snum
@@ -30,8 +26,6 @@ function getsellob(){
 						'  <div class="card-body">'+
 						'    <h5 class="card-title">'+json[i].lid+'님</h5>'+
 						'    <p class="card-text">'+json[i].stitle+'</p>'+
-						
-						
 						'	 <p class="card'+i+'"></p>'+
 						'    <p class="delete'+i+'"></p>'+
 						'  </div>'+

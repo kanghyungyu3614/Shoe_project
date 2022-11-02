@@ -189,6 +189,23 @@ public class memberdao extends dao{
 		}catch (Exception e) {System.out.println(e);}
 		return false;
 	}
+	//  비밀번호 변경
+	
+	public boolean reinsert(int lnum , String upinp) {
+		String sql = "update signup set lpw=? where lnum =? ";
+		
+		try {
+			ps = con.prepareStatement(sql);
+			ps.setString(1,upinp);
+			ps.setInt(2, lnum);
+			ps.executeUpdate();
+			return true;
+			
+		} catch (Exception e) {
+			System.out.println(e);
+		}return false;
+		
+	}
 }
 
 
