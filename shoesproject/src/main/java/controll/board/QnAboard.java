@@ -44,11 +44,11 @@ public class QnAboard extends HttpServlet {
 		String qfile = multi.getFilesystemName("qfile");
 		System.out.println(qfile);
 
-		// DB처리
-		boolean result 
-			= boarddao.getInstance().qnawrite(qtitle, qcontent, qfile);
-		// 응답
-		response.getWriter().print(result);
+//		// DB처리
+//		boolean result 
+//			= boarddao.getInstance().qnawrite(qtitle, qcontent, qfile);
+//		// 응답
+//		response.getWriter().print(result);
 
 	}
 
