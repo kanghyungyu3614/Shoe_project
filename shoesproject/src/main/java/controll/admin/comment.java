@@ -20,7 +20,25 @@ public class comment extends HttpServlet {
     }
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		request.setCharacterEncoding("UTF-8"); // 한글 인코딩
+		String type = request.getParameter("type");
 		
+		int cno = Integer.parseInt(request.getParameter("cno"));
+		String ctitle = request.getParameter("ctitle");
+		String ccontent = request.getParameter("ccontent");
+		
+		System.out.println(cno);
+		System.out.println(ctitle);
+		System.out.println(ccontent);
+		
+		CommentDto dto = new CommentDto(cno, ctitle, ccontent, null, 0);
+		
+		System.out.println(dto);
+		
+		boolean result = CommentDao.getInstance().viewcomment(dto);
+		System.out.println(dto.toString());
+		
+		response.getWriter().print(result);
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
