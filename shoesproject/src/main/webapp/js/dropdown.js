@@ -29,9 +29,19 @@ $(document).ready(function() {
 				$(this).children().removeClass('active');
 			});
 			
-			/* 햄버거 메뉴  */
+			/* 로그인을 안했을때 햄버거 메뉴  */
 			$('.menu_bar').click(function(){
 				$(this).toggleClass('active');
 				$('.menu_open').slideToggle();
+			});
+			/* member가 로그인했을때 햄버거 메뉴  */
+			$('.member_menu_bar').click(function(){
+				$(this).toggleClass('active');
+				$('.member_menu_open').slideToggle();
+			});
+			/* admin이 로그인했을때 햄버거 메뉴  */
+			$('.admin_menu_bar').click(function(){
+				$(this).toggleClass('active');
+				$('.admin_menu_open').slideToggle();
 			});
 		});
