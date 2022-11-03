@@ -75,7 +75,7 @@ create table request(
     lnum int,								-- 회원아이디 연결
 	foreign key (lnum) references signup(lnum)
 );
- 
+
 create table comment(
 	cno int auto_increment primary key,		-- 댓글번호
 	ctitle varchar(100),					-- 댓글제목
