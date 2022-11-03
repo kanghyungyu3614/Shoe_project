@@ -52,7 +52,6 @@ public class write extends HttpServlet {
 			o.put("sfile", list.get(i).getSfile());
 			o.put("lid", list.get(i).getLid());
 			a.add(o);
-			System.out.println(o);
 			
 		}
 		response.setCharacterEncoding("UTF-8");
@@ -73,6 +72,8 @@ public class write extends HttpServlet {
 				
 				);
 		
+		
+		
 		String lid = multi.getParameter("lid");
 		
 		String title = multi.getParameter("title");
@@ -81,44 +82,35 @@ public class write extends HttpServlet {
 		int lnum = memberdao.getInstance().getlnum(lid);
 		
 		boolean result = boarddao.getInstance().sdraw(title, content, file, lnum);
-		System.out.println(result);
+		
 		response.getWriter().print(result);}
 
 	@Override
 	protected void doPut(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 	
-	
-	String uploadpath = request.getSession().getServletContext().getRealPath("/supload");
-	MultipartRequest multi = new MultipartRequest(
-				request,
-				uploadpath,
-				1024*1024*10,
-				"UTF-8" , 					
-				new DefaultFileRenamePolicy()
-			
-			);
-	
 		
-	String title = multi.getParameter("title");
-	String content = multi.getParameter("content");
-	String file = multi.getFilesystemName("sfile");
-	int snum =	Integer.parseInt(multi.getParameter("snum"));
-	HttpSession session = request.getSession();
+		/*
+		 * String title = .getParameter("title"); String content =
+		 * multi.getParameter("content"); String file =
+		 * multi.getFilesystemName("sfile"); int snum =
+		 */
+		
+		int snum =  Integer.parseInt(request.getParameter("snum"));
+		String title = request.getParameter("title");
+		String content = request.getParameter("content");
+		System.out.println(snum);
 	
-	session.setAttribute("snum", snum);
-	
-	String lid =(String)session.getAttribute("lid");
-	System.out.println("잘옴");	
-	
-	boolean result = boarddao.getInstance().selupdata(title, content, file, snum);
+	boolean result = boarddao.getInstance().selupdata( title ,content ,snum);
 	System.out.println(result);
 	response.getWriter().print(result);}
+	
 
 	
 	
 	@Override
 	protected void doDelete(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
+				
 		int snum = Integer.parseInt(request.getParameter("snum"));
 		System.out.println(snum);
 		

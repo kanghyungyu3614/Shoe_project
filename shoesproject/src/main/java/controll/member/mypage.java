@@ -64,5 +64,21 @@ public class mypage extends HttpServlet {
 		boolean re = memberdao.getInstance().memberdelete(lid,lpw);
 		response.getWriter().print(re);
 	}
+	
+	@Override
+	protected void doPut(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	
+		
+		int lnum = Integer.parseInt(request.getParameter("lnum"));
+		String upinp = request.getParameter("upinp");
+		
+		System.out.println(lnum + upinp);
+		
+		boolean result = memberdao.getInstance().reinsert(lnum , upinp);
+		
+		response.getWriter().print(result);
+				
+				
+	}
 
 }

@@ -24,7 +24,6 @@ public class boarddao extends dao {
 			System.out.println(e);
 		}return false;
 		
-		
 	}
 	
 	// 출력 r
@@ -51,8 +50,8 @@ public class boarddao extends dao {
 	
 	//셀럽 업데이트
 	
-	public boolean selupdata(String title,String content,String file, int snum) {
-		String sql ="update board set stitle= "+title+" ,scontent = "+content+" ,sfile="+file+" where snum= "+snum+"";
+	public boolean selupdata(String title,String content, int snum) {
+		String sql ="update board set stitle= '"+title+"' ,scontent = '"+content+"' where snum= "+snum;
 		
 		try {
 			ps = con.prepareStatement(sql);
@@ -63,10 +62,16 @@ public class boarddao extends dao {
 			System.out.println(e);
 		}return false;
 	}
+	
 	//셀럽 삭제
 	public boolean seldelete(int snum) {
 		String sql ="delete from board where snum ="+snum;
-		
+		try {
+			ps = con.prepareStatement(sql);
+			ps.executeUpdate();
+			return true;
+		} catch (Exception e) {System.out.println(e);
+		}return false;
 	}
 	
 }

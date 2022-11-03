@@ -43,45 +43,46 @@ create table notice(
     ndate datetime default now()         -- 공지날짜
 );
 
-create table delivery(
-	dprice int auto_increment primary key
+create table product(                  -- 대분류
+   pno   int auto_increment primary key,      -- 상품번호
+   pcategory varchar(100),               -- 상품종류
+    pbrand varchar(100),               -- 상품브랜드
+    pname varchar(100),                     -- 상품이름
+   pimg varchar(1000),                  -- 상품이미지
+    pcolor varchar(100),                    -- 상품색상
+    pprice int,                        -- 상품가격
+    preleaseday varchar(100)                -- 상품출시일입찰
 );
 
-create table product(
-	pno	int auto_increment primary key,		-- 상품번호
-    ppurpose varchar(100),					-- 상품목적 (구매, 판매, 배송 등등)
-    pcategory varchar(100),					-- 상품종류
-    pbrand varchar(100),					-- 상품브랜드
-    psize varchar(100),						-- 상품사이즈
-    pprice int,								-- 상품가격
-    ptitle varchar(100),					-- 상품제목
-    pcontent varchar(300),					-- 상품내용
-    pdate datetime default now(),			-- 상품등록날짜
-    pimg varchar(1000),						-- 상품이미지
-    pstatus varchar(100),					-- 상품현재상태
-    pbuying int,							-- 상품구매입찰가
-    psellling int,							-- 상품판매입찰가
-    dprice int null,						-- 배송가격
-    foreign key (dprice) references delivery(dprice)
+create table sproduct(                  -- 소분류
+   spno int auto_increment primary key,    -- 상품번호
+    spstatus varchar(100),               -- 상품체결상태
+    spsize int,                        -- 상품사이즈
+    spendday varchar(100),               -- 상품등록시간
+    spsellid varchar(100),                  -- 상품판매자아이디
+    spbuyid  varchar(100),               -- 상품구매자아이디
+   pno int,
+    foreign key (pno) references product(pno)
 );
 
 create table request(
-	rno	int auto_increment primary key,		-- 요청번호
-    rpurpose varchar(100),					-- 요청목적 (구매, 판매, 배송 등등)
-    rdetail varchar(100),					-- 요청세부사항
-    rtitle varchar(100),					-- 요청제목
-	rcontent varchar(300),					-- 요청내용
-    rdate datetime default now(),			-- 요청날짜
-    lnum int,								-- 회원아이디 연결
-	foreign key (lnum) references signup(lnum)
+   rno   int auto_increment primary key,      -- 요청번호
+    rpurpose varchar(100),               -- 요청목적 (구매, 판매, 배송 등등)
+    rdetail varchar(100),               -- 요청세부사항
+    rtitle varchar(100),               -- 요청제목
+   rcontent varchar(300),               -- 요청내용
+    rdate datetime default now(),         -- 요청날짜
+    lnum int,                        -- 회원아이디 연결
+   foreign key (lnum) references signup(lnum)
 );
 
 create table comment(
-	cno int auto_increment primary key,		-- 댓글번호
-	ctitle varchar(100),					-- 댓글제목
-    ccontent varchar(300),					-- 댓글내용
-    cdate datetime default now(),			-- 댓글날짜
-    rno int,								-- 요청번호 연결
+   cno int auto_increment primary key,      -- 댓글번호
+   ctitle varchar(100),               -- 댓글제목
+    ccontent varchar(300),               -- 댓글내용
+    cdate datetime default now(),         -- 댓글날짜
+    rno int,                        -- 요청번호 연결
     foreign key (rno) references request(rno)
 );
+
 

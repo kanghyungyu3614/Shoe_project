@@ -7,11 +7,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-<%@ include file="/main/mainhome.jsp"%>
+<%@ include file="/main/mainbaner.jsp"%>
 
-<%session.setAttribute("lid", null); 
+<%session.setAttribute("lid", null);
 
-response.sendRedirect("/shoesproject/main/mainhome.jsp");%>
+response.sendRedirect("/shoesproject/main/mainhome.jsp");
+%>
 
 </body>
 </html>

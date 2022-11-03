@@ -1,4 +1,9 @@
+
+
+
 rloadDetail()
+
+let rnum = ''
 function rloadDetail() {
 	$.ajax({
 		url : "/shoesproject/rload",
@@ -12,13 +17,15 @@ function rloadDetail() {
 				"<tr><th>번호</th><th>제목</th><th>내용</th><th>날짜</th><th></th><th></th></tr>"
 				
 				for(let i = 0 ; i<list.length ; i++) {
-					r = list[i]
+					 r = list[i]
+					rnum = list[i].rno
 					html = `<tr>
 								<td>${r.rno}</td>
 								<td>${r.rtitle}</td>
 								<td>${r.rcontent}</td>
 								<td>${r.rdate}</td>
 								<td><button type="button" onclick="commentform(${r.rno})">답변하기</td>
+								<td><button type="button" onclick="commentview(${r.rno})">답변보기</td>
 								<td><button type="button" onclick="rdelete(${r.rno})">삭제</button></td>
 							</tr>
 							<tr class="commentform${r.rno}"></tr>
@@ -52,6 +59,7 @@ function rdelete(rno) {
 }
 
 function logout() {
+	
 	$.ajax({
 		url : "/shoesproject/logout",
 		success: function (re) {
@@ -61,31 +69,60 @@ function logout() {
 		}
 	})
 }
+let rloadstate = false /* 답변하기 폼 열고닫기 상태 저장하는 변수 */
 
 // 답글 폼 생성
 function commentform(rno) {
-	html = `<tr>
+	
+	if( rloadstate == false  ){ // 답변하기 폼이 열려있으면 답변하기 상세페이지 오픈
+		html = `<tr>
 				<td colspan="6" style="height: 500px; border: 1px solid black;">
-					제목 : <input type="text" class="ctitle" style="border: 1px solid black; width: 300px; height: 30px; margin-bottom: 20px;"> <br>
-					내용 : <input type="text" class="ccontent" style="border: 1px solid black; width: 300px; height: 200px; margin-bottom: 20px;"> <br>
-					<button type="button" style="width: 100px; height:50px; border: 1px solid black; margin-left: 48px;">답변하기</button>
+					제목 : <input type="text"  class="ctitle" id="ctitle" style="border: 1px solid black; width: 300px; height: 30px; margin-bottom: 20px;"> <br>
+					내용 : <input type="text" class="ccontent" id="ccontent" style="border: 1px solid black; width: 300px; height: 200px; margin-bottom: 20px;"> <br>
+					<button type="button" style="width: 100px; height:50px; border: 1px solid black; margin-left: 48px;" onclick="comment(${rno})">답변하기</button>
 				</td>
 			</tr>`
+		rloadstate = true; // 답변하기 열리면 true 전환
+	}else{ // 답변하기 폼이 열려있을때 다시 버튼을 눌러주면
+		html = ""; // 공백처리
+		rloadstate = false; // 닫히면 false 전환 
+	}
 	document.querySelector(`.commentform${rno}`).innerHTML = html
 }
 
-// 답글 요청
-function comment(rno) {
+// 답변내용 보기 폼 생성
+function commentview(rno){
+	alert(rno)
 	$.ajax({
-		url : "/shoeproject/comment",
+		url :"/http://localhost:8080/shoesproject/admin/cload",
 		data : {"rno" : rno},
+		success : function(re) { console.log( re ) 
+		let list = JSON.parse(re)
+		console.log(list)
+		}
+	})	
+}
+		
+// 문의 답변하기 []안태섭]
+function comment(rno) {
+	let ctitle = document.querySelector('.ctitle').value
+	let ccontent = document.querySelector('.ccontent').value
+	$.ajax({
+		url : "/shoesproject/comment",
+		data : {"rno" : rno , "ctitle" : ctitle , "ccontent" : ccontent },
+		type : 'post',
 		success : function (re) {
-			if(re) {
-				window.location.reload()
+			if(re == 'true') {
+				alert('답글 작성 완료')
+			}else{ 
+				( alert ( '답글 작성 실패'))
 			}
 		}
 	})
 }
+
+
+
 
 
 
