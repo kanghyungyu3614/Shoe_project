@@ -5,11 +5,14 @@
 <head>
 <meta charset="UTF-8">
 <title>ShoesProject</title>
+<link href="../css/detailPage.css" rel="stylesheet">
 </head>
 <body>
 	<%@include file="../main/mainbaner.jsp" %>
-	<div class="product"></div>
-	
+	<div id="main">
+
+
+	</div>
 	
 	
 	

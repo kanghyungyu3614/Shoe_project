@@ -48,14 +48,7 @@ a:visited{
 }
 
 
-/*헤더 끝*/ 
-/*main 시작*/ 
-#main{
-	border: 1px solid black;
-	width: 1200px;
-	margin: 0 auto;
-}
-/*main 끝*/ 
+/*헤더 끝*/  
 /*이달의 인기 브랜드 , 카테고리 시작*/
 .brand {
 	border: 1px solid black;
@@ -319,95 +312,10 @@ a:visited{
 
 
 
-/*하단 시작*/
-footer{
-	width: 1200px;
-	height: 300px;
-	border: 1px solid black;
-	clear:both;
-	width:100%;
-	height: 200px;
-}
-/* GitLink*/
-.gitLink{
-	font-family: 'SEBANG_Gothic_Bold';
-	font-size:30px;
-	color: white;
-}
-.gitLink:hover, .gitLink:link , .gitLink:active , .gitLink:visited{
-	text-decoration: none;
-}
 
 
 
-/* footerURL  */
-#footerURL{
-	text-align:center;
-	padding-top: 60px;
-}
-/*하단 끝*/
-/* 모두 끝 */
 
-
-/*  드롭다운 시작 */
-/* reset css */
-html{font-size: 10px}
-body{font-size: 1.6rem}
-*{margin: 0;padding: 0;}
-ul li,
-ol li{list-style: none;}
-a{text-decoration: none;color: inherit;}
-
-
-/*#header{display: flex;justify-content: space-between;align-items: center;padding: 2rem;position: relative;}*/
-#gnb{display: flex;z-index: 99;margin-left: auto;}
-#gnb > .dept1 {position: relative;;padding: 1rem 2rem;text-align: center;}
- #gnb > .dept1 > a.active{color: red;font-weight: bold}
-
-#gnb .inner_menu {position: absolute;top: 100%;left:50%;transform: translateX(-50%);width:100%;padding-top:3rem;display: none}
-#gnb  .dept2 {padding: 1rem 0;color: #555}
-#gnb  .dept2 > a:hover,
-#gnb  .dept2 > a:active,
-#gnb  .dept2 > a:focus {font-weight: bold}
-/*.menu_bar  {margin-left: auto;}*/
-.menu_bar {z-index: 9999;position: relative; left: 46px; bottom: 7px;}
-.menu_bar.active span:nth-child(1){display: none}
-.menu_bar.active span:nth-child(2){transform:rotate(130deg)}
-.menu_bar.active span:nth-child(3){transform: rotate(45deg);top: 0px;position: absolute}
-.menu_bar span{width: 22px;height: 2px;background: #555;display: block;margin: 6px}
-/* 햄버거 버튼을 열었을때 하부칸들 눌렀을때 크기는 얘를 줄이면 된다. */
-.menu_open{position: fixed;width: 740px;height: 37.7vh;background: #ffffff;top: 134px;left: 363px;z-index: 999;padding: 3rem;display: none}
-.menu_open > ul{display: flex; justify-content: center;}
-.menu_open > ul li{width: 150px;}
-
-/*member가 로그인 했을때 햄버거 드롭다운 시작*/
-.member_menu_bar {z-index: 9999;position: relative; left: 46px; bottom: 7px;}
-.member_menu_bar.active span:nth-child(1){display: none}
-.member_menu_bar.active span:nth-child(2){transform:rotate(130deg)}
-.member_menu_bar.active span:nth-child(3){transform: rotate(45deg);top: 0px;position: absolute}
-.member_menu_bar span{width: 22px;height: 2px;background: #555;display: block;margin: 6px}
-.member_menu_open{position: fixed;width: 1115.5px;height: 37.7vh;background: #ffffff;top: 134px;left: 283px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
-.member_menu_open > ul{display: flex; justify-content: center;}
-.member_menu_open > ul li{width: 150px;}
-/*member가 로그인 했을때 햄버거 드롭다운 끝*/
-
-/*admin이 로그인 했을때 햄버거 드롭다운 시작*/
-.admin_menu_bar {z-index: 9999;position: relative; left: 46px; bottom: 7px;}
-.admin_menu_bar.active span:nth-child(1){display: none}
-.admin_menu_bar.active span:nth-child(2){transform:rotate(130deg)}
-.admin_menu_bar.active span:nth-child(3){transform: rotate(45deg);top: 0px;position: absolute}
-.admin_menu_bar span{width: 22px;height: 2px;background: #555;display: block;margin: 6px}
-.admin_menu_open{position: fixed;width: 1115.5px;height: 37.7vh;background: #ffffff;top: 138px;left: 275px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
-.admin_menu_open > ul{display: flex; justify-content: center;}
-.admin_menu_open > ul li{width: 150px;}
-/*admin이 로그인 했을때 햄버거 드롭다운 끝*/
-
-
-.hd_bg{background: #fff;width: 100%;height: 0;left: 0;z-index: 1;position: absolute;}
-
-.visual{background:#ccd1f1;width: 100%;height: 100vh;}
-
-/*  드롭다운 끝 */
 
 
 
