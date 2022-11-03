@@ -20,7 +20,6 @@
 		<!-- 네비게이션 시작 -->
 		<div id="main_title">
 			<div class="title_content"><a href="./product.jsp">상품등록</a></div>
-			<div class="title_content"><a href="./require.jsp">상품문의등록</a></div>
 			<div class="title_content"><a href="./admin.jsp">관리자페이지</a></div>
 			<div class="title_content" onclick="logout()">로그아웃</div>
 		</div>  

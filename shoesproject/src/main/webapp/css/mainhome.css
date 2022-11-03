@@ -43,13 +43,6 @@
 	float: left;
 }
 /*admin_brand 끝*/
-
-.month_popular_brand{
-	display: flex;
-	font-weight: 700;
-	font-family: 'SEBANG_Gothic_Bold';
-	justify-content: center;
-}
 /*member_month_popular_brand 시작*/
 .member_month_popular_brand{
 	display: flex;
@@ -97,13 +90,6 @@
 	float: left;
 }
 /*admin가 로그인했을때 카테고리 끝*/
-
-
-.brand_content{
-	text-align: center;
-	font-weight: 700px;
-	font-family: 'SEBANG_Gothic_Bold';
-}
 /*member_brand_content 시작*/
 .member_brand_content{
 	text-align: center;
@@ -510,9 +496,7 @@ a{text-decoration: none;color: inherit;}
 .menu_bar span{width: 22px;height: 2px;background: #555;display: block;margin: 6px}
 /* 햄버거 버튼을 열었을때 하부칸들 눌렀을때 크기는 얘를 줄이면 된다. */
 /*276px*/
-.menu_open{position: fixed;width: 740px;height: 37.7vh;background: #ffffff;top: 134px;left: 276px;z-index: 999;padding: 3rem;display: none}
-.menu_open > ul{display: flex; justify-content: center;}
-.menu_open > ul li{width: 150px;}
+
 
 /*member가 로그인 했을때 햄버거 드롭다운 시작*/
 .member_menu_bar {z-index: 9999;position: relative; left: 46px; bottom: 7px;}
