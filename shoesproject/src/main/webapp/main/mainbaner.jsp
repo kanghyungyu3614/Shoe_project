@@ -15,7 +15,7 @@
 		<%if(lid==null){ %>
 		<header class="header">
 			<div id="header_logo">
-				<a href="">shoes</a>
+				<a href="">shoes</a> 
 			</div>
 		</header>
 	<%}else if(lid.equals("admin")){ %>
