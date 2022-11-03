@@ -23,11 +23,11 @@
 				</tr> <!--//구매/판매/브랜드배송/일반  -->
 				<tr>
 					<td>문의세부유형</td>
-					<td><input type="text" class="ntitle" id="product_number"placeholder="ex)  진행상황 / 결제 / 배송 / 검수 / 기타"></td>
+					<td><input type="text" class="ncontent" id="product_number"placeholder="ex)  진행상황 / 결제 / 배송 / 검수 / 기타"></td>
 				</tr>	
 				<tr>
 					<td>날짜</td>
-					<td><input type="text" class="ntitle" id="product_birthday"placeholder="ex)  22/10/27 "></td>
+					<td><input type="text" class="ndate" id="product_birthday"placeholder="ex)  22/10/27 "></td>
 				</tr>	
 				<tr>
 					<td id="detail_explain">문의내용</td>

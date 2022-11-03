@@ -21,7 +21,6 @@ function nwrite() {
 		}
 	})
 }
-
 function logout() {
 	$.ajax({
 		url : "/shoesproject/logout",
