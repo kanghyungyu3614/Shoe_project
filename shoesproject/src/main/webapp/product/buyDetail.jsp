@@ -62,7 +62,7 @@
 			<div>270</div>
 			<div>구매입찰</div>
 		</div>
-		<div id="size_275" class="product_size"	onclick="buyAddButton(275)">
+		<div id="275" class="product_size"	onclick="buyAddButton(275)">
 			<div>275</div>
 			<div>구매입찰</div>
 		</div>
