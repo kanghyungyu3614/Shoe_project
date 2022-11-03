@@ -14,13 +14,7 @@
 	if(lid == null) {
 		response.sendRedirect("/shoesproject/main/mainhome.jsp");
 	}%> 
-<!-- 	<form> -->
-<!-- 		문의유형 : <input type="text" class="rpurpose" name="rpurpose"> <br> -->
-<!-- 		문의세부유형 : <input type="text" class="rdetail" name="rdetail"> <br> -->
-<!-- 		문의제목 : <input type="text" class="rtitle" name="rtitle"> <br> -->
-<!-- 		문의내용 : <input type="text" class="rcontent" name="rcontent"> <br> -->
-<!-- 		<button type="button" onclick="request()">문의하기</button> <br> -->
-<!-- 	</form> -->
+
 	
   	<div id="main">
 		<!-- 네비게이션 시작 -->
