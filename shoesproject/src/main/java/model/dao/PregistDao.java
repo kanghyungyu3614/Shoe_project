@@ -10,22 +10,20 @@ public class PregistDao extends dao {
 	public static PregistDao getInstance() { return dao; }
 	
 	// 상품 등록
-	public boolean pregist(String ppurpose, String pcategory, String pbrand, String psize, int pprice, String ptitle, String pcontent, String pimg, String pstatus) {
+	public boolean pregist(String pcategory, String pbrand, String pname, String pimg, String pcolor, int pprice, String preleaseday) {
 		
-		String sql = "insert into product(ppurpose, pcategory, pbrand, psize, pprice, ptitle, pcontent, pimg, pstatus)"
-				+ "values(?, ?, ?, ?, ?, ?, ?, ?, ?)";
+		String sql = "insert into product(pcategory, pbrand, pname, pimg, pcolor, pprice, preleaseday)"
+				+ "values(?, ?, ?, ?, ?, ?, ?)";
 		
 		try {
 			ps = con.prepareStatement(sql);
-			ps.setString(1, ppurpose);
-			ps.setString(2, pcategory);
-			ps.setString(3, pbrand);
-			ps.setString(4, psize);
-			ps.setInt(5, pprice);
-			ps.setString(6, ptitle);
-			ps.setString(7, pcontent);
-			ps.setString(8, pimg);
-			ps.setString(9, pstatus);
+			ps.setString(1, pcategory);
+			ps.setString(2, pbrand);
+			ps.setString(3, pname);
+			ps.setString(4, pimg);
+			ps.setString(5, pcolor);
+			ps.setInt(6, pprice);
+			ps.setString(7, preleaseday);
 			ps.executeUpdate();
 			
 			return true;
@@ -48,10 +46,8 @@ public class PregistDao extends dao {
 				PregistDto dto = new PregistDto(						
 							rs.getInt(1), rs.getString(2),
 							rs.getString(3), rs.getString(4),
-							rs.getString(5), rs.getInt(6),
-							rs.getString(7), rs.getString(8),
-							rs.getString(9), rs.getString(10),
-							rs.getString(11)
+							rs.getString(5), rs.getString(6),
+							rs.getInt(7), rs.getString(8)
 						);
 				list.add(dto);
 			}
@@ -74,10 +70,8 @@ public class PregistDao extends dao {
 				PregistDto dto = new PregistDto(						
 							rs.getInt(1), rs.getString(2),
 							rs.getString(3), rs.getString(4),
-							rs.getString(5), rs.getInt(6),
-							rs.getString(7), rs.getString(8),
-							rs.getString(9), rs.getString(10),
-							rs.getString(11)
+							rs.getString(5), rs.getString(6),
+							rs.getInt(7), rs.getString(8)
 						);
 				list.add(dto);
 			}
@@ -98,12 +92,10 @@ public class PregistDao extends dao {
 			while(rs.next()) {
 				
 				PregistDto dto = new PregistDto(						
-						rs.getInt(1), rs.getString(2),
-						rs.getString(3), rs.getString(4),
-						rs.getString(5), rs.getInt(6),
-						rs.getString(7), rs.getString(8),
-						rs.getString(9), rs.getString(10),
-						rs.getString(11)
+							rs.getInt(1), rs.getString(2),
+							rs.getString(3), rs.getString(4),
+							rs.getString(5), rs.getString(6),
+							rs.getInt(7), rs.getString(8)
 						);
 				list.add(dto);
 			}
