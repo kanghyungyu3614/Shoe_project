@@ -31,42 +31,33 @@
 			<!-- 사이즈	상품이름	모델번호	상품상세설명	상품브랜드	 출시일	가격  시작-->
 			<table>
 				<tr>
-					<td>목적</td>
-					<td><input type="text" name="ppurpose" class="ntitle" id="product_name" placeholder="ex)  구매 / 판매 / 브랜드배송 / 일반" autofocus></td>
-				</tr> <!--//구매/판매/브랜드배송/일반  -->
-				<tr>
 					<td>카테고리</td>
-					<td><input type="text" class="ntitle"  name="pcategory"></td>
+					<td><input type="text" name="pcategory" class="ntitle"placeholder="ex)  신발 / 옷 / 핸드폰"></td>
 				</tr>	
 				<tr>
 					<td>브랜드</td>
 					<td><input type="text" name="pbrand" class="ntitle" id="product_brand"placeholder="ex)  아디다스 / 나이키 / 뉴발란스"></td>
 				</tr>	
 				<tr>
-					<td>사이즈</td>
-					<td><input type="text" name="psize" class="ntitle" id="product_size"placeholder="ex)  260 / 270 / 280 / 290"></td>
+					<td>제품명</td>
+					<td><input type="text" name="pname" class="ntitle" id="product_birthday"placeholder="ex)  22/10/27 "></td>
 				</tr>	
 				<tr>
 					<td>가격</td>
 					<td><input type="text" name="pprice" class="ntitle" id="product_price"placeholder="ex)  원"> </td>
 				</tr>	
 				<tr>
-					<td>제목</td>
-					<td><input type="text" name="ptitle" class="ntitle" id="product_birthday"placeholder="ex)  22/10/27 "></td>
+					<td>색상</td>
+					<td><input type="text" name="pcolor" class="ntitle" id="product_price"placeholder="ex)  빨간색, 노랑색, 파란색"> </td>
 				</tr>	
-				<tr>
-					<td id="detail_explain">내용</td>
-					<td><input type="text" name="pcontent" class="ntitle" id="product_detail_explain"placeholder="ex)  할인혜택,이벤트,무료배송"></td>
+								<tr>
+					<td>출시일</td>
+					<td><input type="text" name="prday" class="ntitle" id="product_price"placeholder="ex) "> </td>
 				</tr>	
 				<tr>
 					<td id="detail_explain">이미지</td>
 					<td><input type="file" name="pimg" id="nimg"></td>
 				</tr>		
-				<tr>
-					<td id="detail_explain">현재상태</td>
-					<td>구매신청<input type="radio" name="pstatus" value="구매신청"></td>
-					<td>판매신청<input type="radio" name="pstatus" value="판매신청"></td>
-				</tr>	
 			</table>
 			<!-- 사이즈	상품이름	모델번호	상품상세설명	상품브랜드	 출시일	가격  끝-->
 	  		<div class="write_component">

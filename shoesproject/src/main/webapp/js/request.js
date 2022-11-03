@@ -13,7 +13,7 @@ function request() {
 		success : function (re) {
 			if(re == "true") {
 				alert("문의완료!!")
-				window.location.reload()
+				window.location.href = "/shoesproject/main/mainhome.jsp"
 			} else {
 				alert("문의실패!!")
 				window.location.reload()

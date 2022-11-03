@@ -18,25 +18,25 @@
 			<!-- 문의유형 문의세부유형	문의내용	날짜-->
 			<table>
 				<tr>
-					<td>문의유형</td>
-					<td><input type="text" class="ntitle" id="product_name" placeholder="ex)  구매 / 판매 / 브랜드배송 / 일반" autofocus></td>
+					<td>문의목적</td>
+					<td><input type="text" class="rpurpose" id="product_name" placeholder="ex)  구매 / 판매 / 브랜드배송 / 일반" autofocus></td>
 				</tr> <!--//구매/판매/브랜드배송/일반  -->
 				<tr>
 					<td>문의세부유형</td>
-					<td><input type="text" class="ntitle" id="product_number"placeholder="ex)  진행상황 / 결제 / 배송 / 검수 / 기타"></td>
+					<td><input type="text" class="rdetail" id="product_number"placeholder="ex)  진행상황 / 결제 / 배송 / 검수 / 기타"></td>
 				</tr>	
 				<tr>
-					<td>날짜</td>
-					<td><input type="text" class="ntitle" id="product_birthday"placeholder="ex)  22/10/27 "></td>
+					<td>제목</td>
+					<td><input type="text" class="rtitle" id="product_birthday"placeholder="ex)  22/10/27 "></td>
 				</tr>	
 				<tr>
 					<td id="detail_explain">문의내용</td>
-					<td><input type="text" class="ntitle" id="product_detail_explain"placeholder="ex) 궁금한것이 있습니다."></td>
+					<td><input type="text" class="rcontent" id="product_detail_explain"placeholder="ex) 궁금한것이 있습니다."></td>
 				</tr>	
 			</table>
 			<!-- 사이즈	상품이름	모델번호	상품상세설명	상품브랜드	 출시일	가격  끝-->
 	  		<div class="write_component">
-				<button id="write_button" type="button" onclick="nwrite()">문의<br>등록</button>  		
+				<button id="write_button" type="button" onclick="request()">문의<br>등록</button>  		
 				<button id="reset_button" type="reset">취소</button>  		
 	  		</div>
 		</form>
@@ -58,7 +58,6 @@
   	</div>
 	<!-- 마무리 -->
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-	<script type="text/javascript" src="../js/notice.js"></script>
 	<script type="text/javascript" src="../js/rloadDetail.js"></script>
 	<script type="text/javascript" src="../js/request.js"></script>	
 </body>
