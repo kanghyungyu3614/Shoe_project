@@ -99,13 +99,7 @@ function commentview(rno){
 		success : function(re) { console.log( re ) 
 		let list = JSON.parse(re)
 		console.log(list)
-		
-		
 		}
-		
-		
-		
-
 	})	
 }
 		
