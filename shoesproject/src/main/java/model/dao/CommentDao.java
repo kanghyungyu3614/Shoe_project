@@ -1,7 +1,9 @@
 package model.dao;
 
-import controll.admin.comment;
+import java.util.ArrayList;
+
 import model.dto.CommentDto;
+import model.dto.RequestDto;
 
 public class CommentDao extends dao {
 
@@ -20,17 +22,27 @@ public class CommentDao extends dao {
 		}catch (Exception e) {System.out.println("문의답변 오류 " + e);}
 		return false;
 	}
-
-	
-	public boolean viewcomment(CommentDto dto) {
-		String sql = "select * from comment";
+	// 3. 글 조회
+	public ArrayList<CommentDto> getboard(int rno) {
+		ArrayList<CommentDto> list = new ArrayList<>();
+		String sql ="select * from comment where rno = ? " + rno;
 		try {
 			ps = con.prepareStatement(sql);
-			ps.executeQuery(); return true;
+			rs = ps.executeQuery();
+			if( rs.next() ) {
+				CommentDto dto = new CommentDto(
+						rs.getInt(1), rs.getString(2),
+						rs.getString(3), rs.getString(4),
+						rs.getInt(5));
+				return list;
+			}
 		}catch (Exception e) {System.out.println(e);}
-		return false;
-		
+		return list;
 	}
+	
+
+		
+	
 	
 	
 	
