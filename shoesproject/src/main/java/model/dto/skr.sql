@@ -43,6 +43,10 @@ create table notice(
     ndate datetime default now()         -- 공지날짜
 );
 
+create table delivery(
+	dprice int auto_increment primary key
+);
+
 create table product(
 	pno	int auto_increment primary key,		-- 상품번호
     ppurpose varchar(100),					-- 상품목적 (구매, 판매, 배송 등등)
@@ -54,7 +58,11 @@ create table product(
     pcontent varchar(300),					-- 상품내용
     pdate datetime default now(),			-- 상품등록날짜
     pimg varchar(1000),						-- 상품이미지
-    pstatus varchar(100)					-- 상품현재상태
+    pstatus varchar(100),					-- 상품현재상태
+    pbuying int,							-- 상품구매입찰가
+    psellling int,							-- 상품판매입찰가
+    dprice int null,						-- 배송가격
+    foreign key (dprice) references delivery(dprice)
 );
 
 create table request(
