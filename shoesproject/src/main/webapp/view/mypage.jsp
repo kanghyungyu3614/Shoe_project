@@ -832,19 +832,23 @@
 				<tr>
 					<td class="num1">비밀번호</td>
 					<td class="lpw"></td>
+					<td class="reup"><button onclick="reupdate()">수정</button></td>
 				</tr>
 				<tr>
 					<td class="num1">전화번호</td>
 					<td class="lph"></td>
+					<td class="reup"><button onclick="reupdate()">수정</button></td>
 				</tr>
 					<tr>
 					<td class="num1">이메일</td>
 					<td class="lemail"></td>
+					<td class="reup"><button onclick="reupdate()">수정</button></td>
 				</tr>
 				
 				<tr>
 					<td class="num1">발사이즈</td>
 					<td class="lsize"></td>
+					<td class="reup"><button onclick="reupdate()">수정</button></td>
 				</tr>
 			</table>
 			<div>
