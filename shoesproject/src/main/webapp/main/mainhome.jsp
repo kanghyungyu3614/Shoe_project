@@ -992,8 +992,8 @@
 		<section class="main_img_slade">
 		<div class="product_img_content">인기상품</div>
 			<span class="product_img">
-			    <img src="./img/product/1.jpg">
-			    <div>Louis Vuitton</div>
+			    <img src="">
+			    <div class="selname">Louis Vuitton</div>
 			</span>	
 			<span class="product_img">
 				<img src="./img/product/2.jpg">
@@ -1054,52 +1054,9 @@
 		<!-- 셀럽 이미지 슬라이드 시작 -->
 		<section class="product_img_slade">
 		<div class="product_img_content">셀렙 이미지</div>
-		<span class="product_img">
-			    <img src="./img/1.jpg">
-			    <div>Louis Vuitton</div>
-			</span>	
-			<span class="product_img">
-				<img src="./img/2.jpg">
-				<div>Adidas Yeezy Boost</div>
-				
-			</span>	
-			<span class="product_img">
-				<img src="./img/3.jpg">
-				<div>Asics x Jessica</div>
-				
-			</span>	
-			<span class="product_img">
-				<img src="./img/4.jpg">
-				<div>Asics x Andersson Bell </div>
-				
-			</span>	
-			<span class="product_img">
-				<img src="./img/product/1.jpg">
-				<div>Jordan 4 Retro</div>
-			</span>	
-			
-			<span class="product_img">
-			    <img src="./img/1.jpg">
-			    <div>Nike x Neckface </div>
-				
-			</span>	
-			<span class="product_img">
-				<img src="./img/2.jpg">
-				<div>Louis Vuitton LV Trainer</div>
-				
-			</span>	
-			<span class="product_img">
-				<img src="./img/3.jpg">
-				<div>Louis Vuitton</div>
-			</span>	
-			<span class="product_img">
-				<img src="./img/4.jpg">
-				<div>Louis Vuitton</div>
-			</span>	
-			<span class="product_img">
-				<img src="./img/product/1.jpg">
-				<div>New Balance 1906R</div>
-			</span>
+			<div class="selloveimg">
+					<button onclick="selhi()">안녕</button>
+			</div>
 		</section>
 		<!--셀럽 이미지 슬라이드 끝 -->
 		
@@ -1122,7 +1079,14 @@
 		<script type="text/javascript" src="../js/request.js"></script>
 		<script type="text/javascript" src="../js/dropdown.js"></script>
 		<script type="text/javascript" src="../js/rloadDetail.js"></script>
+		<script type="text/javascript" src="../boardjs/sellove.js"></script>
+		
+		
 	</div>
+</div>
+
+</div>
+
 
 </body>
 </html>

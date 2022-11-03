@@ -57,7 +57,6 @@ function reupdate(){
 	let upinp = document.querySelector(".upinp").value
 	
 	console.log(upinp)
-	
 }
 function reinsert(){
 	let upinp = document.querySelector(".upinp").value

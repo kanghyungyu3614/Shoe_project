@@ -39,10 +39,13 @@ function getsellob(){
 							
 			}
 				document.querySelector(".selove5").innerHTML += html;	
+				
 		}
 	})
 	
 }
+
+
 
 function sellobview(snum , i){
 	let lid = document.querySelector(".lid").value
@@ -73,6 +76,23 @@ function seldele(snum){
 		
 	})
 }
+
+
+function selhi(){
+	let chtml = ''
+		for(let i = 0; i <json.length; i++){
+			
+	 chtml =  '<img alt="" src="'+img+'" class="selimg">'+
+'				<div class="selname">'+json[i].stitle+'</div>'+
+'				<button onclick="selhi()">'+json[i].lid+'</button>';		
+			
+		}
+		document.querySelector(".selloveimg").innerHTML += chtml;
+	
+}
+
+
+
 
 //	for(let i = 0; i<snum.length; i++){
 //				img = '/shoesproject/supload/'+json[i].sfile
