@@ -64,7 +64,7 @@ create table sproduct(						-- 소분류
 	pno int,
     foreign key (pno) references product(pno)
 );
-
+   
 create table request(
 	rno	int auto_increment primary key,		-- 요청번호
     rpurpose varchar(100),					-- 요청목적 (구매, 판매, 배송 등등)
