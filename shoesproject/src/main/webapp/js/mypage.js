@@ -54,7 +54,6 @@ function reupdate(){
 	reuplist[0].innerHTML = '<button onclick="reinsert()">수정하기</button'
 	document.querySelector('.lpw').innerHTML = '<input type="text" class="upinp">'
 	
-	
 	let upinp = document.querySelector(".upinp").value
 	
 	console.log(upinp)
@@ -64,7 +63,10 @@ function reinsert(){
 	let upinp = document.querySelector(".upinp").value
 	
 	let lnum = document.querySelector(".lno").innerHTML
-	alert(lnum)
+	
+	
+	let lpwc = /^[a-zA-Z0-9]{10,20}$/
+		if(lpwc.test(upinp)){
 	$.ajax({
 		url : "/shoesproject/shoe/mypage",
 		type :'put',
@@ -73,6 +75,7 @@ function reinsert(){
 		success : re=>{
 			if(re=='true'){
 				alert("수정되었습니다.")
+				location.reload()
 			}else{
 				alert("수정실패")
 			}
@@ -80,6 +83,9 @@ function reinsert(){
 		
 	})
 	
+	}else{
+		alert("영소/대문자 10글자 이상 작성")
+	}
 }
 
 
