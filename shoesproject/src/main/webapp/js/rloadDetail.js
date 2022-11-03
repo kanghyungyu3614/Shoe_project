@@ -12,7 +12,6 @@ function rloadDetail() {
 			if(re){
 				let list = JSON.parse(re)
 				console.log(list)
-				
 				document.querySelector('.request').innerHTML = 
 				"<tr><th>번호</th><th>제목</th><th>내용</th><th>날짜</th><th></th><th></th></tr>"
 				
@@ -92,13 +91,27 @@ function commentform(rno) {
 
 // 답변내용 보기 폼 생성
 function commentview(rno){
+
+	
 	alert(rno)
 	$.ajax({
-		url :"/http://localhost:8080/shoesproject/admin/cload",
+		url :"/shoesproject/admin/cload",
 		data : {"rno" : rno},
-		success : function(re) { console.log( re ) 
-		let list = JSON.parse(re)
-		console.log(list)
+		success : function(re) {
+			if(re){
+				let list = JSON.parse(re)	
+				document.querySelector('.request').innerHTML = ''
+				for(let i = 0 ; i<list.length; i++){
+					let c = list[i]
+					
+					html = 
+					`<tr>
+						<td>${c.ctitle} <br> </td> 
+						<td>${c.ccontent} <br> </td>
+					</tr>`
+					document.querySelector('.request').innerHTML = html
+				}	
+			}
 		}
 	})	
 }
@@ -108,7 +121,7 @@ function comment(rno) {
 	let ctitle = document.querySelector('.ctitle').value
 	let ccontent = document.querySelector('.ccontent').value
 	$.ajax({
-		url : "/shoesproject/comment",
+		url : "http://localhost:8080/shoesproject/admin/comment",
 		data : {"rno" : rno , "ctitle" : ctitle , "ccontent" : ccontent },
 		type : 'post',
 		success : function (re) {

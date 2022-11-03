@@ -25,7 +25,7 @@ public class CommentDao extends dao {
 	// 3. 글 조회
 	public ArrayList<CommentDto> getboard(int rno) {
 		ArrayList<CommentDto> list = new ArrayList<>();
-		String sql ="select * from comment where rno = ? " + rno;
+		String sql ="select * from comment where rno = "+ rno;
 		try {
 			ps = con.prepareStatement(sql);
 			rs = ps.executeQuery();
@@ -34,7 +34,7 @@ public class CommentDao extends dao {
 						rs.getInt(1), rs.getString(2),
 						rs.getString(3), rs.getString(4),
 						rs.getInt(5));
-				return list;
+				list.add(dto);
 			}
 		}catch (Exception e) {System.out.println(e);}
 		return list;
