@@ -28,16 +28,13 @@ public class list extends HttpServlet {
 		for(int i = 0 ; i<list.size() ; i++) {
 			JSONObject object = new JSONObject();
 			object.put("pno", list.get(i).getPno());
-			object.put("ppurpose", list.get(i).getPpurpose());
 			object.put("pcategory", list.get(i).getPcategory());
 			object.put("pbrand", list.get(i).getPbrand());
-			object.put("psize", list.get(i).getPsize());
-			object.put("pprice", list.get(i).getPprice());
-			object.put("ptitle", list.get(i).getPtitle());
-			object.put("pcontent", list.get(i).getPcontent());
-			object.put("pdate", list.get(i).getPdate());
+			object.put("pname", list.get(i).getPname());
 			object.put("pimg", list.get(i).getPimg());
-			object.put("pstatus", list.get(i).getPstatus());
+			object.put("pcolor", list.get(i).getPcolor());
+			object.put("pprice", list.get(i).getPprice());
+			object.put("preleaseday", list.get(i).getPreleaseday());
 			
 			array.add(object);
 		}

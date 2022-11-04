@@ -31,16 +31,13 @@ public class detail extends HttpServlet {
 		JSONObject object = new JSONObject();
 		
 		object.put("pno", dto.getPno());
-		object.put("ppurpose", dto.getPpurpose());
 		object.put("pcategory", dto.getPcategory());
 		object.put("pbrand", dto.getPbrand());
-		object.put("psize", dto.getPsize());
-		object.put("pprice", dto.getPprice());
-		object.put("ptitle", dto.getPtitle());
-		object.put("pcontent", dto.getPcontent());
-		object.put("pdate", dto.getPdate());
+		object.put("pname", dto.getPname());
 		object.put("pimg", dto.getPimg());
-		object.put("pstatus", dto.getPstatus());
+		object.put("pcolor", dto.getPcolor());
+		object.put("pprice", dto.getPprice());
+		object.put("preleaseday", dto.getPreleaseday());
 		
 		response.setCharacterEncoding("UTF-8");
 		response.getWriter().print(object);

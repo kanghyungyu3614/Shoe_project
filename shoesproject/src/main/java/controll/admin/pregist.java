@@ -51,21 +51,18 @@ public class pregist extends HttpServlet {
 					new DefaultFileRenamePolicy()	// 중복이면 자동이름변경
 				);
 		
-		String ppurpose = multi.getParameter("ppurpose");
 		String pcategory = multi.getParameter("pcategory");
 		String pbrand = multi.getParameter("pbrand");
-		String psize = multi.getParameter("psize");
+		String pname = multi.getParameter("pname");
+		String pcolor = multi.getParameter("pcolor");
 		int pprice = Integer.parseInt(multi.getParameter("pprice"));
-		String ptitle = multi.getParameter("ptitle");
-		String pcontent = multi.getParameter("pcontent");
+		String preleaseday = multi.getParameter("preleaseday");
 		
 		// 첨부파일 경로/이름 호출
 		String pimg = multi.getFilesystemName("pimg");
 		
-		String pstatus = multi.getParameter("pstatus");
 		
-		
-		boolean result = PregistDao.getInstance().pregist(ppurpose , pcategory, pbrand, psize, pprice, ptitle, pcontent, pimg, pstatus);
+		boolean result = PregistDao.getInstance().pregist(pcategory, pbrand, pname, pimg, pcolor, pprice, preleaseday);
 		
 		response.getWriter().print(result);
 		

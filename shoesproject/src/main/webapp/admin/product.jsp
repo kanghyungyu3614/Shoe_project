@@ -51,7 +51,7 @@
 				</tr>	
 								<tr>
 					<td>출시일</td>
-					<td><input type="text" name="prday" class="ntitle" id="product_price"placeholder="ex) "> </td>
+					<td><input type="text" name="preleaseday" class="ntitle" id="product_price"placeholder="ex) "> </td>
 				</tr>	
 				<tr>
 					<td id="detail_explain">이미지</td>
