@@ -37,7 +37,6 @@ function rloadDetail() {
 }
 
 function rdelete(rno) {
-	
 	if(confirm("정말 삭제하시겠습니까?")){		
 		$.ajax({
 			url : "/shoesproject/rdelete",
@@ -128,7 +127,8 @@ function comment(rno) {
 		type : 'post',
 		success : function (re) {
 			if(re == 'true') {
-				alert('답글 작성 완료')
+				alert('답글 작성 완료') // 답글 작성 성공하면
+				window.location.reload() // 페이지 새로고침 ( 최신화 )
 			}else{ 
 				( alert ( '답글 작성 실패'))
 			}
