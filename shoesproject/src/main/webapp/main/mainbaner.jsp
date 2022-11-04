@@ -15,13 +15,13 @@
 		<%if(lid==null){ %>
 		<header class="header">
 			<div id="header_logo">
-				<a href="">shoes</a> 
+				<a href="/shoesproject/main/mainhome.jsp">shoes</a> 
 			</div>
 		</header>
 	<%}else if(lid.equals("admin")){ %>
 	<header class="header">
 		<div id="header_logo">
-			<a href="">shoes</a>
+			<a href="/shoesproject/main/mainhome.jsp">shoes</a>
 			 <span class="member_content">관리자님 안녕하세요.</span>
 		     <span class="member_find">
 				<span class="member_page">&nbsp;<a href="../view/mypage.jsp">나의정보</a> |</span><br>

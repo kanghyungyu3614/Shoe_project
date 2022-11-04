@@ -14,7 +14,7 @@
 	<%if(lid==null){%>
 	<header class="header">
 		<div id="header_logo">
-			<a href="../main/mainhome.jsp">shoes</a>
+			<a href="/shoesproject/main/mainhome.jsp">shoes</a>
 		</div>
 	</header>
 	<div id= main> <!-- 메인에서 얘러뜨는거 원래 그런겁니다.  -->
@@ -325,7 +325,7 @@
 		<%}else if(lid.equals("admin")){%>
 		<header class="header">
 			<div id="header_logo">
-				<a href="">shoes</a>
+				<a href="/shoesproject/main/mainhome.jsp">shoes</a>
 				<span class="admin_content">관리자님 안녕하세요.</span>
 				<span class="admin_find">
 				<span><a href="../admin/admin.jsp">관리자페이지</a> |</span>
@@ -631,7 +631,7 @@
 	
 	<header class="header">
 		<div id="header_logo">
-			<a href="">shoes</a>
+			<a href="/shoesproject/main/mainhome.jsp">shoes</a>
 			 <span class="member_content"><%=lid%>님 안녕하세요.</span>
 		     <span class="member_find">
 				<span class="member_page">&nbsp;<a href="../view/mypage.jsp">나의정보</a> |</span><br>
