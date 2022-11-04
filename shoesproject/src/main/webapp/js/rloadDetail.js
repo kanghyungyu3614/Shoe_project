@@ -13,7 +13,7 @@ function rloadDetail() {
 				let list = JSON.parse(re)
 				console.log(list)
 				document.querySelector('.request').innerHTML = 
-				"<tr><th>번호</th><th>제목</th><th>내용</th><th>날짜</th><th></th><th></th></tr>"
+				"<tr><th>번호</th><th>제목</th><th>내용</th><th>날짜</th></tr>"
 				
 				for(let i = 0 ; i<list.length ; i++) {
 					 r = list[i]
@@ -68,16 +68,15 @@ function logout() {
 		}
 	})
 }
-let rloadstate = false /* 답변하기 폼 열고닫기 상태 저장하는 변수 */
+let rloadstate = false /* 답변하기 폼 열고닫기 상태 저장 변수 */
 
 // 답글 폼 생성
 function commentform(rno) {
-	
 	if( rloadstate == false  ){ // 답변하기 폼이 열려있으면 답변하기 상세페이지 오픈
 		html = `<tr>
-				<td colspan="6" style="height: 500px; border: 1px solid black;">
-					제목 : <input type="text"  class="ctitle" id="ctitle" style="border: 1px solid black; width: 300px; height: 30px; margin-bottom: 20px;"> <br>
-					내용 : <input type="text" class="ccontent" id="ccontent" style="border: 1px solid black; width: 300px; height: 200px; margin-bottom: 20px;"> <br>
+				<td colspan="7" style="height: 500px; border: 1px solid black;">
+					제목 : <input type="text" class="ctitle" 		id="ctitle" 	style="border: 1px solid black; width: 300px; height: 30px; 	margin-bottom: 20px;"> <br>
+					내용 : <input type="text" class="ccontent" 	id="ccontent" 	style="border: 1px solid black; width: 300px; height: 200px; 	margin-bottom: 20px;"> <br>
 					<button type="button" style="width: 100px; height:50px; border: 1px solid black; margin-left: 48px;" onclick="comment(${rno})">답변하기</button>
 				</td>
 			</tr>`
@@ -89,27 +88,30 @@ function commentform(rno) {
 	document.querySelector(`.commentform${rno}`).innerHTML = html
 }
 
+let cloadstate = false /* 답변한 내용 폼 열고닫기 상태 저장 변수 */
 // 답변내용 보기 폼 생성
 function commentview(rno){
-
-	
-	alert(rno)
 	$.ajax({
 		url :"/shoesproject/admin/cload",
 		data : {"rno" : rno},
 		success : function(re) {
 			if(re){
 				let list = JSON.parse(re)	
-				document.querySelector('.request').innerHTML = ''
 				for(let i = 0 ; i<list.length; i++){
-					let c = list[i]
-					
-					html = 
-					`<tr>
-						<td>${c.ctitle} <br> </td> 
-						<td>${c.ccontent} <br> </td>
-					</tr>`
-					document.querySelector('.request').innerHTML = html
+					let c = list[i]		
+						if( cloadstate == false  ){ // 답변하기 폼이 열려있으면 답변하기 상세페이지 오픈
+						html = `<tr>
+								<td colspan="7" style="height: 500px; border: 1px solid black;">
+									<h4> 답변 한 제목 </h4> <br> <h5> ${c.ctitle} </h5> <br> 
+									<h4> 답변 한 내용 </h4> <br> <h5> ${c.ccontent} </h5> <br>
+								</td>
+								</tr>`
+						cloadstate = true; // 답변하기 열리면 true 전환
+					}else{ // 답변하기 폼이 열려있을때 다시 버튼을 눌러주면
+						html = ""; // 공백처리
+						cloadstate = false; // 닫히면 false 전환 
+					}
+					document.querySelector(`.commentform${rno}`).innerHTML = html
 				}	
 			}
 		}

@@ -27,7 +27,7 @@
 				</tr>	
 				<tr>
 					<td>제목</td>
-					<td><input type="text" class="rtitle" id="product_birthday"placeholder="ex)  22/10/27 "></td>
+					<td><input type="text" class="rtitle" id="product_birthday"placeholder="ex)  최대 16 글자 "></td>
 				</tr>	
 				<tr>
 					<td id="detail_explain">문의내용</td>
