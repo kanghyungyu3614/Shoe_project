@@ -809,55 +809,102 @@
 			
 		</section>
 		<div class="mypage_component">
-			<h1>my page</h1>
-			
-			<table class="mmain">
-				<tr>
-					<td class="num1">회원번호</td>
-					<td class="lno"></td>
-				</tr>
-				<tr>
-					<td class="num1">가입일</td>
-					<td class="ldate"></td>
-				</tr>
-				
-				<tr>
-					<td class="num1">이름</td>
-					<td class="lname"></td>
-				</tr>
-				<tr>
-					<td class="num1">아이디</td>
-					<td class="lid"></td>
-				</tr>
-				<tr>
-					<td class="num1">비밀번호</td>
-					<td class="lpw"></td>
-					<td class="reup"><button onclick="reupdate()">수정</button></td>
-				</tr>
-				<tr>
-					<td class="num1">전화번호</td>
-					<td class="lph"></td>
-					<td class="reup"><button onclick="reupdate()">수정</button></td>
-				</tr>
+		
+			<div class="title_mypage">
+				<h1>마이 페이지</h1>
+			</div>
+
+				<table class="mmain">
+				<div class="lno"></div>
+				<div class="ldate"></div>
+				<div class="lname"></div>
+				<div class="lid"></div>
+				<div class="lpw"></div>
+				<div class="lph"></div>
+				<div class="lemail"></div>
+				<div class="lsize"></div>
+						<tr>
+							<td class="num1">회원번호</td>
+							<td class="lno"></td>
+						</tr>
 					<tr>
-					<td class="num1">이메일</td>
-					<td class="lemail"></td>
-					<td class="reup"><button onclick="reupdate()">수정</button></td>
-				</tr>
-				
-				<tr>
-					<td class="num1">발사이즈</td>
-					<td class="lsize"></td>
-					<td class="reup"><button onclick="reupdate()">수정</button></td>
-				</tr>
-			</table>
+						<td class="num1">가입일</td>
+						<td class="ldate"></td>
+					</tr>
+					
+					<tr>
+						<td class="num1">이름</td>
+						<td class="lname"></td>
+					</tr>
+					<tr>
+						<td class="num1">아이디</td>
+						<td class="lid"></td>
+					</tr>
+					<tr>
+						<td class="num1">비밀번호</td>
+						<td class="lpw"></td>
+						<td class="reup"><button onclick="reupdate()">수정</button></td>
+					</tr>
+					<tr>
+						<td class="num1">전화번호</td>
+						<td class="lph"></td>
+						<td class="reup"><button onclick="reupdate()">수정</button></td>
+					</tr>
+						<tr>
+						<td class="num1">이메일</td>
+						<td class="lemail"></td>
+						<td class="reup"><button onclick="reupdate()">수정</button></td>
+					</tr>
+					
+					<tr>
+						<td class="num1">발사이즈</td>
+						<td class="lsize"></td>
+						<td class="reup"><button onclick="reupdate()">수정</button></td>
+					</tr>
+				</table>
 			<div>
 				<button type="button" onclick="deletemember()">탈퇴하기</button>
 			</div>
 		</div>
-		
-		
-		<%}%>
+
+		<h6>구매내역</h6>
+				<div>
+					<table>
+						<tr>
+							<td>상품명</td>
+							<td>사이즈</td>
+							<td>날짜</td>
+							<td>상태</td>
+						</tr>
+						<tr>
+							<td>이미지</td>
+							<td>280</td>
+							<td>2022-10-10</td>
+							<td>구매완료</td>
+						</tr>
+					</table>
+				</div>
+				
+		<h6>판매내역</h6>
+				<div>
+					<table>
+						<tr>
+							<td>상품명</td>
+							<td>사이즈</td>
+							<td>날짜</td>
+							<td>상태</td>
+						</tr>
+						<tr>
+							<td>이미지</td>
+							<td>280</td>
+							<td>2022-10-10</td>
+							<td>구매완료</td>
+						</tr>
+					</table>
+				</div>
+
+
+				<%}%>
 		<!-- member가 로그인에 성공했을떄 끝 -->	
 	<!-- 로그인 컴포넌트 끝 -->
 		
