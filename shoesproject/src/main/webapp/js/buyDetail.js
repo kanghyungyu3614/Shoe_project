@@ -29,3 +29,7 @@ function productBuyButton(){
 	console.log(hideNum);	
 	
 }
+load()
+function load(){
+	
+}
