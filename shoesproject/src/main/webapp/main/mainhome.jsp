@@ -20,7 +20,7 @@
 	<div id= main>
 		<section class="brand">
 			<div class="brand_content">이달의 인기 브랜드</div> 
-			<div class="month_popular_brand">
+				<div class="month_popular_brand">
 				<div>1.Nike&nbsp;&nbsp;&nbsp;</div>
 				<div>2.밀레&nbsp;&nbsp;&nbsp;</div>
 				<div>3.THE NORTH FACE&nbsp;&nbsp;&nbsp;</div>
@@ -1044,7 +1044,9 @@
 		<section class="product_img_slade">
 		<div class="product_img_content">셀렙 이미지</div>
 			<div class="selloveimg">
-					<button onclick="selhi()">안녕</button>
+				<!-- <button onclick="selhi()">셀럽이미지보기</button>
+				 -->	
+				
 			</div>
 		</section>
 		<!--셀럽 이미지 슬라이드 끝 -->

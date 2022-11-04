@@ -6,6 +6,7 @@ let json =''
 let img = ''
 let html = ''
 let snum=''
+
 function getsellob(){
 	
 	
@@ -46,7 +47,7 @@ function getsellob(){
 }
 
 
-
+selhi()
 function sellobview(snum , i){
 	let lid = document.querySelector(".lid").value
 	if(lid == json[i].lid){
@@ -79,15 +80,27 @@ function seldele(snum){
 
 
 function selhi(){
-	let chtml = ''
-		for(let i = 0; i <json.length; i++){
-			
-	 chtml =  '<img alt="" src="'+img+'" class="selimg">'+
-'				<div class="selname">'+json[i].stitle+'</div>'+
-'				<button onclick="selhi()">'+json[i].lid+'</button>';		
+	
+	$.ajax({
+		url : "/shoesproject/board/write",
+		type : 'get',
+		success : function(re){
+		let sjson = JSON.parse(re)
+		
+		let chtml = ''
+		for(let i = 0; i <sjson.length; i++){
+		let simg = '/shoesproject/supload/'+sjson[i].sfile
+		 	chtml +=  '<a href="/shoesproject/board/selovelist.jsp"><img alt="" src="'+simg+'"></a>'+
+						
+					'	<div>'+sjson[i].lid+'님<div>'+
+					'	<div>'+sjson[i].stitle+'</div>';		
 			
 		}
+		
 		document.querySelector(".selloveimg").innerHTML += chtml;
+	
+		}
+	})	
 	
 }
 
