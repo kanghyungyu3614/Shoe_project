@@ -15,11 +15,12 @@
 }
 img{
 	width: 500px;
-	height: 500px;
-	background: #e2f2f2;	
-	text-align: center;
-    margin: 0 auto;
+    height: 500px;
+    background: #e2f2f2;
+    text-align: center;
+    margin: 10px auto;
     display: flex;
+    border-radius: 10px;
 }
 .sellNote{
 	width: 500px;
@@ -27,7 +28,7 @@ img{
 	box-shadow: 0 2px 6px rgb(0 0 0 /  12%);
 	margin: 10px auto;
 }
-.warnComponent{
+#warnComponent{
     line-height: 12px;
     padding: 3px 5px 2px;
     margin-right: 4px;
@@ -41,7 +42,7 @@ img{
     text-align: center;
 }
 
-.warnContent{
+#warnContent{
 	display: block;
     line-height: 14px;
     margin-top: 4px;
@@ -49,7 +50,9 @@ img{
     letter-spacing: -.06px;
     color: rgba(34,34,34,.5);
 }
-
+.warntext{
+	margin-left: 10px;
+}
 
 
 

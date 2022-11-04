@@ -13,8 +13,8 @@
 		<section class="img_coponent">
 			<img src="/shoesproject/main/img/product/4.jpg">
 			<div class="sellNote">
-				<div><span class="warnComponent">주의</span>판매 거래 주의사항</div>
-				<div class="warnContent">반드시 보유한 상품만 판매하세요.</div>
+				<div><span id="warnComponent" class="warntext">주의</span>판매 거래 주의사항</div>
+				<div id="warnContent" class="warntext" >반드시 보유한 상품만 판매하세요.</div>
 				<!-- <img src="/shoesproject/main/img/left.png">  -->
 			</div>
 		
