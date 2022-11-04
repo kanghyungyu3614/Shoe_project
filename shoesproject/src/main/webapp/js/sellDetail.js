@@ -10,6 +10,7 @@ function sellAddButton(num){
 	let body = document.querySelector("body");
 	
 	var html =  '<div class="sellButton" onclick="productSellButton()">'+
+	'<input class="sellFinal">판매하기<br>'+
 	'<div class="sellFinal">판매입찰</div>'+
 	'<div class="sellDeliver">일반배송(5-7일소요)</div>'+
 	'</div>';

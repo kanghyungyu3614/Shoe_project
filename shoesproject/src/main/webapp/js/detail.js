@@ -14,3 +14,11 @@ function detail() {
 		}
 	})
 }
+
+
+function selin(){
+	
+}
+function buyin(){
+	
+}

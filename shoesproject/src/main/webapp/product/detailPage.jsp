@@ -8,6 +8,7 @@
 <link href="../css/detailPage.css" rel="stylesheet">
 </head>
 <body>
+
 	<%@include file="../main/mainbaner.jsp" %>
 	<div id="main">
 		<section class="img_coponent">
@@ -17,8 +18,10 @@
 				<div id="warnContent" class="warntext" >반드시 보유한 상품만 판매하세요.</div>
 				<!-- <img src="/shoesproject/main/img/left.png">  -->
 			</div>
-		
-		
+			
+			<button onclick="selin()">판매</button>
+			
+			<button onclick="buyin()">구매</button>
 		
 		
 		
