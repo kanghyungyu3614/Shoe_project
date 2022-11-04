@@ -1,4 +1,5 @@
 pload()
+
 function pload() {
 	$.ajax({
 		url : "/shoesproject/pload",
@@ -25,6 +26,7 @@ function pload() {
 			}
 			document.querySelector('.list').innerHTML = html
 		}
+		
 	})
 }
 
