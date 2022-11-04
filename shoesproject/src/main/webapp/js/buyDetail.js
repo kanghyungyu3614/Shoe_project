@@ -26,6 +26,7 @@ function buyAddButton(num) {
 function productBuyButton() {
 	hideComponent = document.querySelector("#size");
 	let hideNum = Number(hideComponent.innerHTML);
-	console.log(hideNum);
 
+	console.log(hideNum);	
+	
 }
