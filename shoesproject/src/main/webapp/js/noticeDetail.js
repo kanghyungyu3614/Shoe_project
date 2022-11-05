@@ -7,21 +7,18 @@ function notice() {
 		success: function (re) {
 			if(re){
 				let list = JSON.parse(re)
-				console.log(list)
-				
-				document.querySelector('.notice').innerHTML = 
-				"<tr><th>번호</th><th>제목</th><th>내용</th><th>날짜</th><th></th></tr>"
-				
+				console.log(list) 
+				let html = "<tr><th>번호</th><th>제목</th><th>내용</th><th>날짜</th><th>삭제버튼</th></tr>";
 				for(let i = 0 ; i<list.length ; i++) {
 					notice = list[i]
-					html = "<tr>"
+					html += "<tr>"
 							+ "<td>"+notice.nno+"</td>"
 							+ "<td>"+notice.ntitle+"</td>"
 							+ "<td>"+notice.ncontent+"</td>"
 							+ "<td>"+notice.ndate+"</td>"
 							+ "<td><button type='button' onclick='ndelete("+notice.nno+")'>삭제</button></td>"
 						+ "</tr>"
-					document.querySelector('.notice').innerHTML += html
+					document.querySelector('#notice_table').innerHTML = html
 				}
 			}
 		}

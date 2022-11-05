@@ -45,3 +45,41 @@ $(document).ready(function() {
 				$('.admin_menu_open').slideToggle();
 			});
 		});
+		
+		
+// 회원의 드롭다운인지, 비회원의 드롭다운인지, 관리자의 드롭다운인지 찾기
+function findDropdown (){
+ let resultNum = 0 ;
+ let noMemberDropdowncontent = document.querySelector('.menu_open')
+ let MemberDropdowncontent = document.querySelector('.member_menu_open')
+ let adminDropdowncontent = document.querySelector('.admin_menu_bar')
+ if(noMemberDropdowncontent != null){
+	resultNum = 'noMem';	
+ }
+ else if(MemberDropdowncontent != null){
+	resultNum = 'Mem';
+ }
+ else if(adminDropdowncontent != null){
+	resultNum = 'admin';
+ }
+ return resultNum;	
+}
+		
+// 드롭다운 닫기 
+$(window).scroll(function () { 
+	var scrollValue = $(document).scrollTop(); 
+	console.log(scrollValue);
+    if(scrollValue>10 && findDropdown() == 'noMem'){
+		noMemberDropdowncontent = document.querySelector('.menu_open')
+		noMemberDropdowncontent.style.display = "none";
+	}
+    else if(scrollValue>10 && findDropdown() == 'Mem'){
+		MemberDropdowncontent = document.querySelector('.member_menu_open')
+		MemberDropdowncontent.style.display = "none";
+	}
+    else if( scrollValue>10 && findDropdown() == 'admin'){
+		adminDropdowncontent = document.querySelector('.admin_menu_open')
+		adminMenuBar = document.querySelector('.admin_menu_bar')
+		adminDropdowncontent.style.display = "none";
+	}
+});		

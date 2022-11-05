@@ -90,10 +90,12 @@ function selhi(){
 		let chtml = ''
 		for(let i = 0; i <sjson.length; i++){
 		let simg = '/shoesproject/supload/'+sjson[i].sfile
-		 	chtml +=  '<a href="/shoesproject/board/selovelist.jsp"><img alt="" src="'+simg+'"></a>'+
-						
-					'	<div>'+sjson[i].lid+'님<div>'+
-					'	<div>'+sjson[i].stitle+'</div>';		
+		 	chtml +=  
+		 			'<div class="seloveComponent">'
+		 				+'<a href="/shoesproject/board/selovelist.jsp"><img class="seloveimg" alt="" src="'+simg+'"></a>'
+		 				+'<div class="userid">'+sjson[i].lid+'님</div>'
+						+'<div class="usercontent">'+sjson[i].stitle+'</div>'
+					+'</div>';		
 			
 		}
 		

@@ -28,7 +28,7 @@
 			<span class="nav_detail"><a href="../admin.jsp">관리자게시판</a></span>
 			<span id="notice">공지사항</span>
 				<div class="notice">
-					<table class="notice">	
+					<table id="notice_table"class="notice">	
 						<tr>
 							<td>제목</td>
 							<td>내용</td>

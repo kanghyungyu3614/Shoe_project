@@ -85,6 +85,11 @@ a:visited{
 	margin-right: 10px;
 	
 }
+
+.request{
+	width: 1148px;
+}
+
 /*공지사항 안의 상세보기 글자,상담 문의 게시판 안의 상세보기 끝*/
 /* 상품등록게시판 시작*/
 #product_regist{
@@ -113,7 +118,7 @@ td{
 }
 .notice tr:nth-child(1) td:nth-child(2){
 	border: 1px solid black;
-	width: 900px;
+	width: 600px;
 	height : 50px;
 	font-weight: 700;
 	font-size: 28px;
@@ -131,6 +136,10 @@ td{
 	width: 1148px;
 	font-size: 20px;
 }
+
+
+
+
 
 #advice_notice_table tr, th{
 	border: solid 1px black;

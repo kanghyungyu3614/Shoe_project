@@ -35,23 +35,23 @@
 				</tr>	
 				<tr>
 					<td>브랜드</td>
-					<td><input type="text" name="pbrand" class="ntitle" id="product_brand"placeholder="ex)  아디다스 / 나이키 / 뉴발란스"></td>
+					<td><input type="text" name="pbrand" class="ntitle" placeholder="ex)  아디다스 / 나이키 / 뉴발란스"></td>
 				</tr>	
 				<tr>
 					<td>제품명</td>
-					<td><input type="text" name="pname" class="ntitle" id="product_birthday"placeholder="ex)  22/10/27 "></td>
+					<td><input type="text" name="pname" class="ntitle" placeholder="ex)  반스 볼트 x 더블탭스 "></td>
 				</tr>	
 				<tr>
 					<td>가격</td>
-					<td><input type="text" name="pprice" class="ntitle" id="product_price"placeholder="ex)  원"> </td>
+					<td><input type="text" name="pprice" class="ntitle" placeholder="ex)  원"> </td>
 				</tr>	
 				<tr>
 					<td>색상</td>
-					<td><input type="text" name="pcolor" class="ntitle" id="product_price"placeholder="ex)  빨간색, 노랑색, 파란색"> </td>
+					<td><input type="text" name="pcolor" class="ntitle" placeholder="ex)  빨간색, 노랑색, 파란색"> </td>
 				</tr>	
 								<tr>
 					<td>출시일</td>
-					<td><input type="text" name="preleaseday" class="ntitle" id="product_price"placeholder="ex) "> </td>
+					<td><input type="text" name="preleaseday" class="ntitle" placeholder="ex) 22/11/05 "> </td>
 				</tr>	
 				<tr>
 					<td id="detail_explain">이미지</td>

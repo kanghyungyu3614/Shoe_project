@@ -1044,8 +1044,6 @@
 		<section class="product_img_slade">
 		<div class="product_img_content">셀렙 이미지</div>
 			<div class="selloveimg">
-				<!-- <button onclick="selhi()">셀럽이미지보기</button>
-				 -->	
 				
 			</div>
 		</section>
