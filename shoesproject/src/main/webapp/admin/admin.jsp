@@ -72,7 +72,6 @@
 			<span class="nav_detail"><a href="./detail/productDetail.jsp">상세보기</a></span>
 			<div class="advice_table">상품 등록
 			</div>
-			
 			<table class="regist"> <!--  이름, 전화번호, 사이즈, 상품이름, 모델번호, 컬러, 상품상세설명, 상품브랜드, 출시일, 가격 -->
 				<tr>
 					<th >상품이름</th>
