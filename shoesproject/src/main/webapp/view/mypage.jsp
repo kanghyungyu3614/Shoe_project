@@ -6,6 +6,7 @@
 <meta charset="EUC-KR">
 <title>Insert title here</title>
 <link href="../css/mypage.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
 <body>
 
@@ -808,65 +809,61 @@
 		</div>				
 			
 		</section>
-		<div class="mypage_component">
 		
-			<div class="title_mypage">
-				<h1>마이 페이지</h1>
+	<div class="mypage_component">
+		<div class="container text-center">
+			<div class="row row1">
+				<div class="col">
+					<div class="hname">
+					<i class="fas fa-user"></i>
+					이름</div>
+					<div class="lname"></div> <!-- 회원 이름 -->
+				</div>
+				
+				<div class="col">
+					<div class="hname">
+					<i class="fas fa-duotone fa-shoe-prints"></i>
+					발 사이즈 </div>
+					<div class="lsize"></div> <!-- 회원 발 사이즈 -->
+				</div>
+				<div class="col">
+					<div class="hname">
+					<i class="fas fa-calendar-alt"></i>
+					가입 일 </div>
+					<div class="ldate"></div> <!-- 회원 가입 날짜 -->
+				</div>
 			</div>
+			
+	<div class="row row-cols-auto">
+		<div class="col col1">
+			<table class="mmain">
+					<tr>
+						<td class="num1">회원번호</td>
+						<td class="lno"></td>
+					</tr>
+				<tr>
+					<td class="num1">아이디</td>
+					<td class="lid"></td>
+				</tr>
+				<tr>
+					<td class="num1">비밀번호</td>
+					<td class="lpw"></td>
+					<td class="reup"><button onclick="reupdate()">수정</button></td>
+				</tr>
+				<tr>
+					<td class="num1">전화번호</td>
+					<td class="lph"></td>
+					<td class="reup"><button onclick="reupdate()">수정</button></td>
+				</tr>
+					<tr>
+					<td class="num1">이메일</td>
+					<td class="lemail"></td>
+					<td class="reup"><button onclick="reupdate()">수정</button></td>
+				</tr>
 
-				<table class="mmain">
-				<div class="lno"></div>
-				<div class="ldate"></div>
-				<div class="lname"></div>
-				<div class="lid"></div>
-				<div class="lpw"></div>
-				<div class="lph"></div>
-				<div class="lemail"></div>
-				<div class="lsize"></div>
-						<tr>
-							<td class="num1">회원번호</td>
-							<td class="lno"></td>
-						</tr>
-					<tr>
-						<td class="num1">가입일</td>
-						<td class="ldate"></td>
-					</tr>
-					
-					<tr>
-						<td class="num1">이름</td>
-						<td class="lname"></td>
-					</tr>
-					<tr>
-						<td class="num1">아이디</td>
-						<td class="lid"></td>
-					</tr>
-					<tr>
-						<td class="num1">비밀번호</td>
-						<td class="lpw"></td>
-						<td class="reup"><button onclick="reupdate()">수정</button></td>
-					</tr>
-					<tr>
-						<td class="num1">전화번호</td>
-						<td class="lph"></td>
-						<td class="reup"><button onclick="reupdate()">수정</button></td>
-					</tr>
-						<tr>
-						<td class="num1">이메일</td>
-						<td class="lemail"></td>
-						<td class="reup"><button onclick="reupdate()">수정</button></td>
-					</tr>
-					
-					<tr>
-						<td class="num1">발사이즈</td>
-						<td class="lsize"></td>
-						<td class="reup"><button onclick="reupdate()">수정</button></td>
-					</tr>
-				</table>
-			<div>
-				<button type="button" onclick="deletemember()">탈퇴하기</button>
-			</div>
+			</table>
 		</div>
-
+	<div class="col col2">
 		<h6>구매내역</h6>
 				<div>
 					<table>
@@ -884,27 +881,31 @@
 						</tr>
 					</table>
 				</div>
-				
-		<h6>판매내역</h6>
-				<div>
-					<table>
-						<tr>
-							<td>상품명</td>
-							<td>사이즈</td>
-							<td>날짜</td>
-							<td>상태</td>
-						</tr>
-						<tr>
-							<td>이미지</td>
-							<td>280</td>
-							<td>2022-10-10</td>
-							<td>구매완료</td>
-						</tr>
-					</table>
+			<h6>판매내역</h6>
+					<div>
+						<table>
+							<tr>
+								<td>상품명</td>
+								<td>사이즈</td>
+								<td>날짜</td>
+								<td>상태</td>
+							</tr>
+							<tr>
+								<td>이미지</td>
+								<td>280</td>
+								<td>2022-10-10</td>
+								<td>구매완료</td>
+							</tr>
+						</table>
+					</div>
 				</div>
-
-
-				<%}%>
+			</div>
+		</div>
+			<div>
+				<button type="button" onclick="deletemember()">탈퇴하기</button>
+			</div>
+		</div>
+	<%}%>
 		<!-- member가 로그인에 성공했을떄 끝 -->	
 	<!-- 로그인 컴포넌트 끝 -->
 		
@@ -923,20 +924,16 @@
 	         </div>			
 		</footer>
 		<!-- 푸터 끝 -->
-		
+		<script src="https://kit.fontawesome.com/def66b134a.js" crossorigin="anonymous"></script>
 		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 		<script type="text/javascript" src="../js/login.js"></script>
 		<script type="text/javascript" src="../js/dropdown.js"></script>
-		
-	
-
-
-
-
 
 </div>
-	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-
-<script type="text/javascript" src="../js/mypage.js"></script>
+		<script src="https://kit.fontawesome.com/def66b134a.js" crossorigin="anonymous"></script>
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+		<script type="text/javascript" src="../js/mypage.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+	
 </body>
 </html>
