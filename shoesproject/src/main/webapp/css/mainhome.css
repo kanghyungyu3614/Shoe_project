@@ -80,7 +80,6 @@
 
 /*main 시작*/ 
 #main{
-	border: 1px solid black;
 	width: 1200px;
 	margin: 0 auto;
 }
@@ -357,12 +356,11 @@
 /* 셀럽 이미지 끝*/
 /*하단 시작*/
 footer{
-	width: 1200px;
-	height: 300px;
-	border: 1px solid black;
-	clear:both;
-	width:100%;
-	height: 200px;
+    width: 1180px;
+    border: 1px solid black;
+    clear: both;
+    height: 200px;
+    margin: 0 auto;
 }
 /* GitLink*/
 .gitLink{
