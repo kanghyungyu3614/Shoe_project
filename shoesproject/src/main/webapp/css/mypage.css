@@ -24,7 +24,7 @@
 	font-family: 'SEBANG_Gothic_Bold';
 	font-weight: 700;
 	font-size: 40px;
-	margin: 20px 20px;
+	margin: 0px 20px;
 	display: flex;
 }
 
@@ -414,13 +414,17 @@ h1{
 	text-align: left;
 }
 
+.hdname{
+	font-size: 2.5rem;
+}
 .hname{
-	font-size: 3rem;
+	font-size: 2.5rem;
 }
 
 .col{
 	height:100px;
 	border: solid 1px black;
+	margin-right: 5px;
 }
 
 .col1{
@@ -441,8 +445,7 @@ h1{
 	border-radius: 5px;
 }
 
-.coln , .cols , .cold{
-	
+.lname , .lsize , .ldate {
+	font-size : 1.8rem;
 }
-
 

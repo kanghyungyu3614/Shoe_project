@@ -814,7 +814,7 @@
 		<div class="container text-center">
 			<div class="row row1">
 				<div class="col">
-					<div class="hname">
+					<div class="hdname">
 					<i class="fas fa-user"></i>
 					이름</div>
 					<div class="lname"></div> <!-- 회원 이름 -->
@@ -860,8 +860,13 @@
 					<td class="lemail"></td>
 					<td class="reup"><button onclick="reupdate()">수정</button></td>
 				</tr>
-
+				<tr>
+				<td>
+					<button type="button" onclick="deletemember()">탈퇴하기</button>
+				</td>
+				</tr>
 			</table>
+			
 		</div>
 	<div class="col col2">
 		<h6>구매내역</h6>
@@ -881,6 +886,8 @@
 						</tr>
 					</table>
 				</div>
+		</div>	
+		<div class="col col3">
 			<h6>판매내역</h6>
 					<div>
 						<table>
@@ -897,14 +904,12 @@
 								<td>구매완료</td>
 							</tr>
 						</table>
-					</div>
-				</div>
-			</div>
-		</div>
-			<div>
-				<button type="button" onclick="deletemember()">탈퇴하기</button>
-			</div>
-		</div>
+					</div> <!-- 구매내역 end -->
+				</div> <!-- 구매내역 end -->
+			</div> <!-- info end -->
+		</div> <!-- b: container end -->
+	</div> <!-- mypage div end -->
+</div> <!-- all div end -->
 	<%}%>
 		<!-- member가 로그인에 성공했을떄 끝 -->	
 	<!-- 로그인 컴포넌트 끝 -->
