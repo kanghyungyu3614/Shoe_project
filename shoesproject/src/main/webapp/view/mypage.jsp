@@ -866,9 +866,8 @@
 				</td>
 				</tr>
 			</table>
-			
 		</div>
-	<div class="col col2">
+		<div class="col col2">
 		<h6>구매내역</h6>
 				<div>
 					<table>
@@ -887,7 +886,7 @@
 					</table>
 				</div>
 		</div>	
-		<div class="col col3">
+		<div class="col col2">
 			<h6>판매내역</h6>
 					<div>
 						<table>
@@ -905,7 +904,9 @@
 							</tr>
 						</table>
 					</div> <!-- 구매내역 end -->
-				</div> <!-- 구매내역 end -->
+	</div>
+
+				</div> <!-- 판매내역 end -->
 			</div> <!-- info end -->
 		</div> <!-- b: container end -->
 	</div> <!-- mypage div end -->
