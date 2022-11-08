@@ -16,7 +16,7 @@
   		<form id="form_component">
 	  		<div id="form_component_title"> 상품문의등록 </div>
 			<!-- 문의유형 문의세부유형	문의내용	날짜-->
-			<table>
+			<table id="requireComponent">
 				<tr>
 					<td>문의목적</td>
 					<td><input type="text" class="rpurpose" id="product_name" placeholder="ex)  구매 / 판매 / 브랜드배송 / 일반" autofocus></td>
@@ -27,7 +27,7 @@
 				</tr>	
 				<tr>
 					<td>제목</td>
-					<td><input type="text" class="rtitle" id="product_birthday"placeholder="ex)  최대 16 글자 "></td>
+					<td><input type="text" class="rtitle" id="product_title"placeholder="ex)  최대 16 글자 "></td>
 				</tr>	
 				<tr>
 					<td id="detail_explain">문의내용</td>
@@ -40,6 +40,7 @@
 				<button id="reset_button" type="reset">취소</button>  		
 	  		</div>
 		</form>
+		<div class="request_board">문의 게시판</div>
 		<table class="request"></table>
 		<!-- 공지사항 등록 끝 -->
 		

@@ -17,10 +17,9 @@ function rloadDetail() {
 								<td>${r.rno}</td>
 								<td>${r.rtitle}</td>
 								<td>${r.rcontent}</td>
-								<td>${r.rdate}</td>
-								<td><button type="button" onclick="commentform(${r.rno})">답변하기</td>
-								<td><button type="button" onclick="commentview(${r.rno})">답변보기</td>
-								<td><button type="button" onclick="rdelete(${r.rno})">삭제</button></td>
+								<td class="board_date">${r.rdate}</td>
+								<td class="board_thing"><button type="button" class="board_btn" onclick="commentview(${r.rno})">답변보기</td>
+								<td class="board_thing"><button type="button" class="board_btn" onclick="rdelete(${r.rno})">삭제</button></td>
 							</tr>
 							<tr class="commentform${r.rno}"></tr>
 							`
