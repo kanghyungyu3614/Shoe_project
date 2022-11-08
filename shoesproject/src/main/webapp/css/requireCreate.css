@@ -108,6 +108,14 @@ a:visited{
 	font-size: 30px;
 }
 /*form_component_title 끝*/
+/*테이블 시작*/
+#requireComponent{
+    width: 450px;
+    height: 300px;
+}
+
+
+/*테이블 끝*/
 /* input태그, 버튼 시작*/
 .ntitle , .ncontent{
 	border: 1px solid black;
@@ -123,13 +131,19 @@ a:visited{
 	height: 230px;
 }
 #product_detail_explain{
-	height:100px;
+	height: 100px;
+    width: 290px;
 }
 #detail_explain{
 	vertical-align: top;
 }
 table tr td {
-	text-align: left;
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+table tr:nth-child(3) {
+    padding-top: 10px;
 }
 
 #write_button{
@@ -151,16 +165,56 @@ table tr td {
 	font-size: 20px;
 	font-weight: 700;	
 }
+
+
+
+#product_name{
+	width: 290px;
+    height: 30px;
+}
+
+#product_number{
+	width: 290px;
+    height: 30px;	
+}
+
+#product_title{
+	width: 290px;
+    height: 30px;	
+}
 /* input태그, 버튼 끝*/
 
+/*하단 게시판 시작*/
+.request{
+	width: 1200px;
+	height: 100%;
+	margin: 20px auto;
+}
+.request_board{
+	font-weight: 700;
+	font-size: 30px;
+	text-align: center;
+	margin: 20px auto;
+}
+
+.board_date{
+	width: 170px;
+}
+.board_thing{
+	width: 100px;
+    text-align: center;
+}
+
+.board_btn{
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
 
 
-
-
-
-
-
-
+/*하단 게시판 끝*/
 /*하단 시작*/
 footer{
 	width: 1200px;

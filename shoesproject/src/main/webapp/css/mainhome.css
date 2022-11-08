@@ -503,7 +503,12 @@ footer{
 /*브랜드 카테고리 슬라이드 끝*/
 
 /*메인 이미지 슬라이드 시작*/
-	.main_img_slade .section .slidewrap {max-width:1170px;margin:0 auto;overflow:hidden;position:relative;}
+	.main_img_slade .section .slidewrap {max-width: 1170px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    height: 560px;
+    }
 	.main_img_slade img{
 		width: 1170px; height: 570px;
 	}

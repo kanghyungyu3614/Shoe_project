@@ -451,9 +451,9 @@ footer{
 
 #main{
 	width: 1200px;
-	height: 2000px;
-	border: 1px solid black;
-	margin: 0 auto;
+    height: 2000px;
+    border: 1px solid black;
+    margin: 30px auto;
 }
 #main_title{
 	display: flex;

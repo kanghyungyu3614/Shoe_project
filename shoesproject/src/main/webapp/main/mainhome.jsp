@@ -978,7 +978,7 @@
 		
 		</section>
 		<!-- 메인 이미지 슬라이드 끝 -->
-		<section class="main_img_slade">
+		<section class="main_img_slade" id="popular_product">
 		<div class="product_img_content">인기상품</div>
 			<span class="product_img">
 			    <img src="">

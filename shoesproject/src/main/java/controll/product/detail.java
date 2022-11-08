@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 import org.json.simple.JSONObject;
 
 import model.dao.DetailDao;
+import model.dao.memberdao;
 import model.dto.PregistDto;
 
 /**
@@ -60,8 +61,27 @@ public class detail extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		doGet(request, response);
+		
+		
+		int hideNum = Integer.parseInt(request.getParameter("hideNum"));
+		int selprice = Integer.parseInt(request.getParameter("selprice")); 
+		String lid = (String)request.getSession().getAttribute("lid");
+		int type = Integer.parseInt(request.getParameter("type"));
+		System.out.println(lid);
+		System.out.println(hideNum+","+selprice);	
+		
+		if(type==1) {
+		boolean result = DetailDao.getInstance().selin(hideNum,selprice,lid);
+		response.getWriter().print(result);
+		}
+		else if(type==2) {
+			boolean result = DetailDao.getInstance().selbuy(hideNum,selprice,lid);
+			response.getWriter().print(result);
+		}
+		 /*
+		 * else if(type==2) { boolean result =
+		 * DetailDao.getInstance().selin(hideNum,selprice,lid); }
+		 */
 	}
 
 }
