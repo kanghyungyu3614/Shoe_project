@@ -16,15 +16,15 @@ function pload() {
 				let pimg = "/shoesproject/pupload/" + p.pimg
 				
 				
-				html += `<div style="margin: 30px; z-index: 99;" class="product${p.pno}" onclick="product(${p.pno})">
+				html += `<span style="margin: 30px; z-index: 99;" class="product${p.pno}" onclick="product(${p.pno})">
 							<div><img style="width: 230px; height: 230px;" alt="이미지없음" src="${pimg}"></div>
 							<div>
 								브랜드명 : <span>${p.pbrand}</span>
 								<span>${p.ptitle}</span>
 							</div>
-						</div>`
+						</span>`
 			}
-			document.querySelector('.list').innerHTML = html
+			document.querySelector('#popular_product').innerHTML += html
 		}
 		
 	})
