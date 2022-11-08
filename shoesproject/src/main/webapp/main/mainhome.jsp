@@ -939,17 +939,17 @@
 					<ul class="slidelist">
 						<li>
 							<a>
-								<img src="./img/1.jpg">
+								<img class="slidelist_img" src="./img/1.jpg">
 							</a>
 						</li>
 						<li>
 							<a>
-								<img src="./img/2.jpg">
+								<img class="slidelist_img" src="./img/2.jpg">
 							</a>
 						</li>
 						<li>
 							<a>
-								<img src="./img/3.jpg">
+								<img class="slidelist_img" src="./img/3.jpg">
 							</a>
 						</li>
 					</ul>
@@ -980,8 +980,10 @@
 		<!-- 메인 이미지 슬라이드 끝 -->
 		<section class="main_img_slade" id="popular_product">
 		<div class="product_img_content">인기상품</div>
+		<!-- 인기제품 안에 내용들 시작 -->
+		<div class="main_popular_product">
 			<span class="product_img">
-			    <img src="">
+			    <img src="./img/product/1.jpg">
 			    <div class="selname">Louis Vuitton</div>
 			</span>	
 			<span class="product_img">
@@ -1034,6 +1036,9 @@
 				<img src="./img/product/12.jpg">
 				<div>New Balance 1906R</div>
 			</span>	
+		
+		</div>
+		<!-- 인기제품 안에 내용들 끝 -->
 		</section>
 		
 			<!-- 슬라이드 끝 -->
