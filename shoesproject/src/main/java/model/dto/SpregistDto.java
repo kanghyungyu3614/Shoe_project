@@ -1,20 +1,21 @@
 package model.dto;
 
-public class PsregistDto {
+public class SpregistDto {
 	int spno;
 	String spstatus;
 	int spsize;
 	String spendday;
 	String spsellid;
 	String spbuyid;
+	int spprice;
 	int pno;
 	
-	public PsregistDto() {
+	public SpregistDto() {
 		// TODO Auto-generated constructor stub
 	}
 
-	public PsregistDto(int spno, String spstatus, int spsize, String spendday, String spsellid, String spbuyid,
-			int pno) {
+	public SpregistDto(int spno, String spstatus, int spsize, String spendday, String spsellid, String spbuyid,
+			int spprice, int pno) {
 		super();
 		this.spno = spno;
 		this.spstatus = spstatus;
@@ -22,6 +23,7 @@ public class PsregistDto {
 		this.spendday = spendday;
 		this.spsellid = spsellid;
 		this.spbuyid = spbuyid;
+		this.spprice = spprice;
 		this.pno = pno;
 	}
 
@@ -73,6 +75,14 @@ public class PsregistDto {
 		this.spbuyid = spbuyid;
 	}
 
+	public int getSpprice() {
+		return spprice;
+	}
+
+	public void setSpprice(int spprice) {
+		this.spprice = spprice;
+	}
+
 	public int getPno() {
 		return pno;
 	}
@@ -83,8 +93,8 @@ public class PsregistDto {
 
 	@Override
 	public String toString() {
-		return "PsregistDto [spno=" + spno + ", spstatus=" + spstatus + ", spsize=" + spsize + ", spendday=" + spendday
-				+ ", spsellid=" + spsellid + ", spbuyid=" + spbuyid + ", pno=" + pno + "]";
+		return "SpregistDto [spno=" + spno + ", spstatus=" + spstatus + ", spsize=" + spsize + ", spendday=" + spendday
+				+ ", spsellid=" + spsellid + ", spbuyid=" + spbuyid + ", spprice=" + spprice + ", pno=" + pno + "]";
 	}
 	
 }

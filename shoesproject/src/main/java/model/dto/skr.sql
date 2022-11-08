@@ -60,8 +60,8 @@ create table sproduct(						-- 소분류 (= sub product)
     spsize int,								-- 상품사이즈
     spendday varchar(100),					-- 상품최종낙찰일
     spsellid varchar(100),                  -- 상품판매자아이디
-    spbuyid  varchar(100),               	-- 상품구매자아이디
-    								-- 낙찰가격
+    spbuyid varchar(100),               	-- 상품구매자아이디
+    spprice	int,					-- 상품입찰가격
     pno int,								-- 상품대분류번호
     foreign key (pno) references product(pno)
 );

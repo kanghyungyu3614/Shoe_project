@@ -30,6 +30,10 @@
 		<!-- spsellid 이부분은 나중에 세션안에 현재 로그인 상태의 아이디를 가져와서 넣을것임 -->
 		<input type="text" name="spsellid">
 	</form>
+	
+	<tr>
+		<td></td>
+	</tr>
 
 </body>
 </html>

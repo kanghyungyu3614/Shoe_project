@@ -49,7 +49,7 @@
 					<td>색상</td>
 					<td><input type="text" name="pcolor" class="ntitle" id="product_price"placeholder="ex)  빨간색, 노랑색, 파란색"> </td>
 				</tr>	
-								<tr>
+				<tr>
 					<td>출시일</td>
 					<td><input type="text" name="preleaseday" class="ntitle" id="product_price"placeholder="ex) "> </td>
 				</tr>	
