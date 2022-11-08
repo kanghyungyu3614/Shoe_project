@@ -12,10 +12,8 @@ mypa()
 			let member = JSON.parse(re)
 			
 			console.log(member)
-			document.querySelector(".lno").innerHTML = member.lnum
 			document.querySelector(".ldate").innerHTML = member.lday
 			document.querySelector(".lname").innerHTML = member.lname
-			document.querySelector(".lid").innerHTML = member.lid
 			document.querySelector(".lpw").innerHTML = member.lpw
 			document.querySelector(".lph").innerHTML = member.lph
 			document.querySelector(".lemail").innerHTML = member.lemail
@@ -86,5 +84,4 @@ function reinsert(){
 		alert("영소/대문자 10글자 이상 작성")
 	}
 }
-
 

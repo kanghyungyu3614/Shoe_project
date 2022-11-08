@@ -16,21 +16,6 @@ function detail() {
 }
 
 
-function selin(){
-	
-	let selprice = document.querySelector(".selprice").value
-	let product_size = document.querySelector('.product_size').value
-	alert(product_size)
-	
-	$.ajax({
-		
-		
-	})
-}
-function buyin(){
-	
-}
-
 
 
 
@@ -102,6 +87,5 @@ new Chart("myChart", {
   }
   // 옵션으로 이렇게 쓸거다.
 });
-
 
 

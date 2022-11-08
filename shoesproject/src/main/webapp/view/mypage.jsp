@@ -833,43 +833,23 @@
 					<div class="ldate"></div> <!-- 회원 가입 날짜 -->
 				</div>
 			</div>
-			
-	<div class="row row-cols-auto">
-		<div class="col col1">
-			<table class="mmain">
-					<tr>
-						<td class="num1">회원번호</td>
-						<td class="lno"></td>
-					</tr>
-				<tr>
-					<td class="num1">아이디</td>
-					<td class="lid"></td>
-				</tr>
-				<tr>
-					<td class="num1">비밀번호</td>
-					<td class="lpw"></td>
-					<td class="reup"><button onclick="reupdate()">수정</button></td>
-				</tr>
-				<tr>
-					<td class="num1">전화번호</td>
-					<td class="lph"></td>
-					<td class="reup"><button onclick="reupdate()">수정</button></td>
-				</tr>
-					<tr>
-					<td class="num1">이메일</td>
-					<td class="lemail"></td>
-					<td class="reup"><button onclick="reupdate()">수정</button></td>
-				</tr>
-				<tr>
-				<td>
-					<button type="button" onclick="deletemember()">탈퇴하기</button>
-				</td>
-				</tr>
-			</table>
-		</div>
-		<div class="col col2">
-		<h6>구매내역</h6>
-				<div>
+				<div class="sell">
+					<table>
+						<tr>
+							<td>상품명</td>
+							<td>사이즈</td>
+							<td>날짜</td>
+							<td>상태</td>
+						</tr>
+						<tr>
+							<td>이미지</td>
+							<td>260</td>
+							<td>2022-10-10</td>
+							<td>검수중</td>
+						</tr>
+					</table>
+				</div>		
+				<div class="buy">
 					<table>
 						<tr>
 							<td>상품명</td>
@@ -880,36 +860,66 @@
 						<tr>
 							<td>이미지</td>
 							<td>280</td>
-							<td>2022-10-10</td>
-							<td>구매완료</td>
+							<td>2022-10-12</td>
+							<td>배송중</td>
 						</tr>
 					</table>
 				</div>
-		</div>	
-		<div class="col col2">
-			<h6>판매내역</h6>
-					<div>
-						<table>
-							<tr>
-								<td>상품명</td>
-								<td>사이즈</td>
-								<td>날짜</td>
-								<td>상태</td>
-							</tr>
-							<tr>
-								<td>이미지</td>
-								<td>280</td>
-								<td>2022-10-10</td>
-								<td>구매완료</td>
-							</tr>
-						</table>
-					</div> <!-- 구매내역 end -->
-	</div>
-
-				</div> <!-- 판매내역 end -->
+				
+				<h2>로그인 정보</h2>
+				<table class="mmain">
+					<tr>
+						<td class="num1">이메일</td>
+						<td class="lemail"></td>
+						<td class="reup"><button onclick="reupdate()">수정</button></td>
+					</tr>
+					<tr>
+						<td class="num1">비밀번호</td>
+						<td class="lpw"></td>
+						<td class="reup"><button onclick="reupdate()">수정</button></td>
+					</tr>
+					<tr>
+						<td class="num1">전화번호</td>
+						<td class="lph"></td>
+						<td class="reup"><button onclick="reupdate()">수정</button></td>
+					</tr>
+					<tr>
+						<td>
+							<button type="button" onclick="deletemember()">탈퇴하기</button>
+						</td>
+					</tr>
+				</table>
 			</div> <!-- info end -->
-		</div> <!-- b: container end -->
-	</div> <!-- mypage div end -->
+					<div class="divTable blueTable">
+						<div class="divTableBody">
+							<div class="divTableRow">
+								<div class="divTableCell div1">상품명</div>
+								<div class="divTableCell">사이즈</div>
+								<div class="divTableCell">날짜</div>
+								<div class="divTableCell div2">상태</div>
+							</div>
+							<div class="divTableRow">
+								<div class="divTableCell">ㅁ</div>
+								<div class="divTableCell">ㅁ</div>
+								<div class="divTableCell">ㅁ</div>
+								<div class="divTableCell">ㅁ</div>
+							</div>
+							<div class="divTableRow">
+								<div class="divTableCell">상품명</div>
+								<div class="divTableCell">사이즈</div>
+								<div class="divTableCell">날짜</div>
+								<div class="divTableCell">상태</div>
+							</div>
+							<div class="divTableRow">
+								<div class="divTableCell div3">ㅇ</div>
+								<div class="divTableCell">ㅇ</div>
+								<div class="divTableCell">ㅇ</div>
+								<div class="divTableCell div4">ㅇ</div>
+							</div>
+						</div>
+					</div>
+				</div> <!-- b: container end -->
+</div> <!-- mypage div end -->
 </div> <!-- all div end -->
 	<%}%>
 		<!-- member가 로그인에 성공했을떄 끝 -->	
