@@ -834,7 +834,7 @@
 				</div>
 			</div>
 			
-	<div class="row row-cols-auto">
+	<div class="row">
 		<div class="col col1">
 			<table class="mmain">
 					<tr>
@@ -886,7 +886,7 @@
 					</table>
 				</div>
 		</div>	
-		<div class="col col2">
+		<div class="col col3">
 			<h6>판매내역</h6>
 					<div>
 						<table>
