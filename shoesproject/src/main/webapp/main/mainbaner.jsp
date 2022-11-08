@@ -25,9 +25,9 @@
 			<a href="/shoesproject/main/mainhome.jsp">shoes</a>
 			 <span class="member_content">관리자님 안녕하세요.</span>
 		     <span class="member_find">
-				<span class="member_page">&nbsp;<a href="../view/mypage.jsp">나의정보</a> |</span><br>
-				<span class="member_selovelist">&nbsp;<a href="../admin/admin.jsp">관리자페이지</a> |</span>
-				<span class="member_logout">&nbsp;<a href="../view/logout.jsp">로그아웃</a></span>
+				<span class="member_page">&nbsp;<a href="/shoesproject/view/mypage.jsp">나의정보</a> |</span><br>
+				<span class="member_selovelist">&nbsp;<a href="/shoesproject/admin/admin.jsp">관리자페이지</a> |</span>
+				<span class="member_logout">&nbsp;<a href="/shoesproject/view/logout.jsp">로그아웃</a></span>
 			</span>
 		</div>
 	</header>	
@@ -41,11 +41,11 @@
 			 <span class="member_content"><%=lid%>님 안녕하세요.</span>
 			 <%} %>
 		     <span class="member_find">
-				<span class="member_page">&nbsp;<a href="../view/mypage.jsp">나의정보</a> |</span><br>
-				<span class="member_selovelist">&nbsp;<a href="../board/selovelist.jsp">셀렙들의정보</a> |</span>
-				<span class="member_selovelist">&nbsp;<a href="./requireCreate.jsp">문의사항</a> |</span>
-				<span class="member_selovelist">&nbsp;<a href="./noticeBoard.jsp">공지사항</a> |</span>
-				<span class="member_logout">&nbsp;<a href="../view/logout.jsp">로그아웃</a></span>
+				<span class="member_page">&nbsp;<a href="/shoesproject/view/mypage.jsp">나의정보</a> |</span><br>
+				<span class="member_selovelist">&nbsp;<a href="/shoesproject/board/selovelist.jsp">셀렙들의정보</a> |</span>
+				<span class="member_selovelist">&nbsp;<a href="/shoesproject/main/requireCreate.jsp">문의사항</a> |</span>
+				<span class="member_selovelist">&nbsp;<a href="/shoesproject/main/noticeBoard.jsp">공지사항</a> |</span>
+				<span class="member_logout">&nbsp;<a href="/shoesproject/view/logout.jsp">로그아웃</a></span>
 			</span>
 		</div>
 	</header>

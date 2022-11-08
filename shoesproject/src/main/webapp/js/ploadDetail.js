@@ -58,6 +58,9 @@ function spload(pno) {
 				for(let i = 0 ; i < data.length ; i++) {
 					s = data[i]
 					console.log(s.spstatus)
+					if(s.spendday == undefined) {
+						s.spendday = ""
+					}
 					if(s.spsellid == undefined) {
 						s.spsellid = ""
 					}

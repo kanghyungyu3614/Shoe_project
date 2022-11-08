@@ -46,6 +46,9 @@ function spload(pno) {
 				html += `<tr style="text-align: center;"><td>상품번호</td><td>현재진행상태</td><td>사이즈</td><td>낙찰일</td><td>판매자ID</td><td>구매자ID</td><td>가격</td><td>기타</td><tr>`
 				for(let i = 0 ; i < data.length ; i++) {
 					s = data[i]
+					if(s.spendday == undefined) {
+						s.spendday = ""
+					}
 					if(s.spsellid == undefined) {
 						s.spsellid = ""
 					}
