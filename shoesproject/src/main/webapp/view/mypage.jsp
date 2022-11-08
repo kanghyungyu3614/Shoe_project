@@ -843,9 +843,9 @@
 						</tr>
 						<tr>
 							<td>이미지</td>
-							<td>280</td>
+							<td>260</td>
 							<td>2022-10-10</td>
-							<td>구매완료</td>
+							<td>검수중</td>
 						</tr>
 					</table>
 				</div>		
@@ -860,19 +860,18 @@
 						<tr>
 							<td>이미지</td>
 							<td>280</td>
-							<td>2022-10-10</td>
-							<td>구매완료</td>
+							<td>2022-10-12</td>
+							<td>배송중</td>
 						</tr>
 					</table>
 				</div>
+				
+				<h2>로그인 정보</h2>
 				<table class="mmain">
 					<tr>
-						<td class="num1">회원번호</td>
-						<td class="lno"></td>
-					</tr>
-					<tr>
-						<td class="num1">아이디</td>
-						<td class="lid"></td>
+						<td class="num1">이메일</td>
+						<td class="lemail"></td>
+						<td class="reup"><button onclick="reupdate()">수정</button></td>
 					</tr>
 					<tr>
 						<td class="num1">비밀번호</td>
@@ -885,20 +884,42 @@
 						<td class="reup"><button onclick="reupdate()">수정</button></td>
 					</tr>
 					<tr>
-						<td class="num1">이메일</td>
-						<td class="lemail"></td>
-						<td class="reup"><button onclick="reupdate()">수정</button></td>
-					</tr>
-					<tr>
 						<td>
 							<button type="button" onclick="deletemember()">탈퇴하기</button>
 						</td>
 					</tr>
 				</table>
-
-					</div> <!-- info end -->
-		</div> <!-- b: container end -->
-	</div> <!-- mypage div end -->
+			</div> <!-- info end -->
+					<div class="divTable blueTable">
+						<div class="divTableBody">
+							<div class="divTableRow">
+								<div class="divTableCell div1">상품명</div>
+								<div class="divTableCell">사이즈</div>
+								<div class="divTableCell">날짜</div>
+								<div class="divTableCell div2">상태</div>
+							</div>
+							<div class="divTableRow">
+								<div class="divTableCell">ㅁ</div>
+								<div class="divTableCell">ㅁ</div>
+								<div class="divTableCell">ㅁ</div>
+								<div class="divTableCell">ㅁ</div>
+							</div>
+							<div class="divTableRow">
+								<div class="divTableCell">상품명</div>
+								<div class="divTableCell">사이즈</div>
+								<div class="divTableCell">날짜</div>
+								<div class="divTableCell">상태</div>
+							</div>
+							<div class="divTableRow">
+								<div class="divTableCell div3">ㅇ</div>
+								<div class="divTableCell">ㅇ</div>
+								<div class="divTableCell">ㅇ</div>
+								<div class="divTableCell div4">ㅇ</div>
+							</div>
+						</div>
+					</div>
+				</div> <!-- b: container end -->
+</div> <!-- mypage div end -->
 </div> <!-- all div end -->
 	<%}%>
 		<!-- member가 로그인에 성공했을떄 끝 -->	
