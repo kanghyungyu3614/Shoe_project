@@ -92,10 +92,12 @@ a:visited{
 }
 table{
 	border-collapse: collapse;
+	width: 1150px;
 }
 .nav_content1 tr th{
 	font-size: 20px;
-	height: 10px;	
+	height: 10px;
+	border: solid 1px black;	
 }
 td{
 	border: 1px solid black;

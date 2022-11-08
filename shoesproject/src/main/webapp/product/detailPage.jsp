@@ -153,10 +153,9 @@
 		
 		</section>
 		<section class="content_coponent">
-		
-		
-		
-		
+			<!--  그래프 css 설정은 여기서 하는겁니다. 시작 -->
+			<canvas id="myChart" style="width:100%;max-width:500px"></canvas>
+			<!--  그래프 css 설정은 여기서 하는겁니다. 끝 -->
 		</section>
 
 	
@@ -166,8 +165,11 @@
 	
 	
 	</div>
+
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
-	
+	<!-- 참고 사이트 ==> https://www.chartjs.org/docs/latest/charts/line.html  -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 	<script type="text/javascript" src="../js/detail.js"></script>
 	<script type="text/javascript" src="../js/sellDetail.js"></script>

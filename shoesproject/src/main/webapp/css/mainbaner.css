@@ -14,9 +14,8 @@
 }
 /*눈누에서 세방고딕 글씨체 끝*/
 
-
-/*-------------------------------------------------------------가로 : 2559px 이하 시작------------------------------------------------------------------*/
-@media (max-width: 2559px) {  
+/*-------------------------------------------------------------가로 : 769px 이상 640px 이하 시작------------------------------------------------------------------*/
+@media (max-width: 640px) {
 /*헤더 시작*/ 
 .header{
 	 width: 1200px;
@@ -50,12 +49,618 @@ a:visited{
 	color: black;
 }
 
+/*헤더 끝*/  
+/*햄버거 드롭다운 시작*/
+/*일반유저 로그인 시작*/
+.member_menu_open{position: fixed;width: 1115.5px;height: 60.7vh;background: #ffffff;top: 140px;left: 11px;z-index: 999;padding: 3rem;border: 1px solid black; display: none}
+/*일반유저 로그인 끝*/
+/*관리자 로그인 시작*/
+.admin_menu_open{position: fixed;width: 1115.5px;height: 60.7vh;background: #ffffff;top: 140px;left: 11px;z-index: 999;padding: 3rem;border: 1px solid black; display: none}
+/*관리자 로그인 끝*/
+/*로그인 안했을떄 시작*/
+.menu_open{
+	position: fixed;
+    width: 739px;
+    height: 63.7vh;
+    background: #ffffff;
+    top: 144px;
+    left: 12.5px;
+    z-index: 999;
+    padding: 3rem;
+    display: none;		
+}
+/*로그인 안했을떄 끝*/
+
+/*햄버거 드롭다운 끝*/	
+}
+/*-------------------------------------------------------------가로 : 769px 이상 960px 이하 시작------------------------------------------------------------------*/
+/*-------------------------------------------------------------가로 : 769px 이상 960px 이하 시작------------------------------------------------------------------*/
+@media (min-width: 641px) and (max-width: 768px) {
+/*헤더 시작*/ 
+.header{
+	 width: 1200px;
+	 margin: 0 auto;
+	 border-top: 1px solid #c0c0c0;
+}
+#header_logo{
+	font-family: 'SEBANG_Gothic_Bold';
+	font-weight: 700;
+	font-size: 40px;
+	margin: 20px 20px;
+	display: flex;
+}
+
+a:hover{
+	text-decoration: none;
+	color: black;
+}
+a:link{
+	text-decoration: none;
+	color: black;
+}
+
+a:active{
+	text-decoration: none;
+	color: black;
+}
+
+a:visited{
+	text-decoration: none;
+	color: black;
+}
 
 /*헤더 끝*/  
+/*햄버거 드롭다운 시작*/
+/*일반유저 로그인 시작*/
+.member_menu_open{position: fixed;width: 1115.5px;height: 60.7vh;background: #ffffff;top: 140px;left: 11px;z-index: 999;padding: 3rem;border: 1px solid black; display: none}
+/*일반유저 로그인 끝*/
+/*관리자 로그인 시작*/
+.admin_menu_open{position: fixed;width: 1115.5px;height: 60.7vh;background: #ffffff;top: 140px;left: 11px;z-index: 999;padding: 3rem;border: 1px solid black; display: none}
+/*관리자 로그인 끝*/
+/*로그인 안했을떄 시작*/
+.menu_open{
+	position: fixed;
+    width: 739px;
+    height: 63.7vh;
+    background: #ffffff;
+    top: 144px;
+    left: 12.5px;
+    z-index: 999;
+    padding: 3rem;
+    display: none;	
 }
-/*-------------------------------------------------------------가로 : 2559px 이하 끝------------------------------------------------------------------*/
+/*로그인 안했을떄 끝*/
+
+
+
+/*햄버거 드롭다운 끝*/	
+	
+}
+/*-------------------------------------------------------------가로 : 641px 이상 768px 이하 끝------------------------------------------------------------------*/
+/*-------------------------------------------------------------가로 : 769px 이상 960px 이하 시작------------------------------------------------------------------*/
+@media (min-width: 769px) and (max-width: 967px) {
+/*헤더 시작*/ 
+.header{
+	 width: 1200px;
+	 margin: 0 auto;
+	 border-top: 1px solid #c0c0c0;
+}
+#header_logo{
+	font-family: 'SEBANG_Gothic_Bold';
+	font-weight: 700;
+	font-size: 40px;
+	margin: 20px 20px;
+	display: flex;
+}
+
+a:hover{
+	text-decoration: none;
+	color: black;
+}
+a:link{
+	text-decoration: none;
+	color: black;
+}
+
+a:active{
+	text-decoration: none;
+	color: black;
+}
+
+a:visited{
+	text-decoration: none;
+	color: black;
+}
+
+/*헤더 끝*/  
+/*햄버거 드롭다운 시작*/
+/*일반유저 로그인 시작*/
+.member_menu_open{position: fixed;width: 1115.5px;height: 60.7vh;background: #ffffff;top: 140px;left: 11px;z-index: 999;padding: 3rem;border: 1px solid black; display: none}
+/*일반유저 로그인 끝*/
+/*관리자 로그인 시작*/
+.admin_menu_open{position: fixed;width: 1115.5px;height: 60.7vh;background: #ffffff;top: 140px;left: 11px;z-index: 999;padding: 3rem;border: 1px solid black; display: none}
+/*관리자 로그인 끝*/
+/*로그인 안했을떄 시작*/
+.menu_open{
+	position: fixed;
+    width: 739px;
+    height: 63.7vh;
+    background: #ffffff;
+    top: 144px;
+    left: 12.5px;
+    z-index: 999;
+    padding: 3rem;
+    display: none;	
+}
+/*로그인 안했을떄 끝*/
+
+/*햄버거 드롭다운 끝*/	
+	
+}
+/*-------------------------------------------------------------가로 : 769px 이상 967px 이하 끝------------------------------------------------------------------*/
+/*-------------------------------------------------------------가로 : 968px 이상 1097px 이하 시작------------------------------------------------------------------*/
+@media (min-width: 968px) and (max-width: 1098px) {
+/*헤더 시작*/ 
+.header{
+	 width: 1200px;
+	 margin: 0 auto;
+	 border-top: 1px solid #c0c0c0;
+}
+#header_logo{
+	font-family: 'SEBANG_Gothic_Bold';
+	font-weight: 700;
+	font-size: 40px;
+	margin: 20px 20px;
+	display: flex;
+}
+
+a:hover{
+	text-decoration: none;
+	color: black;
+}
+a:link{
+	text-decoration: none;
+	color: black;
+}
+
+a:active{
+	text-decoration: none;
+	color: black;
+}
+
+a:visited{
+	text-decoration: none;
+	color: black;
+}
+
+/*헤더 끝*/  
+/*햄버거 드롭다운 시작*/
+/*일반유저 로그인 시작*/
+.member_menu_open{position: fixed;width: 1115.5px;height: 60.7vh;background: #ffffff;top: 140px;left: 11px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
+/*일반유저 로그인 끝*/
+/*관리자 로그인 시작*/
+.admin_menu_open{position: fixed;width: 1115.5px;height: 60.7vh;background: #ffffff;top: 140px;left: 11px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
+/*관리자 로그인 끝*/
+/*로그인 안했을떄 시작*/
+.menu_open{
+	position: fixed;
+    width: 739px;
+    height: 63.7vh;
+    background: #ffffff;
+    top: 144px;
+    left: 12.5px;
+    z-index: 999;
+    padding: 3rem;
+    display: none;
+}
+/*로그인 안했을떄 끝*/
+
+/*햄버거 드롭다운 끝*/	
+		
+}
+
+/*-------------------------------------------------------------가로 : 968px 이상 1097px 이하 끝------------------------------------------------------------------*/
+/*-------------------------------------------------------------가로 : 1098px 이상 1281px 이하 시작------------------------------------------------------------------*/
+@media (min-width: 1098px) and (max-width: 1281px) {
+/*헤더 시작*/ 
+.header{
+	 width: 1200px;
+	 margin: 0 auto;
+	 border-top: 1px solid #c0c0c0;
+}
+#header_logo{
+	font-family: 'SEBANG_Gothic_Bold';
+	font-weight: 700;
+	font-size: 40px;
+	margin: 20px 20px;
+	display: flex;
+}
+
+a:hover{
+	text-decoration: none;
+	color: black;
+}
+a:link{
+	text-decoration: none;
+	color: black;
+}
+
+a:active{
+	text-decoration: none;
+	color: black;
+}
+
+a:visited{
+	text-decoration: none;
+	color: black;
+}
+
+/*헤더 끝*/  
+/*햄버거 드롭다운 시작*/
+/*일반유저 로그인 시작*/
+.member_menu_open{position: fixed;width: 1115.5px;height: 55.7vh;background: #ffffff;top: 140px;left: 45px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
+/*일반유저 로그인 끝*/
+/*관리자 로그인 시작*/
+.admin_menu_open{position: fixed;width: 1115.5px;height: 55.7vh;background: #ffffff;top: 140px;left: 45px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
+/*관리자 로그인 끝*/
+/*로그인 안했을떄 시작*/
+.menu_open{
+	position: fixed;
+    width: 739px;
+    height: 54.7vh;
+    background: #ffffff;
+    top: 144px;
+    left: 45.5px;
+    z-index: 999;
+    padding: 3rem;
+    display: none;
+}
+/*로그인 안했을떄 끝*/
+
+
+/*햄버거 드롭다운 끝*/	
+	
+}
+/*-------------------------------------------------------------가로 : 1098px 이상 1281px 이하 끝------------------------------------------------------------------*/
+/*-------------------------------------------------------------가로 : 1282px 이상 1536px 이하 시작------------------------------------------------------------------*/
+@media (min-width: 1282px) and (max-width: 1536px) {
+/*헤더 시작*/ 
+.header{
+	 width: 1200px;
+	 margin: 0 auto;
+	 border-top: 1px solid #c0c0c0;
+}
+#header_logo{
+	font-family: 'SEBANG_Gothic_Bold';
+	font-weight: 700;
+	font-size: 40px;
+	margin: 20px 20px;
+	display: flex;
+}
+
+a:hover{
+	text-decoration: none;
+	color: black;
+}
+a:link{
+	text-decoration: none;
+	color: black;
+}
+
+a:active{
+	text-decoration: none;
+	color: black;
+}
+
+a:visited{
+	text-decoration: none;
+	color: black;
+}
+
+/*헤더 끝*/  
+/*햄버거 드롭다운 시작*/
+/*일반유저 로그인 시작*/
+.member_menu_open{position: fixed;width: 1115.5px;height: 46.7vh;background: #ffffff;top: 140px;left: 172px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
+/*일반유저 로그인 끝*/
+/*관리자 로그인 시작*/
+.admin_menu_open{position: fixed;width: 1115.5px;height: 46.7vh;background: #ffffff;top: 140px;left: 172px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
+/*관리자 로그인 끝*/
+/*로그인 안했을떄 시작*/
+.menu_open{
+	position: fixed;
+    width: 739px;
+    height: 47.7vh;
+    background: #ffffff;
+    top: 134px;
+    left: 172px;
+    z-index: 999;
+    padding: 3rem;
+    display: none;
+}
+/*로그인 안했을떄 끝*/
+
+
+/*햄버거 드롭다운 끝*/
+
+}
+/*-------------------------------------------------------------가로 : 1282px 이상 1536px 이하 끝------------------------------------------------------------------*/
+/*-------------------------------------------------------------가로 : 1537px 이상 1746px 이하 시작------------------------------------------------------------------*/
+@media (min-width: 1537px) and (max-width: 1746px) {
+/*헤더 시작*/ 
+.header{
+	 width: 1200px;
+	 margin: 0 auto;
+	 border-top: 1px solid #c0c0c0;
+}
+#header_logo{
+	font-family: 'SEBANG_Gothic_Bold';
+	font-weight: 700;
+	font-size: 40px;
+	margin: 20px 20px;
+	display: flex;
+}
+
+a:hover{
+	text-decoration: none;
+	color: black;
+}
+a:link{
+	text-decoration: none;
+	color: black;
+}
+
+a:active{
+	text-decoration: none;
+	color: black;
+}
+
+a:visited{
+	text-decoration: none;
+	color: black;
+}
+
+/*헤더 끝*/  
+/*햄버거 드롭다운 시작*/
+/*일반유저 로그인 시작*/
+.member_menu_open{position: fixed;width: 1115.5px;height: 40.7vh;background: #ffffff;top: 140px;left: 275px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
+/*일반유저 로그인 끝*/
+/*관리자 로그인 시작*/
+.admin_menu_open{position: fixed;width: 1115.5px;height: 40.7vh;background: #ffffff;top: 140px;left: 275px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
+/*관리자 로그인 끝*/
+/*로그인 안했을떄 시작*/
+.menu_open{
+	position: fixed;
+    width: 739px;
+    height: 39.7vh;
+    background: #ffffff;
+    top: 147px;
+    left: 276px;
+    z-index: 999;
+    padding: 3rem;
+    display: none;
+}
+/*로그인 안했을떄 끝*/	
+/*햄버거 드롭다운 끝*/
+}
+/*-------------------------------------------------------------가로 : 1536px 이상 1746px 이하 끝------------------------------------------------------------------*/
+/*-------------------------------------------------------------가로 : 1746px 이상 1919px 이하 시작---------------------------------------------------------*/
+@media (min-width: 1746px) and (max-width: 1919px) {
+/*헤더 시작*/ 
+.header{
+	 width: 1200px;
+	 margin: 0 auto;
+	 border-top: 1px solid #c0c0c0;
+}
+#header_logo{
+	font-family: 'SEBANG_Gothic_Bold';
+	font-weight: 700;
+	font-size: 40px;
+	margin: 20px 20px;
+	display: flex;
+}
+
+a:hover{
+	text-decoration: none;
+	color: black;
+}
+a:link{
+	text-decoration: none;
+	color: black;
+}
+
+a:active{
+	text-decoration: none;
+	color: black;
+}
+
+a:visited{
+	text-decoration: none;
+	color: black;
+}
+
+/*헤더 끝*/  
+/*햄버거 드롭다운 시작*/
+/*일반유저 로그인 시작*/
+.member_menu_open{position: fixed;width: 1115.5px;height: 37.7vh;background: #ffffff;top: 134px;left: 362px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
+/*일반유저 로그인 끝*/
+/*관리자 로그인 시작*/
+.admin_menu_open{position: fixed;width: 1115.5px;height: 37.7vh;background: #ffffff;top: 134px;left: 362px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
+/*관리자 로그인 끝*/
+/*로그인 안했을떄 시작*/
+.menu_open{position: fixed;width: 740px;height: 37.7vh;background: #ffffff;top: 134px;left: 363px;z-index: 999;padding: 3rem;display: none}
+/*로그인 안했을떄 끝*/
+/*햄버거 드롭다운 끝*/	
+}
+/*-------------------------------------------------------------가로 : 1800px 이상 1919px 이하 시작---------------------------------------------------------*/
+/*-------------------------------------------------------------가로 : 2133px 이상 2399px 이하 끝------------------------------------------------------------------*/
+@media (min-width: 1920px) and (max-width: 2132px) {
+/*헤더 시작*/ 
+.header{
+	 width: 1200px;
+	 margin: 0 auto;
+	 border-top: 1px solid #c0c0c0;
+}
+#header_logo{
+	font-family: 'SEBANG_Gothic_Bold';
+	font-weight: 700;
+	font-size: 40px;
+	margin: 20px 20px;
+	display: flex;
+}
+
+a:hover{
+	text-decoration: none;
+	color: black;
+}
+a:link{
+	text-decoration: none;
+	color: black;
+}
+
+a:active{
+	text-decoration: none;
+	color: black;
+}
+
+a:visited{
+	text-decoration: none;
+	color: black;
+}
+
+/*헤더 끝*/  
+/*햄버거 드롭다운 시작*/
+/*일반유저 로그인 시작*/
+.member_menu_open{position: fixed;width: 1115.5px;height: 37.7vh;background: #ffffff;top: 144px;left: 362px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
+/*일반유저 로그인 끝*/
+/*관리자 로그인 시작*/
+.admin_menu_open{position: fixed;width: 1115.5px;height: 37.7vh;background: #ffffff;top: 144px;left: 362px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
+/*관리자 로그인 끝*/
+/*로그인 안했을떄 시작*/
+.menu_open{position: fixed;width: 739px;height: 37.7vh;background: #ffffff;top: 144px;left: 363px;z-index: 999;padding: 3rem;display: none}
+/*로그인 안했을떄 끝*/
+/*햄버거 드롭다운 끝*/	
+}
+/*-------------------------------------------------------------가로 : 1920px 이상 2132px 이하 끝---------------------------------------------------------*/
+/*-------------------------------------------------------------가로 : 2133px 이상 2399px 이하 끝------------------------------------------------------------------*/
+@media (min-width: 2133px) and (max-width: 2399px) {
+/*헤더 시작*/ 
+.header{
+	 width: 1200px;
+	 margin: 0 auto;
+	 border-top: 1px solid #c0c0c0;
+}
+#header_logo{
+	font-family: 'SEBANG_Gothic_Bold';
+	font-weight: 700;
+	font-size: 40px;
+	margin: 20px 20px;
+	display: flex;
+}
+
+a:hover{
+	text-decoration: none;
+	color: black;
+}
+a:link{
+	text-decoration: none;
+	color: black;
+}
+
+a:active{
+	text-decoration: none;
+	color: black;
+}
+
+a:visited{
+	text-decoration: none;
+	color: black;
+}
+
+/*헤더 끝*/  
+/*햄버거 드롭다운 시작*/
+/*일반유저 로그인 시작*/
+.member_menu_open{position: fixed;width: 1115.5px;height: 33.7vh;background: #ffffff;top: 144px;left: 468px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
+/*일반유저 로그인 끝*/
+/*관리자 로그인 시작*/
+.admin_menu_open{position: fixed;width: 1115.5px;height: 33.7vh;background: #ffffff;top: 144px;left: 468px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
+/*관리자 로그인 끝*/
+/*로그인 안했을떄 시작*/
+.menu_open{
+    position: fixed;
+    width: 739px;
+    height: 33vh;
+    background: #ffffff;
+    top: 144px;
+    left: 469px;
+    z-index: 999;
+    padding: 3rem;
+    display: none;
+}
+/*로그인 안했을떄 끝*/
+/*햄버거 드롭다운 끝*/
+}
+/*-------------------------------------------------------------가로 : 2133px 이상 2399px 이하 끝------------------------------------------------------------------*/
+/*-------------------------------------------------------------가로 : 2400px 이상 시작------------------------------------------------------------------*/
+@media (min-width: 2400px) and (max-width: 2559px) {
+/*헤더 시작*/ 
+.header{
+	 width: 1200px;
+	 margin: 0 auto;
+	 border-top: 1px solid #c0c0c0;
+}
+#header_logo{
+	font-family: 'SEBANG_Gothic_Bold';
+	font-weight: 700;
+	font-size: 40px;
+	margin: 20px 20px;
+	display: flex;
+}
+
+a:hover{
+	text-decoration: none;
+	color: black;
+}
+a:link{
+	text-decoration: none;
+	color: black;
+}
+
+a:active{
+	text-decoration: none;
+	color: black;
+}
+
+a:visited{
+	text-decoration: none;
+	color: black;
+}
+
+/*헤더 끝*/  
+/*햄버거 드롭다운 시작*/
+/*일반유저 로그인 시작*/
+.member_menu_open{position: fixed;width: 1115.5px;height: 29.7vh;background: #ffffff;top: 144px;left: 600px;;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
+/*일반유저 로그인 끝*/
+/*관리자 로그인 시작*/
+.admin_menu_open{position: fixed;width: 1115.5px;height: 29.7vh;background: #ffffff;top: 144px;left: 600px;;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
+/*관리자 로그인 끝*/
+/*로그인 안했을떄 시작*/
+.menu_open{
+	position: fixed;
+    width: 739px;
+    height: 30.5vh;
+    background: #ffffff;
+    top: 144px;
+    left: 601px;
+    z-index: 999;
+    padding: 3rem;
+    display: none;
+}
+/*로그인 안했을떄 끝*/
+/*햄버거 드롭다운 끝*/
+}
+/*-------------------------------------------------------------가로 : 2400px 이상 2559px 이하 끝------------------------------------------------------------------*/
 /*-------------------------------------------------------------가로 : 2560px 이상 3839px 이하  시작------------------------------------------------------*/
-@media (min-width: 2560px) and (max-width: 3839px) {
+@media (min-width: 2560px) and (max-width: 2840px) {
 /*헤더 시작*/ 
 .header{
 	 width: 1200px;
@@ -91,8 +696,90 @@ a:visited{
 
 
 /*헤더 끝*/  
+/*햄버거 드롭다운 시작*/
+/*일반유저 로그인 시작*/
+.member_menu_open{position: fixed;width: 1115.5px;height: 27.7vh;background: #ffffff;top: 144px;left: 679px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
+/*일반유저 로그인 끝*/
+/*관리자 로그인 시작*/
+.admin_menu_open{position: fixed;width: 1115.5px;height: 27.7vh;background: #ffffff;top: 144px;left: 679px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
+/*관리자 로그인 끝*/
+/*로그인 안했을떄 시작*/
+.menu_open{    
+	position: fixed;
+    width: 738px;
+    height: 28.7vh;
+    background: #ffffff;
+    top: 145px;
+    left: 681px;
+    z-index: 999;
+    padding: 3rem;
+    display: none;
+}
+/*로그인 안했을떄 끝*/
+/*햄버거 드롭다운 끝*/
 }
 /*-------------------------------------------------------------가로 : 2560px 이상 3839px 이하  끝------------------------------------------------------*/
+/*-------------------------------------------------------------가로 : 2841px 이상 3839px 이하  시작------------------------------------------------------*/
+@media (min-width: 2841px) and (max-width: 3839px) {
+/*헤더 시작*/ 
+.header{
+	 width: 1200px;
+	 margin: 0 auto;
+	 border-top: 1px solid #c0c0c0;
+}
+#header_logo{
+	font-family: 'SEBANG_Gothic_Bold';
+	font-weight: 700;
+	font-size: 40px;
+	margin: 20px 20px;
+	display: flex;
+}
+
+a:hover{
+	text-decoration: none;
+	color: black;
+}
+a:link{
+	text-decoration: none;
+	color: black;
+}
+
+a:active{
+	text-decoration: none;
+	color: black;
+}
+
+a:visited{
+	text-decoration: none;
+	color: black;
+}
+
+
+/*헤더 끝*/  
+/*햄버거 드롭다운 시작*/
+/*일반유저 로그인 시작*/
+.member_menu_open{position: fixed;width: 1115.5px;height: 24.7vh;background: #ffffff;top: 144px;left: 838px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
+/*일반유저 로그인 끝*/
+/*관리자 로그인 시작*/
+.admin_menu_open{position: fixed;width: 1115.5px;height: 24.7vh;background: #ffffff;top: 144px;left: 838px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
+/*관리자 로그인 끝*/
+/*로그인 안했을떄 시작*/
+.menu_open{
+	position: fixed;
+    width: 739px;
+    height: 25.7vh;
+    background: #ffffff;
+    top: 144px;
+    left: 839px;
+    z-index: 999;
+    padding: 3rem;
+    display: none;
+}
+/*로그인 안했을떄 끝*/
+
+/*햄버거 드롭다운 끝*/
+}
+/*-------------------------------------------------------------가로 : 2841px 이상 3839px 이하  끝------------------------------------------------------*/
 /*-------------------------------------------------------------가로 : 3840px 이상 5759px 이하  시작------------------------------------------------------*/
 @media (min-width: 3840px) and (max-width: 5759px) {
 /*헤더 시작*/ 
@@ -129,7 +816,27 @@ a:visited{
 }
 
 
-/*헤더 끝*/  
+/*헤더 끝*/
+/*햄버거 드롭다운 시작*/
+/*일반유저 로그인 시작*/
+.member_menu_open{position: fixed;width: 1115.5px;height: 19.3vh;background: #ffffff;top: 144px;left: 1314px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
+/*일반유저 로그인 끝*/
+/*관리자 로그인 시작*/
+.admin_menu_open{position: fixed;width: 1115.5px;height: 19.3vh;background: #ffffff;top: 144px;left: 1314px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
+/*관리자 로그인 끝*/
+/*로그인 안했을떄 시작*/
+.menu_open{position: fixed;
+    width: 739px;
+    height: 19vh;
+    background: #ffffff;
+    top: 150px;
+    left: 1315px;
+    z-index: 999;
+    padding: 3rem;
+    display: none;
+}
+/*로그인 안했을떄 끝*/
+/*햄버거 드롭다운 끝*/
 }
 /*-------------------------------------------------------------가로 : 3840px 이상 5759px 이하  끝------------------------------------------------------*/
 /*-------------------------------------------------------------가로 : 5760px 이상 7679px 이하  시작------------------------------------------------------*/
@@ -168,7 +875,27 @@ a:visited{
 }
 
 
-/*헤더 끝*/  
+/*헤더 끝*/ 
+/*햄버거 드롭다운 시작*/
+/*일반유저 로그인 시작*/
+.member_menu_open{position: fixed;width: 1115.5px;height: 12.3vh;background: #ffffff;top: 154px;left: 2289px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
+/*일반유저 로그인 끝*/
+/*관리자 로그인 시작*/
+.admin_menu_open{position: fixed;width: 1115.5px;height: 12.3vh;background: #ffffff;top: 154px;left: 2289px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
+/*관리자 로그인 끝*/
+/*로그인 안했을떄 시작*/
+.menu_open{position: fixed;
+    width: 740px;
+    height: 12.5vh;
+    background: #ffffff;
+    top: 154px;
+    left: 2293px;
+    z-index: 999;
+    padding: 3rem;
+    display: none;
+}
+/*로그인 안했을떄 끝*/
+/*햄버거 드롭다운 끝*/
 } 
 /*--------------------------------------------가로 : 5760px 이상 7679px 이하  끝 ------------------------------------------------------------------------ */
 /*-------------------------------------------------------------가로 : 7680px 이상 10000px 이하  시작------------------------------------------------------*/
@@ -208,6 +935,24 @@ a:visited{
 
 
 /*헤더 끝*/  
+/*햄버거 드롭다운 시작*/
+/*일반유저 로그인 시작*/
+.member_menu_open{position: fixed;width: 1115.5px;height: 9.7vh;background: #ffffff;top: 145px;left: 3253px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
+/*일반유저 로그인 끝*/
+/*관리자 로그인 시작*/
+.admin_menu_open{position: fixed;width: 1115.5px;height: 9.7vh;background: #ffffff;top: 145px;left: 3253px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
+/*관리자 로그인 끝*/
+/*로그인 안했을떄 시작*/
+.menu_open{position: fixed;
+    width: 740px;
+    height: 9.5vh;
+    background: #ffffff;
+    top: 154px;
+    left: 3254px;
+    z-index: 999;
+    padding: 3rem;display: none}
+/*로그인 안했을떄 끝*/
+/*햄버거 드롭다운 끝*/
 } 
 /*--------------------------------------------가로 : 7680px 이상 10000px 이하  끝-------더이상 없음------------------------------------------------------------ */
 
@@ -505,7 +1250,6 @@ a{text-decoration: none;color: inherit;}
 .menu_bar.active span:nth-child(3){transform: rotate(45deg);top: 0px;position: absolute}
 .menu_bar span{width: 22px;height: 2px;background: #555;display: block;margin: 6px}
 /* 햄버거 버튼을 열었을때 하부칸들 눌렀을때 크기는 얘를 줄이면 된다. */
-.menu_open{position: fixed;width: 740px;height: 37.7vh;background: #ffffff;top: 134px;left: 363px;z-index: 999;padding: 3rem;display: none}
 .menu_open > ul{display: flex; justify-content: center;}
 .menu_open > ul li{width: 150px;}
 
@@ -515,7 +1259,6 @@ a{text-decoration: none;color: inherit;}
 .member_menu_bar.active span:nth-child(2){transform:rotate(130deg)}
 .member_menu_bar.active span:nth-child(3){transform: rotate(45deg);top: 0px;position: absolute}
 .member_menu_bar span{width: 22px;height: 2px;background: #555;display: block;margin: 6px}
-.member_menu_open{position: fixed;width: 1115.5px;height: 37.7vh;background: #ffffff;top: 134px;left: 283px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
 .member_menu_open > ul{display: flex; justify-content: center;}
 .member_menu_open > ul li{width: 150px;}
 /*member가 로그인 했을때 햄버거 드롭다운 끝*/
@@ -526,7 +1269,7 @@ a{text-decoration: none;color: inherit;}
 .admin_menu_bar.active span:nth-child(2){transform:rotate(130deg)}
 .admin_menu_bar.active span:nth-child(3){transform: rotate(45deg);top: 0px;position: absolute}
 .admin_menu_bar span{width: 22px;height: 2px;background: #555;display: block;margin: 6px}
-.admin_menu_open{position: fixed;width: 1115.5px;height: 37.7vh;background: #ffffff;top: 138px;left: 275px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
+
 .admin_menu_open > ul{display: flex; justify-content: center;}
 .admin_menu_open > ul li{width: 150px;}
 /*admin이 로그인 했을때 햄버거 드롭다운 끝*/
