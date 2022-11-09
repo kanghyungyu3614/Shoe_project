@@ -1,7 +1,7 @@
 @charset "UTF-8";
 .mainComponent{
 width: 1200px;
-    height: 500px;
+    height: 650px;
     margin: 0 auto;
     border: 1px solid black;
     display: flex;
@@ -17,7 +17,10 @@ width: 1200px;
     margin-top: 20px;
     margin-left: 20px;
 }
-
+.mainformComponent2{
+	margin-left: -10px;
+	margin-top: 20px;
+}
 
 .inputComponent{
     border: 1px solid black;
@@ -41,4 +44,9 @@ width: 1200px;
     height: 30px;
     border: 1px solid black;
     margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#chimg{
+	width: 222px;
 }

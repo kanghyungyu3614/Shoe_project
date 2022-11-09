@@ -6,6 +6,7 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
+<link href="/shoesproject/css/write.css" rel="stylesheet"> 
 <body>
 
 
@@ -19,17 +20,19 @@
 
 <% int snum = Integer.parseInt( request.getParameter("snum") ); %>
 
-	<h1>상세 게시물 수정</h1>
-		<input type="hidden" class="snum" name="snum" id="snum" value="<%=snum%>">
-		<div>
-			<img alt="" src="" id="chimg" width="20%">
-		</div>
-			<input type="text" value="${lid}" name="lid" id="lid" readonly="readonly"><br>
-			<input type="text" placeholder="제목" name="title" id="title"><br>
-			<textarea placeholder="내용" id="content" name="content"></textarea><br>
-			
-		<button type="button" onclick="selloveupdate()">글수정하기</button>
- 	
+	<div class="mainComponent">
+		<form class="mainForm">
+		<h1 class="mainformComponent2">상세 게시물 수정</h1>	
+				<input type="hidden" class="snum" name="snum" id="snum" value="<%=snum%>" >
+				<div>
+					<img alt="" src="" id="chimg" width="20%">
+				</div>
+					<input type="text" value="${lid}" name="lid" id="lid" readonly="readonly" class="inputComponent2 inputComponent"><br>
+					<input type="text" placeholder="제목" name="title" id="title" class="inputComponent"><br>
+					<textarea placeholder="내용" id="content" name="content" class="inputComponent"></textarea><br>
+					<button type="button" onclick="selloveupdate()">글수정하기</button>
+		</form>			
+ 	</div>
 
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 	
