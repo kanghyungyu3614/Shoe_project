@@ -982,60 +982,7 @@
 		<div class="product_img_content">인기상품</div>
 		<!-- 인기제품 안에 내용들 시작 -->
 		<div class="main_popular_product">
-			<span class="product_img">
-			    <img src="./img/product/1.jpg">
-			    <div class="selname">Louis Vuitton</div>
-			</span>	
-			<span class="product_img">
-				<img src="./img/product/2.jpg">
-				<div>Adidas Yeezy Boost</div>
-				
-			</span>	
-			<span class="product_img">
-				<img src="./img/product/3.jpg">
-				<div>Asics x Jessica</div>
-				
-			</span>	
-			<span class="product_img">
-				<img src="./img/product/4.jpg">
-				<div>Asics x Andersson Bell </div>
-				
-			</span>	
-			<span class="product_img">
-				<img src="./img/product/5.jpg">
-				<div>Jordan 4 Retro</div>
-			</span>	
-			<span class="product_img">
-				<img src="./img/product/6.jpg">
-				<div>Nike Air Force</div>
-			</span>	
 			
-			<span class="product_img">
-			    <img src="./img/product/7.jpg">
-			    <div>Nike x Neckface </div>
-				
-			</span>	
-			<span class="product_img">
-				<img src="./img/product/8.jpg">
-				<div>Louis Vuitton LV Trainer</div>
-				
-			</span>	
-			<span class="product_img">
-				<img src="./img/product/9.jpg">
-				<div>Louis Vuitton</div>
-			</span>	
-			<span class="product_img">
-				<img src="./img/product/10.jpg">
-				<div>Louis Vuitton</div>
-			</span>	
-			<span class="product_img">
-				<img src="./img/product/11.jpg">
-				<div>New Balance 1906R</div>
-			</span>	
-			<span class="product_img">
-				<img src="./img/product/12.jpg">
-				<div>New Balance 1906R</div>
-			</span>	
 		
 		</div>
 		<!-- 인기제품 안에 내용들 끝 -->

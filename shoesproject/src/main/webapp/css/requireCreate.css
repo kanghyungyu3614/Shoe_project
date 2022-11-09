@@ -138,9 +138,7 @@ a:visited{
 	vertical-align: top;
 }
 table tr td {
-    text-align: left;
-    padding-left: 10px;
-    padding-top: 10px;
+   padding: 10px;
 }
 table tr:nth-child(3) {
     padding-top: 10px;
@@ -196,6 +194,12 @@ table tr:nth-child(3) {
 	text-align: center;
 	margin: 20px auto;
 }
+
+.board_num{
+	width: 100px;
+	text-align: center;
+}
+
 
 .board_date{
 	width: 170px;

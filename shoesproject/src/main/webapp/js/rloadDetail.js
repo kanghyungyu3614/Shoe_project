@@ -14,7 +14,7 @@ function rloadDetail() {
 					r = list[i]
 					rnum = list[i].rno
 					html = `<tr>
-								<td>${r.rno}</td>
+								<td class="board_num">${r.rno}</td>
 								<td>${r.rtitle}</td>
 								<td>${r.rcontent}</td>
 								<td class="board_date">${r.rdate}</td>

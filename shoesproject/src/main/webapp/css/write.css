@@ -1,0 +1,44 @@
+@charset "UTF-8";
+.mainComponent{
+width: 1200px;
+    height: 500px;
+    margin: 0 auto;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+}
+
+.mainForm{
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
+.mainformComponent{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+
+.inputComponent{
+    border: 1px solid black;
+    width: 200px;
+    margin-top: 10px;
+    border-radius: 5px;
+    height: 80px;
+    padding: 10px;
+}
+
+#lid{
+    height: 30px;
+    text-align: center;
+    margin-top: 0px;
+}
+#title{
+    height: 20px;
+}
+.WriteBtn{
+	width: 222px;
+    height: 30px;
+    border: 1px solid black;
+    margin-top: 10px;
+}

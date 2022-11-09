@@ -317,7 +317,7 @@
 }
 
 .productComponent{
-    width: 291px;
+    width: 25%;
     height: 250px;
     z-index: 9999;
 }
@@ -568,9 +568,9 @@ footer{
 		width: 180px; height: 200px;
 	}
 	.product_img {
-		width: 291px;
-	    height: 250px;
-	    display: inline-block;
+	width: 25%;
+    height: 250px;
+    display: inline-block;
 	}
 	.product_img div{
 		text-align: center;

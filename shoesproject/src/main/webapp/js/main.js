@@ -24,6 +24,64 @@ function pload() {
 							</div>
 						</div>`
 			}
+			
+			html +=  '<span class="product_img">'+
+'			    <img src="./img/product/1.jpg">'+
+'			    <div class="selname">Louis Vuitton</div>'+
+'			</span>	'+
+'			<span class="product_img">'+
+'				<img src="./img/product/2.jpg">'+
+'				<div>Adidas Yeezy Boost</div>'+
+'				'+
+'			</span>	'+
+'			<span class="product_img">'+
+'				<img src="./img/product/3.jpg">'+
+'				<div>Asics x Jessica</div>'+
+'				'+
+'			</span>	'+
+'			<span class="product_img">'+
+'				<img src="./img/product/4.jpg">'+
+'				<div>Asics x Andersson Bell </div>'+
+'				'+
+'			</span>	'+
+'			<span class="product_img">'+
+'				<img src="./img/product/5.jpg">'+
+'				<div>Jordan 4 Retro</div>'+
+'			</span>	'+
+'			<span class="product_img">'+
+'				<img src="./img/product/6.jpg">'+
+'				<div>Nike Air Force</div>'+
+'			</span>	'+
+'			'+
+'			<span class="product_img">'+
+'			    <img src="./img/product/7.jpg">'+
+'			    <div>Nike x Neckface </div>'+
+'				'+
+'			</span>	'+
+'			<span class="product_img">'+
+'				<img src="./img/product/8.jpg">'+
+'				<div>Louis Vuitton LV Trainer</div>'+
+'				'+
+'			</span>	'+
+'			<span class="product_img">'+
+'				<img src="./img/product/9.jpg">'+
+'				<div>Louis Vuitton</div>'+
+'			</span>	'+
+'			<span class="product_img">'+
+'				<img src="./img/product/10.jpg">'+
+'				<div>Louis Vuitton</div>'+
+'			</span>	'+
+'			<span class="product_img">'+
+'				<img src="./img/product/11.jpg">'+
+'				<div>New Balance 1906R</div>'+
+'			</span>	'+
+'			<span class="product_img">'+
+'				<img src="./img/product/12.jpg">'+
+'				<div>New Balance 1906R</div>'+
+'			</span>';
+			
+			
+			
 			document.querySelector('.main_popular_product').innerHTML += html
 		}
 		
