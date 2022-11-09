@@ -5,7 +5,7 @@
 	box-sizing: border-box;
 }
 
-/*눈누에서 세방고딕 글씨체 시작 font-weight:700이랑 같이 쓰자*/
+/*눈누에서 세방고딕 글씨체 시작 font-weight:700이랑 같이 쓰자 */
 @font-face {
     font-family: 'SEBANG_Gothic_Bold';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/SEBANG_Gothic_Bold.woff') format('woff');

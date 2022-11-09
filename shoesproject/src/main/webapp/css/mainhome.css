@@ -297,16 +297,52 @@
 	margin: 10px 10px;	
 	text-align: center;
 }
-
 .main_img_content{
 	font-weight:700;
 	font-size: 24px;
 	font-family: 'SEBANG_Gothic_Bold';			
 	text-align: center;
 }
-
 /*메인 이미지 슬라이드 끝*/
+/*인기제품 시작*/
+.main_popular_product{
+	border: 1px solid black;
+    width: 1180px;
+    height: 570px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: flex;
+    font-size: 15px;
+    flex-wrap: wrap;
+}
 
+.productComponent{
+    width: 291px;
+    height: 250px;
+    z-index: 9999;
+}
+.productComponentImg{
+	width: 180px;
+    height: 200px;
+}
+	
+.product_content{
+	width: 100px;
+    height: 100px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 15px;
+    font-weight: 700;
+}
+.product_brand_content{
+}
+.slidelist_img{
+		width: 1170px; height: 570px;		
+}
+
+
+
+/*인기제품 끝*/
 /*제품 이미지 슬라이드 시작*/
 .product_img_slade{
 	clear : both;
@@ -509,9 +545,8 @@ footer{
     position: relative;
     height: 560px;
     }
-	.main_img_slade img{
-		width: 1170px; height: 570px;
-	}
+
+	
 	/* INPUT이 체크되면 변화값이 li까지 전달되는 스타일 */
 	.section [id="slide10"]:checked ~ .slidewrap .slidelist > li {transform:translateX(0%);}
 	.section [id="slide11"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-100%);}
@@ -533,8 +568,9 @@ footer{
 		width: 180px; height: 200px;
 	}
 	.product_img {
-		width: 190px; height: 250px;
-		display: inline-block;
+		width: 291px;
+	    height: 250px;
+	    display: inline-block;
 	}
 	.product_img div{
 		text-align: center;
