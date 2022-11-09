@@ -1,4 +1,8 @@
 detail()
+let callComponent = 0;
+let hideComponent = 0;
+let hideNum = 0;
+
 function detail() {
 	$.ajax({
 		url : "/shoesproject/product/detail",
@@ -11,13 +15,154 @@ function detail() {
 			`
 			
 			document.querySelector('.product').innerHTML = html
+			 
 		}
 	})
 }
 
 
 
+function sellAddButton(num){ // 판매
+	
+	let product_number = document.querySelector(".product_number").innerHTML
+	hideComponent = document.querySelector("#size")
+	hideComponent.innerHTML = num;
+	let pricelist = document.querySelector(".pricelist")
+	let html = ''
+	 hideComponent = document.querySelector("#size");
+   	 hideNum = Number(hideComponent.innerHTML);
+   	 let pno = Number(product_number);
+   	 alert(pno)
+   	 console.log(hideNum+ "dssad")
+	$.ajax({	
+		url : "/shoesproject/product/detail",
+		type :'post',
+		data : {"hideNum" : hideNum , "type" : 3 ,"pno" : pno},
+		success : re=>{
+			alert(re)
+		if(re){		
+			let json = JSON.parse(re)
+			
+			for(let i = 0; i<json.length; i++){
+			
+			html +='<button class="productlist" onclick="productlist('+json[i].spno+')">'+
+					'<div>'+json[i].spsize+'</div>' +
+					'<div>'+json[i].spprice+'</div>'+
+					'<div>'+json[i].spbuyid+'</div>'+
+				'</button>'
+		    
+		}
+		pricelist.innerHTML = html;}
+		else{
+			html = ''
+			}
+		}
+	
+	})
+	
+	
+}
 
+function productlist(spno){
+	let ok =  confirm(spno+"구매하시겠습니까?")
+	if(ok==true){
+		alert("dd")
+	}
+}
+/*-----------------------------------------------------------------------------*/
+function buyAddButton(num){ // 구매
+	console.log(num);
+	hideComponent = document.querySelector("#size")
+	hideComponent.innerHTML = num;
+	
+
+	let product_number = document.querySelector(".product_number").innerHTML
+	hideComponent = document.querySelector("#size")
+	hideComponent.innerHTML = num;
+	let pricelist1 = document.querySelector(".pricelist1")
+	let html = ''
+	 hideComponent = document.querySelector("#size");
+   	 hideNum = Number(hideComponent.innerHTML);
+   	 let pno = Number(product_number);
+   	 alert(pno)
+   	 console.log(hideNum+ "dssad")
+	$.ajax({	
+		url : "/shoesproject/product/detail",
+		type :'post',
+		data : {"hideNum" : hideNum , "type" : 4 ,"pno" : pno},
+		success : re=>{
+			alert(re)
+		if(re){		
+			let json = JSON.parse(re)
+			console.log(json)
+			for(let i = 0; i<json.length; i++){
+			html +='<button class="productlist" onclick="productbuylist('+json[i].spno+')">'+
+					'<div>'+json[i].spsize+'</div>' +
+					'<div>'+json[i].spprice+'</div>'+
+					'<div>'+json[i].spbuyid+'</div>'+
+				'</button>'
+		    
+		}
+		pricelist1.innerHTML = html;}
+		else{
+			html = ''
+			}
+		}
+	
+	})
+}
+function productbuylist(spno){
+	let ok =  confirm(spno+"하시겠습니까?")
+	if(ok==true){
+		alert("dd")
+	}
+}
+
+function selin(){
+	let selprice = document.querySelector(".selprice").value
+ 	  hideComponent = document.querySelector("#size");
+   	 hideNum = Number(hideComponent.innerHTML);
+	
+  	 console.log(hideNum+selprice);   
+  	 $.ajax({
+		url : "/shoesproject/product/detail",
+		type : "post",
+		data :  {"selprice" : selprice , "hideNum" : hideNum ,"type" : 1},
+		success : function(re){
+			if(re=="true"){
+				alert("등록성공")
+			}else{
+				alert("실패")
+			}
+			
+		}
+		
+	
+})
+   
+}
+function selbuy(){
+	let selprice = document.querySelector(".selprice1").value
+ 	  hideComponent = document.querySelector("#size");
+   	 hideNum = Number(hideComponent.innerHTML);
+	
+  	 console.log(hideNum+selprice);   
+  	 $.ajax({
+		url : "/shoesproject/product/detail",
+		type : "post",
+		data :  {"selprice" : selprice , "hideNum" : hideNum ,"type" : 2},
+		success : function(re){
+			if(re=="true"){
+				alert("등록성공")
+			}else{
+				alert("실패")
+			}
+			
+		}
+		
+})
+}
+	
 
 
 
