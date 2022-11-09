@@ -810,125 +810,101 @@
 			
 		</section>
 		
-	<div class="mypage_component">
-		<div class="container text-center">
-			<div class="row row1">
-				<div class="col">
-					<div class="hdname">
-					<i class="fas fa-user"></i>
-					이름</div>
-					<div class="lname"></div> <!-- 회원 이름 -->
-				</div>
-				
-				<div class="col">
-					<div class="hname">
-					<i class="fas fa-duotone fa-shoe-prints"></i>
-					발 사이즈 </div>
-					<div class="lsize"></div> <!-- 회원 발 사이즈 -->
-				</div>
-				<div class="col">
-					<div class="hname">
-					<i class="fas fa-calendar-alt"></i>
-					가입 일 </div>
-					<div class="ldate"></div> <!-- 회원 가입 날짜 -->
-				</div>
+<div class="mypage_component">
+	<div class="container text-center">
+		<div class="row row1">
+			<div class="col">
+				<div class="hdname"><i class="fas fa-user"></i>이름</div>
+				<div class="lname">
+				</div> <!-- 회원 이름 -->
 			</div>
-				<div class="sell">
-					<table>
-						<tr>
-							<td>상품명</td>
-							<td>사이즈</td>
-							<td>날짜</td>
-							<td>상태</td>
-						</tr>
-						<tr>
-							<td>이미지</td>
-							<td>260</td>
-							<td>2022-10-10</td>
-							<td>검수중</td>
-						</tr>
-					</table>
-				</div>		
-				<div class="buy">
-					<table>
-						<tr>
-							<td>상품명</td>
-							<td>사이즈</td>
-							<td>날짜</td>
-							<td>상태</td>
-						</tr>
-						<tr>
-							<td>이미지</td>
-							<td>280</td>
-							<td>2022-10-12</td>
-							<td>배송중</td>
-						</tr>
-					</table>
-				</div>
-				
-				<h2>로그인 정보</h2>
-				<table class="mmain">
-					<tr>
-						<td class="num1">이메일</td>
-						<td class="lemail"></td>
-						<td class="reup"><button onclick="reupdate()">수정</button></td>
-					</tr>
-					<tr>
-						<td class="num1">비밀번호</td>
-						<td class="lpw"></td>
-						<td class="reup"><button onclick="reupdate()">수정</button></td>
-					</tr>
-					<tr>
-						<td class="num1">전화번호</td>
-						<td class="lph"></td>
-						<td class="reup"><button onclick="reupdate()">수정</button></td>
-					</tr>
-					<tr>
-						<td>
-							<button type="button" onclick="deletemember()">탈퇴하기</button>
-						</td>
+			
+			<div class="col">
+				<div class="hname"><i class="fas fa-duotone fa-shoe-prints"></i>신발 사이즈</div>
+				<div class="lsize">
+				</div> <!-- 회원 발 사이즈 -->
+			</div>
+			
+			<div class="col">
+				<div class="hname"><i class="fas fa-calendar-alt"></i>가입 일 </div>
+				<div class="ldate">
+				</div> <!-- 회원 가입 날짜 -->
+			</div>
+		</div>
+		<div class="blist"> 구매내역 </div>
+			<div class="sell">
+				<table class="tablel">
+					<tr class="str">
+						<td><img src="1.jpg"></td>
+						<td class="stdn">Jordan 1 x Travis Scott x Fragment Retro Low OG SP Military Blue</td>
+						<td class="stds">280</td>
+						<td class="stdd">2022/10/03</td>
+						<td class="stdt">배송완료</td>
+					</tr>					
+				</table>
+			</div>
+			
+		<div class="slist"> 판매내역 </div>
+			<div class="buy">
+				<table class="tablel">
+					<tr class="str">
+						<td><img src="1.jpg"></td>
+						<td class="stdn">Jordan 1 x Travis Scott x Fragment Retro Low OG SP Military Blue</td>
+						<td class="stds">280</td>
+						<td class="stdd">2022/10/03</td>
+						<td class="stdt">배송완료</td>
 					</tr>
 				</table>
-			</div> <!-- info end -->
-			
-			<div class="c">
-				<div class="p">
-				<img src="../img/product/3.jpg">
-					<div class="l">
-					
-					
-					</div>
-				</div>
+			</div>						
+			<div class="buy">
+				<table class="tablel">
+					<tr class="str">
+						<td><img src="1.jpg"></td>
+						<td class="stdn">Jordan 1 x Travis Scott x Fragment Retro Low OG SP Military Blue</td>
+						<td class="stds">280</td>
+						<td class="stdd">2022/10/03</td>
+						<td class="stdt">배송완료</td>
+					</tr>
+				</table>
 			</div>
-					<div class="divTable blueTable">
-						<div class="divTableBody">
-							<div class="divTableRow">
-								<div class="divTableCell div1">상품명</div>
-								<div class="divTableCell">사이즈</div>
-								<div class="divTableCell">날짜</div>
-								<div class="divTableCell div2">상태</div>
-							</div>
-							<div class="divTableRow">
-								<div class="divTableCell">ㅁ</div>
-								<div class="divTableCell">ㅁ</div>
-								<div class="divTableCell">ㅁ</div>
-								<div class="divTableCell">ㅁ</div>
-							</div>
-							<div class="divTableRow">
-								<div class="divTableCell">상품명</div>
-								<div class="divTableCell">사이즈</div>
-								<div class="divTableCell">날짜</div>
-								<div class="divTableCell">상태</div>
-							</div>
-							<div class="divTableRow">
-								<div class="divTableCell div3">ㅇ</div>
-								<div class="divTableCell">ㅇ</div>
-								<div class="divTableCell">ㅇ</div>
-								<div class="divTableCell div4">ㅇ</div>
-							</div>
-						</div>
-					</div>
-				</div> <!-- b: container end -->
+			<div class="buy">
+				<table class="tablel">
+					<tr class="str">
+						<td><img src="1.jpg"></td>
+						<td class="stdn">Jordan 1 x Travis Scott x Fragment Retro Low OG SP Military Blue</td>
+						<td class="stds">280</td>
+						<td class="stdd">2022/10/03</td>
+						<td class="stdt">배송완료</td>
+					</tr>
+				</table>
+			</div>						
+	</div> <!-- b:container end -->
+	<h2>로그인 정보</h2>
+	<table class="mmain">
+		<tr>
+			<td class="num1">이메일</td>
+			<td class="lemail"></td>
+			<td class="reup"><button onclick="reupdate()">수정</button></td>
+		</tr>
+		<tr>
+			<td class="num1">비밀번호</td>
+			<td class="lpw"></td>
+			<td class="reup"><button onclick="reupdate()">수정</button></td>
+		</tr>
+		<tr>
+			<td class="num1">전화번호</td>
+			<td class="lph"></td>
+			<td class="reup"><button onclick="reupdate()">수정</button></td>
+		</tr>
+		<tr>
+			<td>
+				<button type="button" onclick="deletemember()">탈퇴하기</button>
+			</td>
+		</tr>
+	</table>
+	
+</div> <!-- info end -->
+</div> <!-- main end -->
 </div> <!-- mypage div end -->
 </div> <!-- all div end -->
 	<%}%>
