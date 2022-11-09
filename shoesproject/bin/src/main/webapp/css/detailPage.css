@@ -1,0 +1,67 @@
+@charset "UTF-8";
+#main{
+	border: solid 1px red;
+	margin: 0 auto;
+	width: 1200px;
+	height: 2000px;
+	display: flex;
+}
+/*이미지 컴포넌트 시작*/
+.img_coponent{
+	border: solid 1px red;
+	margin: 0 auto;
+	width: 580px;
+	height: 800px;	
+}
+img{
+	width: 500px;
+    height: 500px;
+    background: #e2f2f2;
+    text-align: center;
+    margin: 10px auto;
+    display: flex;
+    border-radius: 10px;
+}
+.sellNote{
+	width: 500px;
+	height: 50px;
+	box-shadow: 0 2px 6px rgb(0 0 0 /  12%);
+	margin: 10px auto;
+}
+#warnComponent{
+    line-height: 12px;
+    padding: 3px 5px 2px;
+    margin-right: 4px;
+    border-radius: 2px;
+    font-size: 12px;
+    letter-spacing: -.06px;
+    font-weight: 600;
+    color: #fff;
+    background-color: #ff8824;
+    width: 30px;
+    text-align: center;
+}
+
+#warnContent{
+	display: block;
+    line-height: 14px;
+    margin-top: 4px;
+    font-size: 12px;
+    letter-spacing: -.06px;
+    color: rgba(34,34,34,.5);
+}
+.warntext{
+	margin-left: 10px;
+}
+
+
+
+/*이미지 컴포넌트 끝*/
+/*설명 컴포넌트 시작*/
+.content_coponent{
+	border: solid 1px red;
+	margin: 0 auto;
+	width: 580px;
+	height: 2000px;	
+}
+/*설명 컴포넌트 끝*/

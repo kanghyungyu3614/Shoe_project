@@ -1,0 +1,112 @@
+@charset "UTF-8";
+/*초기설정 끝*/
+*{
+	margin: 0;
+	border: 0;
+}
+/*초기설정 시작*/
+/*눈누에서 세방고딕 글씨체 시작 font-weight:700이랑 같이 쓰자*/
+@font-face {
+    font-family: 'SEBANG_Gothic_Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/SEBANG_Gothic_Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/*눈누에서 세방고딕 글씨체 끝*/
+/*전체 시작*/
+#main{
+	width: 1200px;
+	height: 100%;
+	margin: 10px auto;
+}
+/*전체 끝*/
+/* 구매하기 제목 시작 */
+.maintitle{
+	font-weight: 700;
+	font-size: 40px;
+    font-family: 'SEBANG_Gothic_Bold';
+    margin:  30px 0;
+    text-align: center;
+}
+/* 구매하기 제목 끝 */
+/*판매 컴포넌트 시작*/
+.sellborder{
+	width: 700px;
+	height: 100%;
+	margin: 0 auto;
+	box-shadow: 0 4px 10px 0 rgb(120 120 120);
+}
+/*판매 컴포넌트 끝*/
+.mainproduct{
+	display: flex;	
+	width: 600px;
+	height: 100px;
+	margin: 20px auto;
+	font-size: 15px;
+	font-weight: 600;
+    font-family: 'SEBANG_Gothic_Bold';
+}
+
+.subproduct{
+	display: flex;
+	border: 1px solid #d3d3d3;
+	width: 600px;
+	height: 600px;
+	margin: 10px auto;	
+	flex-wrap: wrap;	
+}
+img{
+	width : 80px;
+	height: 80px;
+	margin: 20px 5px 10px 5px;
+	border-radius: 10px;
+	background: #e2f2f2;
+	margin : 20px 5px 10px 5px;	
+}
+.product_title{
+	display: block;
+	margin: 13px 0px 0px 5px;
+}
+.product_number{
+	margin-top: 20px;	
+}
+.product_engliname{
+    font-family: none;
+    font-weight: normal;	
+}
+.product_koreaname{
+	font-weight: normal;
+    color: #d0d0d0;
+    font-family: none;
+    font-size: 12px;
+}
+.product_size{
+	border: 1px solid #d3d3d3;
+    border-radius: 10px;
+    width: 170px;
+    height: 50px;
+    text-align: center;
+    margin: 14px;
+}
+/* 판매버튼 */
+.sellButton{
+	background-color: #333;
+    border-radius: 10px;
+    width: 600px;
+    height: 60px;
+    text-align: center;
+    margin: 14px auto;
+    color: white;
+}
+.sellFinal{
+	font-weight: 700;
+    margin-top: 20px;
+    font-size: 15px;
+    position: relative;
+    top: 10px;
+}
+.sellDeliver{
+	font-size: 12px;	
+    position: relative;
+    top: 10px;	
+}

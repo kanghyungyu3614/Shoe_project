@@ -1,0 +1,509 @@
+@charset "UTF-8";
+/*초기설정 시작*/
+*{
+	margin: 0;
+	border: 0;
+}
+/*초기설정 끝 */
+/*눈누에서 세방고딕 글씨체 시작 font-weight:700이랑 같이 쓰자*/
+@font-face {
+    font-family: 'SEBANG_Gothic_Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/SEBANG_Gothic_Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/*눈누에서 세방고딕 글씨체 끝*/
+/*헤더 시작*/ 
+.header{
+	 width: 1200px;
+	 height: 9vh;
+	 margin: 0 auto;
+	 border-top: 1px solid #c0c0c0;
+}
+#header_logo{
+	font-family: 'SEBANG_Gothic_Bold';
+	font-weight: 700;
+	font-size: 40px;
+	margin: 0px 20px;
+	display: flex;
+}
+
+a:hover{
+	text-decoration: none;
+	color: black;
+}
+a:link{
+	text-decoration: none;
+	color: black;
+}
+
+a:active{
+	text-decoration: none;
+	color: black;
+}
+
+a:visited{
+	text-decoration: none;
+	color: black;
+}
+
+
+/*헤더 끝*/ 
+/*main 시작*/ 
+#main{
+	border: 1px solid black;
+	width: 1200px;
+	margin: 20px auto;
+}
+/*main 끝*/ 
+/*이달의 인기 브랜드 , 카테고리 시작*/
+.brand {
+	border: 1px solid black;
+	width: 800px;
+	height: 48px;
+	margin: 10px;
+	float: left;
+}
+/*member_brand 시작*/
+.member_brand {
+	border: 1px solid black;
+	width: 98%;
+	height: 48px;
+	margin: 10px;
+	float: left;
+}
+/*member_brand 끝*/
+
+/*admin_brand 시작*/
+.admin_brand {
+	border: 1px solid black;
+	width: 98%;
+	height: 48px;
+	margin: 10px;
+	float: left;
+}
+/*admin_brand 끝*/
+
+.month_popular_brand{
+	display: flex;
+	font-weight: 700;
+	font-family: 'SEBANG_Gothic_Bold';
+	justify-content: center;
+}
+/*member_month_popular_brand 시작*/
+.member_month_popular_brand{
+	display: flex;
+	font-weight: 700;
+	font-family: 'SEBANG_Gothic_Bold';
+	justify-content: center;
+}
+/*member_month_popular_brand 끝*/
+
+/*admin_month_popular_brand 시작*/
+.admin_month_popular_brand{
+	display: flex;
+	font-weight: 700;
+	font-family: 'SEBANG_Gothic_Bold';
+	justify-content: center;
+}
+/*admin_month_popular_brand 끝*/
+
+
+
+
+.category{
+	border: 1px solid black;
+	width: 800px;
+	height: 390px;
+	margin: 0 10px 10px 10px;
+	float: left;
+}
+/*member가 로그인했을때 카테고리 시작*/
+.member_category{
+	border: 1px solid black;
+	width: 98%;
+	height: 390px;
+	margin: 0 10px 10px 10px;
+	float: left;
+}
+/*member가 로그인했을때 카테고리 끝*/
+
+/*admin이 로그인했을때 카테고리 시작*/
+.admin_category{
+	border: 1px solid black;
+	width: 98%;
+	height: 390px;
+	margin: 0 10px 10px 10px;
+	float: left;
+}
+/*admin가 로그인했을때 카테고리 끝*/
+
+
+.brand_content{
+	text-align: center;
+	font-weight: 700px;
+	font-family: 'SEBANG_Gothic_Bold';
+}
+/*member_brand_content 시작*/
+.member_brand_content{
+	text-align: center;
+	font-weight: 700px;
+	font-family: 'SEBANG_Gothic_Bold';
+}
+/*member_brand_content 끝*/
+
+
+/*admin_brand_content 시작*/
+.admin_brand_content{
+	text-align: center;
+	font-weight: 700px;
+	font-family: 'SEBANG_Gothic_Bold';
+}
+/*admin_brand_content 끝*/
+
+.category_content{
+	text-align: center;
+	font-weight: 700px;
+	font-family: 'SEBANG_Gothic_Bold';	
+}
+/*member가 로그인했을때 category_content 시작*/
+.member_category_content{
+	text-align: center;
+	font-weight: 700px;
+	font-family: 'SEBANG_Gothic_Bold';	
+}
+/*member가 로그인했을때 category_content 끝*/
+/*admin가 로그인했을때 category_content 시작*/
+.admin_category_content{
+	text-align: center;
+	font-weight: 700px;
+	font-family: 'SEBANG_Gothic_Bold';	
+}
+/*admin가 로그인했을때 category_content 끝*/
+
+
+
+/*이달의 인기 브랜드, 카테고리 끝*/
+
+
+
+
+
+/*로그인 시작*/
+.login_modal{
+	border: 1px solid black;
+	width: 365px;
+	height: 450px;
+	margin: 10px 10px 0 0;
+	float: right;
+}
+.login_content{
+	margin: 10px 0;
+	text-align: center;
+	font-weight:700;
+	font-size: 35px;
+	font-family: 'SEBANG_Gothic_Bold';
+}
+.id_content{
+	margin: 60px 0 10px 50px;
+	font-weight:700;
+	font-family: 'SEBANG_Gothic_Bold';
+}
+
+.id_input{
+	border: 1px solid black;
+	width: 280px;
+	height: 25px;
+	margin: 0 29px 0 50px;
+}
+.password_content{
+	margin: 20px 0 10px 50px;
+	font-weight:700;
+	font-family: 'SEBANG_Gothic_Bold';
+}
+
+.passoword_input{
+	border: 1px solid black;
+	width: 280px;
+	height: 25px;
+	margin: 0 29px 0 50px;	
+}
+/*아이디,비밀번호 상태 시작*/
+.alertp{
+	font-weight:700;
+	font-family: 'SEBANG_Gothic_Bold';
+	margin: 10px 29px 0 50px;		
+}
+
+/*아이디,비밀번호 상태 끝*/
+.login_button{
+	width: 140px;
+	height: 50px;
+	margin: 30px 110px 0 110px;
+	font-size: 20px;
+	font-weight: 700;
+	font-family: 'SEBANG_Gothic_Bold';
+	border: 1px solid black;
+}
+.login_button:hover{
+	background-color: #cfcdcd;
+	color: white;
+	cursor: pointer;
+}
+.signup_find{
+	margin: 30px 0 0 0;
+	display: flex;
+	justify-content: center;
+}
+/*로그인 끝*/
+/*admin일때 로그인했을때 상태 시작*/
+.admin_content{
+	margin: 10px 0;
+	text-align: center;
+	font-weight:700;
+	font-size: 35px;
+	font-family: 'SEBANG_Gothic_Bold';
+	position: relative;
+    top: 10px;
+    left: 440px;
+}
+.admin_find{
+	justify-content: center;
+	font-weight:700;
+	font-size: 30px;
+	font-family: 'SEBANG_Gothic_Bold';	
+	position: relative;	
+	top: 25px;
+	left: 450px;		
+}
+/*admin일때 로그인했을때 상태 끝*/
+/*고객이 로그인했을때 상태 시작*/
+.member_content{
+	text-align: center;
+	font-weight:700;
+	font-size: 35px;
+	font-family: 'SEBANG_Gothic_Bold';	
+	position: relative;
+	top: 19px;
+	left : 245px;
+}
+.member_find{
+	display: flex;
+	justify-content: center;
+	font-weight:700;
+	font-size: 24px;
+	font-family: 'SEBANG_Gothic_Bold';	
+	width: 470px;
+	height: 40px;	
+	position: relative;
+	top: 30px;
+	left : 244px;
+}
+/*고객이 로그인했을때 상태 끝*/
+
+
+.mypage_component{
+	margin: 0 auto;
+	text-align: center;
+	padding : 8px;
+}
+ table{
+ 	border-collapse: collapse;
+ 	text-align: center;
+ 	margin: 0 auto;
+ }
+ tr, th, td{
+ 	border: solid 1px black;
+ }
+
+
+
+
+/*하단 시작*/
+footer{
+	width: 1200px;
+	height: 300px;
+	border: 1px solid black;
+	clear:both;
+	width:100%;
+	height: 200px;
+}
+/* GitLink*/
+.gitLink{
+	font-family: 'SEBANG_Gothic_Bold';
+	font-size:30px;
+	color: white;
+}
+.gitLink:hover, .gitLink:link , .gitLink:active , .gitLink:visited{
+	text-decoration: none;
+}
+
+
+
+/* footerURL  */
+#footerURL{
+	text-align:center;
+	padding-top: 60px;
+}
+/*하단 끝*/
+/* 모두 끝 */
+
+
+/*  드롭다운 시작 */
+/* reset css */
+html{font-size: 10px}
+body{font-size: 1.6rem}
+*{margin: 0;padding: 0;}
+ul li,
+ol li{list-style: none;}
+a{text-decoration: none;color: inherit;}
+
+
+/*#header{display: flex;justify-content: space-between;align-items: center;padding: 2rem;position: relative;}*/
+#gnb{display: flex;z-index: 99;margin-left: auto;}
+#gnb > .dept1 {position: relative;;padding: 1rem 2rem;text-align: center;}
+ #gnb > .dept1 > a.active{color: red;font-weight: bold}
+
+#gnb .inner_menu {position: absolute;top: 100%;left:50%;transform: translateX(-50%);width:100%;padding-top:3rem;display: none}
+#gnb  .dept2 {padding: 1rem 0;color: #555}
+#gnb  .dept2 > a:hover,
+#gnb  .dept2 > a:active,
+#gnb  .dept2 > a:focus {font-weight: bold}
+/*.menu_bar  {margin-left: auto;}*/
+.menu_bar {z-index: 9999;position: relative; left: 46px; bottom: 7px;}
+.menu_bar.active span:nth-child(1){display: none}
+.menu_bar.active span:nth-child(2){transform:rotate(130deg)}
+.menu_bar.active span:nth-child(3){transform: rotate(45deg);top: 0px;position: absolute}
+.menu_bar span{width: 22px;height: 2px;background: #555;display: block;margin: 6px}
+/* 햄버거 버튼을 열었을때 하부칸들 눌렀을때 크기는 얘를 줄이면 된다. */
+.menu_open{position: fixed;width: 740px;height: 37.7vh;background: #ffffff;top: 134px;left: 363px;z-index: 999;padding: 3rem;display: none}
+.menu_open > ul{display: flex; justify-content: center;}
+.menu_open > ul li{width: 150px;}
+
+/*member가 로그인 했을때 햄버거 드롭다운 시작*/
+.member_menu_bar {z-index: 9999;position: relative; left: 46px; bottom: 7px;}
+.member_menu_bar.active span:nth-child(1){display: none}
+.member_menu_bar.active span:nth-child(2){transform:rotate(130deg)}
+.member_menu_bar.active span:nth-child(3){transform: rotate(45deg);top: 0px;position: absolute}
+.member_menu_bar span{width: 22px;height: 2px;background: #555;display: block;margin: 6px}
+.member_menu_open{position: fixed;width: 1115.5px;height: 37.7vh;background: #ffffff;top: 134px;left: 283px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
+.member_menu_open > ul{display: flex; justify-content: center;}
+.member_menu_open > ul li{width: 150px;}
+/*member가 로그인 했을때 햄버거 드롭다운 끝*/
+
+/*admin이 로그인 했을때 햄버거 드롭다운 시작*/
+.admin_menu_bar {z-index: 9999;position: relative; left: 46px; bottom: 7px;}
+.admin_menu_bar.active span:nth-child(1){display: none}
+.admin_menu_bar.active span:nth-child(2){transform:rotate(130deg)}
+.admin_menu_bar.active span:nth-child(3){transform: rotate(45deg);top: 0px;position: absolute}
+.admin_menu_bar span{width: 22px;height: 2px;background: #555;display: block;margin: 6px}
+.admin_menu_open{position: fixed;width: 1115.5px;height: 37.7vh;background: #ffffff;top: 138px;left: 275px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
+.admin_menu_open > ul{display: flex; justify-content: center;}
+.admin_menu_open > ul li{width: 150px;}
+/*admin이 로그인 했을때 햄버거 드롭다운 끝*/
+
+
+.hd_bg{background: #fff;width: 100%;height: 0;left: 0;z-index: 1;position: absolute;}
+
+.visual{background:#ccd1f1;width: 100%;height: 100vh;}
+
+/*  드롭다운 끝 */
+
+/* 마이페이지 */
+h1{
+	text-align: left;
+}
+
+.hdname{
+	font-size: 2.5rem;
+}
+.hname{
+	font-size: 2.5rem;
+}
+
+.col{
+	height:100px;
+	border: solid 1px black;
+	margin-right: 5px;
+}
+
+.row1{
+	margin-bottom: 10px;
+}
+
+.col{
+	border-radius: 5px;
+}
+
+.lname , .lsize , .ldate {
+	font-size : 1.8rem;
+}
+
+.sell , .buy{
+	border: solid 1px black;
+	height: 180px;
+}
+.sell tr:nth-child(1){
+	border: solid 1px black;
+	border-top-color: white;
+	border-left-color:white;
+	border-right-color:white;
+	height: 50px;
+}
+.buy tr:nth-child(1){
+	border: solid 1px black;
+	border-top-color: white;
+	border-left-color:white;
+	border-right-color:white;
+	height: 50px;
+}
+.sell table{
+	width: 100%;
+}
+.buy table{
+	width: 100%;
+}
+.sell{
+	margin-bottom: 20px;
+	border-radius: 20px;
+}
+.buy{
+	border-radius: 20px;
+}
+
+
+
+
+div.blueTable {
+  width: 100%;
+  text-align: center;
+  border-radius: 20px;
+}
+.divTable.blueTable .divTableCell, .divTable.blueTable .divTableHead {
+  border: 1px solid #AAAAAA;
+}
+.divTable.blueTable .divTableBody .divTableCell {
+  font-size: 13px;
+}
+.divTable{ display: table; }
+.divTableRow { display: table-row; }
+.divTableHeading { display: table-header-group;}
+.divTableCell, .divTableHead { display: table-cell;}
+.divTableHeading { display: table-header-group;}
+.divTableFoot { display: table-footer-group;}
+.divTableBody { display: table-row-group;}
+
+
+.div1{
+	border-top-left-radius: 20px;
+}
+.div2{
+	border-top-right-radius: 20px;
+}
+.div3{
+	border-bottom-left-radius: 20px;
+}
+.div4{
+	border-bottom-right-radius: 20px;
+}
+

@@ -1,0 +1,618 @@
+@charset "UTF-8";
+
+/*-------------------------------------------------------------가로 : 2559px 이하 시작------------------------------------------------------------------*/
+@media (max-width: 2559px) {  
+/*로그인 시작*/
+.login_modal{
+	border: 1px solid black;
+	width: 365px;
+	height: 450px;
+	margin: 10px 10px 0 0;
+	float: right;
+}
+/*로그인 끝*/	
+}
+/*-------------------------------------------------------------가로 : 2559px 이하 끝------------------------------------------------------------------*/
+/*-------------------------------------------------------------가로 : 2560px 이상 3839px 이하  시작------------------------------------------------------*/
+@media (min-width: 2560px) and (max-width: 3839px) {
+/*로그인 시작*/
+.login_modal{
+	border: 1px solid black;
+    width: 364px;
+    height: 450px;
+    margin: 10px 10px 0 0;
+    float: right;
+}
+/*로그인 끝*/	
+}
+/*-------------------------------------------------------------가로 : 2560px 이상 3839px 이하  끝------------------------------------------------------*/
+/*-------------------------------------------------------------가로 : 3840px 이상 5759px 이하  시작------------------------------------------------------*/
+@media (min-width: 3840px) and (max-width: 5759px) {
+/*로그인 시작*/
+.login_modal{
+	border: 1px solid black;
+	width: 362px;
+    height: 450px;
+    margin: 10px 10px 0 0;
+    float: right;
+}
+/*로그인 끝*/	
+}
+/*-------------------------------------------------------------가로 : 3840px 이상 5759px 이하  끝------------------------------------------------------*/
+/*-------------------------------------------------------------가로 : 5760px 이상 7679px 이하  시작------------------------------------------------------*/
+@media (min-width: 5760px) and (max-width: 7679px) { 
+/*로그인 시작*/
+.login_modal{
+	border: 1px solid black;
+	width: 358px;
+    height: 450px;
+    margin: 10px 10px 0 0;
+    float: right;
+}
+/*로그인 끝*/
+} 
+/*--------------------------------------------가로 : 5760px 이상 7679px 이하  끝 ------------------------------------------------------------------------ */
+/*-------------------------------------------------------------가로 : 7680px 이상 10000px 이하  시작------------------------------------------------------*/
+@media (min-width: 7680px) and (max-width: 10000px) { 
+/*로그인 시작*/
+.login_modal{
+	border: 1px solid black;
+	width: 354px;
+    height: 450px;
+    margin: 10px 10px 0 0;
+    float: right;
+}
+/*로그인 끝*/
+} 
+/*--------------------------------------------가로 : 7680px 이상 10000px 이하  끝-------더이상 없음------------------------------------------------------------ */
+
+
+
+
+/*눈누에서 세방고딕 글씨체 시작 font-weight:700이랑 같이 쓰자*/
+@font-face {
+    font-family: 'SEBANG_Gothic_Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/SEBANG_Gothic_Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/*눈누에서 세방고딕 글씨체 끝*/
+
+/*main 시작*/ 
+#main{
+	width: 1200px;
+	margin: 0 auto;
+}
+/*main 끝*/ 
+/*이달의 인기 브랜드 , 카테고리 시작*/
+.brand {
+	border: 1px solid black;
+	width: 800px;
+	height: 48px;
+	margin: 10px;
+	float: left;
+}
+/*member_brand 시작*/
+.member_brand {
+	border: 1px solid black;
+	width: 98%;
+	height: 48px;
+	margin: 10px;
+	float: left;
+}
+/*member_brand 끝*/
+
+/*admin_brand 시작*/
+.admin_brand {
+	border: 1px solid black;
+	width: 98%;
+	height: 48px;
+	margin: 10px;
+	float: left;
+}
+/*admin_brand 끝*/
+/*member_month_popular_brand 시작*/
+.member_month_popular_brand{
+	display: flex;
+	font-weight: 700;
+	font-family: 'SEBANG_Gothic_Bold';
+	justify-content: center;
+}
+/*member_month_popular_brand 끝*/
+
+/*admin_month_popular_brand 시작*/
+.admin_month_popular_brand{
+	display: flex;
+	font-weight: 700;
+	font-family: 'SEBANG_Gothic_Bold';
+	justify-content: center;
+}
+/*admin_month_popular_brand 끝*/
+
+
+
+
+.category{
+	border: 1px solid black;
+    width: 799px;
+    height: 390px;
+    margin: 0 10px 10px 10px;
+    float: left;
+}
+/*member가 로그인했을때 카테고리 시작*/
+.member_category{
+	border: 1px solid black;
+	width: 98%;
+	height: 390px;
+	margin: 0 10px 10px 10px;
+	float: left;
+}
+/*member가 로그인했을때 카테고리 끝*/
+
+/*admin이 로그인했을때 카테고리 시작*/
+.admin_category{
+	border: 1px solid black;
+	width: 98%;
+	height: 390px;
+	margin: 0 10px 10px 10px;
+	float: left;
+}
+/*admin가 로그인했을때 카테고리 끝*/
+/*member_brand_content 시작*/
+.member_brand_content{
+	text-align: center;
+	font-weight: 700px;
+	font-family: 'SEBANG_Gothic_Bold';
+}
+/*member_brand_content 끝*/
+
+
+/*admin_brand_content 시작*/
+.admin_brand_content{
+	text-align: center;
+	font-weight: 700px;
+	font-family: 'SEBANG_Gothic_Bold';
+}
+/*admin_brand_content 끝*/
+
+.category_content{
+	text-align: center;
+	font-weight: 700px;
+	font-family: 'SEBANG_Gothic_Bold';	
+}
+/*member가 로그인했을때 category_content 시작*/
+.member_category_content{
+	text-align: center;
+	font-weight: 700px;
+	font-family: 'SEBANG_Gothic_Bold';	
+}
+/*member가 로그인했을때 category_content 끝*/
+/*admin가 로그인했을때 category_content 시작*/
+.admin_category_content{
+	text-align: center;
+	font-weight: 700px;
+	font-family: 'SEBANG_Gothic_Bold';	
+}
+/*admin가 로그인했을때 category_content 끝*/
+
+
+
+.login_content{
+	margin: 10px 0;
+	text-align: center;
+	font-weight:700;
+	font-size: 35px;
+	font-family: 'SEBANG_Gothic_Bold';
+}
+.id_content{
+	margin: 60px 0 10px 50px;
+	font-weight:700;
+	font-family: 'SEBANG_Gothic_Bold';
+}
+
+.id_input{
+	border: 1px solid black;
+	width: 280px;
+	height: 25px;
+	margin: 0 29px 0 50px;
+}
+.password_content{
+	margin: 20px 0 10px 50px;
+	font-weight:700;
+	font-family: 'SEBANG_Gothic_Bold';
+}
+
+.passoword_input{
+	border: 1px solid black;
+	width: 280px;
+	height: 25px;
+	margin: 0 29px 0 50px;	
+}
+/*아이디,비밀번호 상태 시작*/
+.alertp{
+	font-weight:700;
+	font-family: 'SEBANG_Gothic_Bold';
+	margin: 10px 29px 0 50px;		
+}
+
+/*아이디,비밀번호 상태 끝*/
+.login_button{
+	width: 140px;
+	height: 50px;
+	margin: 30px 110px 0 110px;
+	font-size: 20px;
+	font-weight: 700;
+	font-family: 'SEBANG_Gothic_Bold';
+	border: 1px solid black;
+}
+.login_button:hover{
+	background-color: #cfcdcd;
+	color: white;
+	cursor: pointer;
+}
+.signup_find{
+	margin: 30px 0 0 0;
+	display: flex;
+	justify-content: center;
+}
+/*로그인 끝*/
+/*admin일때 로그인했을때 상태 시작*/
+.admin_content{
+	margin: 10px 0;
+	text-align: center;
+	font-weight:700;
+	font-size: 35px;
+	font-family: 'SEBANG_Gothic_Bold';
+	position: relative;
+    top: 10px;
+    left: 440px;
+}
+.admin_find{
+	justify-content: center;
+	font-weight:700;
+	font-size: 30px;
+	font-family: 'SEBANG_Gothic_Bold';	
+	position: relative;	
+	top: 3px;
+	left: 400px;		
+}
+/*admin일때 로그인했을때 상태 끝*/
+/*고객이 로그인했을때 상태 시작*/
+.member_content{
+	text-align: center;
+	font-weight:700;
+	font-size: 35px;
+	font-family: 'SEBANG_Gothic_Bold';	
+	position: relative;
+	top: 23px;
+	left : 134px;
+}
+/*고객이 로그인했을때 상태 끝*/
+/*메인 이미지 슬라이드 시작*/
+.main_img_slade{
+	clear : both;
+	border: 1px solid black;
+	width: 1180px;
+	height: 600px;
+	margin: 10px 10px;	
+	text-align: center;
+}
+
+.main_img_content{
+	font-weight:700;
+	font-size: 24px;
+	font-family: 'SEBANG_Gothic_Bold';			
+	text-align: center;
+}
+
+/*메인 이미지 슬라이드 끝*/
+
+/*제품 이미지 슬라이드 시작*/
+.product_img_slade{
+	clear : both;
+	border: 1px solid black;
+	width: 1180px;
+	height: 600px;
+	margin: 10px 10px;	
+	overflow-y: scroll;
+    overflow-x: hidden;	
+}
+
+.product_img_content{
+	font-weight:700;
+	font-size: 24px;
+	font-family: 'SEBANG_Gothic_Bold';			
+	text-align: center;
+}
+
+/*제품 이미지 슬라이드 끝*/
+/*제품 이미지 크기 시작*/
+.product_img_slade .section img{
+	width: 300px; height: 255px;	
+}
+/*제품 이미지 크기 끝*/
+/* 셀럽 이미지 시작*/
+.selloveimg{
+    display: flex;
+    width: 1180px;
+    height: 574px;
+    flex-wrap: wrap;
+}
+.seloveComponent{
+	width: 250px;
+    height: 300px;
+    margin: 20px;
+}
+.userid{
+	font-size: 20px;
+}
+.usercontent{
+	font-size: 20px;	
+}
+.seloveimg{
+	width: 270px;
+    height: 200px;
+}
+/* 셀럽 이미지 끝*/
+/*하단 시작*/
+footer{
+    width: 1180px;
+    border: 1px solid black;
+    clear: both;
+    height: 200px;
+    margin: 0 auto;
+}
+/* GitLink*/
+.gitLink{
+	font-family: 'SEBANG_Gothic_Bold';
+	font-size:30px;
+	color: white;
+}
+.gitLink:hover, .gitLink:link , .gitLink:active , .gitLink:visited{
+	text-decoration: none;
+}
+
+
+
+/* footerURL  */
+#footerURL{
+	text-align:center;
+	padding-top: 60px;
+}
+/*하단 끝*/
+/* 모두 끝 */
+
+
+
+
+/*슬라이드 시작*/
+
+/* INPUT 가리기 */
+	.section [id*="slide"] {display:none;}
+	/*member가 로그인했을때 이미지들 크기 시작*/	
+	.member_category img{
+		width: 300px; height: 155px;
+	}
+	/*member가 로그인했을때 이미지들 크기 끝*/	
+	/*admin이 로그인했을때 이미지들 크기 시작*/	
+	.admin_category img{
+		width: 300px; height: 155px;
+	}
+	/*admin이 로그인했을때 이미지들 크기 끝*/	
+	/*로그인 안했을때 카테고리 이미지 끝*/
+	/*로그인을 안했을때 상태 시작*/
+	/* 슬라이드 영역 - max-width 크기를 조절해주면 됩니다*/
+	.category .section .slidewrap {max-width:900px;margin:0 auto;overflow:hidden;position:relative;}
+	/*로그인을 안했을때 상태 끝*/
+	
+	/* member가 로그인 했을때 상태 시작*/
+	.member_category .section .slidewrap {margin:0 auto;overflow:hidden;position:relative;}
+	/* member가 로그인 했을때 상태 끝*/
+	/* admin이 로그인 했을때 상태 시작*/
+	.admin_category .section .slidewrap {margin:0 auto;overflow:hidden;position:relative;}
+	/* admin이 로그인 했을때 상태 끝*/
+
+	/* 메인이미지 이미지 상태 시작*/
+	.main_img_slade .section .slidewrap {margin:0 auto;overflow:hidden;position:relative;}
+	/* 메인이미지  상태 끝*/
+
+	/* 인기상품 이미지 상태 시작*/
+	.product_img_slade .section .slidewrap {margin:0 auto;overflow:hidden;position:relative;}
+	/* 인기상품 상태 끝*/
+	
+	
+	.section .slidelist {white-space:nowrap;font-size:0; padding: 0;}
+	.section .slidelist > li {display:inline-block;vertical-align:middle;width:100%;transition:all .5s; }
+	.section .slidelist > li > a {display:block;position:relative;}
+
+	/* 좌우로 넘기는 LABEL버튼에 대한 스타일 */
+	.section .slide-control {position:absolute;top:0;left:0;z-index:10;width:100%;height:100%;}
+	/* admin 오늘의 브랜드 베스트 내용 시작*/
+	.admin_category_sldie_content{
+		display: flex;
+		justify-content: space-around;
+		font-family: 'SEBANG_Gothic_Bold';
+		font-size:20px;
+	}
+	/* admin 오늘의 브랜드 베스트 내용 끝*/
+	
+	
+	
+	/*.admin_category .section .slide-control {position:absolute;top:0;left:0;z-index:10;width:100%;height:100%;}*/
+	
+	.section .slide-control label {position:absolute;z-index:1;top:50%;transform:translateY(-50%);padding:50px;cursor:pointer;}
+	.section .slide-control .left {left:10px;background:url('./img/left.png') center center / 100% no-repeat;}
+	.section .slide-control .right {right:10px;background:url('./img/right.png') center center / 100% no-repeat;}
+	.section .slide-control [class*="control"] {display:none;}
+
+	/* INPUT이 체크되면 변화값이 li까지 전달되는 스타일 */
+	.section [id="slide01"]:checked ~ .slidewrap .slidelist > li {transform:translateX(0%);}
+	.section [id="slide02"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-100%);}
+	.section [id="slide03"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-200%);}
+	
+	/*  INPUT이 체크되면 변화값이 좌우 슬라이드 버튼을 담고 있는 div 까지 전달되는 스타일 */
+	.section [id="slide01"]:checked ~ .slidewrap .control01 {display:block;}
+	.section [id="slide02"]:checked ~ .slidewrap .control02 {display:block;}
+	.section [id="slide03"]:checked ~ .slidewrap .control03 {display:block;}
+	
+	
+	
+/*슬라이드 끝*/
+
+/*브랜드 카테고리 슬라이드 시작*/ /*추가로 필요*/
+	
+	
+	/* INPUT이 체크되면 변화값이 li까지 전달되는 스타일 */
+	.section [id="slide04"]:checked ~ .slidewrap .slidelist > li {transform:translateX(0%);}
+	.section [id="slide05"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-100%);}
+	.section [id="slide06"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-200%);}
+	
+	/*  INPUT이 체크되면 변화값이 좌우 슬라이드 버튼을 담고 있는 div 까지 전달되는 스타일 */
+	.section [id="slide04"]:checked ~ .slidewrap .control01 {display:block;}
+	.section [id="slide05"]:checked ~ .slidewrap .control02 {display:block;}
+	.section [id="slide06"]:checked ~ .slidewrap .control03 {display:block;}
+
+
+	/*로그인 했을때 슬라이드 밑에 추가된거 시작*/
+	/* INPUT이 체크되면 변화값이 li까지 전달되는 스타일 */
+	.section [id="slide07"]:checked ~ .slidewrap .slidelist > li {transform:translateX(0%);}
+	.section [id="slide08"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-100%);}
+	.section [id="slide09"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-200%);}
+	
+	/*  INPUT이 체크되면 변화값이 좌우 슬라이드 버튼을 담고 있는 div 까지 전달되는 스타일 */
+	.section [id="slide07"]:checked ~ .slidewrap .control01 {display:block;}
+	.section [id="slide08"]:checked ~ .slidewrap .control02 {display:block;}
+	.section [id="slide09"]:checked ~ .slidewrap .control03 {display:block;}
+	/*로그인 했을때 슬라이드 밑에 추가된거 끝*/
+
+	/*메인이미지 슬라이드 밑에 추가된거 시작*/
+	/* INPUT이 체크되면 변화값이 li까지 전달되는 스타일 */
+	.section [id="slide10"]:checked ~ .slidewrap .slidelist > li {transform:translateX(0%);}
+	.section [id="slide11"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-100%);}
+	.section [id="slide12"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-200%);}
+	
+	/*  INPUT이 체크되면 변화값이 좌우 슬라이드 버튼을 담고 있는 div 까지 전달되는 스타일 */
+	.section [id="slide10"]:checked ~ .slidewrap .control01 {display:block;}
+	.section [id="slide11"]:checked ~ .slidewrap .control02 {display:block;}
+	.section [id="slide12"]:checked ~ .slidewrap .control03 {display:block;}
+	/*로그인 했을때 슬라이드 밑에 추가된거 끝*/
+	
+	
+
+
+/*브랜드 카테고리 슬라이드 끝*/
+
+/*메인 이미지 슬라이드 시작*/
+	.main_img_slade .section .slidewrap {max-width: 1170px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    height: 560px;
+    }
+	.main_img_slade img{
+		width: 1170px; height: 570px;
+	}
+	/* INPUT이 체크되면 변화값이 li까지 전달되는 스타일 */
+	.section [id="slide10"]:checked ~ .slidewrap .slidelist > li {transform:translateX(0%);}
+	.section [id="slide11"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-100%);}
+	.section [id="slide12"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-200%);}
+	
+	/*  INPUT이 체크되면 변화값이 좌우 슬라이드 버튼을 담고 있는 div 까지 전달되는 스타일 */
+	.section [id="slide10"]:checked ~ .slidewrap .control01 {display:block;}
+	.section [id="slide11"]:checked ~ .slidewrap .control02 {display:block;}
+	.section [id="slide12"]:checked ~ .slidewrap .control03 {display:block;}
+	
+	.category .slidelist img{
+			width: 270px; height: 160px;	
+	}
+	
+/*메인 이미지 슬라이드 끝*/
+
+/*인기상품 이미지 시작*/
+	.product_img img{
+		width: 180px; height: 200px;
+	}
+	.product_img {
+		width: 190px; height: 250px;
+		display: inline-block;
+	}
+	.product_img div{
+		text-align: center;
+		font-size: 15px;
+		font-weight: 700
+		
+	}
+/*인기상품 이미지 끝*/
+
+
+
+/*  드롭다운 시작 */
+/* reset css */
+html{font-size: 10px}
+body{font-size: 1.6rem}
+ul li,
+ol li{list-style: none;}
+a{text-decoration: none;color: inherit;}
+
+
+/*#header{display: flex;justify-content: space-between;align-items: center;padding: 2rem;position: relative;}*/
+#gnb{display: flex;z-index: 99;margin-left: auto;}
+#gnb > .dept1 {position: relative;;padding: 1rem 2rem;text-align: center;}
+ #gnb > .dept1 > a.active{color: red;font-weight: bold}
+
+#gnb .inner_menu {position: absolute;top: 100%;left:50%;transform: translateX(-50%);width:100%;padding-top:3rem;display: none}
+#gnb  .dept2 {padding: 1rem 0;color: #555}
+#gnb  .dept2 > a:hover,
+#gnb  .dept2 > a:active,
+#gnb  .dept2 > a:focus {font-weight: bold}
+/*.menu_bar  {margin-left: auto;}*/
+.menu_bar {z-index: 9999;position: relative; left: 46px; bottom: 7px;}
+.menu_bar.active span:nth-child(1){display: none}
+.menu_bar.active span:nth-child(2){transform:rotate(130deg)}
+.menu_bar.active span:nth-child(3){transform: rotate(45deg);top: 0px;position: absolute}
+.menu_bar span{width: 22px;height: 2px;background: #555;display: block;margin: 6px}
+/* 햄버거 버튼을 열었을때 하부칸들 눌렀을때 크기는 얘를 줄이면 된다. */
+/*276px*/
+
+
+/*member가 로그인 했을때 햄버거 드롭다운 시작*/
+.member_menu_bar {z-index: 9999;position: relative; left: 46px; bottom: 7px;}
+.member_menu_bar.active span:nth-child(1){display: none}
+.member_menu_bar.active span:nth-child(2){transform:rotate(130deg)}
+.member_menu_bar.active span:nth-child(3){transform: rotate(45deg);top: 0px;position: absolute}
+.member_menu_bar span{width: 22px;height: 2px;background: #555;display: block;margin: 6px}
+.member_menu_open{position: fixed;width: 1115.5px;height: 37.7vh;background: #ffffff;top: 134px;left: 275px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
+.member_menu_open > ul{display: flex; justify-content: center;}
+.member_menu_open > ul li{width: 150px;}
+/*member가 로그인 했을때 햄버거 드롭다운 끝*/
+
+/*admin이 로그인 했을때 햄버거 드롭다운 시작*/
+.admin_menu_bar {z-index: 9999;position: relative; left: 46px; bottom: 7px;}
+.admin_menu_bar.active span:nth-child(1){display: none}
+.admin_menu_bar.active span:nth-child(2){transform:rotate(130deg)}
+.admin_menu_bar.active span:nth-child(3){transform: rotate(45deg);top: 0px;position: absolute}
+.admin_menu_bar span{width: 22px;height: 2px;background: #555;display: block;margin: 6px}
+.admin_menu_open{position: fixed;width: 1115.5px;height: 37.7vh;background: #ffffff;top: 138px;left: 275px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
+.admin_menu_open > ul{display: flex; justify-content: center;}
+.admin_menu_open > ul li{width: 150px;}
+/*admin이 로그인 했을때 햄버거 드롭다운 끝*/
+
+
+.hd_bg{background: #fff;width: 100%;height: 0;left: 0;z-index: 1;position: absolute;}
+
+.visual{background:#ccd1f1;width: 100%;height: 100vh;}
+
+/*  드롭다운 끝 */	
+	
+	
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,161 @@
+@charset "UTF-8";
+/*초기화 시작*/
+*{
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+/*초기화 끝*/
+/*눈누에서 세방고딕 글씨체 시작*/
+@font-face {
+    font-family: 'SEBANG_Gothic_Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2104@1.0/SEBANG_Gothic_Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/*눈누에서 세방고딕 글씨체 끝*/
+/* 전체 시작*/
+#main {
+	margin: 0 auto;
+	width: 1200px;
+	border: 1px solid black;
+	text-align: center;
+}
+/* 전체 끝*/
+/* 네비게이션 시작*/
+#main{
+	width: 1200px;
+	border: 1px solid black;
+	margin: 0 auto;
+}
+#main_title{
+	display: flex;
+}
+.title_content{
+	width: 400px;
+	text-align: center;
+	height: 80px;
+	border: 1px solid black;
+	line-height: 80px;
+	font-weight: 700;
+	font-size: 30px;
+}
+
+/*공지사항등록버튼 색 조정 시작*/
+a:hover{
+	text-decoration: none;
+	color:black;
+}
+a:link{
+	text-decoration: none;
+	color:black;
+}
+a:active{
+	text-decoration: none;
+	color:black;
+}
+a:visited{
+	text-decoration: none;
+	color:black;
+}
+/*공지사항등록버튼 색 조정 끝*/
+
+
+/* 네비게이션 끝*/
+/*form_component 시작*/
+#form_component{
+	border: 1px solid black;
+	width: 500px;
+	height: 500px;
+	margin: 200px auto;
+	font-weight: 700;
+	font-size: 20px;
+}
+/*form_component 끝*/
+/*form_component_title 시작*/
+#form_component_title{
+	line-height: 80px;
+	font-weight: 700;
+	font-size: 30px;
+}
+/*form_component_title 끝*/
+/* input태그, 버튼 시작*/
+.ntitle , .ncontent{
+	border: 1px solid black;
+	margin: 0;
+}
+
+.ntitle{
+	width: 350px;
+	height: 22px;
+}
+.ncontent{
+	width: 350px;
+	height: 230px;
+}
+#product_detail_explain{
+	height:100px;
+}
+#detail_explain{
+	vertical-align: top;
+}
+table tr td {
+	text-align: left;
+}
+
+#write_button{
+	width: 90px;
+	height: 90px;
+	margin-left:40px;
+	border: 1px solid black;
+	font-size: 20px;
+	font-weight: 700;
+	margin-top : 10px;
+	vertical-align: top;
+}
+
+#reset_button{
+	width: 90px;
+	height: 90px;
+	margin: 10px;
+	border: 1px solid black;
+	font-size: 20px;
+	font-weight: 700;	
+}
+/* input태그, 버튼 끝*/
+
+
+
+
+
+
+
+
+
+/*하단 시작*/
+footer{
+	width: 1200px;
+	height: 300px;
+	border: 1px solid black;
+	clear:both;
+	width:100%;
+	height: 200px;
+}
+/* GitLink*/
+.gitLink{
+	font-family: 'SEBANG_Gothic_Bold';
+	font-size:30px;
+	color: white;
+}
+.gitLink:hover, .gitLink:link , .gitLink:active , .gitLink:visited{
+	text-decoration: none;
+}
+
+
+
+/* footerURL  */
+#footerURL{
+	text-align:center;
+	padding-top: 60px;
+}
+/*하단 끝*/
