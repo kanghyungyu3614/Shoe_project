@@ -17,7 +17,7 @@
 		<form class="mainForm">
 		<h1 class="mainformComponent">셀럽 제작소</h1>
 				<input type="text" value="${lid}" name="lid" id="lid" readonly="readonly" class="inputComponent"><br>
-				<input type="text" placeholder="제목" name="title" id="title" class="inputComponent"><br>
+				<input type="text" placeholder="제목" name="title" id="title" class="inputComponent" autofocus><br>
 				<textarea placeholder="내용" id="content" name="content" class="inputComponent"></textarea><br>
 			
 			<input type="file" name="sfile" id="sfile" class="sfile">
