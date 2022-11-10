@@ -18,9 +18,10 @@
 @media (max-width: 640px) {
 /*헤더 시작*/ 
 .header{
-	 width: 1200px;
-	 margin: 0 auto;
-	 border-top: 1px solid #c0c0c0;
+    width: 1200px;
+	height: 90px;
+    margin: 0 auto;
+    border-top: 1px solid #c0c0c0;
 }
 #header_logo{
 	font-family: 'SEBANG_Gothic_Bold';
@@ -127,9 +128,10 @@ a:visited{
 @media (min-width: 641px) and (max-width: 768px) {
 /*헤더 시작*/ 
 .header{
-	 width: 1200px;
-	 margin: 0 auto;
-	 border-top: 1px solid #c0c0c0;
+    width: 1200px;
+	height: 90px;
+    margin: 0 auto;
+    border-top: 1px solid #c0c0c0;
 }
 #header_logo{
 	font-family: 'SEBANG_Gothic_Bold';
@@ -239,9 +241,10 @@ a:visited{
 @media (min-width: 769px) and (max-width: 967px) {
 /*헤더 시작*/ 
 .header{
-	 width: 1200px;
-	 margin: 0 auto;
-	 border-top: 1px solid #c0c0c0;
+    width: 1200px;
+	height: 90px;
+    margin: 0 auto;
+    border-top: 1px solid #c0c0c0;
 }
 #header_logo{
 	font-family: 'SEBANG_Gothic_Bold';
@@ -349,9 +352,10 @@ a:visited{
 @media (min-width: 968px) and (max-width: 1098px) {
 /*헤더 시작*/ 
 .header{
-	 width: 1200px;
-	 margin: 0 auto;
-	 border-top: 1px solid #c0c0c0;
+    width: 1200px;
+	height: 90px;
+    margin: 0 auto;
+    border-top: 1px solid #c0c0c0;
 }
 #header_logo{
 	font-family: 'SEBANG_Gothic_Bold';
@@ -461,9 +465,10 @@ a:visited{
 @media (min-width: 1098px) and (max-width: 1281px) {
 /*헤더 시작*/ 
 .header{
-	 width: 1200px;
-	 margin: 0 auto;
-	 border-top: 1px solid #c0c0c0;
+    width: 1200px;
+	height: 90px;
+    margin: 0 auto;
+    border-top: 1px solid #c0c0c0;
 }
 #header_logo{
 	font-family: 'SEBANG_Gothic_Bold';
@@ -573,9 +578,10 @@ a:visited{
 @media (min-width: 1282px) and (max-width: 1536px) {
 /*헤더 시작*/ 
 .header{
-	 width: 1200px;
-	 margin: 0 auto;
-	 border-top: 1px solid #c0c0c0;
+    width: 1200px;
+	height: 90px;
+    margin: 0 auto;
+    border-top: 1px solid #c0c0c0;
 }
 #header_logo{
 	font-family: 'SEBANG_Gothic_Bold';
@@ -685,9 +691,10 @@ a:visited{
 @media (min-width: 1537px) and (max-width: 1746px) {
 /*헤더 시작*/ 
 .header{
-	 width: 1200px;
-	 margin: 0 auto;
-	 border-top: 1px solid #c0c0c0;
+    width: 1200px;
+	height: 90px;
+    margin: 0 auto;
+    border-top: 1px solid #c0c0c0;
 }
 #header_logo{
 	font-family: 'SEBANG_Gothic_Bold';
@@ -796,9 +803,10 @@ a:visited{
 @media (min-width: 1746px) and (max-width: 1919px) {
 /*헤더 시작*/ 
 .header{
-	 width: 1200px;
-	 margin: 0 auto;
-	 border-top: 1px solid #c0c0c0;
+    width: 1200px;
+	height: 90px;
+    margin: 0 auto;
+    border-top: 1px solid #c0c0c0;
 }
 #header_logo{
 	font-family: 'SEBANG_Gothic_Bold';
@@ -897,9 +905,10 @@ a:visited{
 @media (min-width: 1920px) and (max-width: 2132px) {
 /*헤더 시작*/ 
 .header{
-	 width: 1200px;
-	 margin: 0 auto;
-	 border-top: 1px solid #c0c0c0;
+    width: 1200px;
+	height: 90px;
+    margin: 0 auto;
+    border-top: 1px solid #c0c0c0;
 }
 #header_logo{
 	font-family: 'SEBANG_Gothic_Bold';
@@ -997,9 +1006,10 @@ a:visited{
 @media (min-width: 2133px) and (max-width: 2399px) {
 /*헤더 시작*/ 
 .header{
-	 width: 1200px;
-	 margin: 0 auto;
-	 border-top: 1px solid #c0c0c0;
+    width: 1200px;
+	height: 90px;
+    margin: 0 auto;
+    border-top: 1px solid #c0c0c0;
 }
 #header_logo{
 	font-family: 'SEBANG_Gothic_Bold';
@@ -1107,9 +1117,10 @@ a:visited{
 @media (min-width: 2400px) and (max-width: 2559px) {
 /*헤더 시작*/ 
 .header{
-	 width: 1200px;
-	 margin: 0 auto;
-	 border-top: 1px solid #c0c0c0;
+    width: 1200px;
+	height: 90px;
+    margin: 0 auto;
+    border-top: 1px solid #c0c0c0;
 }
 #header_logo{
 	font-family: 'SEBANG_Gothic_Bold';
@@ -1217,9 +1228,10 @@ a:visited{
 @media (min-width: 2560px) and (max-width: 2840px) {
 /*헤더 시작*/ 
 .header{
-	 width: 1200px;
-	 margin: 0 auto;
-	 border-top: 1px solid #c0c0c0;
+    width: 1200px;
+	height: 90px;
+    margin: 0 auto;
+    border-top: 1px solid #c0c0c0;
 }
 #header_logo{
 	font-family: 'SEBANG_Gothic_Bold';
@@ -1328,9 +1340,10 @@ a:visited{
 @media (min-width: 2841px) and (max-width: 3839px) {
 /*헤더 시작*/ 
 .header{
-	 width: 1200px;
-	 margin: 0 auto;
-	 border-top: 1px solid #c0c0c0;
+    width: 1200px;
+	height: 90px;
+    margin: 0 auto;
+    border-top: 1px solid #c0c0c0;
 }
 #header_logo{
 	font-family: 'SEBANG_Gothic_Bold';
@@ -1439,9 +1452,10 @@ a:visited{
 @media (min-width: 3840px) and (max-width: 5759px) {
 /*헤더 시작*/ 
 .header{
-	 width: 1200px;
-	 margin: 0 auto;
-	 border-top: 1px solid #c0c0c0;
+    width: 1200px;
+	height: 90px;
+    margin: 0 auto;
+    border-top: 1px solid #c0c0c0;
 }
 #header_logo{
 	font-family: 'SEBANG_Gothic_Bold';
@@ -1550,9 +1564,10 @@ a:visited{
 @media (min-width: 5760px) and (max-width: 7679px) { 
 /*헤더 시작*/ 
 .header{
-	 width: 1200px;
-	 margin: 0 auto;
-	 border-top: 1px solid #c0c0c0;
+    width: 1200px;
+	height: 90px;
+    margin: 0 auto;
+    border-top: 1px solid #c0c0c0;
 }
 #header_logo{
 	font-family: 'SEBANG_Gothic_Bold';
@@ -1660,9 +1675,10 @@ a:visited{
 @media (min-width: 7680px) and (max-width: 10000px) { 
 /*헤더 시작*/ 
 .header{
-	 width: 1200px;
-	 margin: 0 auto;
-	 border-top: 1px solid #c0c0c0;
+    width: 1200px;
+	height: 90px;
+    margin: 0 auto;
+    border-top: 1px solid #c0c0c0;
 }
 #header_logo{
 	font-family: 'SEBANG_Gothic_Bold';

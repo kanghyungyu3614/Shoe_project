@@ -49,13 +49,6 @@ a:visited{
 
 
 /*헤더 끝*/ 
-/*main 시작*/ 
-#main{
-	border: 1px solid black;
-	width: 1200px;
-	margin: 0 auto;
-}
-/*main 끝*/ 
 /*이달의 인기 브랜드 , 카테고리 시작*/
 .brand {
 	border: 1px solid black;
@@ -277,28 +270,7 @@ a:visited{
 	left: 450px;		
 }
 /*admin일때 로그인했을때 상태 끝*/
-/*고객이 로그인했을때 상태 시작*/
-.member_content{
-	font-size: 17px;
-    font-family: none;
-    position: relative;
-    top: 54px;
-    left: 485px;
-}
 
-.member_find{
-	display: flex;
-    justify-content: center;
-    font-weight: 700;
-    font-size: 15px;
-    font-family: nonr;
-    width: 480px;
-    height: 40px;
-    position: relative;
-    top: 56px;
-	left: 440px;
-}
-/*고객이 로그인했을때 상태 끝*/
 
 
 .mypage_component{
@@ -319,14 +291,6 @@ a:visited{
 
 
 /*하단 시작*/
-footer{
-	width: 1200px;
-	height: 300px;
-	border: 1px solid black;
-	clear:both;
-	width:100%;
-	height: 200px;
-}
 /* GitLink*/
 .gitLink{
 	font-family: 'SEBANG_Gothic_Bold';
@@ -463,6 +427,740 @@ img{
     border-spacing: 90px 0px;
     border-collapse: inherit;
 }
+/*-------------------------------------------------------------가로 :  640px 이하 시작------------------------------------------------------------------*/
+@media (max-width: 640px) {
+/*고객이 로그인했을때 상태 시작*/
+.member_content{
+    font-size: 17px;
+    font-family: none;
+    position: relative;
+    left: 475px;
+}
+
+.member_find{
+	display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 15px;
+    font-family: nonr;
+    width: 480px;
+    height: 40px;
+    position: relative;
+    left: 430px;
+}
+/*고객이 로그인했을때 상태 끝*/
+
+/*main 시작*/ 
+#main{
+    border: 1px solid black;
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+	top: 50px;
+}
+/*main 끝*/ 
+/*하단시작*/
+footer{
+    border: 1px solid black;
+    clear: both;
+    width: 100%;
+    height: 200px;
+    position: relative;
+	top: 50px;
+}
+/*하단끝*/
+
+}
+/*-------------------------------------------------------------가로 : 640px 이하 시작------------------------------------------------------------------*/
+/*-------------------------------------------------------------가로 : 769px 이상 960px 이하 시작------------------------------------------------------------------*/
+@media (min-width: 641px) and (max-width: 768px) {
+/*고객이 로그인했을때 상태 시작*/
+.member_content{
+    font-size: 17px;
+    font-family: none;
+    position: relative;
+    left: 475px;
+}
+
+.member_find{
+	display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 15px;
+    font-family: nonr;
+    width: 480px;
+    height: 40px;
+    position: relative;
+    left: 430px;
+}
+/*고객이 로그인했을때 상태 끝*/
+
+/*main 시작*/ 
+#main{
+    border: 1px solid black;
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    top: 40px;
+}
+/*main 끝*/ 
+
+/*하단시작*/
+footer{
+    border: 1px solid black;
+    clear: both;
+    width: 100%;
+    height: 200px;
+    position: relative;
+    top: 40px;
+}
+/*하단끝*/
+
+}
+/*-------------------------------------------------------------가로 : 641px 이상 768px 이하 끝------------------------------------------------------------------*/
+/*-------------------------------------------------------------가로 : 769px 이상 960px 이하 시작------------------------------------------------------------------*/
+@media (min-width: 769px) and (max-width: 967px) {
+/*고객이 로그인했을때 상태 시작*/
+.member_content{
+    font-size: 17px;
+    font-family: none;
+    position: relative;
+    left: 475px;
+}
+
+.member_find{
+	display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 15px;
+    font-family: nonr;
+    width: 480px;
+    height: 40px;
+    position: relative;
+    left: 430px;
+}
+/*고객이 로그인했을때 상태 끝*/
+
+/*main 시작*/ 
+#main{
+    border: 1px solid black;
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    top: 30px;
+}
+/*main 끝*/ 
+
+/*하단시작*/
+footer{
+    border: 1px solid black;
+    clear: both;
+    width: 100%;
+    height: 200px;
+    position: relative;
+    top: 30px;
+}
+/*하단끝*/
+
+}
+/*-------------------------------------------------------------가로 : 769px 이상 967px 이하 끝------------------------------------------------------------------*/
+/*-------------------------------------------------------------가로 : 968px 이상 1097px 이하 시작------------------------------------------------------------------*/
+@media (min-width: 968px) and (max-width: 1098px) {
+/*고객이 로그인했을때 상태 시작*/
+.member_content{
+    font-size: 17px;
+    font-family: none;
+    position: relative;
+    left: 475px;
+}
+
+.member_find{
+	display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 15px;
+    font-family: nonr;
+    width: 480px;
+    height: 40px;
+    position: relative;
+    left: 430px;
+}
+/*고객이 로그인했을때 상태 끝*/
+
+/*main 시작*/ 
+#main{
+    border: 1px solid black;
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    top: 20px;
+}
+/*main 끝*/ 
+
+/*하단시작*/
+footer{
+    border: 1px solid black;
+    clear: both;
+    width: 100%;
+    height: 200px;
+    position: relative;
+    top: 20px;    
+}
+/*하단끝*/
+
+}
+/*-------------------------------------------------------------가로 : 968px 이상 1097px 이하 끝------------------------------------------------------------------*/
+/*-------------------------------------------------------------가로 : 1098px 이상 1281px 이하 시작------------------------------------------------------------------*/
+@media (min-width: 1098px) and (max-width: 1281px) {
+/*고객이 로그인했을때 상태 시작*/
+.member_content{
+    font-size: 17px;
+    font-family: none;
+    position: relative;
+    left: 475px;
+}
+
+.member_find{
+	display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 15px;
+    font-family: nonr;
+    width: 480px;
+    height: 40px;
+    position: relative;
+    left: 430px;
+}
+/*고객이 로그인했을때 상태 끝*/
+
+/*main 시작*/ 
+#main{
+    border: 1px solid black;
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    top: 10px;
+}
+/*main 끝*/ 
+
+/*하단시작*/
+footer{
+    border: 1px solid black;
+    clear: both;
+    width: 100%;
+    height: 200px;
+    position: relative;
+    top: 10px;
+}
+/*하단끝*/
+
+}
+/*-------------------------------------------------------------가로 : 1098px 이상 1281px 이하 끝------------------------------------------------------------------*/
+/*-------------------------------------------------------------가로 : 1282px 이상 1536px 이하 시작------------------------------------------------------------------*/
+@media (min-width: 1282px) and (max-width: 1536px) {
+/*고객이 로그인했을때 상태 시작*/
+.member_content{
+    font-size: 17px;
+    font-family: none;
+    position: relative;
+    left: 475px;
+}
+
+.member_find{
+	display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 15px;
+    font-family: nonr;
+    width: 480px;
+    height: 40px;
+    position: relative;
+    left: 430px;
+}
+/*고객이 로그인했을때 상태 끝*/
+
+/*main 시작*/ 
+#main{
+    border: 1px solid black;
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+/*main 끝*/ 
+
+/*하단시작*/
+footer{
+    border: 1px solid black;
+    clear: both;
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+/*하단끝*/
+
+}
+/*-------------------------------------------------------------가로 : 1282px 이상 1536px 이하 끝------------------------------------------------------------------*/
+/*-------------------------------------------------------------가로 : 1537px 이상 1746px 이하 시작------------------------------------------------------------------*/
+@media (min-width: 1537px) and (max-width: 1746px) {
+/*고객이 로그인했을때 상태 시작*/
+.member_content{
+    font-size: 17px;
+    font-family: none;
+    position: relative;
+    left: 475px;
+}
+
+.member_find{
+	display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 15px;
+    font-family: nonr;
+    width: 480px;
+    height: 40px;
+    position: relative;
+    left: 430px;
+}
+/*고객이 로그인했을때 상태 끝*/
+
+/*main 시작*/ 
+#main{
+    border: 1px solid black;
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+	bottom: 10px;
+}
+/*main 끝*/ 
+
+/*하단시작*/
+footer{
+    border: 1px solid black;
+    clear: both;
+    width: 100%;
+    height: 200px;
+    position: relative;
+    bottom: 9px;
+}
+/*하단끝*/
+
+}
+/*-------------------------------------------------------------가로 : 1536px 이상 1746px 이하 끝------------------------------------------------------------------*/
+/*-------------------------------------------------------------가로 : 1746px 이상 1919px 이하 시작---------------------------------------------------------*/
+@media (min-width: 1746px) and (max-width: 1919px) {
+/*고객이 로그인했을때 상태 시작*/
+.member_content{
+    font-size: 17px;
+    font-family: none;
+    position: relative;
+    left: 475px;
+}
+
+.member_find{
+	display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 15px;
+    font-family: nonr;
+    width: 480px;
+    height: 40px;
+    position: relative;
+    left: 430px;
+}
+/*고객이 로그인했을때 상태 끝*/
+
+/*main 시작*/ 
+#main{
+    border: 1px solid black;
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    bottom: 20px;
+}
+/*main 끝*/ 
+
+/*하단시작*/
+footer{
+    border: 1px solid black;
+    clear: both;
+    width: 100%;
+    height: 200px;
+    position: relative;
+    bottom: 19px;
+}
+/*하단끝*/
+
+}
+/*-------------------------------------------------------------가로 : 1800px 이상 1919px 이하 시작---------------------------------------------------------*/
+/*-------------------------------------------------------------가로 : 2133px 이상 2399px 이하 끝------------------------------------------------------------------*/
+@media (min-width: 1920px) and (max-width: 2132px) {
+/*고객이 로그인했을때 상태 시작*/
+.member_content{
+    font-size: 17px;
+    font-family: none;
+    position: relative;
+    left: 475px;
+}
+
+.member_find{
+	display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 15px;
+    font-family: nonr;
+    width: 480px;
+    height: 40px;
+    position: relative;
+    left: 430px;
+}
+/*고객이 로그인했을때 상태 끝*/
+
+/*main 시작*/ 
+#main{
+    border: 1px solid black;
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+/*main 끝*/ 
+
+/*하단시작*/
+footer{
+    border: 1px solid black;
+    clear: both;
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+/*하단끝*/
+
+}
+/*-------------------------------------------------------------가로 : 1920px 이상 2132px 이하 끝---------------------------------------------------------*/
+/*-------------------------------------------------------------가로 : 2133px 이상 2399px 이하 끝------------------------------------------------------------------*/
+@media (min-width: 2133px) and (max-width: 2399px) {
+/*고객이 로그인했을때 상태 시작*/
+.member_content{
+    font-size: 17px;
+    font-family: none;
+    position: relative;
+    left: 475px;
+}
+
+.member_find{
+	display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 15px;
+    font-family: nonr;
+    width: 480px;
+    height: 40px;
+    position: relative;
+    left: 430px;
+}
+/*고객이 로그인했을때 상태 끝*/
+
+/*main 시작*/ 
+#main{
+    border: 1px solid black;
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    bottom: 20px;
+}
+/*main 끝*/ 
+
+/*하단시작*/
+footer{
+    border: 1px solid black;
+    clear: both;
+    width: 100%;
+    height: 200px;
+    position: relative;
+    bottom: 19px;
+}
+/*하단끝*/
+
+}
+/*-------------------------------------------------------------가로 : 2133px 이상 2399px 이하 끝------------------------------------------------------------------*/
+/*-------------------------------------------------------------가로 : 2400px 이상 시작------------------------------------------------------------------*/
+@media (min-width: 2400px) and (max-width: 2559px) {
+/*고객이 로그인했을때 상태 시작*/
+.member_content{
+    font-size: 17px;
+    font-family: none;
+    position: relative;
+    left: 475px;
+}
+
+.member_find{
+	display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 15px;
+    font-family: nonr;
+    width: 480px;
+    height: 40px;
+    position: relative;
+    left: 430px;
+}
+/*고객이 로그인했을때 상태 끝*/
+
+/*main 시작*/ 
+#main{
+    border: 1px solid black;
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+	bottom: 30px;
+}
+/*main 끝*/ 
+
+/*하단시작*/
+footer{
+    border: 1px solid black;
+    clear: both;
+    width: 100%;
+    height: 200px;
+    position: relative;
+	bottom: 29px;
+}
+/*하단끝*/
+
+}
+/*-------------------------------------------------------------가로 : 2400px 이상 2559px 이하 끝------------------------------------------------------------------*/
+/*-------------------------------------------------------------가로 : 2560px 이상 3839px 이하  시작------------------------------------------------------*/
+@media (min-width: 2560px) and (max-width: 2840px) {
+/*고객이 로그인했을때 상태 시작*/
+.member_content{
+    font-size: 17px;
+    font-family: none;
+    position: relative;
+    left: 475px;
+}
+
+.member_find{
+	display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 15px;
+    font-family: nonr;
+    width: 480px;
+    height: 40px;
+    position: relative;
+    left: 430px;
+}
+/*고객이 로그인했을때 상태 끝*/
+
+/*main 시작*/ 
+#main{
+    border: 1px solid black;
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+	bottom: 40px;
+}
+/*main 끝*/ 
+
+/*하단시작*/
+footer{
+    border: 1px solid black;
+    clear: both;
+    width: 100%;
+    height: 200px;
+    position: relative;
+    bottom: 38px;
+}
+/*하단끝*/
+
+}
+/*-------------------------------------------------------------가로 : 2560px 이상 3839px 이하  끝------------------------------------------------------*/
+/*-------------------------------------------------------------가로 : 2841px 이상 3839px 이하  시작------------------------------------------------------*/
+@media (min-width: 2841px) and (max-width: 3839px) {
+/*고객이 로그인했을때 상태 시작*/
+.member_content{
+    font-size: 17px;
+    font-family: none;
+    position: relative;
+    left: 475px;
+}
+
+.member_find{
+	display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 15px;
+    font-family: nonr;
+    width: 480px;
+    height: 40px;
+    position: relative;
+    left: 430px;
+}
+/*고객이 로그인했을때 상태 끝*/
+
+
+/*main 시작*/ 
+#main{
+    border: 1px solid black;
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    bottom: 60px;
+}
+/*main 끝*/ 
+
+/*하단시작*/
+footer{
+    border: 1px solid black;
+    clear: both;
+    width: 100%;
+    height: 200px;
+    position: relative;
+    bottom: 59px;
+}
+/*하단끝*/
+
+}
+/*-------------------------------------------------------------가로 : 2841px 이상 3839px 이하  끝------------------------------------------------------*/
+/*-------------------------------------------------------------가로 : 3840px 이상 5759px 이하  시작------------------------------------------------------*/
+@media (min-width: 3840px) and (max-width: 5759px) {
+/*고객이 로그인했을때 상태 시작*/
+.member_content{
+    font-size: 17px;
+    font-family: none;
+    position: relative;
+    left: 475px;
+}
+
+.member_find{
+	display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 15px;
+    font-family: nonr;
+    width: 480px;
+    height: 40px;
+    position: relative;
+    left: 430px;
+}
+/*고객이 로그인했을때 상태 끝*/
+
+/*main 시작*/ 
+#main{
+    border: 1px solid black;
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    bottom: 90px;
+}
+/*main 끝*/ 
+
+/*하단시작*/
+footer{
+    border: 1px solid black;
+    clear: both;
+    width: 100%;
+    height: 200px;
+    position: relative;
+	bottom: 88px;
+}
+/*하단끝*/
+
+}
+/*-------------------------------------------------------------가로 : 3840px 이상 5759px 이하  끝------------------------------------------------------*/
+/*-------------------------------------------------------------가로 : 5760px 이상 7679px 이하  시작------------------------------------------------------*/
+@media (min-width: 5760px) and (max-width: 7679px) { 
+/*고객이 로그인했을때 상태 시작*/
+.member_content{
+    font-size: 17px;
+    font-family: none;
+    position: relative;
+    left: 475px;
+}
+
+.member_find{
+	display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 15px;
+    font-family: nonr;
+    width: 480px;
+    height: 40px;
+    position: relative;
+    left: 430px;
+}
+/*고객이 로그인했을때 상태 끝*/
+
+/*main 시작*/ 
+#main{
+    border: 1px solid black;
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+	bottom: 180px;
+}
+/*main 끝*/ 
+
+/*하단시작*/
+footer{
+    border: 1px solid black;
+    clear: both;
+    width: 100%;
+    height: 200px;
+    position: relative;
+    bottom: 179px;
+}
+/*하단끝*/
+
+} 
+/*--------------------------------------------가로 : 5760px 이상 7679px 이하  끝 ------------------------------------------------------------------------ */
+/*-------------------------------------------------------------가로 : 7680px 이상 10000px 이하  시작------------------------------------------------------*/
+@media (min-width: 7680px) and (max-width: 10000px) {
+/*고객이 로그인했을때 상태 시작*/
+.member_content{
+    font-size: 17px;
+    font-family: none;
+    position: relative;
+    left: 475px;
+}
+
+.member_find{
+	display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 15px;
+    font-family: nonr;
+    width: 480px;
+    height: 40px;
+    position: relative;
+    left: 430px;
+}
+/*고객이 로그인했을때 상태 끝*/
+
+
+/*main 시작*/ 
+#main{
+    border: 1px solid black;
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    bottom: 260px;
+}
+/*main 끝*/ 
+
+/*하단시작*/
+footer{
+    border: 1px solid black;
+    clear: both;
+    width: 100%;
+    height: 200px;
+    position: relative;
+    bottom: 256px;
+}
+/*하단끝*/
+
+}
+/*--------------------------------------------가로 : 7680px 이상 10000px 이하  끝-------더이상 없음------------------------------------------------------------ */
+
 
 
 
