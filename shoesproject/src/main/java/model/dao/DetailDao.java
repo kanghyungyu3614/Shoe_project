@@ -3,6 +3,7 @@ package model.dao;
 import java.util.ArrayList;
 
 import model.dto.PregistDto;
+import model.dto.SpregistDto;
 import model.dto.dto;
 
 public class DetailDao extends dao {
@@ -60,5 +61,59 @@ public class DetailDao extends dao {
 		} catch (Exception e) {
 			System.out.println(e);
 		}return false;
+	}
+	
+	
+	public ArrayList<SpregistDto>selllist(int hideNum ,int pno){
+		 ArrayList<SpregistDto>list = new ArrayList<>();
+		 
+		String sql = "select * from sproduct where spstatus = '구매입찰' and spsize = ? and pno = ?";
+		try {
+			ps = con.prepareStatement(sql);
+			ps.setInt(1, hideNum);
+			ps.setInt(2, pno);
+			rs = ps.executeQuery();
+			System.out.println("22");
+			while(rs.next()) {	
+				SpregistDto dto = new SpregistDto(rs.getInt(1),rs.getString(2),
+						rs.getInt(3),rs.getString(4),rs.getString(5),
+						rs.getString(6), rs.getInt(7), rs.getInt(8));
+				list.add(dto);
+				System.out.println(list+"ddd");
+				System.out.println(dto+"dd22");
+				
+			}return list;
+			
+		} catch (Exception e) {
+			System.out.println(e+"11");
+		}
+		System.out.println("33");
+		return list;
+	}
+	public ArrayList<SpregistDto>buylist(int hideNum ,int pno){
+		 ArrayList<SpregistDto>list = new ArrayList<>();
+		 
+		String sql = "select * from sproduct where spstatus = '판매입찰' and spsize = ? and pno = ?";
+		try {
+			ps = con.prepareStatement(sql);
+			ps.setInt(1, hideNum);
+			ps.setInt(2, pno);
+			rs = ps.executeQuery();
+			System.out.println("22");
+			while(rs.next()) {	
+				SpregistDto dto = new SpregistDto(rs.getInt(1),rs.getString(2),
+						rs.getInt(3),rs.getString(4),rs.getString(5),
+						rs.getString(6), rs.getInt(7), rs.getInt(8));
+				list.add(dto);
+				System.out.println(list+"ddd");
+				System.out.println(dto+"dd22");
+				
+			}return list;
+			
+		} catch (Exception e) {
+			System.out.println(e+"11");
+		}
+		System.out.println("33");
+		return list;
 	}
 }

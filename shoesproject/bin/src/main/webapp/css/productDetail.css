@@ -1,0 +1,216 @@
+@charset "UTF-8";
+*{
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+#main{
+	width: 1200px;
+	border: 1px solid black;
+	margin: 0 auto;
+}
+#main_title{
+	display: flex;
+}
+.title_content{
+	width: 400px;
+	text-align: center;
+	height: 80px;
+	border: 1px solid black;
+	line-height: 80px;
+	font-weight: 700;
+	font-size: 30px;
+}
+.nav_title{
+	display: flex;
+	margin-top: 20px;
+}
+
+
+
+
+
+
+/*상품등록 시작*/
+.nav_content1{ 
+	width: 1150px;
+	margin: 0 auto;
+	height: 1180px;
+	border: 1px solid black;
+	text-align: center;
+	font-weight:700px;
+	font-size: 25px;
+	line-height: 50px;
+}
+
+.nav_title{
+	display: flex;
+	margin-top: 20px;
+	height: 1200px;
+}
+/*공지사항등록버튼 색 조정 시작*/
+a:hover{
+	text-decoration: none;
+	color:black;
+}
+a:link{
+	text-decoration: none;
+	color:black;
+}
+a:active{
+	text-decoration: none;
+	color:black;
+}
+a:visited{
+	text-decoration: none;
+	color:black;
+}
+/*공지사항등록버튼 색 조정 끝*/
+
+
+/*상품등록 글짜 시작*/
+.nav_content1 #notice{
+	font-size: 33px;
+	font-weight: 700;
+	position: relative;
+	left: 40px;
+}
+/*상품등록 글짜 끝*/
+
+
+/*상품등록 안의 관리자계시판 글자 시작*/
+.nav_content1 .nav_detail{
+	float: right;
+	font-size: 17px;
+	font-weight: 700;
+	margin-right: 10px;
+	
+}
+/*상품등록 안의 관리자계시판 글자 끝*/
+
+/* 상품등록게시판 시작*/
+#product_regist{
+	width: 1150px;
+	border-collapse: collapse;
+}
+
+.notice tr{
+	border: 1px solid black;
+}
+table{
+	border-collapse: collapse;
+}
+.nav_content1 tr th{
+	font-size: 20px;
+}
+td{
+	border: 1px solid black;
+	height: 20px;
+	font-size: 20px;
+	font-weight: 700;
+}
+.notice tr:nth-child(1) td:nth-child(1){
+	border: 1px solid black;
+	width: 300px;
+	height : 50px;
+	font-weight: 700;
+	font-size: 32px;
+}
+.notice tr:nth-child(1) td:nth-child(2){
+	border: 1px solid black;
+	width: 900px;
+	height : 50px;
+	font-weight: 700;
+	font-size: 28px;
+}
+
+th{
+	border: 1px solid black;
+}
+
+
+
+/* 상품등록게시판 끝*/
+
+
+/*테이블 크기 조정 시작*/
+#product_regist tr:nth-child(1) th:nth-child(1){
+	width: 30px;
+	height: 50px;
+	font-size: 25px;
+}
+#product_regist tr:nth-child(1) th:nth-child(2){
+	width: 30px;
+	height: 50px;
+	font-size: 25px;
+}
+#product_regist tr:nth-child(1) th:nth-child(3){
+	width: 30px;
+	height: 50px;
+	font-size: 25px;
+}
+#product_regist tr:nth-child(1) th:nth-child(4){
+	width: 30px;
+	height: 50px;
+	font-size: 25px;
+}
+#product_regist tr:nth-child(1) th:nth-child(5){
+	width: 20px;
+	height: 50px;
+	font-size: 25px;
+}
+#product_regist tr:nth-child(1) th:nth-child(6){
+	width: 20px;
+	height: 50px;
+	font-size: 25px;
+}
+#product_regist tr:nth-child(1) th:nth-child(7){
+	width: 90px;
+	height: 50px;
+	font-size: 25px;
+}
+
+/*테이블 크기 조정 끝*/
+/*테이블 안의 input태그 크기 조정 시작*/
+#product_regist input{
+	border: 1px solid black;
+}
+
+/*테이블 안의 input태그 크기 조정 끝*/
+/*상품등록페이지 끝*/
+
+
+
+
+
+
+
+/*하단 시작*/
+footer{
+	width: 1200px;
+	height: 300px;
+	border: 1px solid black;
+	clear:both;
+	width:100%;
+	height: 200px;
+}
+/* GitLink*/
+.gitLink{
+	font-family: 'YdestreetB';
+	font-size:30px;
+	color: white;
+}
+.gitLink:hover, .gitLink:link , .gitLink:active , .gitLink:visited{
+	text-decoration: none;
+}
+
+
+
+/* footerURL  */
+#footerURL{
+	text-align:center;
+	padding-top: 60px;
+}
+/*하단 끝*/
+/* 모두 끝 */

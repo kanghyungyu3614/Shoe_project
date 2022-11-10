@@ -439,70 +439,28 @@ h1{
 	font-size : 1.8rem;
 }
 
-.sell , .buy{
-	border: solid 1px black;
-	height: 180px;
+.stdn{
+	display:block;
+	margin-top:30px;
+	font-weight: bold;
 }
-.sell tr:nth-child(1){
-	border: solid 1px black;
-	border-top-color: white;
-	border-left-color:white;
-	border-right-color:white;
-	height: 50px;
+img{
+	width:80px;
+	height: 80px;
 }
-.buy tr:nth-child(1){
-	border: solid 1px black;
-	border-top-color: white;
-	border-left-color:white;
-	border-right-color:white;
-	height: 50px;
+.stdd{
+	margin-left:590px;
 }
-.sell table{
-	width: 100%;
+.stds{
+	display: block;
 }
-.buy table{
-	width: 100%;
+.blist{
+	text-align: left;
 }
-.sell{
-	margin-bottom: 20px;
-	border-radius: 20px;
+.slist{
+	text-align: left;
 }
-.buy{
-	border-radius: 20px;
-}
-
-
-
-
-div.blueTable {
-  width: 100%;
-  text-align: center;
-  border-radius: 20px;
-}
-.divTable.blueTable .divTableCell, .divTable.blueTable .divTableHead {
-  border: 1px solid #AAAAAA;
-}
-.divTable.blueTable .divTableBody .divTableCell {
-  font-size: 13px;
-}
-.divTable{ display: table; }
-.divTableRow { display: table-row; }
-.divTableHeading { display: table-header-group;}
-.divTableCell, .divTableHead { display: table-cell;}
-.divTableHeading { display: table-header-group;}
-.divTableFoot { display: table-footer-group;}
-.divTableBody { display: table-row-group;}
-
-
-.div1{
-	border-top-left-radius: 20px;
-}
-.div2{
-	border-top-right-radius: 20px;
-}
-.div3{
-	border-bottom-left-radius: 20px;
-}
-.div4{
-	border-bottom-right-radius: 20px;
+.tablel{
+    border-spacing: 90px 0px;
+    border-collapse: inherit;
 }

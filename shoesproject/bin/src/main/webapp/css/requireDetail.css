@@ -1,0 +1,184 @@
+@charset "UTF-8";
+*{
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+#main{
+	width: 1200px;
+	border: 1px solid black;
+	margin: 0 auto;
+}
+#main_title{
+	display: flex;
+}
+.title_content{
+	width: 400px;
+	text-align: center;
+	height: 80px;
+	border: 1px solid black;
+	line-height: 80px;
+	font-weight: 700;
+	font-size: 30px;
+}
+.nav_title{
+	display: flex;
+	margin-top: 20px;
+}
+/*공지사항,상담문의 시작*/
+.nav_content1{ 
+	width: 1150px;
+	margin: 0 auto;
+	height: 1180px;
+	border: 1px solid black;
+	text-align: center;
+	font-weight:700px;
+	font-size: 25px;
+	line-height: 50px;
+}
+
+.nav_title{
+	display: flex;
+	margin-top: 20px;
+	height: 1200px;
+}
+/*공지사항등록버튼 색 조정 시작*/
+a:hover{
+	text-decoration: none;
+	color:black;
+}
+a:link{
+	text-decoration: none;
+	color:black;
+}
+a:active{
+	text-decoration: none;
+	color:black;
+}
+a:visited{
+	text-decoration: none;
+	color:black;
+}
+/*공지사항등록버튼 색 조정 끝*/
+/*공지사항 글짜 끝*/
+
+/*공지사항 글짜 시작*/
+.nav_content1 #notice{
+	font-size: 33px;
+	font-weight: 700;
+	position: relative;
+	left: 40px;
+}
+/*공지사항 글짜 끝*/
+/*공지사항 안의 상세보기 글자 시작*/
+.nav_content1 .nav_detail{
+	float: right;
+	font-size: 17px;
+	font-weight: 700;
+	margin-right: 10px;
+	
+}
+/*공지사항 안의 상세보기 글자 끝*/
+/*상담문의 시작*/
+.nav_content2{
+	width: 1150px;
+	margin: 0 auto;
+	height: 600px;
+	border: 1px solid black;
+	text-align: center;
+	font-weight:700;
+	font-size: 25px;
+	line-height: 50px;
+}
+.nav_content2 .advice_table{
+	font-size: 33px;
+	font-weight: 700;
+	position: relative;
+	left:40px;
+}
+
+.nav_content2 .nav_detail{
+	float: right;
+	font-size: 17px;
+	font-weight: 700;
+	margin-right: 10px;	
+	
+}
+#advice_notice_table{
+	border-collapse	 : collapse;
+}
+
+
+#advice_notice_table tr:nth-child(1) th:nth-child(1){
+	width: 150px;
+	font-size: 28px;
+	line-height : 50px;
+}
+#advice_notice_table tr:nth-child(1) th:nth-child(2){
+	width: 200px;
+	font-size: 28px;
+	line-height : 50px;
+}
+#advice_notice_table tr:nth-child(1) th:nth-child(3){
+	width: 700px;
+	font-size: 28px;
+	line-height : 50px;
+}
+#advice_notice_table tr:nth-child(1) th:nth-child(4){
+	width: 150px;
+	font-size: 28px;
+	line-height : 50px;
+}
+
+.nav_content2 #advice_notice_table tr{
+	line-height : 30px;
+}
+/*공지사항,상담문의 끝*/
+
+table{
+	border : 1px solid black;
+	border-collapse: collapse;
+}
+tr{
+	border: 1px solid black;
+	font-size: 20px;
+}
+th{
+	border: 1px solid black;
+}
+
+
+
+
+
+
+
+/*하단 시작*/
+footer{
+	width: 1200px;
+	height: 300px;
+	border: 1px solid black;
+	clear:both;
+	width:100%;
+	height: 200px;
+}
+/* GitLink*/
+.gitLink{
+	font-family: 'YdestreetB';
+	font-size:30px;
+	color: white;
+}
+.gitLink:hover, .gitLink:link , .gitLink:active , .gitLink:visited{
+	text-decoration: none;
+}
+
+
+
+/* footerURL  */
+#footerURL{
+	text-align:center;
+	padding-top: 60px;
+}
+/*하단 끝*/
+/* 모두 끝 */
