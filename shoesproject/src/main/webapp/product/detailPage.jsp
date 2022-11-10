@@ -15,12 +15,20 @@
 	<%@include file="../main/mainbaner.jsp" %>
 	<div id="main">
 		<section class="img_coponent">
-			<img src="/shoesproject/main/img/product/4.jpg">
+	
+			<img class="product" src="">
+		
+
 			<div class="sellNote">
 				<div><span id="warnComponent" class="warntext">주의</span>판매 거래 주의사항</div>
 				<div id="warnContent" class="warntext" >반드시 보유한 상품만 판매하세요.</div>
 				<!-- <img src="/shoesproject/main/img/left.png">  -->
+					
 			</div>
+				<div class="productname"></div>
+				<div class="productdate"></div>
+				<div class="productcolor"></div>
+				<div class="productpbrand"></div>		
 			
 			
 			
@@ -42,13 +50,13 @@
 	<div class="maintitle"></div>
 	<section class="sellborder">
 	<div class="mainproduct">
-		<img src="/shoesproject/main/img/product/4.jpg">
+		<img src="" class="priceimg">
 		<div class="product_title">
-			<div class="product_number">1</div>
-			<div class="product_engliname">Nike LeBron XX EP White Metalic Gold</div>
-			<div class="product_koreaname">나이키 르브론 20 EP 화이트 메탈릭 골드</div>
+			<div class="product_number"></div>
+			<div class="product_engliname"></div>
+			<div class="product_koreaname"></div>
 		</div>
-	</div>
+	</div>	
 	<div id="size" style="display:none"  >225</div>
 	<div class="subproduct">
 		<div id="225" class="product_size"	onclick="sellAddButton(225)">
@@ -136,15 +144,19 @@
 			<div>325</div>
 			
 		</div>
-		<div class="pricelist">아</div>
+		
+		<div class="pricelist"></div>
+		<button onclick="sellmain()">판매입찰하기</button>
 	</div>
+	
 	</section>
-</div>
-        희망가격 : <input type="text" class="selprice">
+	
+	</div>
+		<div class="sellmainprice">
+        </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary" onclick="selin()">sell</button>
+       
       </div>
     </div>
   </div>
@@ -166,11 +178,11 @@
 	<div class="maintitle"></div>
 	<section class="sellborder">
 	<div class="mainproduct">
-		<img src="/shoesproject/main/img/product/4.jpg">
+		<img src="" class="priceimg1">
 		<div class="product_title">
-			<div class="product_number">DJ5422-100</div>
-			<div class="product_engliname">Nike LeBron XX EP White Metalic Gold</div>
-			<div class="product_koreaname">나이키 르브론 20 EP 화이트 메탈릭 골드</div>
+			<div class="product_number1">DJ5422-100</div>
+			<div class="product_engliname1">Nike LeBron XX EP White Metalic Gold</div>
+			<div class="product_koreaname1">나이키 르브론 20 EP 화이트 메탈릭 골드</div>
 		</div>
 	</div>
 	<div id="size" style="display:none"  >225</div>
@@ -261,14 +273,15 @@
 			
 		</div>
 		<div class="pricelist1"></div>
+		<button onclick="buymain()">구매입찰하기</button>
 	</div>
 	</section>
 </div>
-        희망가격 : <input type="text" class="selprice1">
+      
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary" onclick="selbuy()">buy</button>
+      <div class="buymainprice">
+        </div>
+      <div class="modal-footer" id="modal-footer">
       </div>
     </div>
   </div>
@@ -281,10 +294,14 @@
 		</section>
 		<section class="content_coponent">
 			<!--  그래프 css 설정은 여기서 하는겁니다. 시작 -->
-			<canvas id="myChart" style="width:100%;max-width:500px"></canvas>
+			<canvas id="myChart" style="width:100%;max-width:1000px"></canvas>
 			<!--  그래프 css 설정은 여기서 하는겁니다. 끝 -->
 		</section>
-
+		<table class="successlist">	
+			
+		
+		
+		</table>
 	
 	
 	
