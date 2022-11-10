@@ -433,7 +433,7 @@ img{
 .member_menu_open{
 	position: fixed;
     width: 1173px;
-    height: 24.7vh;
+	height: 100vh;
     background: #ffffff;
     top: 114px;
     z-index: 999;
@@ -493,7 +493,7 @@ footer{
 .member_menu_open{
 	position: fixed;
     width: 1173px;
-    height: 24.7vh;
+	height: 100vh;
     background: #ffffff;
     z-index: 999;
     padding: 3rem;
@@ -553,7 +553,7 @@ footer{
 .member_menu_open{
 	position: fixed;
     width: 1173px;
-    height: 24.7vh;
+	height: 100vh;
     background: #ffffff;
     z-index: 999;
     padding: 3rem;
@@ -611,9 +611,9 @@ footer{
 /*햄버거 드롭다운 시작*/
 /*일반유저 로그인 시작*/
 .member_menu_open{
-position: fixed;
+	position: fixed;
     width: 1173px;
-    height: 50.7vh;
+	height: 63vh;
     background: #ffffff;
     top: 110px;
     z-index: 999;
@@ -794,7 +794,7 @@ footer{
 .member_menu_open{
 	position: fixed;
     width: 1173px;
-    height: 24.7vh;
+	height: 38vh;
     background: #ffffff;
     top: 114px;
     z-index: 999;
@@ -916,7 +916,7 @@ footer{
 .member_menu_open{
 	position: fixed;
     width: 1173px;
-    height: 24.7vh;
+	height: 35vh;
     background: #ffffff;
     top: 134px;
     z-index: 999;
@@ -975,7 +975,7 @@ footer{
 .member_menu_open{
 	position: fixed;
     width: 1173px;
-    height: 24.7vh;
+	height: 32vh;
     background: #ffffff;
 	top: 120px;
     z-index: 999;
@@ -1036,7 +1036,7 @@ footer{
 .member_menu_open{
 	position: fixed;
     width: 1173px;
-    height: 24.7vh;
+	height: 28vh;
     background: #ffffff;
 	top: 120px;
     z-index: 999;
@@ -1097,7 +1097,7 @@ footer{
 .member_menu_open{
 	position: fixed;
     width: 1173px;
-    height: 24.7vh;
+	height: 26vh;
     background: #ffffff;
     top: 114px;
     z-index: 999;
@@ -1158,7 +1158,7 @@ footer{
 .member_menu_open{
 	position: fixed;
     width: 1173px;
-    height: 24.7vh;
+	height: 24vh;
     background: #ffffff;
     top: 114px;
     left: 852px;
@@ -1221,7 +1221,7 @@ footer{
 .member_menu_open{
     position: fixed;
     width: 1173px;
-    height: 16.7vh;
+	height: 18vh;
     background: #ffffff;
     top: 124px;
     left: 1331px;
