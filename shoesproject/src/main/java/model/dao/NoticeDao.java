@@ -50,7 +50,7 @@ public class NoticeDao extends dao {
 		return null;
 	}
 	
-	public ArrayList<NoticeDto> nloadDetail() {
+	public ArrayList<NoticeDto> nloadDetail() { // 어드민 , 일반회원 공지사항 출력
 		String sql = "select * from notice order by nno desc";
 		
 		JSONArray array = new JSONArray();
@@ -84,7 +84,7 @@ public class NoticeDao extends dao {
 		}
 		return false;
 	}
-	
+
 }
 
 

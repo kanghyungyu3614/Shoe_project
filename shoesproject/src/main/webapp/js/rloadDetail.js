@@ -18,6 +18,7 @@ function rloadDetail() {
 								<td>${r.rtitle}</td>
 								<td>${r.rcontent}</td>
 								<td class="board_date">${r.rdate}</td>
+								<td class="board_thing"><button type="button" class="board_btn" onclick="commentform(${r.rno})">답변하기</td>								
 								<td class="board_thing"><button type="button" class="board_btn" onclick="commentview(${r.rno})">답변보기</td>
 								<td class="board_thing"><button type="button" class="board_btn" onclick="rdelete(${r.rno})">삭제</button></td>
 							</tr>
@@ -51,7 +52,6 @@ function rdelete(rno) {
 }
 
 function logout() {
-
 	$.ajax({
 		url: "/shoesproject/logout",
 		success: function(re) {
@@ -128,6 +128,7 @@ function comment(rno) {
 		}
 	})
 }
+
 
 
 
