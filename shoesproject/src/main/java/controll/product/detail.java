@@ -69,24 +69,28 @@ public class detail extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		
-		int hideNum = Integer.parseInt(request.getParameter("hideNum"));		
 		String lid = (String)request.getSession().getAttribute("lid");
 		int type = Integer.parseInt(request.getParameter("type"));
-		int pno = Integer.parseInt(request.getParameter("pno")); //
-		System.out.println(lid);
-			
-		System.out.println(pno);
+		
 		if(type==1) {
+			int hideNum = Integer.parseInt(request.getParameter("hideNum"));		
+			
+			int pno = Integer.parseInt(request.getParameter("pno")); //
 			int selprice = Integer.parseInt(request.getParameter("selprice")); 
-		boolean result = DetailDao.getInstance().selin(hideNum,selprice,lid);
+		boolean result = DetailDao.getInstance().selin(hideNum,selprice,lid,pno);
 		response.getWriter().print(result);
 		}
 		else if(type==2) {
+			int hideNum = Integer.parseInt(request.getParameter("hideNum"));		
+			
+			int	pno = Integer.parseInt(request.getParameter("pno")); //
 			int selprice = Integer.parseInt(request.getParameter("selprice")); 
-			boolean result = DetailDao.getInstance().selbuy(hideNum,selprice,lid);
+			boolean result = DetailDao.getInstance().selbuy(hideNum,selprice,lid,pno);
 			response.getWriter().print(result);
 		}else if (type==3) { // 판매자 사이즈 리스트 (구매 입찰 올려놓은 사람의 리스트를 보여줌)
-	
+			int hideNum = Integer.parseInt(request.getParameter("hideNum"));		
+			
+			int	pno = Integer.parseInt(request.getParameter("pno"));
 			ArrayList<SpregistDto> result = DetailDao.getInstance().selllist(hideNum , pno);
 			System.out.println(result);
 			System.out.println(hideNum);
@@ -103,8 +107,7 @@ public class detail extends HttpServlet {
 				object.put("spprice" , result.get(i).getSpprice());
 				object.put("pno" , result.get(i).getPno());
 				array.add(object);
-				
-				System.out.println(object);
+				System.out.println( result.get(i).getSpsellid());
 			}
 			System.out.println(array);
 			response.setCharacterEncoding("UTF-8");
@@ -112,7 +115,9 @@ public class detail extends HttpServlet {
 			
 		}
 		else if (type==4) { // 판매자 사이즈 리스트 (구매 입찰 올려놓은 사람의 리스트를 보여줌)
+			int hideNum = Integer.parseInt(request.getParameter("hideNum"));		
 			
+			int	pno = Integer.parseInt(request.getParameter("pno")); //
 			ArrayList<SpregistDto> result = DetailDao.getInstance().buylist(hideNum , pno);
 			System.out.println(result);
 			System.out.println(hideNum);
@@ -136,12 +141,51 @@ public class detail extends HttpServlet {
 			response.setCharacterEncoding("UTF-8");
 			response.getWriter().print(array);
 			
+		}else if(type == 5) {
+			System.out.println(type+"sadsad");
+			int pno = Integer.parseInt(request.getParameter("pno")); //
+			System.out.println(pno);
+			ArrayList<SpregistDto> result = DetailDao.getInstance().suclist(pno);
+			JSONArray array = new JSONArray();
+			for(int i = 0 ; i<result.size(); i++) {
+				JSONObject object = new JSONObject();
+				object.put("spno" , result.get(i).getSpno());
+				object.put("spstatus" , result.get(i).getSpstatus());
+				object.put("spsize" , result.get(i).getSpsize());
+				object.put("spendday" , result.get(i).getSpendday());
+				object.put("spsellid" , result.get(i).getSpsellid());
+				object.put("spbuyid" , result.get(i).getSpbuyid());
+				object.put("spprice" , result.get(i).getSpprice());
+				object.put("pno" , result.get(i).getPno());
+				array.add(object);
+				
+		}
+			response.setCharacterEncoding("UTF-8");
+			System.out.println(array+"wqd");
+			response.getWriter().print(array);
 		}
 		
 	}
 	@Override
-	protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+	protected void doPut(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		int type  = Integer.parseInt(request.getParameter("type"));
 		
+		String lid = (String)request.getSession().getAttribute("lid");
+		System.out.println(lid);
+		if(type==1) {
+			
+			int spno = Integer.parseInt(request.getParameter("spno"));
+			
+			boolean result = DetailDao.getInstance().successsell(spno , lid);
+			
+			response.getWriter().print(result);
+		}else if(type==2) {
+				int spno = Integer.parseInt(request.getParameter("spno"));
+			
+			boolean result = DetailDao.getInstance().successbuy(spno , lid);
+			
+			response.getWriter().print(result);
+		}
 		
 	}
 

@@ -2,6 +2,7 @@ detail()
 let callComponent = 0;
 let hideComponent = 0;
 let hideNum = 0;
+let product_number = document.querySelector(".product_number").innerHTML
 
 function detail() {
 	$.ajax({
@@ -9,13 +10,24 @@ function detail() {
 		success : function (re) {
 			let product = JSON.parse(re)
 			
-			console.log(product.pno)
-			html = `
-				<h1>${product.pno}번 상품 디테일입니다.</h1>
-			`
 			
-			document.querySelector('.product').innerHTML = html
-			 
+			html = `<h1>${product.pno}번 상품 디테일입니다.</h1>`
+			let pimg = "/shoesproject/pupload/"+ product.pimg
+			document.querySelector('.priceimg').src = pimg
+			document.querySelector('.priceimg1').src = pimg
+			
+			document.querySelector('.product').src = pimg
+			document.querySelector(".productname").innerHTML = product.pname
+			document.querySelector(".productdate").innerHTML = product.preleaseday
+			document.querySelector(".productcolor").innerHTML = product.pcolor
+			document.querySelector(".productpbrand").innerHTML = product.pbrand
+			document.querySelector(".product_number").innerHTML = product.pno
+			document.querySelector(".product_engliname").innerHTML = product.pname
+			document.querySelector(".product_koreaname").innerHTML = product.pcolor
+			document.querySelector(".product_number1").innerHTML = product.pno
+			document.querySelector(".product_engliname1").innerHTML = product.pname
+			document.querySelector(".product_koreaname1").innerHTML = product.pcolor
+		
 		}
 	})
 }
@@ -24,22 +36,22 @@ function detail() {
 
 function sellAddButton(num){ // 판매
 	
-	let product_number = document.querySelector(".product_number").innerHTML
+	product_number = document.querySelector(".product_number").innerHTML
 	hideComponent = document.querySelector("#size")
 	hideComponent.innerHTML = num;
 	let pricelist = document.querySelector(".pricelist")
 	let html = ''
 	 hideComponent = document.querySelector("#size");
    	 hideNum = Number(hideComponent.innerHTML);
-   	 let pno = Number(product_number);
-   	 alert(pno)
-   	 console.log(hideNum+ "dssad")
+   	 let pno = product_number;
+  
+   	
 	$.ajax({	
 		url : "/shoesproject/product/detail",
 		type :'post',
 		data : {"hideNum" : hideNum , "type" : 3 ,"pno" : pno},
 		success : re=>{
-			alert(re)
+			
 		if(re){		
 			let json = JSON.parse(re)
 			
@@ -63,11 +75,19 @@ function sellAddButton(num){ // 판매
 	
 }
 
-function productlist(spno){
-	let ok =  confirm(spno+"구매하시겠습니까?")
-	if(ok==true){
-		alert("dd")
-	}
+
+/**-------------------------------판매입찰하기 */
+function sellmain(){
+	let html = ''
+	let html2 = ''
+	html = 
+	'         	희망가격 : <input type="text" class="selprice">'
+	
+	document.querySelector('.sellmainprice').innerHTML = html
+	html2 = '<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>'+
+'        <button type="button" class="btn btn-primary" onclick="selin()">sell</button>';	
+	
+	document.querySelector('.modal-footer').innerHTML = html2 
 }
 /*-----------------------------------------------------------------------------*/
 function buyAddButton(num){ // 구매
@@ -76,22 +96,22 @@ function buyAddButton(num){ // 구매
 	hideComponent.innerHTML = num;
 	
 
-	let product_number = document.querySelector(".product_number").innerHTML
+	product_number = document.querySelector(".product_number").innerHTML
 	hideComponent = document.querySelector("#size")
 	hideComponent.innerHTML = num;
 	let pricelist1 = document.querySelector(".pricelist1")
 	let html = ''
 	 hideComponent = document.querySelector("#size");
    	 hideNum = Number(hideComponent.innerHTML);
-   	 let pno = Number(product_number);
+   	 let pno = product_number;
    	 alert(pno)
-   	 console.log(hideNum+ "dssad")
+   	 
 	$.ajax({	
 		url : "/shoesproject/product/detail",
 		type :'post',
 		data : {"hideNum" : hideNum , "type" : 4 ,"pno" : pno},
 		success : re=>{
-			alert(re)
+			
 		if(re){		
 			let json = JSON.parse(re)
 			console.log(json)
@@ -99,7 +119,7 @@ function buyAddButton(num){ // 구매
 			html +='<button class="productlist" onclick="productbuylist('+json[i].spno+')">'+
 					'<div>'+json[i].spsize+'</div>' +
 					'<div>'+json[i].spprice+'</div>'+
-					'<div>'+json[i].spbuyid+'</div>'+
+					'<div>'+json[i].spsellid+'</div>'+
 				'</button>'
 		    
 		}
@@ -111,26 +131,34 @@ function buyAddButton(num){ // 구매
 	
 	})
 }
-function productbuylist(spno){
-	let ok =  confirm(spno+"하시겠습니까?")
-	if(ok==true){
-		alert("dd")
-	}
-}
 
+/**-------------------------------구매입찰하기 */
+function buymain(){
+	let html = ''
+	let html2 = ''
+	html = '희망가격 : <input type="text" class="selprice1">'
+	
+	document.querySelector('.buymainprice').innerHTML = html
+	
+	html2 = '<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>'+
+			'<button type="button" class="btn btn-primary" onclick="selbuy()">buy</button>';
+	document.querySelector('#modal-footer').innerHTML = html2 
+}
+/**----------------------------------------------------- */
 function selin(){
 	let selprice = document.querySelector(".selprice").value
  	  hideComponent = document.querySelector("#size");
    	 hideNum = Number(hideComponent.innerHTML);
-	
-  	 console.log(hideNum+selprice);   
+		let pno = Number(product_number);
+  	
   	 $.ajax({
 		url : "/shoesproject/product/detail",
 		type : "post",
-		data :  {"selprice" : selprice , "hideNum" : hideNum ,"type" : 1},
+		data :  {"selprice" : selprice , "hideNum" : hideNum ,"type" : 1 , "pno" : pno},
 		success : function(re){
 			if(re=="true"){
 				alert("등록성공")
+				window.location.reload()
 			}else{
 				alert("실패")
 			}
@@ -145,15 +173,17 @@ function selbuy(){
 	let selprice = document.querySelector(".selprice1").value
  	  hideComponent = document.querySelector("#size");
    	 hideNum = Number(hideComponent.innerHTML);
+	let pno = Number(product_number)
 	
-  	 console.log(hideNum+selprice);   
+  	
   	 $.ajax({
 		url : "/shoesproject/product/detail",
 		type : "post",
-		data :  {"selprice" : selprice , "hideNum" : hideNum ,"type" : 2},
+		data :  {"selprice" : selprice , "hideNum" : hideNum ,"type" : 2 ,"pno" : pno},
 		success : function(re){
 			if(re=="true"){
 				alert("등록성공")
+			window.location.reload()
 			}else{
 				alert("실패")
 			}
@@ -168,10 +198,41 @@ function selbuy(){
 
 
 
+/*------------------------------------판매 결제*----------------*/
+function productlist(spno){
+	let ok =  confirm("즉시판매하시겠습니까?")
+	if(ok==true){
+		$.ajax({
+			url : "/shoesproject/product/detail",
+			type : "put",
+			data : {"spno":spno ,"type" : 1},
+			success : re=>{alert(re)}
+			
+		})
+	}
+}
+
+
+/*------------------------------------구매 결제*----------------*/
+
+function productbuylist(spno){
+	let ok =  confirm("즉시구매하시겠습니까?")
+	if(ok==true){
+		$.ajax({
+			url : "/shoesproject/product/detail",
+			type : "put",
+			data : {"spno":spno ,"type" : 2},
+			success : re=>{alert(re)}
+			
+		})
+		
+	}
+}
 
 
 
 
+/*--------------------------------차트구역-----------------------*/
 
 // x축 11개 y축 11개 대응 1:1 대응
 // x축의 가로축값 ==> 날짜로 아마 하는게 좋겠죠?? 
@@ -233,4 +294,36 @@ new Chart("myChart", {
   // 옵션으로 이렇게 쓸거다.
 });
 
+/*-------------------------------거래 리스트------------------------*/
+suclist()
+function suclist(){
+	let slist  = document.querySelector(".successlist")
+	let	html = ""	
+	let pno = Number(product_number)
+	if(product_number!=null){
+	$.ajax({
+		url : "/shoesproject/product/detail",
+		type :"post",
+		data : {"type" : 5 , "pno" : pno},
+		success : re=>{
+			let json = JSON.parse(re)
+			for(let i = 0; i<json.length ; i++){
+				html += '<tr>'+
+							'<th>'+json[i].spsize+'</th>'+
+							'<th>'+json[i].spprice+'</th>'+
+							'<th>'+json[i].spendday+'</th>'+
+						'</tr>'	
+							
+							
+			}
+			slist.innerHTML = html
+			
+		}
+				
+		
+		
+	}) 
+	
+	}
+}
 
