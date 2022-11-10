@@ -256,27 +256,6 @@
 	justify-content: center;
 }
 /*로그인 끝*/
-/*admin일때 로그인했을때 상태 시작*/
-.admin_content{
-	margin: 10px 0;
-	text-align: center;
-	font-weight:700;
-	font-size: 35px;
-	font-family: 'SEBANG_Gothic_Bold';
-	position: relative;
-    top: 10px;
-    left: 440px;
-}
-.admin_find{
-	justify-content: center;
-	font-weight:700;
-	font-size: 30px;
-	font-family: 'SEBANG_Gothic_Bold';	
-	position: relative;	
-	top: 3px;
-	left: 400px;		
-}
-/*admin일때 로그인했을때 상태 끝*/
 /*메인 이미지 슬라이드 시작*/
 .main_img_slade{
 	clear : both;
