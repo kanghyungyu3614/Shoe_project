@@ -23,9 +23,8 @@
 	<header class="header">
 		<div id="header_logo">
 			<a href="/shoesproject/main/mainhome.jsp">shoes</a>
-			 <span class="member_content">관리자님 안녕하세요.</span>
-		     <span class="member_find">
-				<span class="member_page">&nbsp;<a href="/shoesproject/view/mypage.jsp">나의정보</a> |</span><br>
+			 <span class="admin_content">관리자님 안녕하세요.</span>
+		     <span class="admin_find">
 				<span class="member_selovelist">&nbsp;<a href="/shoesproject/admin/admin.jsp">관리자페이지</a> |</span>
 				<span class="member_logout">&nbsp;<a href="/shoesproject/view/logout.jsp">로그아웃</a></span>
 			</span>

@@ -1153,50 +1153,50 @@ a:visited{
 }
 /*로그인 끝*/
 /*admin일때 로그인했을때 상태 시작*/
+
 .admin_content{
-	margin: 10px 0;
-	text-align: center;
-	font-weight:700;
-	font-size: 35px;
-	font-family: 'SEBANG_Gothic_Bold';
-	position: relative;
-    top: 10px;
-    left: 440px;
+    font-size: 17px;
+    font-family: none;
+    position: relative;
+    top: 46px;
+    left: 720px;
 }
+
 .admin_find{
-	justify-content: center;
-	font-weight:700;
-	font-size: 30px;
-	font-family: 'SEBANG_Gothic_Bold';	
-	position: relative;	
-	top: 25px;
-	left: 450px;		
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 15px;
+    font-family: nonr;
+    width: 480px;
+    height: 40px;
+    position: relative;
+	top: 58px;
+    left: 560px;
 }
 /*admin일때 로그인했을때 상태 끝*/
 /*고객이 로그인했을때 상태 시작*/
 .member_content{
-	text-align: center;
-	font-weight:700;
-	font-size: 35px;
-	font-family: 'SEBANG_Gothic_Bold';	
-	position: relative;
-	top: 19px;
-	left: 235px;
+    font-size: 17px;
+    font-family: none;
+    position: relative;
+    top: 46px;
+    left: 485px;
 }
+
 .member_find{
 	display: flex;
-	justify-content: center;
-	font-weight:700;
-	font-size: 20px;
-	font-family: 'SEBANG_Gothic_Bold';	
-	width: 480px;
-	height: 40px;	
-	position: relative;
-	top: 30px;
-	left : 234px;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 15px;
+    font-family: nonr;
+    width: 480px;
+    height: 40px;
+    position: relative;
+    top: 48px;
+    left: 440px;
 }
 /*고객이 로그인했을때 상태 끝*/
-
 
 .mypage_component{
 	margin: 0 auto;

@@ -6,7 +6,17 @@ function pload() {
 		success : function (re) {
 			let product = JSON.parse(re)
 			console.log(product)
-			let html = ""
+			let html = '<tr class="product_table">'+
+							'<td >모델번호</td>'+
+							'<td >카테고리</td>'+
+							'<td >상품브랜드</td>'+
+							'<td >상품이름</td>'+
+							'<td >색상</td>'+
+							'<td >가격</td>'+
+							'<td >출시일</td>'+
+							'<td >이미지</td>'+
+							'<td >삭제버튼</td>'+
+						'</tr>';
 
 			for(let i = 0 ; i<product.length ; i++) {
 				let p = product[i]

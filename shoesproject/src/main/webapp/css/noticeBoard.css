@@ -450,10 +450,10 @@ footer{
 /*눈누에서 세방고딕 글씨체 끝*/
 
 #main{
-	width: 1200px;
+    width: 1200px;
     height: 2000px;
     border: 1px solid black;
-    margin: 30px auto;
+    margin: 13px auto;
 }
 #main_title{
 	display: flex;

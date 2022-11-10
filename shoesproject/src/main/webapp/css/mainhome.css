@@ -277,17 +277,6 @@
 	left: 400px;		
 }
 /*admin일때 로그인했을때 상태 끝*/
-/*고객이 로그인했을때 상태 시작*/
-.member_content{
-	text-align: center;
-	font-weight:700;
-	font-size: 35px;
-	font-family: 'SEBANG_Gothic_Bold';	
-	position: relative;
-	top: 23px;
-	left : 134px;
-}
-/*고객이 로그인했을때 상태 끝*/
 /*메인 이미지 슬라이드 시작*/
 .main_img_slade{
 	clear : both;

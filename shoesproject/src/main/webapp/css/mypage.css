@@ -279,25 +279,24 @@ a:visited{
 /*admin일때 로그인했을때 상태 끝*/
 /*고객이 로그인했을때 상태 시작*/
 .member_content{
-	text-align: center;
-	font-weight:700;
-	font-size: 35px;
-	font-family: 'SEBANG_Gothic_Bold';	
-	position: relative;
-	top: 19px;
-	left : 245px;
+	font-size: 17px;
+    font-family: none;
+    position: relative;
+    top: 54px;
+    left: 485px;
 }
+
 .member_find{
 	display: flex;
-	justify-content: center;
-	font-weight:700;
-	font-size: 24px;
-	font-family: 'SEBANG_Gothic_Bold';	
-	width: 470px;
-	height: 40px;	
-	position: relative;
-	top: 30px;
-	left : 244px;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 15px;
+    font-family: nonr;
+    width: 480px;
+    height: 40px;
+    position: relative;
+    top: 56px;
+	left: 440px;
 }
 /*고객이 로그인했을때 상태 끝*/
 
@@ -464,3 +463,7 @@ img{
     border-spacing: 90px 0px;
     border-collapse: inherit;
 }
+
+
+
+

@@ -78,6 +78,14 @@ a:visited{
 }
 /*상품등록 글짜 끝*/
 
+.regist{
+	width : 1140px;
+	margin: 0 auto;
+}
+
+
+
+
 
 /*상품등록 안의 관리자계시판 글자 시작*/
 .nav_content1 .nav_detail{

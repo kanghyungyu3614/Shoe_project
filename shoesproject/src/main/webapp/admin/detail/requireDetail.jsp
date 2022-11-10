@@ -29,18 +29,12 @@
 			<span id="notice">상품문의 게시판</span>
 				<div id="notice_table_component">
 					<table class="request">
-						<tr>
+						<tr class="notice_table">
 							<th>문의 유형</th>
 							<th>문의 세부유형</th>
 							<th>문의 내용</th>
 							<th>날짜</th>			
-						</tr>
-						<tr>
-							<th>브랜드배송</th>
-							<th>진행상황</th>
-							<th>가나다라마바사아자차카타파하(14줄/20줄)</th>
-							<th>2022/10/26</th>			
-						</tr>			
+						</tr>	
 					</table>
 				
 				</div>
