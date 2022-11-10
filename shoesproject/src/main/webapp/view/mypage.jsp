@@ -199,9 +199,9 @@
 			
 			<button onclick="login()" class="login_button" type="button">로그인하기</button>
 			<div class="signup_find">
-				<div><a href="../view/signup.jsp">회원가입</a> |</div>
-				<div>&nbsp;<a href="../view/find.jsp">아이디찾기</a> |</div>
-				<div>&nbsp;<a href="../view/findpw.jsp">비밀번호찾기</a></div>
+				<div><a href="/shoesproject/view/signup.jsp">회원가입</a> |</div>
+				<div>&nbsp;<a href="/shoesproject/view/find.jsp">아이디찾기</a> |</div>
+				<div>&nbsp;<a href="/shoesproject/view/findpw.jsp">비밀번호찾기</a></div>
 			</div> 
 			</section>
 			<!--  로그인 컴포넌트 끝 -->
@@ -219,23 +219,23 @@
 					<ul class="slidelist">
 						<li>
 							<a>
-								<img src="./img/brand/1.jpg">
-								<img src="./img/brand/2.jpg">
-								<img src="./img/brand/3.jpg">
+								<img src="/shoesproject/main/img/brand/1.jpg">
+								<img src="/shoesproject/main/img/brand/2.jpg">
+								<img src="/shoesproject/main/img/brand/3.jpg">
 							</a>
 						</li>
 						<li>
 							<a>
-								<img src="./img/brand/1.jpg">
-								<img src="./img/brand/2.jpg">
-								<img src="./img/brand/3.jpg">
+								<img src="/shoesproject/main/img/brand/1.jpg">
+								<img src="/shoesproject/main/img/brand/2.jpg">
+								<img src="/shoesproject/main/img/brand/3.jpg">
 							</a>
 						</li>
 						<li>
 							<a>
-								<img src="./img/brand/1.jpg">
-								<img src="./img/brand/2.jpg">
-								<img src="./img/brand/3.jpg">
+								<img src="/shoesproject/main/img/brand/1.jpg">
+								<img src="/shoesproject/main/img/brand/2.jpg">
+								<img src="/shoesproject/main/img/brand/3.jpg">
 							</a>
 						</li>
 					</ul>
@@ -273,23 +273,23 @@
 					<ul class="slidelist">
 												<li>
 							<a>
-								<img src="./img/brand/5.jpg">
-								<img src="./img/brand/6.jpg">
-								<img src="./img/brand/7.jpg">
+								<img src="/shoesproject/main/img/brand/5.jpg">
+								<img src="/shoesproject/main/img/brand/6.jpg">
+								<img src="/shoesproject/main/img/brand/7.jpg">
 							</a>
 						</li>
 						<li>
 							<a>
-								<img src="./img/brand/5.jpg">
-								<img src="./img/brand/6.jpg">
-								<img src="./img/brand/7.jpg">
+								<img src="/shoesproject/main/img/brand/5.jpg">
+								<img src="/shoesproject/main/img/brand/6.jpg">
+								<img src="/shoesproject/main/img/brand/7.jpg">
 							</a>
 						</li>
 						<li>
 							<a>
-								<img src="./img/brand/5.jpg">
-								<img src="./img/brand/6.jpg">
-								<img src="./img/brand/7.jpg">
+								<img src="/shoesproject/main/img/brand/5.jpg">
+								<img src="/shoesproject/main/img/brand/6.jpg">
+								<img src="/shoesproject/main/img/brand/7.jpg">
 							</a>
 						</li>
 					</ul>
@@ -635,10 +635,10 @@
 			<a href="/shoesproject/main/mainhome.jsp">shoes</a>
 			 <span class="member_content"><%=lid%>님 안녕하세요.</span>
 		     <span class="member_find">
-				<span class="member_page">&nbsp;<a href="../view/mypage.jsp">나의정보</a> |</span><br>
-				<span class="member_selovelist">&nbsp;<a href="../board/selovelist.jsp">셀렙들의정보</a> |</span>
-				<span class="member_selovelist">&nbsp;<a href="../admin/require.jsp">문의사항</a> |</span>
-				<span class="member_logout">&nbsp;<a href="../view/logout.jsp">로그아웃</a></span>
+				<span class="member_page">&nbsp;<a href="/shoesproject/view/mypage.jsp">나의정보</a> |</span><br>
+				<span class="member_selovelist">&nbsp;<a href="/shoesproject/board/selovelist.jsp">셀렙들의정보</a> |</span>
+				<span class="member_selovelist">&nbsp;<a href="/shoesproject/main/noticeBoard.jsp">문의사항</a> |</span>
+				<span class="member_logout">&nbsp;<a href="/shoesproject/view/logout.jsp">로그아웃</a></span>
 			</span>
 		</div>
 	</header>
