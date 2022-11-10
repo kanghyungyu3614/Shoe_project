@@ -638,8 +638,9 @@
 				<span class="member_page">&nbsp;<a href="/shoesproject/view/mypage.jsp">나의정보</a> |</span><br>
 				<span class="member_selovelist">&nbsp;<a href="/shoesproject/board/selovelist.jsp">셀렙들의정보</a> |</span>
 				<span class="member_selovelist">&nbsp;<a href="/shoesproject/main/noticeBoard.jsp">문의사항</a> |</span>
-								<span class="member_selovelist">&nbsp;<a href="/shoesproject/main/noticeBoard.jsp">공지사항</a> |</span>
+				<span class="member_selovelist">&nbsp;<a href="/shoesproject/main/noticeBoard.jsp">공지사항</a> |</span>
 				<span class="member_logout">&nbsp;<a href="/shoesproject/view/logout.jsp">로그아웃</a></span>
+
 			</span>
 		</div>
 	</header>

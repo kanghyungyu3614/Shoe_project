@@ -1,9 +1,10 @@
+alert('z')
 notice()
 
 function notice() {
 	$.ajax({
 		url: "/shoesproject/nload",
-		data: { "type": "adminDetail" },
+		data: { "type": "adminDetail"},
 		success: function (re) {
 			if(re){
 				let list = JSON.parse(re)
@@ -12,7 +13,7 @@ function notice() {
 				for(let i = 0 ; i<list.length ; i++) {
 					notice = list[i]
 					html += "<tr>"
-							+ "<td>"+notice.nno+"</td>"
+							+ "<td>"+notice.nno+"</td>"					
 							+ "<td>"+notice.ntitle+"</td>"
 							+ "<td>"+notice.ncontent+"</td>"
 							+ "<td>"+notice.ndate+"</td>"

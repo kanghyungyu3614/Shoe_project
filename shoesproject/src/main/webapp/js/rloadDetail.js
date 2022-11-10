@@ -51,7 +51,6 @@ function rdelete(rno) {
 }
 
 function logout() {
-
 	$.ajax({
 		url: "/shoesproject/logout",
 		success: function(re) {
@@ -128,6 +127,7 @@ function comment(rno) {
 		}
 	})
 }
+
 
 
 

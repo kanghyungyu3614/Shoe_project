@@ -2063,7 +2063,11 @@ a{text-decoration: none;color: inherit;}
 /*  드롭다운 끝 */
 
 
-
+.seloveimg{
+	border-radius: inherit;
+	width: 185px;
+	height: 246px;
+}
 
 
 

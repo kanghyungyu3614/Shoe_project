@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
+import model.dao.NoticeDao;
 import model.dao.PregistDao;
 import model.dao.RequestDao;
 import model.dto.PregistDto;
@@ -24,13 +25,17 @@ import model.dto.RequestDto;
 public class rload extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		String type = request.getParameter("type");
-		
+		System.out.println(request.getSession().getAttribute("lnum"));
+		int lnum = ((Integer) request.getSession().getAttribute("lnum"));
 		ArrayList<RequestDto> list = new ArrayList<>();
 		
 		if(type.equals("admin")) {
 			list = RequestDao.getInstance().rload();
 		} else if(type.equals("adminDetail")) {
 			list = RequestDao.getInstance().rloadDetail();
+		} else if (type.equals("memberd")) {// 본인 문의작성 게시물 보기
+			list = RequestDao.getInstance().rloadDetailm(lnum);
+			System.out.println(lnum);
 		}
 		
 		JSONArray array = new JSONArray();
@@ -44,7 +49,7 @@ public class rload extends HttpServlet {
 			object.put("rdate", list.get(i).getRdate());
 			object.put("lnum", list.get(i).getLnum());
 			array.add(object);
-		}
+		}	
 		
 		response.setCharacterEncoding("UTF-8");
 		response.getWriter().print(array);

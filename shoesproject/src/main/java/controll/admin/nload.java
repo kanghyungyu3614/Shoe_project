@@ -20,11 +20,13 @@ public class nload extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("UTF-8");
 		String type = request.getParameter("type");
-		
+
 		ArrayList<NoticeDto> array = new ArrayList<>();
 		if(type.equals("admin")) {
 			array = NoticeDao.getInstance().nload();
 		} else if(type.equals("adminDetail")) {
+			array = NoticeDao.getInstance().nloadDetail();
+		} else if(type.equals("member")) {
 			array = NoticeDao.getInstance().nloadDetail();
 		}
 		

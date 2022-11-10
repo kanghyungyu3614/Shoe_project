@@ -2,6 +2,10 @@ package model.dao;
 
 import java.util.ArrayList;
 
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+
+import model.dto.NoticeDto;
 import model.dto.PregistDto;
 import model.dto.RequestDto;
 
@@ -86,6 +90,32 @@ public class RequestDao extends dao {
 		}
 		return false;
 	}
+
+	// 마이페이지 내가 문의한 게시물 출력
+		// lnum을 검색해서 나오는 값을 출력
+	public ArrayList<RequestDto> rloadDetailm(int lnum) { 
+		String sql = "select * from request where lnum ="+lnum;
+//		JSONArray array = new JSONArray();
+		ArrayList<RequestDto> list = new ArrayList<>();
+		try {
+			ps = con.prepareStatement(sql);
+			rs = ps.executeQuery();
+			while(rs.next()) {
+				RequestDto dto = new RequestDto(
+						rs.getInt(1), rs.getString(2),
+						rs.getString(3), rs.getString(4),
+						rs.getString(5), rs.getString(6),
+						rs.getInt(7));
+				list.add(dto);
+			}
+			return list;
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+		return null;
+	}
+	
+	
 }
 
 

@@ -40,7 +40,7 @@
 				<button id="reset_button" type="reset">취소</button>  		
 	  		</div>
 		</form>
-		<div class="request_board">문의 게시판</div>
+		<div class="request_board">내 문의</div>
 		<table class="request"></table>
 		<!-- 공지사항 등록 끝 -->
 		
@@ -59,7 +59,7 @@
   	</div>
 	<!-- 마무리 -->
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-	<script type="text/javascript" src="../js/rloadDetail.js"></script>
+	<script type="text/javascript" src="../js/viewdetailr.js"></script>
 	<script type="text/javascript" src="../js/request.js"></script>	
 </body>
 </html>
