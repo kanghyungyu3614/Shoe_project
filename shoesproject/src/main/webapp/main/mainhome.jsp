@@ -1012,7 +1012,7 @@
 	           <a class="gitLink" href="https://github.com/kanghyungyu3614">강현규</a> 
 	         </div>			
 		</footer>
-		<!-- 푸터 끝 -->
+		<!-- 푸터 끝  -->
 		
 		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 		<script type="text/javascript" src="../js/main.js"></script>
