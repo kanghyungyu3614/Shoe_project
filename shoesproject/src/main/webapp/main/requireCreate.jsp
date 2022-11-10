@@ -22,7 +22,7 @@
 					<td><input type="text" class="rpurpose" id="product_name" placeholder="ex)  구매 / 판매 / 브랜드배송 / 일반" autofocus></td>
 				</tr> <!--//구매/판매/브랜드배송/일반  -->
 				<tr>
-					<td>문의세부유형</td>
+					<td class="require_detail">문의<br>세부유형</td>
 					<td><input type="text" class="rdetail" id="product_number"placeholder="ex)  진행상황 / 결제 / 배송 / 검수 / 기타"></td>
 				</tr>	
 				<tr>
