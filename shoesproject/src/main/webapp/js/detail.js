@@ -7,9 +7,11 @@ let product_number = document.querySelector(".product_number").innerHTML
 function detail() {
 	$.ajax({
 		url : "/shoesproject/product/detail",
+		async: false,
 		success : function (re) {
 			let product = JSON.parse(re)
-			
+			console.log(re);
+			console.log("re");
 			
 			html = `<h1>${product.pno}번 상품 디테일입니다.</h1>`
 			let pimg = "/shoesproject/pupload/"+ product.pimg
