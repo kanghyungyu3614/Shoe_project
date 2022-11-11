@@ -939,12 +939,12 @@
 					<ul class="slidelist">
 						<li>
 							<a>
-								<img class="slidelist_img" src="./img/1.jpg">
+								<img class="slidelist_img" src="./img/main2.webp" style="width: 100%">
 							</a>
 						</li>
 						<li>
 							<a>
-								<img class="slidelist_img" src="./img/2.jpg">
+								<img class="slidelist_img" src="./img/main1.jpg">
 							</a>
 						</li>
 						<li>

@@ -6,13 +6,16 @@
 	text-align: center;
 	box-sizing:  border-box;
 }
-table{
-	border-collapse: collapse;
-}
 .mainsize{
 	height: 1200px;
 	width: 800px;
 	border:solid 1px black; 
+	
+}
+.trsize{
+	width: 400px;
+	height: 20px;
+	border: solid 1px black;
 	
 }
 .signsize{
@@ -24,42 +27,58 @@ table{
 }
 
 .inputsize {
+	margin : 5px;
 	padding-left: 15px; 
 	height: 40px;
 	width: 350px;
-	border: solid 1px;
+	border : 0;
 	text-align: left;
 }
 .playrull{
 	width: 350px;
 	height: 200px;
-	border: solid 1px red;
+
 	
+}
+.playrull h3{
+	margin-top: 15px; 
 }
 .chek{
 		
 		display: flex;
 		margin: 20px;
 }
-.ckbox{
+.ckbox1 , .ckbox2 {
 	width: 30px;
 	height: 30px;
 	direction: none
 }
-
-.cocl2{
-	height: 30px;
-}
-
 .cocl3{
 	height: 30px;
-	width: 30px;
-	border: solid 1px black;
+    width: 30px;
+    
+    position: relative;
+    top: 10px;
+   
+ 	
+}
+.insertbox{
+	width: 400px;
+	height : 50px;
+	display: flex;
+	border-bottom: solid 1px #ebebeb;
+	margin-top: 10px;
+	
+}
+.btnsize{
+	color: white;
+	width: 400px;
+	height: 50px;
+	border : none;
+	display: block;
+	border-radius: 10px;
+	margin-top: 10px;
+
 }
 
-
-.oneline{
-	height: 100px;
-	width: 300px;
-	border : solid 1px black;
-}
+>>>>>>> refs/remotes/origin/김경주3

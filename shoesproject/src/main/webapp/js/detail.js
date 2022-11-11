@@ -1,9 +1,11 @@
 detail()
+
 let callComponent = 0;
 let hideComponent = 0;
 let hideNum = 0;
 let product_number = document.querySelector(".product_number").innerHTML
 
+console.log(lid)
 function detail() {
 	$.ajax({
 		url : "/shoesproject/product/detail",
@@ -34,6 +36,7 @@ function detail() {
 
 function sellAddButton(num){ // 판매
 	
+
 	product_number = document.querySelector(".product_number").innerHTML
 	hideComponent = document.querySelector("#size")
 	hideComponent.innerHTML = num;

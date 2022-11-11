@@ -1,5 +1,5 @@
 let cocl3 = document.querySelectorAll('.cocl3')
-
+let checkcolor = [0,0,0,0,0];
 
 function log1(){
 	let lname = document.querySelector("#lname").value
@@ -18,16 +18,18 @@ function log1(){
 				cocl3[1].innerHTML = "x"
 			}else{cocl3[1].innerHTML = "o" ;
 			cocl3[0].innerHTML = "o"}
-		
+			
 			}
 			
 			
-		})	
+		})
+		checkcolor[0] = 1;
 	}else{
 		cocl3[0].innerHTML = "x";
 		cocl3[1].innerHTML = "x"
 		
 	}
+	
 }
 
 
@@ -37,6 +39,7 @@ function log2(){
 		
 		if(lpwc.test(lpw)){
 			cocl3[2].innerHTML = "o"
+			checkcolor[1] = 1;
 		}else{
 			cocl3[2].innerHTML = "x"
 			
@@ -51,6 +54,7 @@ function log3(){
 	if(lphc.test(lph)){
 		
 		cocl3[3].innerHTML ="o"
+		checkcolor[2] = 1;
 	}else{
 		cocl3[3].innerHTML ="x"
 	}
@@ -66,6 +70,7 @@ function log4(){
 	if(lemailc.test(lemail)){
 		
 		cocl3[4].innerHTML ="o"
+		checkcolor[3] = 1;
 	}else{
 		cocl3[4].innerHTML ="x"
 
@@ -79,9 +84,15 @@ function log5(){
 		let lsizec = /^([0-9]{2,3})$/
 		if(lsizec.test(lsize)){
 			cocl3[5].innerHTML ="x"
+			checkcolor[4] = 1;
 		}else{
 			cocl3[5].innerHTML ="o"
 		}
+		for(let i = 0;  i<checkcolor.length; i++){
+			if(checkcolor[i]==1){
+				document.querySelectorAll(".btnsize")[0].style.backgroundColor = "black";
+		}
+}
 		
 }
 function signupbtn(){
@@ -96,12 +107,17 @@ function signupbtn(){
 		if(document.querySelector("#chek2").checked == false){
 			alert("이용약관에 동의해주세요"); return false;
 		}
+	
+		
+		
 		
 		
 		document.querySelector(".lsignup").submit();
 		
 		
 }
+
+		
 
 /*
 function signup(){
