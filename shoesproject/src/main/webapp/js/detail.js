@@ -7,15 +7,13 @@ let product_number = document.querySelector(".product_number").innerHTML
 function detail() {
 	$.ajax({
 		url : "/shoesproject/product/detail",
+		async : false,
 		success : function (re) {
 			let product = JSON.parse(re)
-			
-			
 			html = `<h1>${product.pno}번 상품 디테일입니다.</h1>`
 			let pimg = "/shoesproject/pupload/"+ product.pimg
 			document.querySelector('.priceimg').src = pimg
 			document.querySelector('.priceimg1').src = pimg
-			
 			document.querySelector('.product').src = pimg
 			document.querySelector(".productname").innerHTML = product.pname
 			document.querySelector(".productdate").innerHTML = product.preleaseday
@@ -206,7 +204,9 @@ function productlist(spno){
 			url : "/shoesproject/product/detail",
 			type : "put",
 			data : {"spno":spno ,"type" : 1},
-			success : re=>{alert(re)}
+			success : re=>{alert(re)
+				window.location.reload()}
+			
 			
 		})
 	}
@@ -215,17 +215,18 @@ function productlist(spno){
 
 /*------------------------------------구매 결제*----------------*/
 
-function productbuylist(spno){
-	let ok =  confirm("즉시구매하시겠습니까?")
-	if(ok==true){
+function productbuylist(spno) {
+	let ok = confirm("즉시구매하시겠습니까?")
+	if (ok == true) {
 		$.ajax({
-			url : "/shoesproject/product/detail",
-			type : "put",
-			data : {"spno":spno ,"type" : 2},
-			success : re=>{alert(re)}
-			
+			url: "/shoesproject/product/detail",
+			type: "put",
+			data: { "spno": spno, "type": 2 },
+			success: re => {
+				alert(re)
+				window.location.reload()
+			}
 		})
-		
 	}
 }
 
@@ -233,12 +234,12 @@ function productbuylist(spno){
 
 
 /*--------------------------------차트구역-----------------------*/
-
-// x축 11개 y축 11개 대응 1:1 대응
-// x축의 가로축값 ==> 날짜로 아마 하는게 좋겠죠?? 
-var xValues = ["6개월전","","","","","","","","","","오늘"];
-//x축에 대응되는 y축값 (0,0) 좌표값을 말합니다. 여기에 가격을 넣는게 맞겠죠?? 
-var yValues = [0,300000,130000,140000,150000,160000,180000,200000,230000,250000,000000];
+ 
+// x축 11개 y축 11개 대응 1:1 대응 
+// x축의 가로축값 ==> 날짜로 아마 하는게 좋겠죠??  
+var xValues = ["6개월전","","","","","","","","","","오늘"]; 
+//x축에 대응되는 y축값 (0,0) 좌표값을 말합니다. 여기에 가격을 넣는게 맞겠죠??  
+var yValues = [0,300000,130000,140000,150000,160000,180000,200000,230000,250000,000000]; 
 // Chart객체의 구조 
 // new Chart("dom으로 가져올 id",{객체인데 그래프에 설정 하고싶은 것들을 넣어주는겁니다.} )
 new Chart("myChart", {
@@ -296,34 +297,27 @@ new Chart("myChart", {
 
 /*-------------------------------거래 리스트------------------------*/
 suclist()
-function suclist(){
-	let slist  = document.querySelector(".successlist")
-	let	html = ""	
+function suclist() {
+	let slist = document.querySelector(".successlist")
+	let html = ""
 	let pno = Number(product_number)
-	if(product_number!=null){
-	$.ajax({
-		url : "/shoesproject/product/detail",
-		type :"post",
-		data : {"type" : 5 , "pno" : pno},
-		success : re=>{
-			let json = JSON.parse(re)
-			for(let i = 0; i<json.length ; i++){
-				html += '<tr>'+
-							'<th>'+json[i].spsize+'</th>'+
-							'<th>'+json[i].spprice+'</th>'+
-							'<th>'+json[i].spendday+'</th>'+
-						'</tr>'	
-							
-							
+	if (product_number != null) {
+		$.ajax({
+			url: "/shoesproject/product/detail",
+			type: "post",
+			data: { "type": 5, "pno": pno },
+			success: re => {
+				let json = JSON.parse(re)
+				for (let i = 0; i < json.length; i++) {
+					html += '<tr>' +
+						'<th>' + json[i].spsize + '</th>' +
+						'<th>' + json[i].spprice + '</th>' +
+						'<th>' + json[i].spendday + '</th>' +
+						'</tr>'
+				}
+				slist.innerHTML = html
 			}
-			slist.innerHTML = html
-			
-		}
-				
-		
-		
-	}) 
-	
+		})
 	}
 }
 

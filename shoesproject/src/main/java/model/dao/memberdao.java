@@ -204,8 +204,10 @@ public class memberdao extends dao{
 		} catch (Exception e) {
 			System.out.println(e);
 		}return false;
-		
 	}
+	
+	// 구매 판매내역 [안태섭 ]
+	public
 }
 
 

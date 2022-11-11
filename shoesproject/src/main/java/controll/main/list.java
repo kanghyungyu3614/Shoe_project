@@ -21,9 +21,7 @@ import model.dto.PregistDto;
 @WebServlet("/list")
 public class list extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
 		ArrayList<PregistDto> list = ListDao.getInstance().list();
-		
 		JSONArray array = new JSONArray();
 		for(int i = 0 ; i<list.size() ; i++) {
 			JSONObject object = new JSONObject();
@@ -35,12 +33,12 @@ public class list extends HttpServlet {
 			object.put("pcolor", list.get(i).getPcolor());
 			object.put("pprice", list.get(i).getPprice());
 			object.put("preleaseday", list.get(i).getPreleaseday());
-			
 			array.add(object);
 		}
-		
 		response.setCharacterEncoding("UTF-8");
 		response.getWriter().print(array);
+		
+		
 		
 	}
 	private static final long serialVersionUID = 1L;

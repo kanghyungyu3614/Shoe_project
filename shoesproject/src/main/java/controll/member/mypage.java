@@ -45,6 +45,9 @@ public class mypage extends HttpServlet {
 			object.put("lemail", dto.getLemail());
 			object.put("lsize", dto.getLsize());
 			
+			
+			
+			
 			System.out.println(object);
 			response.setCharacterEncoding("UTF-8");	
 			response.getWriter().print(object);
