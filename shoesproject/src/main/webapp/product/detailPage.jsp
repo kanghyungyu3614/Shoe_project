@@ -20,13 +20,8 @@
 				<div class="sellNote">
 					<div><span id="warnComponent" class="warntext">주의</span>판매 거래 주의사항</div>
 					<div id="warnContent" class="warntext" >반드시 보유한 상품만 판매하세요.</div>
-				</div>
-				<div class="productname"></div>
-				<div class="productdate"></div>
-				<div class="productcolor"></div>
-				<div class="productpbrand"></div>		
-				<!-- Button trigger modal -->
-				<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" >판매하기</button>
+				</div>	
+				
 		
 				<!-- Modal 시작-->
 				<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -84,9 +79,7 @@
 				</div>
 				<!-- Modal 끝-->
 				<!--------------------------------------------------------------구매하기--------------------->
-				<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1" >
-				 구매하기
-				</button>
+				
 				<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 				  <div class="modal-dialog">
 				    <div class="modal-content">
@@ -137,6 +130,7 @@
 				      </div>
 				      <div class="buymainprice"></div>
 				      <div class="modal-footer" id="modal-footer"></div>
+				      
 				    </div>
 				  </div>
 				</div>
@@ -147,6 +141,77 @@
 			<canvas id="myChart" style="width:100%;max-width:1000px"></canvas>
 			<!--  그래프 css 설정은 여기서 하는겁니다. 끝 -->
 			<table class="successlist">	</table>
+			<!--  구매하기, 판매하기 버튼 시작 -->
+			<button type="button" class="btn btn-primary btn-lg" id="btn_sell" data-bs-toggle="modal" data-bs-target="#exampleModal1" >
+				 구매하기
+			</button>
+			<button type="button" class="btn btn-primary btn-lg" id="btn_buy" data-bs-toggle="modal" data-bs-target="#exampleModal" >
+				판매하기
+			</button>
+			<!--  구매하기, 판매하기 버튼 끝 -->
+			<div class="product_imfo_main">
+				<div class="product_imfo">상품정보</div>
+				<table class="product_table">
+					<tr>
+						<th class="productinfoName">제품명</th>
+						<th class="productinfoPbrand">브랜드</th>
+						<th class="productinfoColor">색깔</th>
+						<th class="productinfoDate">출시일</th>
+					</tr>
+					<tr>
+						<td class="productname"></td>
+						<td class="productpbrand"></td>
+						<td class="productcolor"></td>
+						<td class="productdate"></td>
+					</tr>
+				</table>
+			</div>
+			<div class="product_imfo_sub">
+				<div class="product_deliver">배송정보</div>
+				<div class="product_whiteSpace">
+					<img src="/shoesproject/main/img/deliver.png" class="deliver_img">
+					<div class="deliver_info">
+						<div class="product_deliver_nomal">일반배송 3,000원</div>
+						<div class="product_deliver_nomal_detail">검수 후 배송 ・ 5-7일 내 도착 예정</div>					
+					</div>
+				</div>
+				<div class="product_whiteSpace">
+					<img src="/shoesproject/main/img/factory.png" class="deliver_img">
+					<div class="deliver_info">
+						<div class="product_deliver_nomal">창고보관 첫 30일 무료</div>
+						<div class="product_deliver_nomal_detail">배송 없이 창고에 보관 ・ 빠르게 판매 가능</div>					
+					</div>
+				</div>
+			</div>
+			<div class="product_deliver">구매 전 꼭 확인해주세요!</div>
+				<div class="product_imfo_sub">
+					<div class="product_whiteSpace">
+						<img src="/shoesproject/main/img/정품보증.svg" class="deliver_img">
+						<div class="deliver_info">
+							<div class="product_deliver_nomal">100% 정품 보증</div>
+							<div class="product_deliver_nomal_detail">Shoes에서 검수한 상품이 정품이 아닐 경우, 구매가의 1.5배를 보상합니다.</div>					
+						</div>
+				</div>
+				<div class="product_whiteSpace">
+					<img src="/shoesproject/main/img/엄격한 다중 검수.svg" class="deliver_img">
+					<div class="deliver_info">
+						<div class="product_deliver_nomal">엄격한 다중 검수</div>
+						<div class="product_deliver_nomal_detail">모든 상품은 검수센터에 도착한 후, 상품별 전문가 그룹의 체계적인 시스템을 거쳐 검수를 진행합니다.</div>					
+					</div>
+				</div>
+				<div class="product_whiteSpace">
+					<img src="/shoesproject/main/img/정품인증.svg" class="deliver_img">
+					<div class="deliver_info">
+						<div class="product_deliver_nomal">정품 인증 패키지</div>
+						<div class="product_deliver_nomal_detail">검수에 합격한 경우에 한하여 Shoes의 정품 인증 패키지가 포함된 상품이 배송됩니다.</div>					
+					</div>
+				</div>
+				<div class="product_whiteSpace_info">
+					Shoes는 통신판매 중개자로서 통신판매의 당사자가 아닙니다. 
+					본 상품은 개별판매자가 등록한 상품으로 상품, 상품정보, 거래에 관한 의무와 책임은 각 판매자에게 있습니다. 
+					단, 거래과정에서 검수하고 보증하는 내용에 대한 책임은 Shoes에 있습니다.
+				</div>
+			</div>
 		</section>
 	</div>
 	<!-- 셀럽 이미지 슬라이드 시작 -->

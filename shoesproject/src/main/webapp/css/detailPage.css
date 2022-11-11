@@ -10,13 +10,13 @@
 	border: solid 1px black;
 	margin: 0 auto;
 	width: 580px;
-	height: 2000px;		
+	
 }
 .img_coponent{
-	border: solid 1px black;
+	box-shadow: 0 2px 6px rgb(0 0 0 / 12%);
 	margin: 0 auto;
 	width: 580px;
-	height: 800px;	
+	height: 590px;
 }
 img{
 	width: 500px;
@@ -26,12 +26,14 @@ img{
     margin: 10px auto;
     display: flex;
     border-radius: 10px;
+    
 }
 .sellNote{
 	width: 500px;
 	height: 50px;
 	box-shadow: 0 2px 6px rgb(0 0 0 /  12%);
 	margin: 10px auto;
+	border-radius: 5px;
 }
 #warnComponent{
     line-height: 12px;
@@ -66,24 +68,102 @@ img{
 .content_coponent{
 	margin: 0 auto;
     width: 600px;
-	height: 2000px;	
+	height: 1500px;	
 }
 /*설명 컴포넌트 끝*/
+
+
 /*차트 밑에 테이블 시작*/
 .successlist{
     width: 600px;
     margin: 0;
 }
 
-
-
-
 /*차트 밑에 테이블 끝*/
+/* 구매하기 판매하기 버튼 시작*/
+#btn_sell{
+	margin-top: 10px;
+	width: 296.5px;
+	height: 80px;	
+	font-weight: bold;
+	font-size: 30px;
+	background-color: #ef6253;
+}
 
+#btn_buy{
+	margin-top: 10px;	
+	width: 296.5px;
+	height: 80px;	
+	font-weight: bold;
+	font-size: 30px;
+	background-color: #41b979;
+}
+/* 구매하기 판매하기 버튼 끝*/
+/* 상품정보 시작 */
+.product_imfo_main{
+	width: 600px;
+    height: 130px;
+}
+.product_imfo{
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	margin-top : 10px;
+	margin-bottom: 10px;
+}
 
+.product_table{
+	width: 600px;
+	height: 80px;
+}
+/* 상품정보 끝 */
+/* 배송정보 시작*/
+.product_imfo_sub{
+    width: 600px;
+    height: 200px;
+}
 
+.product_deliver{
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	margin-top : 10px;
+	margin-bottom: 5px;
+}
+.product_whiteSpace{
+	margin-top: 10px;
+	display: flex;
+}
 
-
+.product_whiteSpace_info{
+	margin-top: 20px;
+    padding-top: 20px;
+    line-height: 16px;
+    border-top: 1px solid #f0f0f0;
+    font-size: 12px;
+    letter-spacing: -.06px;
+    letter-spacing: -.05px;
+    color: rgba(34,34,34,.5);	
+}
+.deliver_img{
+	width: 60px;
+    height: 80px;
+    display: inline;
+    margin: 0px;
+    vertical-align: top;
+    border-radius: 10px;
+    position: relative;
+    top: 5px;
+}
+.deliver_info{
+	display: inline-block;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.product_deliver_nomal{
+	font-weight: bold;
+}
+/* 배송정보 끝*/
 
 
 

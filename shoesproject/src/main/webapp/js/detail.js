@@ -10,7 +10,8 @@ function detail() {
 		async: false,
 		success : function (re) {
 			let product = JSON.parse(re)
-			
+			console.log("product")
+			console.log(product)
 			html = `<h1>${product.pno}번 상품 디테일입니다.</h1>`
 			let pimg = "/shoesproject/pupload/"+ product.pimg
 			document.querySelector('.priceimg').src = pimg
@@ -354,14 +355,14 @@ $(window).scroll(function () {
 		imgComponent.style.position = "static"; 	
 		imgComponent.style.top = "none"; 
 	}
-    else if(scrollValue>89.5&&scrollValue < 1286 ){
+    else if(scrollValue>89.5&&scrollValue < 1000 ){
 		imgComponent = document.querySelector('.img_coponent')
 		imgComponent.style.position = "fixed";
-		imgComponent.style.top = 0; 	
+		imgComponent.style.top = "10px"; 	
 	}
-	else if(scrollValue>1287&&scrollValue < 2000){
+	else if(scrollValue>1000&&scrollValue < 2000){
 		imgComponent = document.querySelector('.img_coponent')
 		imgComponent.style.position = "relative";		
-		imgComponent.style.top = "1200px"; 
+		imgComponent.style.top = "900px"; 
 	}
 });	
