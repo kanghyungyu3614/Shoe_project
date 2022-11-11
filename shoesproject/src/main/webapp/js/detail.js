@@ -349,13 +349,20 @@ new Chart("myChart", {
 $(window).scroll(function () { 
 	var scrollValue = $(document).scrollTop(); 
 	console.log(scrollValue);
-    if(scrollValue>89.5 ){
-		imgComponent = document.querySelector('.img_coponent')
-		imgComponent.style.position = "fixed";
-	}else if (scrollValue<89.5){
+    if (scrollValue>0&&scrollValue<89.5){
 		imgComponent = document.querySelector('.img_coponent')
 		imgComponent.style.position = "static"; 	
+		imgComponent.style.top = "none"; 
+	}
+    else if(scrollValue>89.5&&scrollValue < 1286 ){
+		imgComponent = document.querySelector('.img_coponent')
+		imgComponent.style.position = "fixed";
 		imgComponent.style.top = 0; 	
+	}
+	else if(scrollValue>1287&&scrollValue < 2000){
+		imgComponent = document.querySelector('.img_coponent')
+		imgComponent.style.position = "fixed";		
+		imgComponent.style.bottom = 0; 
 	}
 });	
 

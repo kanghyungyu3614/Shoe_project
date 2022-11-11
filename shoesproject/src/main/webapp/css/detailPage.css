@@ -2,7 +2,6 @@
 #main{
 	margin: 0 auto;
 	width: 1200px;
-	height: 2000px;
 	display: flex;
 }
 /*이미지 컴포넌트 시작*/
@@ -80,6 +79,13 @@ img{
 
 
 /*차트 밑에 테이블 끝*/
+/*이달의 셀럽들 시작*/
+.month_sellve{
+	width: 1180px;
+	height: 500px;
+	border: solid 1px black;
+	margin: 0 auto;
+}
 
 
 
@@ -87,6 +93,62 @@ img{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*이달의 셀럽들 끝*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*하단 시작*/
+footer{
+    width: 1180px;
+    border: 1px solid black;
+    clear: both;
+    height: 200px;
+    margin: 0 auto;
+}
+/* GitLink*/
+.gitLink{
+	font-family: 'SEBANG_Gothic_Bold';
+	font-size:30px;
+	color: white;
+}
+.gitLink:hover, .gitLink:link , .gitLink:active , .gitLink:visited{
+	text-decoration: none;
+}
+
+
+
+/* footerURL  */
+#footerURL{
+	text-align:center;
+	padding-top: 60px;
+}
+/*하단 끝*/
 
 
 
