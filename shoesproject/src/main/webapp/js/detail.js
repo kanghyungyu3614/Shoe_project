@@ -1,21 +1,21 @@
 detail()
-
 let callComponent = 0;
 let hideComponent = 0;
 let hideNum = 0;
 let product_number = document.querySelector(".product_number").innerHTML
 
-console.log(lid)
 function detail() {
 	$.ajax({
 		url : "/shoesproject/product/detail",
-		async : false,
+		async: false,
 		success : function (re) {
 			let product = JSON.parse(re)
+			
 			html = `<h1>${product.pno}번 상품 디테일입니다.</h1>`
 			let pimg = "/shoesproject/pupload/"+ product.pimg
 			document.querySelector('.priceimg').src = pimg
 			document.querySelector('.priceimg1').src = pimg
+			
 			document.querySelector('.product').src = pimg
 			document.querySelector(".productname").innerHTML = product.pname
 			document.querySelector(".productdate").innerHTML = product.preleaseday
@@ -36,7 +36,6 @@ function detail() {
 
 function sellAddButton(num){ // 판매
 	
-
 	product_number = document.querySelector(".product_number").innerHTML
 	hideComponent = document.querySelector("#size")
 	hideComponent.innerHTML = num;
@@ -207,9 +206,7 @@ function productlist(spno){
 			url : "/shoesproject/product/detail",
 			type : "put",
 			data : {"spno":spno ,"type" : 1},
-			success : re=>{alert(re)
-				window.location.reload()}
-			
+			success : re=>{alert(re)}
 			
 		})
 	}
@@ -218,18 +215,17 @@ function productlist(spno){
 
 /*------------------------------------구매 결제*----------------*/
 
-function productbuylist(spno) {
-	let ok = confirm("즉시구매하시겠습니까?")
-	if (ok == true) {
+function productbuylist(spno){
+	let ok =  confirm("즉시구매하시겠습니까?")
+	if(ok==true){
 		$.ajax({
-			url: "/shoesproject/product/detail",
-			type: "put",
-			data: { "spno": spno, "type": 2 },
-			success: re => {
-				alert(re)
-				window.location.reload()
-			}
+			url : "/shoesproject/product/detail",
+			type : "put",
+			data : {"spno":spno ,"type" : 2},
+			success : re=>{alert(re)}
+			
 		})
+		
 	}
 }
 let xValues; 
@@ -288,6 +284,8 @@ function suclist(){
 ChartJs();
 function ChartJs(){
 /*--------------------------------차트구역-----------------------*/
+
+
 // Chart객체의 구조 
 // new Chart("dom으로 가져올 id",{객체인데 그래프에 설정 하고싶은 것들을 넣어주는겁니다.} )
 new Chart("myChart", {
@@ -343,7 +341,7 @@ new Chart("myChart", {
   }
   // 옵션으로 이렇게 쓸거다.
 });
-
+	
 }
 
 
@@ -363,11 +361,7 @@ $(window).scroll(function () {
 	}
 	else if(scrollValue>1287&&scrollValue < 2000){
 		imgComponent = document.querySelector('.img_coponent')
-		imgComponent.style.position = "fixed";		
-		imgComponent.style.bottom = 0; 
+		imgComponent.style.position = "relative";		
+		imgComponent.style.top = "1200px"; 
 	}
 });	
-
-
-
-
