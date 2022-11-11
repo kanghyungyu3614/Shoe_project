@@ -1,7 +1,11 @@
 package model.dao;
 
+import java.util.ArrayList;
+
 import model.dao.memberdao;
+import model.dto.SpregistDto;
 import model.dto.dto;
+import model.dto.orderinfodetail;
 
 public class memberdao extends dao{
 
@@ -206,8 +210,57 @@ public class memberdao extends dao{
 		}return false;
 	}
 	
-	// 구매 판매내역 [안태섭 ]
-	public
+	// 구매내역 출력 [안태섭 ]
+	public ArrayList<orderinfodetail> brload(String spbuyid){
+		ArrayList<orderinfodetail> list = new ArrayList<>();
+		String sql = "SELECT spno, spstatus, spsize , spendday, spsellid, spbuyid , spprice , product.* FROM sproduct, product where spbuyid = ?";
+		try {
+			ps = con.prepareStatement(sql);
+			ps.setString(1, spbuyid);
+			rs = ps.executeQuery();
+			while(rs.next()) {
+			orderinfodetail dto = new orderinfodetail(
+					rs.getInt(1), rs.getString(2),
+					rs.getInt(3), rs.getString(4),
+					rs.getString(5), rs.getString(6),
+					rs.getInt(7) , rs.getInt(8),
+					rs.getString(9) , rs.getString(10),
+					rs.getString(11) , rs.getString(12),
+					rs.getString(13) , rs.getInt(14) , rs.getString(15)
+					);
+				list.add(dto);
+				System.out.println(dto);
+			}
+
+			return list;
+		}catch (Exception e) {System.out.println(e);}
+			return list;
+	}
+	// 판매내역 출력 [안태섭 ]
+	public ArrayList<orderinfodetail> srload(String spsellid){
+		ArrayList<orderinfodetail> list = new ArrayList<>();
+		String sql = "SELECT spno, spstatus, spsize , spendday, spsellid, spbuyid , spprice , product.* FROM sproduct, product where spsellid = ?";
+		try {
+			ps = con.prepareStatement(sql);
+			ps.setString(1, spsellid);
+			rs = ps.executeQuery();
+			while(rs.next()) {
+				orderinfodetail dto = new orderinfodetail(
+						rs.getInt(1), rs.getString(2),
+						rs.getInt(3), rs.getString(4),
+						rs.getString(5), rs.getString(6),
+						rs.getInt(7) , rs.getInt(8),
+						rs.getString(9) , rs.getString(10),
+						rs.getString(11) , rs.getString(12),
+						rs.getString(13) , rs.getInt(14) , rs.getString(15)
+						);
+				list.add(dto);
+				System.out.println(dto);
+			}
+			return list;
+		}catch (Exception e) {System.out.println(e);}
+			return list;
+	}
 }
 
 

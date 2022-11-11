@@ -34,7 +34,6 @@ public class mypage extends HttpServlet {
 		String lid = (String)request.getSession().getAttribute("lid");
 		System.out.println(lid);
 		dto dto = memberdao.getInstance().getpage(lid);
-		
 		JSONObject object= new JSONObject();
 			object.put("lnum", dto.getLnum());
 			object.put("lday", dto.getLday());
@@ -44,10 +43,6 @@ public class mypage extends HttpServlet {
 			object.put("lph", dto.getLph());
 			object.put("lemail", dto.getLemail());
 			object.put("lsize", dto.getLsize());
-			
-			
-			
-			
 			System.out.println(object);
 			response.setCharacterEncoding("UTF-8");	
 			response.getWriter().print(object);
