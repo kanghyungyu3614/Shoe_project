@@ -45,10 +45,10 @@ public class psession extends HttpServlet {
 		ArrayList<orderinfodetail> result = null;
 		if(type == 1) {
 			System.out.println(type);
-			result = memberdao.getInstance().srload(lid);
+			result = memberdao.getInstance().brload(lid);
 			System.out.println(result);
 		} else if (type == 2) {
-			result = memberdao.getInstance().brload(lid);
+			result = memberdao.getInstance().srload(lid);
 		}
 		JSONArray array = new JSONArray();
 		for(int i = 0 ; i<result.size(); i++) {

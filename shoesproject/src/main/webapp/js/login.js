@@ -1,14 +1,11 @@
 
 function login(){
-	
-	
-	
 	let lid = document.querySelector('#lid').value
 	let lpw = document.querySelector('#lpw').value
 	let alertp = document.querySelector(".alertp")
-
 	$.ajax({
 		url:"/shoesproject/shoe/login",
+		async : false,
 		data : {"lid" : lid, "lpw":lpw},
 		success : function(re){
 			if(re==='1'){

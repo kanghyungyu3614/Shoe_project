@@ -8,22 +8,24 @@ function getbuylist(){
 		success: function(re) {
 			if (re) {
 				let bns = JSON.parse(re)
-				let html = '';
-				let pimg = null;
+				let html = "";
 				let bnsp;
 				for (let i = 0; i < bns.length; i++) {
 					bnsp = bns[i]
-					pimg = `<img src="/shoesproject/pupload/${bnsp.pimg}">`
 						html +=
+							"<div class='str'>" + bnsp.spno + "</div> <br>"						
 							+ "<div class='str'>" + bnsp.spbuyid + "</div> <br>"
-							+ pimg
+							+ `<div class='str'><img src="/shoesproject/pupload/${bnsp.pimg}"></div>`
 							+ "<div class='str'>" + bnsp.spsize + "</div> <br>"
 							+ "<div class='str'>" + bnsp.pname + "</div> <br>"
 							+ "<div class='str'>" + bnsp.preleaseday + "</div> <br>"
 							+ "<div class='str'>" + bnsp.spstatus + "</div> <br>"
-
 				}
 				document.querySelector('.buy').innerHTML = html
+				
+				
+				
+				
 			}
 		}
 	})
@@ -40,11 +42,12 @@ function getselllist(){
 				let bns = JSON.parse(re)
 				let html = '';
 				let pimg = null;
-				let bnsp;
+				let bnsp = null
 				for (let i = 0; i < bns.length; i++) {
 					bnsp = bns[i]
 					pimg = `<img src="/shoesproject/pupload/${bnsp.pimg}">`
 						html +=
+							"<div class='str'>" + bnsp.spno + "</div> <br>"						
 							+ "<div class='str'>" + bnsp.spsellid + "</div> <br>"
 							+ pimg
 							+ "<div class='str'>" + bnsp.spsize + "</div> <br>"

@@ -890,16 +890,12 @@
 	         </div>			
 		</footer>
 		<!-- 푸터 끝 -->
-		<script src="https://kit.fontawesome.com/def66b134a.js" crossorigin="anonymous"></script>
-		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 		<script type="text/javascript" src="../js/login.js"></script>
 		<script type="text/javascript" src="../js/dropdown.js"></script>
-
-</div>
-		<script src="https://kit.fontawesome.com/def66b134a.js" crossorigin="anonymous"></script>
-		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 		<script type="text/javascript" src="../js/mypage.js"></script>
 		<script type="text/javascript" src="../js/mybuynsell.js"></script>
+		<script src="https://kit.fontawesome.com/def66b134a.js" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
 	
 </body>

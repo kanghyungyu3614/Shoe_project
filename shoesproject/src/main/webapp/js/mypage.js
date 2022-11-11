@@ -1,16 +1,10 @@
-/**
- * 
- */
- 
 mypa()
-
  function mypa(){
 	$.ajax({
 		url : "/shoesproject/shoe/mypage",
-		success :function(re){
-			
-			let member = JSON.parse(re)
-			
+		async : false,
+		success :function(re){		
+			let member = JSON.parse(re)	
 			console.log(member)
 			document.querySelector(".ldate").innerHTML = member.lday
 			document.querySelector(".lname").innerHTML = member.lname
@@ -18,10 +12,7 @@ mypa()
 			document.querySelector(".lph").innerHTML = member.lph
 			document.querySelector(".lemail").innerHTML = member.lemail
 			document.querySelector(".lsize").innerHTML = member.lsize
-			
 		}
-		
-		
 	})
 }
 
@@ -31,6 +22,7 @@ function deletemember(){
 	console.log(dele)
 	$.ajax({
 		url : "/shoesproject/shoe/mypage",
+		async : false,
 		type :'POST', 
 		data :{"dele" : dele},
 		success : function(re){
