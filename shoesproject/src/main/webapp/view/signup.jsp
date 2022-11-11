@@ -8,6 +8,7 @@
 <link href="../css/member/signup.css" rel="stylesheet">
 </head>
 <body>
+	<%@ include file="../main/mainbaner.jsp" %>
 
 <div class="mainsize">
 <form class="lsignup" action="/shoesproject/shoe/signup" method="post">
@@ -42,7 +43,7 @@
 			<div class="cocl3"></div>
 		</div>
 		<div class="insertbox">
-			<div> <input type="text" placeholder="발사이즈 예) 244mm"  name="lsize" id="lsize" onkeyup="log5()" class="inputsize"></div>
+			<div> <input type="text" placeholder="발사이즈 예) 240mm"  name="lsize" id="lsize" onkeyup="log5()" class="inputsize"></div>
 			<div class="cocl3"></div>
 		</div>
 		
