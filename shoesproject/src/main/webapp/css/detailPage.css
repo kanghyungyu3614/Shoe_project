@@ -1,14 +1,19 @@
 @charset "UTF-8";
 #main{
-	border: solid 1px red;
 	margin: 0 auto;
 	width: 1200px;
-	height: 2000px;
 	display: flex;
 }
 /*이미지 컴포넌트 시작*/
+
+.main_section{
+	border: solid 1px black;
+	margin: 0 auto;
+	width: 580px;
+	height: 2000px;		
+}
 .img_coponent{
-	border: solid 1px red;
+	border: solid 1px black;
 	margin: 0 auto;
 	width: 580px;
 	height: 800px;	
@@ -59,9 +64,101 @@ img{
 /*이미지 컴포넌트 끝*/
 /*설명 컴포넌트 시작*/
 .content_coponent{
-	border: solid 1px red;
 	margin: 0 auto;
-	width: 580px;
+    width: 600px;
 	height: 2000px;	
 }
 /*설명 컴포넌트 끝*/
+/*차트 밑에 테이블 시작*/
+.successlist{
+    width: 600px;
+    margin: 0;
+}
+
+
+
+
+/*차트 밑에 테이블 끝*/
+/*이달의 셀럽들 시작*/
+.month_sellve{
+	width: 1180px;
+	height: 500px;
+	border: solid 1px black;
+	margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*이달의 셀럽들 끝*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*하단 시작*/
+footer{
+    width: 1180px;
+    border: 1px solid black;
+    clear: both;
+    height: 200px;
+    margin: 0 auto;
+}
+/* GitLink*/
+.gitLink{
+	font-family: 'SEBANG_Gothic_Bold';
+	font-size:30px;
+	color: white;
+}
+.gitLink:hover, .gitLink:link , .gitLink:active , .gitLink:visited{
+	text-decoration: none;
+}
+
+
+
+/* footerURL  */
+#footerURL{
+	text-align:center;
+	padding-top: 60px;
+}
+/*하단 끝*/
+
+
+
+
+
+
+
+
+
+
+
+
+

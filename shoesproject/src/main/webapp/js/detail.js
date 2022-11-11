@@ -229,17 +229,62 @@ function productbuylist(spno) {
 		})
 	}
 }
+let xValues; 
+let yValues;
+/*-------------------------------거래 리스트------------------------*/
+suclist()
+function suclist(){
+	let slist  = document.querySelector(".successlist")
+	let	html = '<tr> <th>사이즈</th> <th>가격</th> <th>시간</th> </tr>'		
+	let pno = Number(product_number)
+	if(product_number!=null){
+	$.ajax({
+		url : "/shoesproject/product/detail",
+		async : false,
+		type :"post",
+		data : {"type" : 5 , "pno" : pno},
+		success : re=>{
+			console.log("re");
+			console.log(re);
+			let json = JSON.parse(re)
+				//yValues += [300000,130000,140000,150000,160000,180000,200000,230000,250000]; 
+				//xValues = [,"","","","","","","","","",]
+			// x축 11개 y축 11개 대응 1:1 대응
+			// x축의 가로축값 ==> 날짜로 아마 하는게 좋겠죠?? 
+			xValues = [];
+			//x축에 대응되는 y축값 (0,0) 좌표값을 말합니다. 여기에 가격을 넣는게 맞겠죠?? 
+			yValues = [];	
+			for(let i = 0; i<json.length ; i++){
+				
+				xValues[i] = ""
+				yValues[i] = json[i].spprice
+				//yValues += [json[i].spprice]
+				console.log(yValues)
+				html += '<tr>'+
+							'<th>'+json[i].spsize+'</th>'+
+							'<th>'+json[i].spprice+'</th>'+
+							'<th>'+json[i].spendday+'</th>'+
+						'</tr>'		
+							
+			}
+			
+			
+			
+			slist.innerHTML = html
+			
+		}
+				
+		
+		
+	}) 
+	
+	}
+}
 
 
-
-
+ChartJs();
+function ChartJs(){
 /*--------------------------------차트구역-----------------------*/
- 
-// x축 11개 y축 11개 대응 1:1 대응 
-// x축의 가로축값 ==> 날짜로 아마 하는게 좋겠죠??  
-var xValues = ["6개월전","","","","","","","","","","오늘"]; 
-//x축에 대응되는 y축값 (0,0) 좌표값을 말합니다. 여기에 가격을 넣는게 맞겠죠??  
-var yValues = [0,300000,130000,140000,150000,160000,180000,200000,230000,250000,000000]; 
 // Chart객체의 구조 
 // new Chart("dom으로 가져올 id",{객체인데 그래프에 설정 하고싶은 것들을 넣어주는겁니다.} )
 new Chart("myChart", {
@@ -252,10 +297,11 @@ new Chart("myChart", {
       data: yValues, // data에는 yValues를 넣을겁니다.
       fill: false, // 그래프와 x축을 적분처럼 다 색을 칠할건지 ==> 근데 이건 안하는게 이쁨 
       // 그래프 색은 빨간색이 좋을거 같아요.
-      backgroundColor: "red",
-      borderColor: "red",
+      backgroundColor: "#3136ff",
+      borderColor: "#3136ff",
       // 이게 꼭짓점 없애는 애다. 시작
-      pointRadius: 0 
+      pointRadius: 3,
+      lineTension : 0
       // 이게 꼭짓점 없애는 애다. 끝
     }]
   },
@@ -274,7 +320,7 @@ new Chart("myChart", {
       // x축 설정 끝 
       // y축 설정 시작 
       ,yAxes: [{
-    	  ticks: {min: 0, max:300000, fontSize : 10, fontFamily : 'Helvetica Neue',fontWeight: 600,fontColor : 'black', reverse: false ,beginAtZero: true}
+    	  ticks: {min: 0, max:500000, fontSize : 10, fontFamily : 'Helvetica Neue',fontWeight: 600,fontColor : 'black', reverse: false ,beginAtZero: true}
       	  ,position: 'right'
       	  }]
     	
@@ -295,29 +341,30 @@ new Chart("myChart", {
   // 옵션으로 이렇게 쓸거다.
 });
 
-/*-------------------------------거래 리스트------------------------*/
-suclist()
-function suclist() {
-	let slist = document.querySelector(".successlist")
-	let html = ""
-	let pno = Number(product_number)
-	if (product_number != null) {
-		$.ajax({
-			url: "/shoesproject/product/detail",
-			type: "post",
-			data: { "type": 5, "pno": pno },
-			success: re => {
-				let json = JSON.parse(re)
-				for (let i = 0; i < json.length; i++) {
-					html += '<tr>' +
-						'<th>' + json[i].spsize + '</th>' +
-						'<th>' + json[i].spprice + '</th>' +
-						'<th>' + json[i].spendday + '</th>' +
-						'</tr>'
-				}
-				slist.innerHTML = html
-			}
-		})
-	}
 }
+
+
+// 드롭다운 닫기 
+$(window).scroll(function () { 
+	var scrollValue = $(document).scrollTop(); 
+	console.log(scrollValue);
+    if (scrollValue>0&&scrollValue<89.5){
+		imgComponent = document.querySelector('.img_coponent')
+		imgComponent.style.position = "static"; 	
+		imgComponent.style.top = "none"; 
+	}
+    else if(scrollValue>89.5&&scrollValue < 1286 ){
+		imgComponent = document.querySelector('.img_coponent')
+		imgComponent.style.position = "fixed";
+		imgComponent.style.top = 0; 	
+	}
+	else if(scrollValue>1287&&scrollValue < 2000){
+		imgComponent = document.querySelector('.img_coponent')
+		imgComponent.style.position = "fixed";		
+		imgComponent.style.bottom = 0; 
+	}
+});	
+
+
+
 
