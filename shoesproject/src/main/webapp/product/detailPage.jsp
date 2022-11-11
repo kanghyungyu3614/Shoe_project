@@ -11,8 +11,11 @@
 <link href="../css/detailPage.css" rel="stylesheet">
 </head>
 <body>
-
+	
 	<%@include file="../main/mainbaner.jsp" %>
+	
+	<% if(lid==null){response.sendRedirect("/shoesproject/view/login.jsp");} %>
+	
 	<div id="main">
 		<section class="img_coponent">
 	
@@ -33,7 +36,7 @@
 			
 			
 			<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" >
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"  >
  판매하기
 </button>
 
@@ -163,7 +166,8 @@
 </div>
 
 <!--------------------------------------------------------------구매하기--------------------->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1" >
+
+<button type="button" class="btn btn-primary logrebutton" data-bs-toggle="modal" data-bs-target="#exampleModal1"  >
  구매하기
 </button>
 <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

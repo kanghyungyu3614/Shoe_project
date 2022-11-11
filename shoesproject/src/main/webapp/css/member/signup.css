@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+
+*{
+	margin: 0 auto;
+	text-align: center;
+	box-sizing:  border-box;
+}
+
+.mainsize{
+	height: 1200px;
+	width: 800px;
+	border:solid 1px black; 
+	
+}
+.signsize{
+	margin : 20px;
+	border-bottom: solid 2px black;
+}
+.insertsize{
+	padding: 2%;
+}
+
+.inputsize {
+	margin : 5px;
+	padding-left: 15px; 
+	height: 40px;
+	width: 350px;
+	border: solid 2px;
+	text-align: left;
+}
+.playrull{
+	width: 350px;
+	height: 200px;
+	border: solid 1px red;
+	
+}
+.chek{
+		
+		display: flex;
+		margin: 20px;
+}
+.ckbox{
+	width: 30px;
+	height: 30px;
+	direction: none
+}
+.cocl3{
+	height: 30px;
+	width: 30px;
+	border: solid 1px black;
+}
+
+

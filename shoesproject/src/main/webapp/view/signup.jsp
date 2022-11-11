@@ -5,60 +5,65 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-		
+<link href="../css/member/signup.css" rel="stylesheet">
 </head>
 <body>
 
+<div class="mainsize">
 <form class="lsignup" action="/shoesproject/shoe/signup" method="post">
 
-	<h2> 회원가입 </h2>
-	<h3> 기입정보 </h3>
+	<h2 class="signsize"> 회원가입 </h2>
+	<h3 class="insertsize"> 기입정보 </h3>
 
 
 	<table>
 		<tr>
-			<td><input type="text" placeholder="이름" name="lname" id="lname"></td>
+			<td><input type="text" placeholder="이름" name="lname" id="lname" class="inputsize"></td>
 			<td class="cocl3"></td>
 	
 		</tr>
 		<tr>
 			
-			<td><input type="text" placeholder="아이디" name="lid" id="lid" onkeyup="log1()"></td>
+			<td><input type="text" placeholder="아이디" name="lid" id="lid" onkeyup="log1()" class="inputsize"></td>
 			<td class="cocl3"></td>
 		</tr>
 		<tr>
-			<td><input type="text" placeholder="비밀번호" name="lpw" id="lpw" onkeyup="log2()"></td>
-			<td class="cocl3"></td>
-			
-		</tr>
-		<tr>
-			<td><input type="text" placeholder="전화번호" name="lph" id="lph" onkeyup="log3()"></td>
+			<td><input type="text" placeholder="비밀번호" name="lpw" id="lpw" onkeyup="log2()" class="inputsize"></td>
 			<td class="cocl3"></td>
 			
 		</tr>
 		<tr>
-			<td><input type="text" placeholder="이메일" name="lemail" id="lemail" onkeyup="log4()"></td>
+			<td><input type="text" placeholder="전화번호" name="lph" id="lph" onkeyup="log3()" class="inputsize"></td>
+			<td class="cocl3"></td>
+			
+		</tr>
+		<tr>
+			<td><input type="text" placeholder="이메일" name="lemail" id="lemail" onkeyup="log4()" class="inputsize"></td>
 			<td class="cocl3"></td>
 		</tr>
 		<tr>
-			<td> <input type="text" placeholder="발사이즈"  name="lsize" id="lsize" onkeyup="log5()"></td>
+			<td> <input type="text" placeholder="발사이즈"  name="lsize" id="lsize" onkeyup="log5()" class="inputsize"></td>
 			<td class="cocl3"></td>
 		</tr>
 		
 	</table>
-	<h3>이용약관</h3>
-		<span>
-			<input type="checkbox" id="chek1">약관1<p>
-			<textarea rows="" cols="" readonly="readonly" style="resize: none;"></textarea><p>
-			<input type="checkbox" id="chek2">약관2<p>
-			<textarea rows="" cols="" readonly="readonly" style="resize: none;"></textarea>
-			
-		</span>	
-	<div>
-		<button type="button" onclick="signupbtn()"> 가입하기</button>
-		<button type="reset"> 취소하기 </button>
-	</div>	
+	<div class="playrull">
+		<h3>이용약관</h3>
+			<span class="chek">
+				<input type="checkbox" class="ckbox">약관1
+				<textarea rows="" cols="" readonly="readonly" style="resize: none;"></textarea>
+			</span>
+				
+			<span class="chek">
+				<input type="checkbox" class="ckbox">약관2
+				<textarea rows="" cols="" readonly="readonly" style="resize: none;"></textarea>
+			</span>	
 		
+	</div>
+		<div>
+			<button type="button" onclick="signupbtn()"> 가입하기</button>
+			<button type="reset"> 취소하기 </button>
+		</div>	
 </form>
 
 <!-- <form action="/태섭_경주포폴/member/signup" method="post" class="sign">
@@ -85,6 +90,7 @@
 	
 	
 </form> -->
+</div>
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 
 <script type="text/javascript" src="../js/signup.js"></script>
