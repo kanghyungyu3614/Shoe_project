@@ -1,12 +1,11 @@
 notice()
-
 function scroll1() {
 	window.scroll({
 		top: 1000,
 		behavior: "smooth"
 	});
 }
-
+// 공지 출력 함수
 function notice() {
 	$.ajax({
 		url: "/shoesproject/nload",
@@ -15,10 +14,8 @@ function notice() {
 			if (re) {
 				let list = JSON.parse(re)
 				console.log(list)
-
 				document.querySelector('.notice').innerHTML =
 					"<tr><th>제목</th><th>내용</th><th>날짜</th></tr>"
-
 				for (let i = 0; i < list.length; i++) {
 					notice = list[i]
 					html = "<tr>"
@@ -33,7 +30,7 @@ function notice() {
 		}
 	})
 }
-
+// 공지 삭제 함수
 function ndelete(i) {
 	$.ajax({
 		url: "/shoesproject/ndelete",
@@ -48,7 +45,7 @@ function ndelete(i) {
 		}
 	})
 }
-
+// 로그아웃 함수
 function logout() {
 	$.ajax({
 		url: "/shoesproject/logout",

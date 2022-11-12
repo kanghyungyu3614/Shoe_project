@@ -22,10 +22,6 @@ function getbuylist(){
 							+ "<div class='str'>" + bnsp.spstatus + "</div> <br>"
 				}
 				document.querySelector('.buy').innerHTML = html
-				
-				
-				
-				
 			}
 		}
 	})
@@ -54,7 +50,6 @@ function getselllist(){
 							+ "<div class='str'>" + bnsp.pname + "</div> <br>"
 							+ "<div class='str'>" + bnsp.preleaseday + "</div> <br>"
 							+ "<div class='str'>" + bnsp.spstatus + "</div> <br>"
-						
 				}
 				document.querySelector('.sell').innerHTML = html
 			}

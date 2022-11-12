@@ -58,9 +58,6 @@ img{
 .warntext{
 	margin-left: 10px;
 }
-
-
-
 /*이미지 컴포넌트 끝*/
 /*설명 컴포넌트 시작*/
 .content_coponent{
@@ -75,9 +72,6 @@ img{
     margin: 0;
 }
 
-
-
-
 /*차트 밑에 테이블 끝*/
 /*이달의 셀럽들 시작*/
 .month_sellve{
@@ -86,43 +80,7 @@ img{
 	border: solid 1px black;
 	margin: 0 auto;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*이달의 셀럽들 끝*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*하단 시작*/
 footer{
     width: 1180px;
@@ -140,25 +98,9 @@ footer{
 .gitLink:hover, .gitLink:link , .gitLink:active , .gitLink:visited{
 	text-decoration: none;
 }
-
-
-
 /* footerURL  */
 #footerURL{
 	text-align:center;
 	padding-top: 60px;
 }
 /*하단 끝*/
-
-
-
-
-
-
-
-
-
-
-
-
-

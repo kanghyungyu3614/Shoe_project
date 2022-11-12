@@ -1,6 +1,4 @@
 @charset "UTF-8";
-
-
 *{
 	margin: 0 auto;
 	text-align: center;
@@ -10,13 +8,11 @@
 	height: 1200px;
 	width: 800px;
 	border:solid 1px black; 
-	
 }
 .trsize{
 	width: 400px;
 	height: 20px;
 	border: solid 1px black;
-	
 }
 .signsize{
 	margin : 20px;
@@ -43,10 +39,9 @@
 .playrull h3{
 	margin-top: 15px; 
 }
-.chek{
-		
-		display: flex;
-		margin: 20px;
+.chek{	
+	display: flex;
+	margin: 20px;
 }
 .ckbox1 , .ckbox2 {
 	width: 30px;
@@ -56,11 +51,8 @@
 .cocl3{
 	height: 30px;
     width: 30px;
-    
     position: relative;
     top: 10px;
-   
- 	
 }
 .insertbox{
 	width: 400px;
@@ -68,7 +60,6 @@
 	display: flex;
 	border-bottom: solid 1px #ebebeb;
 	margin-top: 10px;
-	
 }
 .btnsize{
 	color: white;
@@ -80,5 +71,3 @@
 	margin-top: 10px;
 
 }
-
->>>>>>> refs/remotes/origin/김경주3

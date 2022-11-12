@@ -21,7 +21,6 @@ function requestPay(  ) {
 		}
 	});
 }
-
 /*
 	<!-- iamport.payment.js  [ 결제 API ]-->
 	<script type="text/javascript"

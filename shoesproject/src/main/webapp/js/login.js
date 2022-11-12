@@ -19,12 +19,7 @@ function login(){
 
 			}else if(re==='0'){
 				alertp.innerHTML = "비밀번호가 틀렸거나 존재하지 않는 아이디입니다";
-
 			}
 		}
 	})
-	
-	
-	
-	
 }

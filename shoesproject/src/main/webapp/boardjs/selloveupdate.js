@@ -9,7 +9,6 @@ $.ajax({
 		document.querySelector("#chimg").src='/shoesproject/supload/'+json[0].sfile
 	}
 })
-
 function selloveupdate(){
 	
 	let info = {
@@ -17,7 +16,6 @@ function selloveupdate(){
 		title : document.querySelector('#title').value , 
 		content : document.querySelector('#content').value ,  		
 	}
-	
 	$.ajax({
 		url : "/shoesproject/board/write",
 		data : info,
@@ -33,6 +31,5 @@ function selloveupdate(){
 				alert( "성공실패")
 			}
 		}
-		
 	})
 }

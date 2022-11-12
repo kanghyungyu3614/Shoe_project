@@ -11,7 +11,7 @@
 
 <%@include file="../main/mainbaner.jsp" %>
 
-<% if(lid==null){response.sendRedirect("/shoesproject/view/mainhome.jsp");} %>
+<%if(lid==null){response.sendRedirect("/shoesproject/view/mainhome.jsp");} %>
 
 	<div class="mainComponent">
 		<form class="mainForm">
@@ -19,7 +19,6 @@
 				<input type="text" value="${lid}" name="lid" id="lid" readonly="readonly" class="inputComponent"><br>
 				<input type="text" placeholder="제목" name="title" id="title" class="inputComponent" autofocus><br>
 				<textarea placeholder="내용" id="content" name="content" class="inputComponent"></textarea><br>
-			
 			<input type="file" name="sfile" id="sfile" class="sfile">
 			<button type="button" onclick="draw()" class="WriteBtn">글작성</button>
 			<div>
@@ -28,12 +27,8 @@
 		</form>		
 	</div>
 	
-	
-	
-
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-
-<script type="text/javascript" src="../boardjs/write.js"></script>
+	<script type="text/javascript" src="../boardjs/write.js"></script>
 
 </body>
 </html>

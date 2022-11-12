@@ -7,19 +7,21 @@ import model.dto.SpregistDto;
 import model.dto.dto;
 import model.dto.orderinfodetail;
 
-public class memberdao extends dao{
+public class memberdao extends dao {
 
 	private static memberdao mdao = new memberdao();
-	public static memberdao getInstance() { return mdao;}
-	
-	
-	//가입하기
-	
+
+	public static memberdao getInstance() {
+		return mdao;
+	}
+
+	// 가입하기
+
 	public boolean lsignup(dto dto) {
-		String sql ="insert into signup(lname ,lid , lpw, lph, lemail ,lsize)values(?,?,?,?,?,?)";
+		String sql = "insert into signup(lname ,lid , lpw, lph, lemail ,lsize)values(?,?,?,?,?,?)";
 		try {
 			ps = con.prepareStatement(sql);
-			ps.setString(1,dto.getLname());
+			ps.setString(1, dto.getLname());
 			ps.setString(2, dto.getLid());
 			ps.setString(3, dto.getLpw());
 			ps.setString(4, dto.getLph());
@@ -29,9 +31,10 @@ public class memberdao extends dao{
 			return true;
 		} catch (Exception e) {
 			System.out.println(e);
-		}return false;
+		}
+		return false;
 	}
-	
+
 	/*
 	 * public boolean lsignup( dto dto ) { String sql
 	 * ="insert into shoe( lname ,lid,lpw,lph,lemail,lsize)values(?,?,?,?,?,?)"; try
@@ -43,42 +46,49 @@ public class memberdao extends dao{
 	 * 
 	 * }
 	 */
-	
+
 	// 아이디 검사
-	public boolean check(String lid ,String lname) {
-		String sql ="select * from signup where lid =? and lname=?";
+	public boolean check(String lid, String lname) {
+		String sql = "select * from signup where lid =? and lname=?";
 		try {
-			ps= con.prepareStatement(sql);
-		    ps.setString(1,lid);
-		    ps.setString(2, lname);
-		    rs =  ps.executeQuery();
-			if(rs.next())return true;
-		} catch (Exception e) {System.out.println(e);}
+			ps = con.prepareStatement(sql);
+			ps.setString(1, lid);
+			ps.setString(2, lname);
+			rs = ps.executeQuery();
+			if (rs.next())
+				return true;
+		} catch (Exception e) {
+			System.out.println(e);
+		}
 		return false;
 	}
-	
+
 	// 로그인
-	public int M_login(String lid ,String lpw) {
+	public int M_login(String lid, String lpw) {
 		String sql = "select * from signup where lid=?";
 		try {
 			ps = con.prepareStatement(sql);
 			ps.setString(1, lid);
 			rs = ps.executeQuery();
-				if(rs.next()) {
-					sql ="select * from signup where lid = ? and lpw = ?";
-					ps = con.prepareStatement(sql);
-					ps.setString(1, rs.getString(3));
-					ps.setString(2, lpw);
-					rs = ps.executeQuery();
-					if(rs.next()) {return 1;}
-					return 2;
+			if (rs.next()) {
+				sql = "select * from signup where lid = ? and lpw = ?";
+				ps = con.prepareStatement(sql);
+				ps.setString(1, rs.getString(3));
+				ps.setString(2, lpw);
+				rs = ps.executeQuery();
+				if (rs.next()) {
+					return 1;
 				}
+				return 2;
+			}
 		} catch (Exception e) {
-			System.out.println(e); return 3;
+			System.out.println(e);
+			return 3;
 		}
 		return 0;
 	}
-	//아이디 찾기
+
+	// 아이디 찾기
 	public String findid(String findname, String findph) {
 		String sql = "select * from signup where lname=? and lph=?";
 		try {
@@ -86,50 +96,53 @@ public class memberdao extends dao{
 			ps.setString(1, findname);
 			ps.setString(2, findph);
 			rs = ps.executeQuery();
-			if(rs.next()) {
+			if (rs.next()) {
 				return rs.getString(3);
 			}
-		} catch (Exception e) {System.out.println(e);}
+		} catch (Exception e) {
+			System.out.println(e);
+		}
 		return null;
 	}
-	
-	//비번 찾기 난수
-	public boolean findpw(String id,String name,String ph) {
-		
+
+	// 비번 찾기 난수
+	public boolean findpw(String id, String name, String ph) {
+
 		String sql = "select *from signup where lid=? and lname=? and lph=?";
 		try {
-			ps =con.prepareStatement(sql);
+			ps = con.prepareStatement(sql);
 			ps.setString(1, id);
 			ps.setString(2, name);
 			ps.setString(3, ph);
 			rs = ps.executeQuery();
-			if(rs.next()) {
+			if (rs.next()) {
 				return true;
 			}
 		} catch (Exception e) {
-			System.out.println(e);}
-		return false;
+			System.out.println(e);
 		}
-	
-	
-	//임시비번 업데이트
+		return false;
+	}
+
+	// 임시비번 업데이트
 	public boolean pwch(String id, String rand) {
-		String sql ="update signup set lpw= ? where lid= ?";
+		String sql = "update signup set lpw= ? where lid= ?";
 		try {
 			ps = con.prepareStatement(sql);
 			ps.setString(1, rand);
 			ps.setString(2, id);
 			ps.executeUpdate();
 			return true;
-		} catch (Exception e) {System.out.println(e);
+		} catch (Exception e) {
+			System.out.println(e);
 			// TODO: handle exception
-		}return false;
-		
-		
+		}
+		return false;
+
 	}
-	
-	//회원 호출
-	
+
+	// 회원 호출
+
 	public dto getpage(String lid) {
 		dto dto = null;
 		String sql = "select * from signup where lid = ?";
@@ -137,50 +150,52 @@ public class memberdao extends dao{
 			ps = con.prepareStatement(sql);
 			ps.setString(1, lid);
 			rs = ps.executeQuery();
-			if(rs.next()) {
-				dto = new dto(rs.getInt( 1 ) , rs.getString( 2 ) ,
-						rs.getString( 3 ), rs.getString( 4 ) ,
-						rs.getString( 5 ), rs.getString( 6 ), 
-						rs.getString( 7 ), rs.getString(8));
+			if (rs.next()) {
+				dto = new dto(rs.getInt(1), rs.getString(2), rs.getString(3), rs.getString(4), rs.getString(5),
+						rs.getString(6), rs.getString(7), rs.getString(8));
 				return dto;
 			}
 		} catch (Exception e) {
 			System.out.println(e);
-		}return dto;
+		}
+		return dto;
 	}
-	
+
 	// 탈퇴
-	
-	public boolean memberdelete(String lid,String lpw) {
+
+	public boolean memberdelete(String lid, String lpw) {
 		String sql = "delete from signup where lid = ? and lpw =?";
 		try {
 			ps = con.prepareStatement(sql);
 			ps.setString(1, lid);
 			ps.setString(2, lpw);
-			int count = ps.executeUpdate(); //삭제가 안되도 true여서 
-			if(count == 1) {
+			int count = ps.executeUpdate(); // 삭제가 안되도 true여서
+			if (count == 1) {
 				return true;
 			}
 		} catch (Exception e) {
 			System.out.println(e);
-		}return false;
+		}
+		return false;
 	}
 
-	//아이디를 번호로 
+	// 아이디를 번호로
 	public int getlnum(String lid) {
 		String sql = "select * from signup where lid =?";
 		try {
 			ps = con.prepareStatement(sql);
 			ps.setString(1, lid);
 			rs = ps.executeQuery();
-			if(rs.next()) return rs.getInt(1);
+			if (rs.next())
+				return rs.getInt(1);
 		} catch (Exception e) {
 			System.out.println(e);
-		}return 0;
+		}
+		return 0;
 	}
 
 	// 회원정보 수정 2022-10-28 안태섭
-	public boolean updatemember (String lpw , String lph , String lemail , String lsize , int lnum) {
+	public boolean updatemember(String lpw, String lph, String lemail, String lsize, int lnum) {
 		String sql = "update signup set lpw = ? , lph = ? , lemail = ? , lsize = ? where lnum = ?";
 		try {
 			ps = con.prepareStatement(sql);
@@ -189,78 +204,73 @@ public class memberdao extends dao{
 			ps.setString(3, lemail);
 			ps.setString(4, lsize);
 			ps.setInt(5, lnum);
-			ps.executeUpdate(); return true;
-		}catch (Exception e) {System.out.println(e);}
+			ps.executeUpdate();
+			return true;
+		} catch (Exception e) {
+			System.out.println(e);
+		}
 		return false;
 	}
-	//  비밀번호 변경
-	
-	public boolean reinsert(int lnum , String upinp) {
+	// 비밀번호 변경
+
+	public boolean reinsert(int lnum, String upinp) {
 		String sql = "update signup set lpw=? where lnum =? ";
-		
+
 		try {
 			ps = con.prepareStatement(sql);
-			ps.setString(1,upinp);
+			ps.setString(1, upinp);
 			ps.setInt(2, lnum);
 			ps.executeUpdate();
 			return true;
-			
+
 		} catch (Exception e) {
 			System.out.println(e);
-		}return false;
+		}
+		return false;
 	}
-	
+
 	// 구매내역 출력 [안태섭 ]
-	public ArrayList<orderinfodetail> brload(String spbuyid){
+	public ArrayList<orderinfodetail> brload(String spbuyid) {
 		ArrayList<orderinfodetail> list = new ArrayList<>();
 		String sql = "SELECT spno, spstatus, spsize , spendday, spsellid, spbuyid , spprice , product.* FROM sproduct, product where spbuyid = ?";
 		try {
 			ps = con.prepareStatement(sql);
 			ps.setString(1, spbuyid);
 			rs = ps.executeQuery();
-			while(rs.next()) {
-			orderinfodetail dto = new orderinfodetail(
-					rs.getInt(1), rs.getString(2),
-					rs.getInt(3), rs.getString(4),
-					rs.getString(5), rs.getString(6),
-					rs.getInt(7) , rs.getInt(8),
-					rs.getString(9) , rs.getString(10),
-					rs.getString(11) , rs.getString(12),
-					rs.getString(13) , rs.getInt(14) , rs.getString(15)
-					);
+			while (rs.next()) {
+				orderinfodetail dto = new orderinfodetail(rs.getInt(1), rs.getString(2), rs.getInt(3), rs.getString(4),
+						rs.getString(5), rs.getString(6), rs.getInt(7), rs.getInt(8), rs.getString(9), rs.getString(10),
+						rs.getString(11), rs.getString(12), rs.getString(13), rs.getInt(14), rs.getString(15));
 				list.add(dto);
 				System.out.println(dto);
 			}
 
 			return list;
-		}catch (Exception e) {System.out.println(e);}
-			return list;
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+		return list;
 	}
+
 	// 판매내역 출력 [안태섭 ]
-	public ArrayList<orderinfodetail> srload(String spsellid){
+	public ArrayList<orderinfodetail> srload(String spsellid) {
 		ArrayList<orderinfodetail> list = new ArrayList<>();
 		String sql = "SELECT spno, spstatus, spsize , spendday, spsellid, spbuyid , spprice , product.* FROM sproduct, product where spsellid = ?";
 		try {
 			ps = con.prepareStatement(sql);
 			ps.setString(1, spsellid);
 			rs = ps.executeQuery();
-			while(rs.next()) {
-				orderinfodetail dto = new orderinfodetail(
-						rs.getInt(1), rs.getString(2),
-						rs.getInt(3), rs.getString(4),
-						rs.getString(5), rs.getString(6),
-						rs.getInt(7) , rs.getInt(8),
-						rs.getString(9) , rs.getString(10),
-						rs.getString(11) , rs.getString(12),
-						rs.getString(13) , rs.getInt(14) , rs.getString(15)
-						);
+			while (rs.next()) {
+				orderinfodetail dto = new orderinfodetail(rs.getInt(1), rs.getString(2), rs.getInt(3), rs.getString(4),
+						rs.getString(5), rs.getString(6), rs.getInt(7), rs.getInt(8), rs.getString(9), rs.getString(10),
+						rs.getString(11), rs.getString(12), rs.getString(13), rs.getInt(14), rs.getString(15));
 				list.add(dto);
 				System.out.println(dto);
 			}
 			return list;
-		}catch (Exception e) {System.out.println(e);}
-			return list;
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+		return list;
 	}
 }
-
-
