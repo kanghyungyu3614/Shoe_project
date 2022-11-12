@@ -24,6 +24,7 @@
 				
 		
 				<!-- Modal 시작-->
+				<!--판매하기 시작--------------------->
 				<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 				  <div class="modal-dialog">
 				    <div class="modal-content">
@@ -32,15 +33,28 @@
 				        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 				      </div>
 				      <div class="modal-body">
-						  <div id="main">
+						  <div class="modal_main">
 							<div class="maintitle"></div>
 							<section class="sellborder">
 								<div class="mainproduct">
 									<img src="" class="priceimg">
 									<div class="product_title">
-										<div class="product_number"></div>
-										<div class="product_engliname"></div>
-										<div class="product_koreaname"></div>
+										
+										<div class="product_imfo_main modal_info_main">
+											<div class="product_imfo">판매하기 상품정보</div>
+												<table class="product_table" id="sell_product_table">
+													<tr>
+														<th class="productinfoName">제품번호</th>
+														<th class="productinfoPbrand">제품명</th>
+														<th class="productinfoColor">색깔</th>
+													</tr>
+													<tr>
+														<td class="product_number"></td>
+														<td class="product_engliname"></td>
+														<td class="product_koreaname"></td>
+													</tr>
+												</table>
+											</div>
 									</div>
 								</div>	
 								<div id="size" style="display:none"  >225</div>
@@ -67,7 +81,7 @@
 									<div id="320" class="product_size"	onclick="sellAddButton(320)"><div>320</div></div>
 									<div id="325" class="product_size"	onclick="sellAddButton(325)"><div>325</div></div>
 									<div class="pricelist"></div>
-									<button onclick="sellmain()">판매입찰하기</button>
+									<button onclick="sellmain()" class="modal_sell">판매입찰하기</button>
 								</div>
 							</section>
 						   </div>
@@ -77,8 +91,8 @@
 				    </div>
 				  </div>
 				</div>
-				<!-- Modal 끝-->
-				<!--------------------------------------------------------------구매하기--------------------->
+				<!--판매하기 끝--------------------->
+				<!--구매하기 시작--------------------->
 				
 				<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 				  <div class="modal-dialog">
@@ -88,15 +102,27 @@
 				        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 				      </div>
 				      <div class="modal-body">
-				       <div id="main">
+				       <div class="modal_main">
 							<div class="maintitle"></div>
 							<section class="sellborder">
 								<div class="mainproduct">
 									<img src="" class="priceimg1">
 									<div class="product_title">
-										<div class="product_number1">DJ5422-100</div>
-										<div class="product_engliname1">Nike LeBron XX EP White Metalic Gold</div>
-										<div class="product_koreaname1">나이키 르브론 20 EP 화이트 메탈릭 골드</div>
+										<div class="product_imfo_main modal_info_main">
+											<div class="product_imfo">구매하기 상품정보</div>
+												<table class="product_table" id="buy_product_table">
+													<tr>
+														<th class="productinfoName">제품번호</th>
+														<th class="productinfoPbrand">제품명</th>
+														<th class="productinfoColor">색깔</th>
+													</tr>
+													<tr>
+														<td class="product_number1"></td>
+														<td class="product_engliname1"></td>
+														<td class="product_koreaname1"></td>
+													</tr>
+												</table>
+											</div>
 									</div>
 								</div>
 								<div id="size" style="display:none"  >225</div>
@@ -123,7 +149,7 @@
 									<div id="320" class="product_size"	onclick="buyAddButton(320)"><div>320</div></div>
 									<div id="325" class="product_size"	onclick="buyAddButton(325)"><div>325</div></div>
 									<div class="pricelist1"></div>
-									<button onclick="buymain()">구매입찰하기</button>
+									<button onclick="buymain()" class="modal_buy">구매입찰하기</button>
 								</div>
 							</section>
 						</div>
@@ -135,6 +161,7 @@
 				  </div>
 				</div>
 		   	</div><!--  여기가 끝 -->
+				<!--구매하기 끝--------------------->
 		</section>
 		<section class="content_coponent">
 			<!--  그래프 css 설정은 여기서 하는겁니다. 시작 -->

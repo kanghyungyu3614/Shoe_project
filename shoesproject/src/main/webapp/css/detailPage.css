@@ -257,13 +257,101 @@ footer{
 
 
 
+/*모달 수정 시작*/
+.modal-content {
+	position: relative;
+    right: 100px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 700px;
+    height: 1200px;
+    color: var(--bs-modal-color);
+    pointer-events: auto;
+    background-color: var(--bs-modal-bg);
+    background-clip: padding-box;
+    border: var(--bs-modal-border-width) solid var(--bs-modal-border-color);
+    border-radius: var(--bs-modal-border-radius);
+    outline: 0;
+}
+.mainproduct{
+	margin: 0 auto;
+}
+.priceimg1{
+	margin: 0 auto;
+}
+
+#sell_product_table{
+	margin: 0 auto;
+}
+#buy_product_table{
+	margin: 0 auto;	
+}
+.modal_info_main{
+	width: auto;
+}
+
+.subproduct{
+	width: 680px;
+    height: 400px;
+}
+.product_size{
+	margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 10px;
+    display: inline-block;
+    width: 130px;
+    height: 40px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/*모달안의 판매하기 버튼 시작 */
+.modal_sell{
+	width: 296.5px;
+    height: 80px;
+    font-weight: bold;
+    font-size: 30px;
+    background-color: #41b979;
+    border-color: #0d6efd;
+    color: white;
+    border-radius: 0.5rem;
+    margin-left: 190px;
+}
+
+.modal_sell:hover{
+	color: white;
+	border: #0a58ca;
+	cursor: pointer;
+}
+
+[type=button]:not(:disabled), button:not(:disabled) {
+    cursor: pointer;
+}
+/*모달안의 판매하기 버튼 끝 */
+/*모달안의 구매하기 버튼 시작 */
+.modal_buy{
+	width: 296.5px;
+    height: 80px;
+    font-weight: bold;
+    font-size: 30px;
+    background-color: #ef6253;
+    border-color: #0d6efd;
+    color: white;
+    border-radius: 0.5rem;
+    margin-left: 190px;	
+	
+	
+}
 
 
 
 
 
-
-
+/*모달안의 구매하기 버튼 끝 */
+/*모달 수정 끝*/
 
 
 
