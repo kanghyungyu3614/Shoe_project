@@ -43,7 +43,6 @@ function sellAddButton(num){ // 판매
 	hideComponent = document.querySelector("#size")
 	hideComponent.innerHTML = num;
 	let pricelist = document.querySelector(".pricelist")
-	let html = ''
 	 hideComponent = document.querySelector("#size");
    	 hideNum = Number(hideComponent.innerHTML);
    	 let pno = product_number;
@@ -58,13 +57,19 @@ function sellAddButton(num){ // 판매
 		if(re){		
 			let json = JSON.parse(re)
 			
+			html =  '<tr>'+
+				'<td>신발사이즈</td>'+
+				'<td>가격</td>'+
+				'<td>유저아이디</td>'+
+			'</tr>';
 			for(let i = 0; i<json.length; i++){
 			
-			html +='<button class="productlist" onclick="productlist('+json[i].spno+')">'+
-					'<div>'+json[i].spsize+'</div>' +
-					'<div>'+json[i].spprice+'</div>'+
-					'<div>'+json[i].spbuyid+'</div>'+
-				'</button>'
+			
+		    html += '<tr class="productlist" onclick="productlist('+json[i].spno+')">'
+					    +'<td><button class="productlist" onclick="productlist('+json[i].spno+')">'+json[i].spsize+'</button></td>'
+					    +'<td><button class="productlist" onclick="productlist('+json[i].spno+')">'+json[i].spprice+'</button></td>'
+					    +'<td><button class="productlist" onclick="productlist('+json[i].spno+')">'+json[i].spbuyid+'</button></td>'
+				    +'</tr>'
 		    
 		}
 		pricelist.innerHTML = html;}
@@ -103,7 +108,6 @@ function buyAddButton(num){ // 구매
 	hideComponent = document.querySelector("#size")
 	hideComponent.innerHTML = num;
 	let pricelist1 = document.querySelector(".pricelist1")
-	let html = ''
 	 hideComponent = document.querySelector("#size");
    	 hideNum = Number(hideComponent.innerHTML);
    	 let pno = product_number;
@@ -119,13 +123,18 @@ function buyAddButton(num){ // 구매
 		if(re){		
 			let json = JSON.parse(re)
 			console.log(json)
+			let html =  '<tr>'+
+							'<td>신발사이즈</td>'+
+							'<td>가격</td>'+
+							'<td>유저아이디</td>'+
+						'</tr>';
+			
 			for(let i = 0; i<json.length; i++){
-			html +='<button class="productlist" onclick="productbuylist('+json[i].spno+')">'+
-					'<div>'+json[i].spsize+'</div>' +
-					'<div>'+json[i].spprice+'</div>'+
-					'<div>'+json[i].spsellid+'</div>'+
-				'</button>'
-		    
+		    html += '<tr class="productlist" onclick="productbuylist('+json[i].spno+')">'
+		    +'<td><button class="productlist" onclick="productbuylist('+json[i].spno+')">'+json[i].spsize+'</button></td>'
+		    +'<td><button class="productlist" onclick="productbuylist('+json[i].spno+')">'+json[i].spprice+'</button></td>'
+		    +'<td><button class="productlist" onclick="productbuylist('+json[i].spno+')">'+json[i].spsellid+'</button></td>'
+		    +'</tr>'
 		}
 		pricelist1.innerHTML = html;}
 		else{
