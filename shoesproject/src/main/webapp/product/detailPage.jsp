@@ -82,9 +82,9 @@
 									<div id="315" class="product_size"	onclick="sellAddButton(315)"><div>315</div></div>
 									<div id="320" class="product_size"	onclick="sellAddButton(320)"><div>320</div></div>
 									<div id="325" class="product_size"	onclick="sellAddButton(325)"><div>325</div></div>
+								</div>
 									<div class="pricelist"></div>
 									<button onclick="sellmain()" class="modal_sell">판매입찰하기</button>
-								</div>
 							</section>
 						   </div>
 						<div class="sellmainprice"></div>
@@ -152,9 +152,9 @@
 									<div id="315" class="product_size"	onclick="buyAddButton(315)"><div>315</div></div>
 									<div id="320" class="product_size"	onclick="buyAddButton(320)"><div>320</div></div>
 									<div id="325" class="product_size"	onclick="buyAddButton(325)"><div>325</div></div>
+								</div>
 									<div class="pricelist1"></div>
 									<button onclick="buymain()" class="modal_buy">구매입찰하기</button>
-								</div>
 							</section>
 						</div>
 				      </div>

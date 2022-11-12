@@ -265,7 +265,7 @@ footer{
     flex-direction: column;
     margin: 0 auto;
     width: 700px;
-    height: 1200px;
+    height: 100%;
     color: var(--bs-modal-color);
     pointer-events: auto;
     background-color: var(--bs-modal-bg);
@@ -330,6 +330,22 @@ footer{
 [type=button]:not(:disabled), button:not(:disabled) {
     cursor: pointer;
 }
+
+.sellmainprice{
+	margin : 20px;
+	font-size: 30px;
+}
+
+.selprice{
+	font-size: 20px;
+    width: 200px;
+    height: 50px;
+}
+.modal-footer button {
+	width : 200px;
+	height: 60px;
+	font-size: 20px;
+}
 /*모달안의 판매하기 버튼 끝 */
 /*모달안의 구매하기 버튼 시작 */
 .modal_buy{
@@ -345,10 +361,16 @@ footer{
 	
 	
 }
+.buymainprice{
+	margin : 20px;
+	font-size: 30px;
+}
 
-
-
-
+.selprice1{
+	font-size: 20px;
+    width: 200px;
+    height: 50px;
+}
 
 /*모달안의 구매하기 버튼 끝 */
 /*모달 수정 끝*/

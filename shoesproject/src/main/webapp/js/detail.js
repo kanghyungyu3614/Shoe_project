@@ -84,7 +84,7 @@ function sellmain(){
 	let html = ''
 	let html2 = ''
 	html = 
-	'         	희망가격 : <input type="text" class="selprice">'
+	'         	희망가격 : <input type="text" class="selprice" placeholder="원단위로 입력해주세요.">'
 	
 	document.querySelector('.sellmainprice').innerHTML = html
 	html2 = '<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>'+
@@ -140,7 +140,7 @@ function buyAddButton(num){ // 구매
 function buymain(){
 	let html = ''
 	let html2 = ''
-	html = '희망가격 : <input type="text" class="selprice1">'
+	html = '희망가격 : <input type="text" class="selprice1" placeholder="원단위로 입력해주세요.">'
 	
 	document.querySelector('.buymainprice').innerHTML = html
 	
