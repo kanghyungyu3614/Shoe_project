@@ -7,7 +7,6 @@ function rload() {
 			if(re){
 				let list = JSON.parse(re)
 				console.log(list)
-				
 				document.querySelector('.request').innerHTML = 
 				"<tr><th>번호</th><th>제목</th><th>내용</th><th>날짜</th><th></th></tr>"
 				
@@ -26,7 +25,6 @@ function rload() {
 		}
 	})
 }
-
 function rdelete(rno) {
 	$.ajax({
 		url : "/shoesproject/rdelete",
@@ -42,7 +40,6 @@ function rdelete(rno) {
 		}
 	})
 }
-
 function logout() {
 	$.ajax({
 		url : "/shoesproject/logout",

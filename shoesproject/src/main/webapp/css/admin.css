@@ -4,7 +4,6 @@
 	border: 0;
 	box-sizing: border-box;
 }
-
 /*눈누에서 세방고딕 글씨체 시작 font-weight:700이랑 같이 쓰자 */
 @font-face {
     font-family: 'SEBANG_Gothic_Bold';
@@ -13,7 +12,6 @@
     font-style: normal;
 }
 /*눈누에서 세방고딕 글씨체 끝*/
-
 #main{
 	width: 1200px;
 	border: 1px solid black;
@@ -46,7 +44,6 @@
 	font-size: 25px;
 	line-height: 50px;
 }
-
 .nav_title{
 	display: flex;
 	margin-top: 20px;
@@ -83,20 +80,16 @@ a:visited{
 	font-size: 17px;
 	font-weight: 700;
 	margin-right: 10px;
-	
 }
-
 .request{
 	width: 1148px;
 }
-
 /*공지사항 안의 상세보기 글자,상담 문의 게시판 안의 상세보기 끝*/
 /* 상품등록게시판 시작*/
 #product_regist{
 	width: 1150px;
 	border-collapse: collapse;
 }
-
 .notice tr{
 	border: 1px solid black;
 }
@@ -127,10 +120,7 @@ td{
 .regist{
 	width: 1150px;
 }
-
-
 /* 상품등록게시판 끝*/
-
 .nav_content1 table{
 	margin: 0 auto;
 	border: 1px solid black;
@@ -138,24 +128,17 @@ td{
 	width: 1148px;
 	font-size: 20px;
 }
-
-
-
-
-
 #advice_notice_table tr, th{
 	border: solid 1px black;
 	height: 30px;
 	font-size: 20px;
 }
-
 .nav_content1 table tr{
 	margin: 0 auto;
 	border: 1px solid black;
 	height: 20px;
 	line-height : 30px;
 }
-
 #notice_table tr:nth-child(4){	
 	line-height : 30px;
 }
@@ -189,8 +172,6 @@ td{
 	font-weight: 700;
 	height: 30px;
 }
-
-
 /*공지사항 안의 테이블 끝*/
 /*상품문의 시작*/
 .nav_content2{
@@ -209,19 +190,15 @@ td{
 	position: relative;
 	left:40px;
 }
-
 .nav_content2 .nav_detail{
 	float: right;
 	font-size: 17px;
 	font-weight: 700;
 	margin-right: 10px;	
-	
 }
 #advice_notice_table{
 	border-collapse	 : collapse;
 }
-
-
 #advice_notice_table tr:nth-child(1) th:nth-child(1){
 	width: 150px;
 	font-size: 28px;
@@ -242,7 +219,6 @@ td{
 	font-size: 28px;
 	line-height : 50px;
 }
-
 .nav_content2 #advice_notice_table tr{
 	line-height : 30px;
 }
@@ -256,8 +232,6 @@ td{
 	 margin-bottom: 25px;
 	 border: 1px solid black;
 }
-
-
 .section_title .advice_table {
 	width: 200px;
 	font-size: 33px;
@@ -267,7 +241,6 @@ td{
 	margin-top: 15px;
 	margin-bottom: 10px;
 }
-
 .section_title .nav_detail{
 	float: right;
 	font-size: 17px;
@@ -275,7 +248,6 @@ td{
 	margin-right: 10px;
 	margin-top: 10px;		
 }
-
 /*테이블 크기 조정 시작*/
 #product_regist tr:nth-child(1) th:nth-child(1){
 	width: 30px;
@@ -312,13 +284,11 @@ td{
 	height: 50px;
 	font-size: 25px;
 }
-
 /*테이블 크기 조정 끝*/
 /*테이블 안의 input태그 크기 조정 시작*/
 #product_regist input{
 	border: 1px solid black;
 }
-
 /*테이블 안의 input태그 크기 조정 끝*/
 /*상품등록페이지 끝*/
 /*하단 시작*/
@@ -339,9 +309,6 @@ footer{
 .gitLink:hover, .gitLink:link , .gitLink:active , .gitLink:visited{
 	text-decoration: none;
 }
-
-
-
 /* footerURL  */
 #footerURL{
 	text-align:center;

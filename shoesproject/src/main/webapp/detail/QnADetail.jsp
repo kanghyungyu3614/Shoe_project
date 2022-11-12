@@ -17,7 +17,6 @@
 			<tr> <td> 내용 <td> 	<td class="qcontent"> 	</td> </tr>
 			<tr> <td> 첨부파일 <td> <td class="qfile"> 	</td> </tr>
 		</table>
-
 		<!-- 문의 답변  -->
 		<div class="replybox">
 			<textarea rows="" cols="" class="rcontent"></textarea>
@@ -25,7 +24,6 @@
 		</div>
 		<!-- 문의 답변 출력 -->
 		<div class="replylist">
-		
 		</div>
 	</div>
 	

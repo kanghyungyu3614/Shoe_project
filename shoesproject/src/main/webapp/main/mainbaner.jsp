@@ -9,8 +9,6 @@
 	
 </head>
 <body>
-
-
 	<%String lid = (String)session.getAttribute("lid");%>
 	
 		<%if(lid==null){ %>
@@ -30,9 +28,7 @@
 			</span>
 		</div>
 	</header>	
-	
 	<%}else{%>
-	
 	<header class="header">
 		<div id="header_logo">
 			<a href="/shoesproject/main/mainhome.jsp">shoes</a>
@@ -48,8 +44,6 @@
 			</span>
 		</div>
 	</header>
-
 	<%} %>
-
 </body>
 </html>

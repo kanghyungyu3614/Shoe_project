@@ -1,10 +1,7 @@
 alert('회원정보 JS 구동 확인')
 function updatemember(){
-	
 	let form = document.querySelector('form')
-	
 	let fd = new FormData(form)
-	
 	$.ajax({
 		url : "/shoesproject/shoe/updatemember",
 		data : fd,

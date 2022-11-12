@@ -60,9 +60,6 @@ img{
 .warntext{
 	margin-left: 10px;
 }
-
-
-
 /*이미지 컴포넌트 끝*/
 /*설명 컴포넌트 시작*/
 .content_coponent{
@@ -214,7 +211,6 @@ img{
     height: 200px;
 }
 /* 셀럽 이미지 끝*/
-
 /*하단 시작*/
 footer{
     width: 1180px;
@@ -232,9 +228,6 @@ footer{
 .gitLink:hover, .gitLink:link , .gitLink:active , .gitLink:visited{
 	text-decoration: none;
 }
-
-
-
 /* footerURL  */
 #footerURL{
 	text-align:center;
@@ -378,8 +371,5 @@ footer{
 
 /*모달안의 구매하기 버튼 끝 */
 /*모달 수정 끝*/
-
-
-
-
+/*하단 끝*/
 
