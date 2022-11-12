@@ -47,11 +47,13 @@
 														<th class="productinfoName">제품번호</th>
 														<th class="productinfoPbrand">제품명</th>
 														<th class="productinfoColor">색깔</th>
+														<th class="productinfoColor">선택한 신발사이즈</th>
 													</tr>
 													<tr>
 														<td class="product_number"></td>
 														<td class="product_engliname"></td>
 														<td class="product_koreaname"></td>
+														<td class="productSellInfoSize">판매할 신발사이즈</td>
 													</tr>
 												</table>
 											</div>
@@ -115,11 +117,13 @@
 														<th class="productinfoName">제품번호</th>
 														<th class="productinfoPbrand">제품명</th>
 														<th class="productinfoColor">색깔</th>
+														<th class="productinfoColor">선택한 신발사이즈</th>
 													</tr>
 													<tr>
 														<td class="product_number1"></td>
 														<td class="product_engliname1"></td>
 														<td class="product_koreaname1"></td>
+														<td class="productBuyInfoSize">구매할 신발사이즈</td>
 													</tr>
 												</table>
 											</div>

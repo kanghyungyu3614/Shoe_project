@@ -2,6 +2,8 @@ detail()
 let callComponent = 0;
 let hideComponent = 0;
 let hideNum = 0;
+let productSellInfoSize = 0;
+let productBuyInfoSize = 0;
 let product_number = document.querySelector(".product_number").innerHTML
 
 function detail() {
@@ -45,8 +47,8 @@ function sellAddButton(num){ // 판매
 	 hideComponent = document.querySelector("#size");
    	 hideNum = Number(hideComponent.innerHTML);
    	 let pno = product_number;
-  
-   	
+  	productSellInfoSize = document.querySelector(".productSellInfoSize")
+   	productSellInfoSize.innerHTML = num;
 	$.ajax({	
 		url : "/shoesproject/product/detail",
 		type :'post',
@@ -105,7 +107,8 @@ function buyAddButton(num){ // 구매
 	 hideComponent = document.querySelector("#size");
    	 hideNum = Number(hideComponent.innerHTML);
    	 let pno = product_number;
-   	 alert(pno)
+   	 productBuyInfoSize = document.querySelector(".productBuyInfoSize")
+   	 productBuyInfoSize.innerHTML = num;
    	 
 	$.ajax({	
 		url : "/shoesproject/product/detail",
