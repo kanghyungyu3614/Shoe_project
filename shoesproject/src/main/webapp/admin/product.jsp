@@ -21,7 +21,7 @@
 		<div id="main_title">
 			<div class="title_content"><a href="./admin.jsp">관리자게시판</a></div>
 			<div class="title_content"><a href="./notice.jsp">공지사항등록</a></div>
-			<div class="title_content" onclick="logout()">로그아웃</div>
+			<div class="title_content" style="cursor: pointer;" onclick="logout()">로그아웃</div>
 		</div>  
 		<!-- 네비게이션 끝 -->
 		<!-- 공지사항 등록 시작 -->
@@ -43,7 +43,7 @@
 				</tr>	
 				<tr>
 					<td>가격</td>
-					<td><input type="text" name="pprice" class="ntitle" placeholder="ex)  원"> </td>
+					<td><input type="text" name="pprice" class="ntitle" placeholder="ex)  200000"> </td>
 				</tr>	
 				<tr>
 					<td>색상</td>

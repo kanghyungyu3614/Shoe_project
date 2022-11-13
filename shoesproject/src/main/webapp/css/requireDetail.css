@@ -21,6 +21,7 @@
 	line-height: 80px;
 	font-weight: 700;
 	font-size: 30px;
+	cursor: pointer;
 }
 .nav_title{
 	display: flex;

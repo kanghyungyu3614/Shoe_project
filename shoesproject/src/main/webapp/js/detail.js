@@ -5,7 +5,6 @@ let hideComponent = 0;
 let hideNum = 0;
 let product_number = document.querySelector(".product_number").innerHTML
 
-console.log(lid)
 function detail() {
 	$.ajax({
 		url : "/shoesproject/product/detail",

@@ -14,7 +14,7 @@
 			<div class="title_content"><a href="../admin/product.jsp">상품등록</a></div>
 			<div class="title_content"><a href="../admin/require.jsp">상품문의등록</a></div>
 			<div class="title_content"><a href="../admin/notice.jsp">공지사항등록</a></div>
-			<div class="title_content" onclick="logout()">로그아웃</div>
+			<div class="title_content" style="cursor: pointer;" onclick="logout()">로그아웃</div>
 		</div>
 		<div class="nav_title">
 			<div class="nav_content1">

@@ -92,9 +92,7 @@ public class detail extends HttpServlet {
 			
 			int	pno = Integer.parseInt(request.getParameter("pno"));
 			ArrayList<SpregistDto> result = DetailDao.getInstance().selllist(hideNum , pno);
-			System.out.println(result);
-			System.out.println(hideNum);
-			System.out.println(pno);
+
 			JSONArray array = new JSONArray();
 			for(int i = 0 ; i<result.size(); i++) {
 				JSONObject object = new JSONObject();
@@ -107,9 +105,7 @@ public class detail extends HttpServlet {
 				object.put("spprice" , result.get(i).getSpprice());
 				object.put("pno" , result.get(i).getPno());
 				array.add(object);
-				System.out.println( result.get(i).getSpsellid());
 			}
-			System.out.println(array);
 			response.setCharacterEncoding("UTF-8");
 			response.getWriter().print(array);
 			
@@ -119,9 +115,6 @@ public class detail extends HttpServlet {
 			
 			int	pno = Integer.parseInt(request.getParameter("pno")); //
 			ArrayList<SpregistDto> result = DetailDao.getInstance().buylist(hideNum , pno);
-			System.out.println(result);
-			System.out.println(hideNum);
-			System.out.println(pno);
 			JSONArray array = new JSONArray();
 			for(int i = 0 ; i<result.size(); i++) {
 				JSONObject object = new JSONObject();
@@ -134,17 +127,12 @@ public class detail extends HttpServlet {
 				object.put("spprice" , result.get(i).getSpprice());
 				object.put("pno" , result.get(i).getPno());
 				array.add(object);
-				
-				System.out.println(object);
 			}
-			System.out.println(array);
 			response.setCharacterEncoding("UTF-8");
 			response.getWriter().print(array);
 			
 		}else if(type == 5) {
-			System.out.println(type+"sadsad");
-			int pno = Integer.parseInt(request.getParameter("pno")); //
-			System.out.println(pno);
+			int pno = Integer.parseInt(request.getParameter("pno"));
 			ArrayList<SpregistDto> result = DetailDao.getInstance().suclist(pno);
 			JSONArray array = new JSONArray();
 			for(int i = 0 ; i<result.size(); i++) {
@@ -161,17 +149,15 @@ public class detail extends HttpServlet {
 				
 		}
 			response.setCharacterEncoding("UTF-8");
-			System.out.println(array+"wqd");
 			response.getWriter().print(array);
 		}
 		
 	}
 	@Override
 	protected void doPut(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		int type  = Integer.parseInt(request.getParameter("type"));
 		
 		String lid = (String)request.getSession().getAttribute("lid");
-		System.out.println(lid);
+		int type  = Integer.parseInt(request.getParameter("type"));
 		if(type==1) {
 			
 			int spno = Integer.parseInt(request.getParameter("spno"));
