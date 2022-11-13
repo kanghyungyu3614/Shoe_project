@@ -1,4 +1,3 @@
-alert('z')
 notice()
 
 function notice() {

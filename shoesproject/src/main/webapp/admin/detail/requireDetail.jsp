@@ -20,7 +20,7 @@
 		<div id="main_title"> <!-- 테스트 -->
 			<div class="title_content"><a href="../product.jsp">상품등록</a></div>
 			<div class="title_content"><a href="../notice.jsp">공지사항등록</a></div>
-			<div class="title_content" onclick="logout()">로그아웃</div>
+			<div class="title_content" style="cursor: pointer;" onclick="logout()">로그아웃</div>
 		</div>
 		<div class="nav_title">
 			<div class="nav_content1">
