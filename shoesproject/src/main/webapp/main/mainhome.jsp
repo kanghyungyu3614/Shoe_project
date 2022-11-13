@@ -181,10 +181,10 @@
 		<!-- 로그인 컴포넌트 시작 -->
 		<section class="login_modal">
 			<div class="login_content">로그인</div>
-			<div class="id_content">아이디</div>
-			<input id="lid" class="id_input" type="text" placeholder="아이디를 입력해주세요."> 
-			<div class="password_content">비밀번호</div>
-			<input id="lpw" class="passoword_input" type="password" placeholder="비밀번호를 입력해주세요."> 
+			
+			<input id="lid" class="id_input inputsize" type="text" placeholder="아이디를 입력해주세요."> 
+			
+			<input id="lpw" class="passoword_input inputsize" type="password" placeholder="비밀번호를 입력해주세요."> 
 			
 			<div class="alertp"></div>
 			
@@ -970,7 +970,7 @@
 		</section>
 		<!-- 메인 이미지 슬라이드 끝 -->
 		<section class="main_img_slade" id="popular_product">
-		<div class="product_img_content">인기상품</div>
+		<div class="product_img_content">BEST CATEGORY</div>
 		<!-- 인기제품 안에 내용들 시작 -->
 		<div class="main_popular_product">
 			
@@ -984,8 +984,9 @@
 		<!-- 제품 이미지 슬라이드 끝 -->
 		
 		<!-- 셀럽 이미지 슬라이드 시작 -->
+		<div class="product_img_content">Style Picks</div>
+		
 		<section class="product_img_slade">
-		<div class="product_img_content">셀렙 이미지</div>
 			<div class="selloveimg">
 				
 			</div>
