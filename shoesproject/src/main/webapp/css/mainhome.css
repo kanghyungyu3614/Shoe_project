@@ -289,8 +289,6 @@
     font-size: 15px;
     font-weight: 700;
 }
-.product_brand_content{
-}
 .slidelist_img{
 	width: 1160px;
     height: 570px;
@@ -393,7 +391,7 @@ footer{
 	/*member가 로그인했을때 이미지들 크기 끝*/	
 	/*admin이 로그인했을때 이미지들 크기 시작*/	
 	.admin_category img{
-		width: 300px; height: 155px;
+		width: 285px; height: 155px;
 	}
 	/*admin이 로그인했을때 이미지들 크기 끝*/	
 	/*로그인 안했을때 카테고리 이미지 끝*/
