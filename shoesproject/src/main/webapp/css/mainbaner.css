@@ -1765,21 +1765,9 @@ a:visited{
 
 
 /*이달의 인기 브랜드 , 카테고리 시작*/
-.brand {
-	
-	width: 800px;
-	height: 48px;
-	margin: 10px;
-	float: left;
-}
+
 /*member_brand 시작*/
-.member_brand {
-	border: 1px solid black;
-	width: 98%;
-	height: 48px;
-	margin: 10px;
-	float: left;
-}
+
 /*member_brand 끝*/
 
 /*admin_brand 시작*/
@@ -1842,12 +1830,12 @@ a:visited{
 
 
 .brand_content{
-	text-align: center;
+	text-align: left;
 	font-weight: 700px;
 	font-family: 'SEBANG_Gothic_Bold';
 	 border-bottom: solid;
 	margin-bottom: 15px;
-
+	    padding-bottom : 10px;
 }
 /*member_brand_content 시작*/
 .member_brand_content{
@@ -1902,30 +1890,18 @@ a:visited{
 	font-size: 35px;
 	font-family: 'SEBANG_Gothic_Bold';
 }
-.id_content{
-	margin: 60px 0 10px 50px;
-	font-weight:700;
-	font-family: 'SEBANG_Gothic_Bold';
+.inputsize{ 
+	height: 40px;
+	width: 260px;
+	border : 0;
+	text-align: left;
+	border-bottom: 1px solid;
+	margin-bottom: 20px; 
 }
 
-.id_input{
-	border: 1px solid black;
-	width: 280px;
-	height: 25px;
-	margin: 0 29px 0 50px;
-}
-.password_content{
-	margin: 20px 0 10px 50px;
-	font-weight:700;
-	font-family: 'SEBANG_Gothic_Bold';
-}
 
-.passoword_input{
-	border: 1px solid black;
-	width: 280px;
-	height: 25px;
-	margin: 0 29px 0 50px;	
-}
+
+
 /*아이디,비밀번호 상태 시작*/
 .alertp{
 	font-weight:700;

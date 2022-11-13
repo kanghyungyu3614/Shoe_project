@@ -6,8 +6,8 @@
 .login_modal{
     border: 1px solid black;
     width: 360px;
-    height: 430px;
-    margin: 10px 10px 0 0;
+   
+    margin: 100px 10px 0 0;
     float: right;
     border-radius:10px; 
 }
@@ -94,13 +94,7 @@
 	float: left;
 }
 /*member_brand 시작*/
-.member_brand {
-	border: 1px solid black;
-	width: 98%;
-	height: 48px;
-	margin: 10px;
-	float: left;
-}
+
 /*member_brand 끝*/
 
 /*admin_brand 시작*/
@@ -205,22 +199,13 @@
 	font-size: 35px;
 	font-family: 'SEBANG_Gothic_Bold';
 }
-.id_content{
-	margin: 60px 0 10px 50px;
-	font-weight:700;
-	font-family: 'SEBANG_Gothic_Bold';
-}
+
 
 .id_input{
 	border: 1px solid black;
 	width: 280px;
 	height: 25px;
 	margin: 0 29px 0 50px;
-}
-.password_content{
-	margin: 20px 0 10px 50px;
-	font-weight:700;
-	font-family: 'SEBANG_Gothic_Bold';
 }
 
 .passoword_input{
@@ -275,7 +260,6 @@
 /*메인 이미지 슬라이드 끝*/
 /*인기제품 시작*/
 .main_popular_product{
-	border: 1px solid black;
     width: 1180px;
     height: 570px;
     overflow-y: scroll;
@@ -283,6 +267,9 @@
     display: flex;
     font-size: 15px;
     flex-wrap: wrap;
+}
+.main_popular_product::-webkit-scrollbar{
+	display: none;
 }
 
 .productComponent{
@@ -315,19 +302,23 @@
 /*제품 이미지 슬라이드 시작*/
 .product_img_slade{
 	clear : both;
-	border: 1px solid black;
 	width: 1180px;
 	height: 600px;
 	margin: 10px 10px;	
 	overflow-y: scroll;
     overflow-x: hidden;	
 }
+.product_img_slade::-webkit-scrollbar{
+	display: none;
+}
 
 .product_img_content{
 	font-weight:700;
 	font-size: 24px;
 	font-family: 'SEBANG_Gothic_Bold';			
-	text-align: center;
+	text-align: left;
+	padding-bottom: 10px;
+	border-bottom: solid;
 }
 
 /*제품 이미지 슬라이드 끝*/
@@ -434,7 +425,9 @@ footer{
 	.section .slide-control {position:absolute;top:0;left:0;z-index:10;width:100%;height:100%;}
 	
 	.section img {
+	
 	border-radius: 20px;
+	margin: 5px;
 	}
 	/* admin 오늘의 브랜드 베스트 내용 시작*/
 	.admin_category_sldie_content{
