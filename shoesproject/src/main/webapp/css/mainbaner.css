@@ -49,18 +49,18 @@ a:visited{
 /*헤더 끝*/  
 /*햄버거 드롭다운 시작*/
 /*일반유저 로그인 시작*/
-.member_menu_open{position: fixed;width: 1115.5px;height: 60.7vh;background: #ffffff;top: 128px;left: 11px;z-index: 999;padding: 3rem;border: 1px solid black; display: none}
+.member_menu_open{position: fixed;width: 1115.5px;height: 60.7vh;background: #F0F0F0;top: 128px;left: 11px;z-index: 999;padding: 3rem;border: 1px solid black; display: none}
 /*일반유저 로그인 끝*/
 /*관리자 로그인 시작*/
-.admin_menu_open{position: fixed;width: 1115.5px;height: 60.7vh;background: #ffffff;top: 140px;left: 11px;z-index: 999;padding: 3rem;border: 1px solid black; display: none}
+.admin_menu_open{position: fixed;width: 1115.5px;height: 60.7vh;background: #F0F0F0;top: 140px;left: 11px;z-index: 999;padding: 3rem;border: 1px solid black; display: none}
 /*관리자 로그인 끝*/
 /*로그인 안했을떄 시작*/
 .menu_open{
 	position: fixed;
-    width: 739px;
+    width: 1115.5px;
     height: 63.7vh;
-    background: #ffffff;
-    top: 144px;
+    background: #F0F0F0;
+    top: 164px;
     left: 12.5px;
     z-index: 999;
     padding: 3rem;
@@ -152,18 +152,18 @@ a:visited{
 /*헤더 끝*/  
 /*햄버거 드롭다운 시작*/
 /*일반유저 로그인 시작*/
-.member_menu_open{position: fixed;width: 1115.5px;height: 60.7vh;background: #ffffff;top: 128px;left: 11px;z-index: 999;padding: 3rem;border: 1px solid black; display: none}
+.member_menu_open{position: fixed;width: 1115.5px;height: 60.7vh;background: #F0F0F0;top: 128px;left: 11px;z-index: 999;padding: 3rem;border: 1px solid black; display: none}
 /*일반유저 로그인 끝*/
 /*관리자 로그인 시작*/
-.admin_menu_open{position: fixed;width: 1115.5px;height: 60.7vh;background: #ffffff;top: 140px;left: 11px;z-index: 999;padding: 3rem;border: 1px solid black; display: none}
+.admin_menu_open{position: fixed;width: 1115.5px;height: 60.7vh;background: #F0F0F0;top: 140px;left: 11px;z-index: 999;padding: 3rem;border: 1px solid black; display: none}
 /*관리자 로그인 끝*/
 /*로그인 안했을떄 시작*/
 .menu_open{
 	position: fixed;
-    width: 739px;
+    width: 1115.5px;
     height: 63.7vh;
-    background: #ffffff;
-    top: 144px;
+    background: #F0F0F0;
+    top: 164px;
     left: 12.5px;
     z-index: 999;
     padding: 3rem;
@@ -255,22 +255,23 @@ a:visited{
 /*헤더 끝*/  
 /*햄버거 드롭다운 시작*/
 /*일반유저 로그인 시작*/
-.member_menu_open{position: fixed;width: 1115.5px;height: 60.7vh;background: #ffffff;top: 130px;left: 11px;z-index: 999;padding: 3rem;border: 1px solid black; display: none}
+.member_menu_open{position: fixed;width: 1115.5px;height: 60.7vh;background: #F0F0F0;top: 130px;left: 11px;z-index: 999;padding: 3rem;border: 1px solid black; display: none}
 /*일반유저 로그인 끝*/
 /*관리자 로그인 시작*/
-.admin_menu_open{position: fixed;width: 1115.5px;height: 60.7vh;background: #ffffff;top: 140px;left: 11px;z-index: 999;padding: 3rem;border: 1px solid black; display: none}
+.admin_menu_open{position: fixed;width: 1115.5px;height: 60.7vh;background: #F0F0F0;top: 140px;left: 11px;z-index: 999;padding: 3rem;border: 1px solid black; display: none}
 /*관리자 로그인 끝*/
 /*로그인 안했을떄 시작*/
 .menu_open{
 	position: fixed;
-    width: 739px;
+    width: 1119px;
     height: 63.7vh;
-    background: #ffffff;
-    top: 144px;
+    background: #F0F0F0;
+    top: 164px;
     left: 12.5px;
     z-index: 999;
     padding: 3rem;
     display: none;	
+    
 }
 /*로그인 안했을떄 끝*/
 
@@ -366,22 +367,23 @@ a:visited{
 /*헤더 끝*/  
 /*햄버거 드롭다운 시작*/
 /*일반유저 로그인 시작*/
-.member_menu_open{position: fixed;width: 1115.5px;height: 60.7vh;background: #ffffff;top: 128px;left: 11px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
+.member_menu_open{position: fixed;width: 1115.5px;height: 60.7vh;background: #F0F0F0;top: 128px;left: 11px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
 /*일반유저 로그인 끝*/
 /*관리자 로그인 시작*/
-.admin_menu_open{position: fixed;width: 1115.5px;height: 60.7vh;background: #ffffff;top: 140px;left: 11px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
+.admin_menu_open{position: fixed;width: 1115.5px;height: 60.7vh;background: #F0F0F0;top: 140px;left: 11px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
 /*관리자 로그인 끝*/
 /*로그인 안했을떄 시작*/
 .menu_open{
 	position: fixed;
-    width: 739px;
+    width: 1119px;
     height: 63.7vh;
-    background: #ffffff;
-    top: 144px;
+    background: #F0F0F0;
+    top: 164px;
     left: 12.5px;
     z-index: 999;
     padding: 3rem;
     display: none;
+    
 }
 /*로그인 안했을떄 끝*/
 /*햄버거 드롭다운 끝*/	
@@ -476,18 +478,18 @@ a:visited{
 /*헤더 끝*/  
 /*햄버거 드롭다운 시작*/
 /*일반유저 로그인 시작*/
-.member_menu_open{position: fixed;width: 1115.5px;height: 55.7vh;background: #ffffff;top: 128px;left: 45px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
+.member_menu_open{position: fixed;width: 1115.5px;height: 58vh;background: #F0F0F0;top: 128px;left: 45px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
 /*일반유저 로그인 끝*/
 /*관리자 로그인 시작*/
-.admin_menu_open{position: fixed;width: 1115.5px;height: 55.7vh;background: #ffffff;top: 140px;left: 45px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
+.admin_menu_open{position: fixed;width: 1115.5px;height: 58vh;background: #F0F0F0;top: 140px;left: 45px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
 /*관리자 로그인 끝*/
 /*로그인 안했을떄 시작*/
 .menu_open{
 	position: fixed;
-    width: 739px;
+    width: 1119px;
     height: 54.7vh;
-    background: #ffffff;
-    top: 144px;
+    background: #F0F0F0;
+    top: 164px;
     left: 45.5px;
     z-index: 999;
     padding: 3rem;
@@ -585,18 +587,18 @@ a:visited{
 /*헤더 끝*/  
 /*햄버거 드롭다운 시작*/
 /*일반유저 로그인 시작*/
-.member_menu_open{position: fixed;width: 1115.5px;height: 46.7vh;background: #ffffff;top: 130px;left: 172px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
+.member_menu_open{position: fixed;width: 1115.5px;height: 48.2vh;background: #F0F0F0;top: 130px;left: 172px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
 /*일반유저 로그인 끝*/
 /*관리자 로그인 시작*/
-.admin_menu_open{position: fixed;width: 1115.5px;height: 46.7vh;background: #ffffff;top: 140px;left: 172px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
+.admin_menu_open{position: fixed;width: 1115.5px;height: 48.2vh;background: #F0F0F0;top: 140px;left: 172px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
 /*관리자 로그인 끝*/
 /*로그인 안했을떄 시작*/
 .menu_open{
 	position: fixed;
-    width: 739px;
-    height: 47.7vh;
-    background: #ffffff;
-    top: 134px;
+    width: 1119px;
+    height: 46.7vh;
+    background: #F0F0F0;
+    top: 164px;
     left: 172px;
     z-index: 999;
     padding: 3rem;
@@ -698,18 +700,18 @@ a:visited{
 /*헤더 끝*/  
 /*햄버거 드롭다운 시작*/
 /*일반유저 로그인 시작*/
-.member_menu_open{position: fixed;width: 1115.5px;height: 40.7vh;background: #ffffff;top: 130px;;left: 275px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
+.member_menu_open{position: fixed;width: 1115.5px;height: 42.2vh;background: #F0F0F0;top: 130px;;left: 275px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
 /*일반유저 로그인 끝*/
 /*관리자 로그인 시작*/
-.admin_menu_open{position: fixed;width: 1115.5px;height: 40.7vh;background: #ffffff;top: 140px;left: 275px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
+.admin_menu_open{position: fixed;width: 1115.5px;height: 42.2vh;background: #F0F0F0;top: 140px;left: 275px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
 /*관리자 로그인 끝*/
 /*로그인 안했을떄 시작*/
 .menu_open{
 	position: fixed;
-    width: 739px;
-    height: 39.7vh;
-    background: #ffffff;
-    top: 147px;
+    width: 1120px;
+    height: 41vh;
+    background: #F0F0F0;
+    top: 167px;
     left: 276px;
     z-index: 999;
     padding: 3rem;
@@ -810,13 +812,13 @@ a:visited{
 /*헤더 끝*/  
 /*햄버거 드롭다운 시작*/
 /*일반유저 로그인 시작*/
-.member_menu_open{position: fixed;width: 1115.5px;height: 37.7vh;background: #ffffff;top: 134px;left: 362px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
+.member_menu_open{position: fixed;width: 1115.5px;height: 37.7vh;background: #F0F0F0;top: 134px;left: 362px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
 /*일반유저 로그인 끝*/
 /*관리자 로그인 시작*/
-.admin_menu_open{position: fixed;width: 1115.5px;height: 37.7vh;background: #ffffff;top: 134px;left: 362px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
+.admin_menu_open{position: fixed;width: 1115.5px;height: 37.7vh;background: #F0F0F0;top: 134px;left: 362px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
 /*관리자 로그인 끝*/
 /*로그인 안했을떄 시작*/
-.menu_open{position: fixed;width: 740px;height: 37.7vh;background: #ffffff;top: 134px;left: 363px;z-index: 999;padding: 3rem;display: none}
+.menu_open{position: fixed;width: 1115.5px;height: 37.7vh;background: #F0F0F0;top: 134px;left: 363px;z-index: 999;padding: 3rem;display: none}
 /*로그인 안했을떄 끝*/
 /*햄버거 드롭다운 끝*/	
 
@@ -913,13 +915,23 @@ a:visited{
 /*헤더 끝*/  
 /*햄버거 드롭다운 시작*/
 /*일반유저 로그인 시작*/
-.member_menu_open{position: fixed;width: 1115.5px;height: 37.7vh;background: #ffffff;top: 130px;left: 362px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
+.member_menu_open{position: fixed;width: 1115.5px;height: 38vh;background: #F0F0F0;top: 130px;left: 362px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
 /*일반유저 로그인 끝*/
 /*관리자 로그인 시작*/
-.admin_menu_open{position: fixed;width: 1115.5px;height: 37.7vh;background: #ffffff;top: 144px;left: 362px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
+.admin_menu_open{position: fixed;width: 1115.5px;height: 38vh;background: #F0F0F0;top: 144px;left: 362px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
 /*관리자 로그인 끝*/
 /*로그인 안했을떄 시작*/
-.menu_open{position: fixed;width: 739px;height: 37.7vh;background: #ffffff;top: 144px;left: 363px;z-index: 999;padding: 3rem;display: none}
+.menu_open{
+	position: fixed;
+    width: 1119px;
+    height: 37.7vh;
+    background: #F0F0F0;
+    top: 164px;
+    left: 363px;
+    z-index: 999;
+    padding: 3rem;
+    display: none;
+}
 /*로그인 안했을떄 끝*/
 /*햄버거 드롭다운 끝*/	
 
@@ -1014,18 +1026,18 @@ a:visited{
 /*헤더 끝*/  
 /*햄버거 드롭다운 시작*/
 /*일반유저 로그인 시작*/
-.member_menu_open{position: fixed;width: 1115.5px;height: 33.7vh;background: #ffffff;top: 130px;left: 468px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
+.member_menu_open{position: fixed;width: 1115.5px;height: 34.2vh;background: #F0F0F0;top: 130px;left: 468px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
 /*일반유저 로그인 끝*/
 /*관리자 로그인 시작*/
-.admin_menu_open{position: fixed;width: 1115.5px;height: 33.7vh;background: #ffffff;top: 144px;left: 468px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
+.admin_menu_open{position: fixed;width: 1115.5px;height: 34.2vh;background: #F0F0F0;top: 144px;left: 468px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
 /*관리자 로그인 끝*/
 /*로그인 안했을떄 시작*/
 .menu_open{
-    position: fixed;
-    width: 739px;
-    height: 33vh;
-    background: #ffffff;
-    top: 144px;
+	position: fixed;
+    width: 1119px;
+    height: 34vh;
+    background: #F0F0F0;
+    top: 164px;
     left: 469px;
     z-index: 999;
     padding: 3rem;
@@ -1125,18 +1137,18 @@ a:visited{
 /*헤더 끝*/  
 /*햄버거 드롭다운 시작*/
 /*일반유저 로그인 시작*/
-.member_menu_open{position: fixed;width: 1115.5px;height: 29.7vh;background: #ffffff;top: 130px;left: 600px;;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
+.member_menu_open{position: fixed;width: 1115.5px;height: 31vh;background: #F0F0F0;top: 130px;left: 600px;;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
 /*일반유저 로그인 끝*/
 /*관리자 로그인 시작*/
-.admin_menu_open{position: fixed;width: 1115.5px;height: 29.7vh;background: #ffffff;top: 144px;left: 600px;;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
+.admin_menu_open{position: fixed;width: 1115.5px;height: 31vh;background: #F0F0F0;top: 144px;left: 600px;;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
 /*관리자 로그인 끝*/
 /*로그인 안했을떄 시작*/
 .menu_open{
-	position: fixed;
-    width: 739px;
-    height: 30.5vh;
-    background: #ffffff;
-    top: 144px;
+position: fixed;
+    width: 1119px;
+    height: 31.5vh;
+    background: #F0F0F0;
+    top: 168px;
     left: 601px;
     z-index: 999;
     padding: 3rem;
@@ -1237,18 +1249,18 @@ a:visited{
 /*헤더 끝*/  
 /*햄버거 드롭다운 시작*/
 /*일반유저 로그인 시작*/
-.member_menu_open{position: fixed;width: 1115.5px;height: 27.7vh;background: #ffffff;top: 130px;left: 679px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
+.member_menu_open{position: fixed;width: 1115.5px;height: 29vh;background: #F0F0F0;top: 130px;left: 679px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
 /*일반유저 로그인 끝*/
 /*관리자 로그인 시작*/
-.admin_menu_open{position: fixed;width: 1115.5px;height: 27.7vh;background: #ffffff;top: 144px;left: 679px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
+.admin_menu_open{position: fixed;width: 1115.5px;height: 29vh;background: #F0F0F0;top: 144px;left: 679px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
 /*관리자 로그인 끝*/
 /*로그인 안했을떄 시작*/
 .menu_open{    
 	position: fixed;
-    width: 738px;
-    height: 28.7vh;
-    background: #ffffff;
-    top: 145px;
+    width: 1118px;
+    height: 27.7vh;
+    background: #F0F0F0;
+    top: 168px;
     left: 681px;
     z-index: 999;
     padding: 3rem;
@@ -1349,22 +1361,28 @@ a:visited{
 /*헤더 끝*/  
 /*햄버거 드롭다운 시작*/
 /*일반유저 로그인 시작*/
-.member_menu_open{position: fixed;width: 1115.5px;height: 24.7vh;background: #ffffff;top: 130px;left: 838px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
+.member_menu_open{position: fixed;width: 1115.5px;height: 25.4vh;background: #F0F0F0;top: 130px;left: 838px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
 /*일반유저 로그인 끝*/
 /*관리자 로그인 시작*/
-.admin_menu_open{position: fixed;width: 1115.5px;height: 24.7vh;background: #ffffff;top: 144px;left: 838px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
+.admin_menu_open{position: fixed;width: 1115.5px;height: 25.4vh;background: #F0F0F0;top: 144px;left: 838px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
 /*관리자 로그인 끝*/
 /*로그인 안했을떄 시작*/
 .menu_open{
-	position: fixed;
-    width: 739px;
-    height: 25.7vh;
-    background: #ffffff;
-    top: 144px;
+    position: fixed;
+    width: 1118px;
+    height: 24vh;
+    background: #F0F0F0;
+    top: 174px;
     left: 839px;
     z-index: 999;
     padding: 3rem;
     display: none;
+}
+.category_content {
+    text-align: center;
+    font-weight: 700px;
+    font-family: 'SEBANG_Gothic_Bold';
+    margin: 10px;
 }
 /*로그인 안했을떄 끝*/
 
@@ -1461,21 +1479,28 @@ a:visited{
 /*헤더 끝*/
 /*햄버거 드롭다운 시작*/
 /*일반유저 로그인 시작*/
-.member_menu_open{position: fixed;width: 1115.5px;height: 19.3vh;background: #ffffff;top: 134px;left: 1314px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
+.member_menu_open{position: fixed;width: 1115.5px;height: 19.3vh;background: #F0F0F0;top: 134px;left: 1314px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
 /*일반유저 로그인 끝*/
 /*관리자 로그인 시작*/
-.admin_menu_open{position: fixed;width: 1115.5px;height: 19.3vh;background: #ffffff;top: 144px;left: 1314px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
+.admin_menu_open{position: fixed;width: 1115.5px;height: 19.3vh;background: #F0F0F0;top: 144px;left: 1314px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
 /*관리자 로그인 끝*/
 /*로그인 안했을떄 시작*/
-.menu_open{position: fixed;
-    width: 739px;
-    height: 19vh;
-    background: #ffffff;
-    top: 150px;
+.menu_open{
+    position: fixed;
+    width: 1118px;
+    height: 18vh;
+    background: #F0F0F0;
+    top: 180px;
     left: 1315px;
     z-index: 999;
     padding: 3rem;
     display: none;
+}
+.category_content {
+    text-align: center;
+    font-weight: 700px;
+    font-family: 'SEBANG_Gothic_Bold';
+    margin: 10px;
 }
 /*로그인 안했을떄 끝*/
 /*햄버거 드롭다운 끝*/
@@ -1573,22 +1598,30 @@ a:visited{
 /*헤더 끝*/ 
 /*햄버거 드롭다운 시작*/
 /*일반유저 로그인 시작*/
-.member_menu_open{position: fixed;width: 1115.5px;height: 12.3vh;background: #ffffff;top: 134px;left: 2289px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
+.member_menu_open{position: fixed;width: 1115.5px;height: 12.4vh;background: #F0F0F0;top: 134px;left: 2289px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
 /*일반유저 로그인 끝*/
 /*관리자 로그인 시작*/
-.admin_menu_open{position: fixed;width: 1115.5px;height: 12.3vh;background: #ffffff;top: 154px;left: 2289px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
+.admin_menu_open{position: fixed;width: 1115.5px;height: 12.4vh;background: #F0F0F0;top: 154px;left: 2289px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
 /*관리자 로그인 끝*/
 /*로그인 안했을떄 시작*/
-.menu_open{position: fixed;
-    width: 740px;
+.menu_open{
+	position: fixed;
+    width: 1118px;
     height: 12.5vh;
-    background: #ffffff;
-    top: 154px;
+    background: #F0F0F0;
+    top: 184px;
     left: 2293px;
     z-index: 999;
     padding: 3rem;
     display: none;
 }
+.category_content {
+    text-align: center;
+    font-weight: 700px;
+    font-family: 'SEBANG_Gothic_Bold';
+    margin: 10px;
+}
+
 /*로그인 안했을떄 끝*/
 /*햄버거 드롭다운 끝*/
 
@@ -1684,20 +1717,29 @@ a:visited{
 /*헤더 끝*/  
 /*햄버거 드롭다운 시작*/
 /*일반유저 로그인 시작*/
-.member_menu_open{position: fixed;width: 1115.5px;height: 9.7vh;background: #ffffff;top: 130px;left: 3253px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
+.member_menu_open{position: fixed;width: 1115.5px;height: 9.7vh;background: #F0F0F0;top: 130px;left: 3253px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
 /*일반유저 로그인 끝*/
 /*관리자 로그인 시작*/
-.admin_menu_open{position: fixed;width: 1115.5px;height: 9.7vh;background: #ffffff;top: 145px;left: 3253px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
+.admin_menu_open{position: fixed;width: 1115.5px;height: 9.7vh;background: #F0F0F0;top: 145px;left: 3253px;z-index: 999;padding: 3rem; border: 1px solid black; display: none}
 /*관리자 로그인 끝*/
 /*로그인 안했을떄 시작*/
-.menu_open{position: fixed;
-    width: 740px;
+.menu_open{
+	position: fixed;
+	width: 1117px;
     height: 9.5vh;
-    background: #ffffff;
-    top: 154px;
+    background: #F0F0F0;
+    top: 174px;
     left: 3254px;
     z-index: 999;
-    padding: 3rem;display: none}
+    padding: 3rem;display: none
+}
+   
+.category_content {
+    text-align: center;
+    font-weight: 700px;
+    font-family: 'SEBANG_Gothic_Bold';
+    margin: 10px;
+}
 /*로그인 안했을떄 끝*/
 /*햄버거 드롭다운 끝*/
 
@@ -1812,7 +1854,7 @@ a:visited{
 .member_category{
 	border: 1px solid black;
 	width: 98%;
-	height: 390px;
+	height: 400px;
 	margin: 0 10px 10px 10px;
 	float: left;
 }
@@ -1822,7 +1864,7 @@ a:visited{
 .admin_category{
 	border: 1px solid black;
 	width: 98%;
-	height: 390px;
+	height: 400px;
 	margin: 0 10px 10px 10px;
 	float: left;
 }

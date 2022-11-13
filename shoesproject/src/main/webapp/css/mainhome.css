@@ -6,7 +6,6 @@
 .login_modal{
     border: 1px solid black;
     width: 360px;
-   
     margin: 100px 10px 0 0;
     float: right;
     border-radius:10px; 
@@ -18,11 +17,11 @@
 @media (min-width: 2560px) and (max-width: 3839px) {
 /*로그인 시작*/
 .login_modal{
-	border: 1px solid black;
-    width: 364px;
-    height: 450px;
-    margin: 10px 10px 0 0;
+    border: 1px solid black;
+    width: 360px;
+    margin: 100px 10px 0 0;
     float: right;
+    border-radius:10px; 
 }
 /*로그인 끝*/	
 }
@@ -31,11 +30,11 @@
 @media (min-width: 3840px) and (max-width: 5759px) {
 /*로그인 시작*/
 .login_modal{
-	border: 1px solid black;
-	width: 362px;
-    height: 450px;
-    margin: 10px 10px 0 0;
+    border: 1px solid black;
+    width: 360px;
+    margin: 100px 10px 0 0;
     float: right;
+    border-radius:10px; 
 }
 /*로그인 끝*/	
 }
@@ -44,11 +43,11 @@
 @media (min-width: 5760px) and (max-width: 7679px) { 
 /*로그인 시작*/
 .login_modal{
-	border: 1px solid black;
-	width: 358px;
-    height: 450px;
-    margin: 10px 10px 0 0;
+    border: 1px solid black;
+    width: 360px;
+    margin: 100px 10px 0 0;
     float: right;
+    border-radius:10px; 
 }
 /*로그인 끝*/
 } 
@@ -57,11 +56,11 @@
 @media (min-width: 7680px) and (max-width: 10000px) { 
 /*로그인 시작*/
 .login_modal{
-	border: 1px solid black;
-	width: 354px;
-    height: 450px;
-    margin: 10px 10px 0 0;
+    border: 1px solid black;
+    width: 360px;
+    margin: 100px 10px 0 0;
     float: right;
+    border-radius:10px; 
 }
 /*로그인 끝*/
 } 
