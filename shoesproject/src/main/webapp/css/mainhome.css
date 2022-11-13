@@ -4,11 +4,12 @@
 @media (max-width: 2559px) {  
 /*로그인 시작*/
 .login_modal{
-	border: 1px solid black;
-	width: 365px;
-	height: 450px;
-	margin: 10px 10px 0 0;
-	float: right;
+    border: 1px solid black;
+    width: 360px;
+    height: 430px;
+    margin: 10px 10px 0 0;
+    float: right;
+    border-radius:10px; 
 }
 /*로그인 끝*/	
 }
@@ -86,7 +87,7 @@
 /*main 끝*/ 
 /*이달의 인기 브랜드 , 카테고리 시작*/
 .brand {
-	border: 1px solid black;
+	
 	width: 800px;
 	height: 48px;
 	margin: 10px;
@@ -133,10 +134,10 @@
 
 
 .category{
-	border: 1px solid black;
+	
     width: 799px;
     height: 390px;
-    margin: 0 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
     float: left;
 }
 /*member가 로그인했을때 카테고리 시작*/
@@ -259,7 +260,7 @@
 /*메인 이미지 슬라이드 시작*/
 .main_img_slade{
 	clear : both;
-	border: 1px solid black;
+
 	width: 1180px;
 	height: 600px;
 	margin: 10px 10px;	
@@ -431,6 +432,10 @@ footer{
 
 	/* 좌우로 넘기는 LABEL버튼에 대한 스타일 */
 	.section .slide-control {position:absolute;top:0;left:0;z-index:10;width:100%;height:100%;}
+	
+	.section img {
+	border-radius: 20px;
+	}
 	/* admin 오늘의 브랜드 베스트 내용 시작*/
 	.admin_category_sldie_content{
 		display: flex;

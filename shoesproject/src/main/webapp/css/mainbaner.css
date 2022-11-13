@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*초기설정 시작*/
 *{
-	margin: 0;
+	margin: 0 auto;
 	border: 0;
 }
 /*초기설정 끝 */
@@ -881,6 +881,7 @@ a:visited{
 	height: 90px;
     margin: 0 auto;
     border-top: 1px solid #c0c0c0;
+    
 }
 #header_logo{
 	font-family: 'SEBANG_Gothic_Bold';
@@ -1765,7 +1766,7 @@ a:visited{
 
 /*이달의 인기 브랜드 , 카테고리 시작*/
 .brand {
-	border: 1px solid black;
+	
 	width: 800px;
 	height: 48px;
 	margin: 10px;
@@ -1844,6 +1845,9 @@ a:visited{
 	text-align: center;
 	font-weight: 700px;
 	font-family: 'SEBANG_Gothic_Bold';
+	 border-bottom: solid;
+	margin-bottom: 15px;
+
 }
 /*member_brand_content 시작*/
 .member_brand_content{
