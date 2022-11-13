@@ -13,9 +13,7 @@ function getbuylist(){
 				for (let i = 0; i < bns.length; i++) {
 					bnsp = bns[i]
 						html +=
-							"<div class='str'>" + bnsp.spno + "</div> <br>"						
-							+ "<div class='str'>" + bnsp.spbuyid + "</div> <br>"
-							+ `<div class='str'><img src="/shoesproject/pupload/${bnsp.pimg}"></div>`
+							 `<div class='stri'><img src="/shoesproject/pupload/${bnsp.pimg}"></div>`
 							+ "<div class='str'>" + bnsp.spsize + "</div> <br>"
 							+ "<div class='str'>" + bnsp.pname + "</div> <br>"
 							+ "<div class='str'>" + bnsp.preleaseday + "</div> <br>"
@@ -43,9 +41,7 @@ function getselllist(){
 					bnsp = bns[i]
 					pimg = `<img src="/shoesproject/pupload/${bnsp.pimg}">`
 						html +=
-							"<div class='str'>" + bnsp.spno + "</div> <br>"						
-							+ "<div class='str'>" + bnsp.spsellid + "</div> <br>"
-							+ pimg
+							 pimg
 							+ "<div class='str'>" + bnsp.spsize + "</div> <br>"
 							+ "<div class='str'>" + bnsp.pname + "</div> <br>"
 							+ "<div class='str'>" + bnsp.preleaseday + "</div> <br>"

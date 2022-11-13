@@ -19,6 +19,7 @@ function rloadDetail() {
 								<td class="board_td">${r.rcontent}</td>
 								<td class="board_date board_td">${r.rdate}</td>
 								<td class="board_thing board_td"><button type="button" class="board_btn" onclick="commentview(${r.rno})">답변보기</td>
+								<td class="board_thing board_td"><button type="button" class="board_btn" onclick="commentform(${r.rno})">답변하기</td>
 								<td class="board_thing board_td"><button type="button" class="board_btn" onclick="rdelete(${r.rno})">삭제</button></td>
 							</tr>
 							<tr class="commentform${r.rno}"></tr>
@@ -29,7 +30,6 @@ function rloadDetail() {
 		}
 	})
 }
-
 function rdelete(rno) {
 	if (confirm("정말 삭제하시겠습니까?")) {
 		$.ajax({
@@ -114,7 +114,7 @@ function comment(rno) {
 	let ctitle = document.querySelector('.ctitle').value
 	let ccontent = document.querySelector('.ccontent').value
 	$.ajax({
-		url: "http://localhost:8080/shoesproject/admin/comment",
+		url: "/shoesproject/admin/comment",
 		data: { "rno": rno, "ctitle": ctitle, "ccontent": ccontent },
 		type: 'post',
 		success: function(re) {

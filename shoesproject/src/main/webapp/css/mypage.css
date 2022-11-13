@@ -424,6 +424,14 @@ img{
     border-spacing: 90px 0px;
     border-collapse: inherit;
 }
+.buy , .sell {
+	display: flex;
+	justify-content: space-between;
+	border: solid 1px black;
+}
+.str{
+	margin-top : 30px;
+}
 /*-------------------------------------------------------------가로 :  640px 이하 시작------------------------------------------------------------------*/
 @media (max-width: 640px) {
 /*햄버거 드롭다운 시작*/

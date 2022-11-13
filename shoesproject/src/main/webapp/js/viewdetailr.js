@@ -18,7 +18,6 @@ function rloadDetaild() { // 내가 문의한 게시물만 출력
 								<td>${r.rcontent}</td>
 								<td class="board_date">${r.rdate}</td>							
 								<td class="board_thing"><button type="button" class="board_btn" onclick="commentview(${r.rno})">답변보기</td>
-								<td class="board_thing"><button type="button" class="board_btn" onclick="rdelete(${r.rno})">삭제</button></td>
 							</tr>
 							<tr class="commentform${r.rno}"></tr>
 							`
