@@ -100,7 +100,7 @@
 									<div id="325" class="product_size"	onclick="sellAddButton(325)"><div>325</div></div>
 								</div>
 									
-									<div class="product_imfo">구매한 유저 리스트</div>
+									<div class="product_imfo">구매요청한 유저 리스트</div>
 									<table class="pricelist">
 										<tr>
 											<td>신발사이즈</td>
@@ -177,7 +177,7 @@
 									<div id="320" class="product_size"	onclick="buyAddButton(320)"><div>320</div></div>
 									<div id="325" class="product_size"	onclick="buyAddButton(325)"><div>325</div></div>
 								</div>
-									<div class="product_imfo">판매한 유저 리스트</div>
+									<div class="product_imfo">판매요청한 유저 리스트</div>
 									<table class="pricelist1">
 										<tr>
 											<td>신발사이즈</td>
