@@ -231,6 +231,9 @@ td{
 	 margin-top: 25px;
 	 margin-bottom: 25px;
 	 border: 1px solid black;
+	 overflow-y: scroll;
+     overflow-x: hidden;
+	 
 }
 .section_title .advice_table {
 	width: 200px;

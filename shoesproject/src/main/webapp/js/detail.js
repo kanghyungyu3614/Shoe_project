@@ -59,7 +59,7 @@ function sellAddButton(num){ // 판매
 			for(let i = 0; i<json.length; i++){
 			
 			
-		    html += '<tr class="productlist" onclick="productlist('+json[i].spno+')">'
+		    html += '<tr class="productlist">'
 					    +'<td><button class="productlist" onclick="productlist('+json[i].spno+')">'+json[i].spsize+'</button></td>'
 					    +'<td><button class="productlist" onclick="productlist('+json[i].spno+')">'+json[i].spprice+'</button></td>'
 					    +'<td><button class="productlist" onclick="productlist('+json[i].spno+')">'+json[i].spbuyid+'</button></td>'
@@ -135,7 +135,7 @@ function buyAddButton(num){ // 구매
 						'</tr>';
 			
 			for(let i = 0; i<json.length; i++){
-		    html += '<tr class="productlist" onclick="productbuylist('+json[i].spno+')">'
+		    html += '<tr class="productlist">'
 		    +'<td><button class="productlist" onclick="productbuylist('+json[i].spno+')">'+json[i].spsize+'</button></td>'
 		    +'<td><button class="productlist" onclick="productbuylist('+json[i].spno+')">'+json[i].spprice+'</button></td>'
 		    +'<td><button class="productlist" onclick="productbuylist('+json[i].spno+')">'+json[i].spsellid+'</button></td>'
@@ -330,15 +330,15 @@ $(window).scroll(function () {
 		imgComponent.style.position = "static"; 	
 		imgComponent.style.top = "none"; 
 	}
-    else if(scrollValue>89.5&&scrollValue < 1000 ){
+    else if(scrollValue>89.5&&scrollValue < 760 ){
 		imgComponent = document.querySelector('.img_coponent')
 		imgComponent.style.position = "fixed";
 		imgComponent.style.top = "10px"; 	
 	}
-	else if(scrollValue>1000&&scrollValue < 2000){
+	else if(scrollValue>760&&scrollValue < 2000){
 		imgComponent = document.querySelector('.img_coponent')
 		imgComponent.style.position = "relative";		
-		imgComponent.style.top = "900px"; 
+		imgComponent.style.top = "679px"; 
 	}
 
 })

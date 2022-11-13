@@ -102,7 +102,7 @@
 	margin: 20px 20px;
 	display: flex;
 	position: absolute;
-	left: -20px;
+	left: 5px;
 }
 }
 /*-------------------------------------------------------------가로 : 640px 이하 시작------------------------------------------------------------------*/
@@ -122,7 +122,6 @@
 	margin: 20px 20px;
 	display: flex;
 	position: absolute;
-	left: -20px;
 }
 
 }
@@ -143,7 +142,7 @@
 	margin: 20px 20px;
 	display: flex;
 	position: absolute;
-    left: 55px;
+    left: 78px;
 }
 
 }
@@ -163,7 +162,7 @@
 	margin: 20px 20px;
 	display: flex;
 	position: absolute;
-    left: 122px;
+    left: 142px;
 }
 
 }
@@ -184,7 +183,7 @@
 	margin: 20px 20px;
 	display: flex;
 	position: absolute;
-    left: 214px;
+    left: 234px;
 }
 
 }
@@ -205,7 +204,7 @@
 	margin: 20px 20px;
 	display: flex;
 	position: absolute;
-    left: 342px;
+    left: 362px;
 }
 
 }
@@ -226,7 +225,7 @@
 	margin: 20px 20px;
 	display: flex;
 	position: absolute;
-    left: 445px;
+    left: 465px;
 }
 
 }
@@ -268,7 +267,7 @@
 	position: absolute;
     left: 532px;
     position: absolute;
-    left: 532px;
+    left: 552px;
 }
 
 }
@@ -288,7 +287,7 @@
 	margin: 20px 20px;
 	display: flex;
 	position: absolute;
-    left: 635px;
+    left: 655px;
 }
 
 }
@@ -308,7 +307,7 @@
 	margin: 20px 20px;
 	display: flex;
 	position: absolute;
-    left: 772px;
+    left: 792px;
 }
 
 
@@ -330,7 +329,7 @@
 	margin: 20px 20px;
 	display: flex;
 	position: absolute;
-    left: 852px;
+    left: 872px;
 }
 
 }
@@ -350,7 +349,7 @@
 	margin: 20px 20px;
 	display: flex;
 	position: absolute;
-    left: 1022px;
+    left: 1042px;
 }
 
 }
@@ -371,7 +370,7 @@
 	margin: 20px 20px;
 	display: flex;
 	position: absolute;
-    left: 1502px;
+    left: 1522px;
 }
 
 }
@@ -392,7 +391,7 @@
 	margin: 20px 20px;
 	display: flex;
 	position: absolute;
-    left: 2470px;
+    left: 2480px;
 }
 
 } 
@@ -413,7 +412,7 @@
 	margin: 20px 20px;
 	display: flex;
 	position: absolute;
-    left: 3422px;
+    left: 3432px;
 }
 }
 /*--------------------------------------------가로 : 7680px 이상 10000px 이하  끝-------더이상 없음------------------------------------------------------------ */

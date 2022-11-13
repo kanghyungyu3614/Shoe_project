@@ -65,7 +65,7 @@ img{
 .content_coponent{
 	margin: 0 auto;
     width: 600px;
-	height: 1500px;	
+	height: 1400px;
 }
 /*설명 컴포넌트 끝*/
 
@@ -111,8 +111,9 @@ img{
 }
 
 .product_table{
-	width: 600px;
-	height: 80px;
+    width: 575px;
+    height: 80px;
+    margin-left: 1px;
 }
 /* 상품정보 끝 */
 /* 배송정보 시작*/
@@ -169,7 +170,7 @@ img{
 .product_img_slade{
     margin: 0 auto;
     border: 1px solid black;
-    width: 1180px;
+    width: 1190px;
     height: 600px;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -213,7 +214,7 @@ img{
 /* 셀럽 이미지 끝*/
 /*하단 시작*/
 footer{
-    width: 1180px;
+    width: 1190px;
     border: 1px solid black;
     clear: both;
     height: 200px;
