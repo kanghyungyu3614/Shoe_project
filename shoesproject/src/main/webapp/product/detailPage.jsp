@@ -59,7 +59,7 @@
 											</div>
 									</div>
 								</div>	
-								<div id="size" style="display:none"  >225</div>
+								<div id="size" style="display:none;"  >225</div>
 								<div class="subproduct">
 									<div id="225" class="product_size"	onclick="sellAddButton(225)"><div>225</div></div>
 									<div id="230" class="product_size"	onclick="sellAddButton(230)"><div>230</div></div>
@@ -137,7 +137,7 @@
 											</div>
 									</div>
 								</div>
-								<div id="size" style="display:none"  >225</div>
+								<div id="size" style="display:none;"  >225</div>
 								<div class="subproduct">
 									<div id="225" class="product_size"	onclick="buyAddButton(225)"><div>225</div></div>
 									<div id="230" class="product_size"	onclick="buyAddButton(230)"><div>230</div></div>
@@ -168,7 +168,6 @@
 											<td>가격</td>
 											<td>유저아이디</td>
 										</tr>
-									
 									</table>
 									<button onclick="buymain()" class="modal_buy">구매입찰하기</button>
 							</section>
@@ -185,7 +184,7 @@
 		</section>
 		<section class="content_coponent">
 			<!--  그래프 css 설정은 여기서 하는겁니다. 시작 -->
-			<canvas id="myChart" style="width:100%;max-width:1000px"></canvas>
+			<canvas id="myChart" style="width:100%;max-width:1000px;"></canvas>
 			<!--  그래프 css 설정은 여기서 하는겁니다. 끝 -->
 			<table class="successlist">	</table>
 			<!--  구매하기, 판매하기 버튼 시작 -->

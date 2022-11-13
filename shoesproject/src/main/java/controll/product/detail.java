@@ -161,13 +161,13 @@ public class detail extends HttpServlet {
 		if(type==1) {
 			
 			int spno = Integer.parseInt(request.getParameter("spno"));
-			
+			System.out.println(spno);
 			boolean result = DetailDao.getInstance().successsell(spno , lid);
 			
 			response.getWriter().print(result);
 		}else if(type==2) {
-				int spno = Integer.parseInt(request.getParameter("spno"));
-			
+			int spno = Integer.parseInt(request.getParameter("spno"));
+			System.out.println(spno);
 			boolean result = DetailDao.getInstance().successbuy(spno , lid);
 			
 			response.getWriter().print(result);
