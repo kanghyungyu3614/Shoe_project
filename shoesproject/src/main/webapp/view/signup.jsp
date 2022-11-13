@@ -11,8 +11,8 @@
 
    <%@ include file="../main/mainbaner.jsp" %>
 
-<div class="mainsize">
-<form class="lsignup" action="/shoesproject/shoe/signup" method="post">
+<div class="mainsize" id="mainsize">
+<form class="lsignup" id="lsignup"  action="/shoesproject/shoe/signup" method="post">
 
    <h2 class="signsize"> 회원가입 </h2>
 

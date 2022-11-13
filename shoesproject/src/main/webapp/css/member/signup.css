@@ -5,13 +5,15 @@
 	box-sizing:  border-box;
 }
 
-.mainsize{
+#mainsize{
 	margin: 0 auto;
 	height: 1200px;
 	width: 800px;
 }
-.lsignup{
-	margin: 0 auto;
+
+#lsignup{
+	margin: 0 auto;	
+	
 }
 .trsize{
 	width: 400px;

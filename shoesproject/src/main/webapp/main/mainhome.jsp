@@ -921,7 +921,6 @@
 		
 				<!-- 메인 이미지 슬라이드 시작 -->
 		<section class="main_img_slade">
-			<div class="main_img_content">메인 이미지 슬라이드</div>
 			<!-- 슬라이드 시작 -->
 			<div class="section">
 				<input type="radio" name="slide3" id="slide10"checked>
