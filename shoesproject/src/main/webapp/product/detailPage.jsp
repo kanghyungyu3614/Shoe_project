@@ -21,7 +21,23 @@
 					<div><span id="warnComponent" class="warntext">주의</span>판매 거래 주의사항</div>
 					<div id="warnContent" class="warntext" >반드시 보유한 상품만 판매하세요.</div>
 				</div>	
-				
+							<div class="product_imfo_main">
+				<div class="product_imfo">상품정보</div>
+				<table class="product_table">
+					<tr>
+						<th class="productinfoName">제품명</th>
+						<th class="productinfoPbrand">브랜드</th>
+						<th class="productinfoColor">색깔</th>
+						<th class="productinfoDate">출시일</th>
+					</tr>
+					<tr>
+						<td class="productname"></td>
+						<td class="productpbrand"></td>
+						<td class="productcolor"></td>
+						<td class="productdate"></td>
+					</tr>
+				</table>
+			</div>
 		
 				<!-- Modal 시작-->
 				<!--판매하기 시작--------------------->
@@ -196,23 +212,6 @@
 				판매하기
 			</button>
 			<!--  구매하기, 판매하기 버튼 끝 -->
-			<div class="product_imfo_main">
-				<div class="product_imfo">상품정보</div>
-				<table class="product_table">
-					<tr>
-						<th class="productinfoName">제품명</th>
-						<th class="productinfoPbrand">브랜드</th>
-						<th class="productinfoColor">색깔</th>
-						<th class="productinfoDate">출시일</th>
-					</tr>
-					<tr>
-						<td class="productname"></td>
-						<td class="productpbrand"></td>
-						<td class="productcolor"></td>
-						<td class="productdate"></td>
-					</tr>
-				</table>
-			</div>
 			<div class="product_imfo_sub">
 				<div class="product_deliver">배송정보</div>
 				<div class="product_whiteSpace">

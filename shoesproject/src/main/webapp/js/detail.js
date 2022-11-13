@@ -330,15 +330,15 @@ $(window).scroll(function () {
 		imgComponent.style.position = "static"; 	
 		imgComponent.style.top = "none"; 
 	}
-    else if(scrollValue>89.5&&scrollValue < 1000 ){
+    else if(scrollValue>89.5&&scrollValue < 760 ){
 		imgComponent = document.querySelector('.img_coponent')
 		imgComponent.style.position = "fixed";
 		imgComponent.style.top = "10px"; 	
 	}
-	else if(scrollValue>1000&&scrollValue < 2000){
+	else if(scrollValue>760&&scrollValue < 2000){
 		imgComponent = document.querySelector('.img_coponent')
 		imgComponent.style.position = "relative";		
-		imgComponent.style.top = "900px"; 
+		imgComponent.style.top = "679px"; 
 	}
 
 })
