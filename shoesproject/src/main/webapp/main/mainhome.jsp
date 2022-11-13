@@ -1012,7 +1012,7 @@
 		<script type="text/javascript" src="../js/request.js"></script>
 		<script type="text/javascript" src="../js/dropdown.js"></script>
 		<script type="text/javascript" src="../js/rloadDetail.js"></script>
-		<script type="text/javascript" src="../boardjs/sellove.js"></script>
+		<script type="text/javascript" src="../boardjs/selloveload.js"></script>
 		
 		
 	</div>
