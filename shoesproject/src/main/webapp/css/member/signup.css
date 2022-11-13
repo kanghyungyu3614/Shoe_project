@@ -5,6 +5,7 @@
 	box-sizing:  border-box;
 }
 .mainsize{
+	margin: 0 auto;
 	height: 1200px;
 	width: 800px;
 	border:solid 1px black; 
@@ -71,3 +72,338 @@
 	margin-top: 10px;
 
 }
+
+
+
+/*-------------------------------------------------------------가로 :  640px 이하 시작------------------------------------------------------------------*/
+@media (max-width: 640px) {
+.header {
+    width: 1200px;
+    height: 90px;
+    margin: 0 auto;
+    border-top: 1px solid #c0c0c0;
+}
+
+#header_logo{
+	font-family: 'SEBANG_Gothic_Bold';
+	font-weight: 700;
+	font-size: 40px;
+	margin: 20px 20px;
+	display: flex;
+	position: absolute;
+	left: -20px;
+}
+}
+/*-------------------------------------------------------------가로 : 640px 이하 시작------------------------------------------------------------------*/
+/*-------------------------------------------------------------가로 : 769px 이상 960px 이하 시작------------------------------------------------------------------*/
+@media (min-width: 641px) and (max-width: 768px) {
+.header {
+    width: 1200px;
+    height: 90px;
+    margin: 0 auto;
+    border-top: 1px solid #c0c0c0;
+}
+
+#header_logo{
+	font-family: 'SEBANG_Gothic_Bold';
+	font-weight: 700;
+	font-size: 40px;
+	margin: 20px 20px;
+	display: flex;
+	position: absolute;
+	left: -20px;
+}
+
+}
+/*-------------------------------------------------------------가로 : 641px 이상 768px 이하 끝------------------------------------------------------------------*/
+/*-------------------------------------------------------------가로 : 769px 이상 960px 이하 시작------------------------------------------------------------------*/
+@media (min-width: 769px) and (max-width: 967px) {
+.header {
+    width: 1200px;
+    height: 90px;
+    margin: 0 auto;
+    border-top: 1px solid #c0c0c0;
+}
+
+#header_logo{
+	font-family: 'SEBANG_Gothic_Bold';
+	font-weight: 700;
+	font-size: 40px;
+	margin: 20px 20px;
+	display: flex;
+	position: absolute;
+    left: 55px;
+}
+
+}
+/*-------------------------------------------------------------가로 : 769px 이상 967px 이하 끝------------------------------------------------------------------*/
+/*-------------------------------------------------------------가로 : 968px 이상 1097px 이하 시작------------------------------------------------------------------*/
+@media (min-width: 968px) and (max-width: 1098px) {
+.header {
+    width: 1200px;
+    height: 90px;
+    margin: 0 auto;
+    border-top: 1px solid #c0c0c0;
+}
+#header_logo{
+	font-family: 'SEBANG_Gothic_Bold';
+	font-weight: 700;
+	font-size: 40px;
+	margin: 20px 20px;
+	display: flex;
+	position: absolute;
+    left: 122px;
+}
+
+}
+/*-------------------------------------------------------------가로 : 968px 이상 1097px 이하 끝------------------------------------------------------------------*/
+/*-------------------------------------------------------------가로 : 1098px 이상 1281px 이하 시작------------------------------------------------------------------*/
+@media (min-width: 1098px) and (max-width: 1281px) {
+.header {
+    width: 1200px;
+    height: 90px;
+    margin: 0 auto;
+    border-top: 1px solid #c0c0c0;
+}
+
+#header_logo{
+	font-family: 'SEBANG_Gothic_Bold';
+	font-weight: 700;
+	font-size: 40px;
+	margin: 20px 20px;
+	display: flex;
+	position: absolute;
+    left: 214px;
+}
+
+}
+/*-------------------------------------------------------------가로 : 1098px 이상 1281px 이하 끝------------------------------------------------------------------*/
+/*-------------------------------------------------------------가로 : 1282px 이상 1536px 이하 시작------------------------------------------------------------------*/
+@media (min-width: 1282px) and (max-width: 1536px) {
+.header {
+    width: 1200px;
+    height: 90px;
+    margin: 0 auto;
+    border-top: 1px solid #c0c0c0;
+}
+
+#header_logo{
+	font-family: 'SEBANG_Gothic_Bold';
+	font-weight: 700;
+	font-size: 40px;
+	margin: 20px 20px;
+	display: flex;
+	position: absolute;
+    left: 342px;
+}
+
+}
+/*-------------------------------------------------------------가로 : 1282px 이상 1536px 이하 끝------------------------------------------------------------------*/
+/*-------------------------------------------------------------가로 : 1537px 이상 1746px 이하 시작------------------------------------------------------------------*/
+@media (min-width: 1537px) and (max-width: 1746px) {
+.header {
+    width: 1200px;
+    height: 90px;
+    margin: 0 auto;
+    border-top: 1px solid #c0c0c0;
+}
+
+#header_logo{
+	font-family: 'SEBANG_Gothic_Bold';
+	font-weight: 700;
+	font-size: 40px;
+	margin: 20px 20px;
+	display: flex;
+	position: absolute;
+    left: 445px;
+}
+
+}
+/*-------------------------------------------------------------가로 : 1536px 이상 1746px 이하 끝------------------------------------------------------------------*/
+/*-------------------------------------------------------------가로 : 1746px 이상 1919px 이하 시작---------------------------------------------------------*/
+@media (min-width: 1746px) and (max-width: 1919px) {
+.header {
+    width: 1200px;
+    height: 90px;
+    margin: 0 auto;
+    border-top: 1px solid #c0c0c0;
+}
+#header_logo{
+	font-family: 'SEBANG_Gothic_Bold';
+	font-weight: 700;
+	font-size: 40px;
+	margin: 20px 20px;
+	display: flex;
+	position: absolute;
+    left: 532px;
+}
+
+}
+/*-------------------------------------------------------------가로 : 1800px 이상 1919px 이하 시작---------------------------------------------------------*/
+/*-------------------------------------------------------------가로 : 2133px 이상 2399px 이하 끝------------------------------------------------------------------*/
+@media (min-width: 1920px) and (max-width: 2132px) {
+.header {
+    width: 1200px;
+    height: 90px;
+    margin: 0 auto;
+    border-top: 1px solid #c0c0c0;
+}
+#header_logo{
+	font-family: 'SEBANG_Gothic_Bold';
+	font-weight: 700;
+	font-size: 40px;
+	margin: 20px 20px;
+	display: flex;
+	position: absolute;
+    left: 532px;
+    position: absolute;
+    left: 532px;
+}
+
+}
+/*-------------------------------------------------------------가로 : 1920px 이상 2132px 이하 끝---------------------------------------------------------*/
+/*-------------------------------------------------------------가로 : 2133px 이상 2399px 이하 끝------------------------------------------------------------------*/
+@media (min-width: 2133px) and (max-width: 2399px) {
+.header {
+    width: 1200px;
+    height: 90px;
+    margin: 0 auto;
+    border-top: 1px solid #c0c0c0;
+}
+#header_logo{
+	font-family: 'SEBANG_Gothic_Bold';
+	font-weight: 700;
+	font-size: 40px;
+	margin: 20px 20px;
+	display: flex;
+	position: absolute;
+    left: 635px;
+}
+
+}
+/*-------------------------------------------------------------가로 : 2133px 이상 2399px 이하 끝------------------------------------------------------------------*/
+/*-------------------------------------------------------------가로 : 2400px 이상 시작------------------------------------------------------------------*/
+@media (min-width: 2400px) and (max-width: 2559px) {
+.header {
+    width: 1200px;
+    height: 90px;
+    margin: 0 auto;
+    border-top: 1px solid #c0c0c0;
+}
+#header_logo{
+	font-family: 'SEBANG_Gothic_Bold';
+	font-weight: 700;
+	font-size: 40px;
+	margin: 20px 20px;
+	display: flex;
+	position: absolute;
+    left: 772px;
+}
+
+
+}
+/*-------------------------------------------------------------가로 : 2400px 이상 2559px 이하 끝------------------------------------------------------------------*/
+/*-------------------------------------------------------------가로 : 2560px 이상 3839px 이하  시작------------------------------------------------------*/
+@media (min-width: 2560px) and (max-width: 2840px) {
+.header {
+    width: 1200px;
+    height: 90px;
+    margin: 0 auto;
+    border-top: 1px solid #c0c0c0;
+}
+
+#header_logo{
+	font-family: 'SEBANG_Gothic_Bold';
+	font-weight: 700;
+	font-size: 40px;
+	margin: 20px 20px;
+	display: flex;
+	position: absolute;
+    left: 852px;
+}
+
+}
+/*-------------------------------------------------------------가로 : 2560px 이상 3839px 이하  끝------------------------------------------------------*/
+/*-------------------------------------------------------------가로 : 2841px 이상 3839px 이하  시작------------------------------------------------------*/
+@media (min-width: 2841px) and (max-width: 3839px) {
+.header {
+    width: 1200px;
+    height: 90px;
+    margin: 0 auto;
+    border-top: 1px solid #c0c0c0;
+}
+#header_logo{
+	font-family: 'SEBANG_Gothic_Bold';
+	font-weight: 700;
+	font-size: 40px;
+	margin: 20px 20px;
+	display: flex;
+	position: absolute;
+    left: 1022px;
+}
+
+}
+/*-------------------------------------------------------------가로 : 2841px 이상 3839px 이하  끝------------------------------------------------------*/
+/*-------------------------------------------------------------가로 : 3840px 이상 5759px 이하  시작------------------------------------------------------*/
+@media (min-width: 3840px) and (max-width: 5759px) {
+.header {
+    width: 1200px;
+    height: 90px;
+    margin: 0 auto;
+    border-top: 1px solid #c0c0c0;
+}
+
+#header_logo{
+	font-family: 'SEBANG_Gothic_Bold';
+	font-weight: 700;
+	font-size: 40px;
+	margin: 20px 20px;
+	display: flex;
+	position: absolute;
+    left: 1502px;
+}
+
+}
+/*-------------------------------------------------------------가로 : 3840px 이상 5759px 이하  끝------------------------------------------------------*/
+/*-------------------------------------------------------------가로 : 5760px 이상 7679px 이하  시작------------------------------------------------------*/
+@media (min-width: 5760px) and (max-width: 7679px) { 
+.header {
+    width: 1200px;
+    height: 90px;
+    margin: 0 auto;
+    border-top: 1px solid #c0c0c0;
+}
+
+#header_logo{
+	font-family: 'SEBANG_Gothic_Bold';
+	font-weight: 700;
+	font-size: 40px;
+	margin: 20px 20px;
+	display: flex;
+	position: absolute;
+    left: 2470px;
+}
+
+} 
+/*--------------------------------------------가로 : 5760px 이상 7679px 이하  끝 ------------------------------------------------------------------------ */
+/*-------------------------------------------------------------가로 : 7680px 이상 10000px 이하  시작------------------------------------------------------*/
+@media (min-width: 7680px) and (max-width: 10000px) {
+.header {
+    width: 1200px;
+    height: 90px;
+    margin: 0 auto;
+    border-top: 1px solid #c0c0c0;
+}
+
+#header_logo{
+	font-family: 'SEBANG_Gothic_Bold';
+	font-weight: 700;
+	font-size: 40px;
+	margin: 20px 20px;
+	display: flex;
+	position: absolute;
+    left: 3422px;
+}
+}
+/*--------------------------------------------가로 : 7680px 이상 10000px 이하  끝-------더이상 없음------------------------------------------------------------ */
+

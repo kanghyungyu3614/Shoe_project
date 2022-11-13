@@ -5,7 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<link href="../css/member/signup.css" rel="stylesheet">
+
 </head>
 <body>
    <%@ include file="../main/mainbaner.jsp" %>
@@ -93,6 +93,7 @@
    
 </form> -->
 </div>
+<link href="../css/member/signup.css" rel="stylesheet">
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 
 <script type="text/javascript" src="../js/signup.js"></script>
