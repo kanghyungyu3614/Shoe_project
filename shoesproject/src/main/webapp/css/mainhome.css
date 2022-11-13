@@ -292,7 +292,8 @@
 .product_brand_content{
 }
 .slidelist_img{
-		width: 1170px; height: 570px;		
+	width: 1160px;
+    height: 570px;
 }
 
 
@@ -386,7 +387,8 @@ footer{
 	.section [id*="slide"] {display:none;}
 	/*member가 로그인했을때 이미지들 크기 시작*/	
 	.member_category img{
-		width: 300px; height: 155px;
+		width: 285px;
+    	height: 155px;
 	}
 	/*member가 로그인했을때 이미지들 크기 끝*/	
 	/*admin이 로그인했을때 이미지들 크기 시작*/	
@@ -520,7 +522,8 @@ footer{
 	.section [id="slide12"]:checked ~ .slidewrap .control03 {display:block;}
 	
 	.category .slidelist img{
-			width: 270px; height: 160px;	
+		width: 255px;
+    	height: 160px;
 	}
 	
 /*메인 이미지 슬라이드 끝*/
