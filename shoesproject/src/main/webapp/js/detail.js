@@ -59,7 +59,7 @@ function sellAddButton(num){ // 판매
 			for(let i = 0; i<json.length; i++){
 			
 			
-		    html += '<tr class="productlist" onclick="productlist('+json[i].spno+')">'
+		    html += '<tr class="productlist">'
 					    +'<td><button class="productlist" onclick="productlist('+json[i].spno+')">'+json[i].spsize+'</button></td>'
 					    +'<td><button class="productlist" onclick="productlist('+json[i].spno+')">'+json[i].spprice+'</button></td>'
 					    +'<td><button class="productlist" onclick="productlist('+json[i].spno+')">'+json[i].spbuyid+'</button></td>'
@@ -135,7 +135,7 @@ function buyAddButton(num){ // 구매
 						'</tr>';
 			
 			for(let i = 0; i<json.length; i++){
-		    html += '<tr class="productlist" onclick="productbuylist('+json[i].spno+')">'
+		    html += '<tr class="productlist">'
 		    +'<td><button class="productlist" onclick="productbuylist('+json[i].spno+')">'+json[i].spsize+'</button></td>'
 		    +'<td><button class="productlist" onclick="productbuylist('+json[i].spno+')">'+json[i].spprice+'</button></td>'
 		    +'<td><button class="productlist" onclick="productbuylist('+json[i].spno+')">'+json[i].spsellid+'</button></td>'
