@@ -44,8 +44,9 @@ function sellAddButton(num){ // 판매
    	productSellInfoSize.innerHTML = num;
 	$.ajax({	
 		url : "/shoesproject/product/detail",
+		async: false,
 		type :'post',
-		data : {"hideNum" : hideNum , "type" : 3 ,"pno" : pno},
+		data : {"hideNum" : hideNum , "type" : 3 ,"pno" : pno}, // hideNum은 size이다.
 		success : re=>{
 			
 		if(re){		
@@ -57,9 +58,14 @@ function sellAddButton(num){ // 판매
 				'<td>유저아이디</td>'+
 			'</tr>';
 			for(let i = 0; i<json.length; i++){
+<<<<<<< HEAD
 			
 			
 		    html += '<tr class="productlist">'
+=======
+			console.log(json[i].spno)
+		    html += '<tr class="productlist" onclick="productlist('+json[i].spno+')">'
+>>>>>>> refs/remotes/origin/황인상
 					    +'<td><button class="productlist" onclick="productlist('+json[i].spno+')">'+json[i].spsize+'</button></td>'
 					    +'<td><button class="productlist" onclick="productlist('+json[i].spno+')">'+json[i].spprice+'</button></td>'
 					    +'<td><button class="productlist" onclick="productlist('+json[i].spno+')">'+json[i].spbuyid+'</button></td>'
@@ -74,6 +80,7 @@ function sellAddButton(num){ // 판매
 			let pno = product_number;
 			$.ajax({
 				url: "/shoesproject/product/detail",
+				async: false,
 				type: 'post',
 				data: { "hideNum": hideNum, "type": 3, "pno": pno },
 				success: re => {
@@ -121,6 +128,7 @@ function buyAddButton(num){ // 구매
    	 productBuyInfoSize.innerHTML = num;
 	$.ajax({	
 		url : "/shoesproject/product/detail",
+		async: false,
 		type :'post',
 		data : {"hideNum" : hideNum , "type" : 4 ,"pno" : pno},
 		success : re=>{
@@ -166,6 +174,7 @@ function selin() {
 	let pno = Number(product_number);
 	$.ajax({
 		url: "/shoesproject/product/detail",
+		async: false,
 		type: "post",
 		data: { "selprice": selprice, "hideNum": hideNum, "type": 1, "pno": pno },
 		success: function(re) {
@@ -185,6 +194,7 @@ function selbuy() {
 	let pno = Number(product_number)
 	$.ajax({
 		url: "/shoesproject/product/detail",
+		async: false,
 		type: "post",
 		data: { "selprice": selprice, "hideNum": hideNum, "type": 2, "pno": pno },
 		success: function(re) {
@@ -200,9 +210,11 @@ function selbuy() {
 /*------------------------------------판매 결제*----------------*/
 function productlist(spno){
 	let ok =  confirm("즉시판매하시겠습니까?")
+	console.log(spno)
 	if(ok==true){
 		$.ajax({
 			url : "/shoesproject/product/detail",
+			async: false,
 			type : "put",
 			data : {"spno":spno ,"type" : 1},
 			success : re=>{alert(re)
@@ -217,6 +229,7 @@ function productbuylist(spno){
 	if(ok==true){
 		$.ajax({
 			url : "/shoesproject/product/detail",
+			async: false,
 			type : "put",
 			data : {"spno":spno ,"type" : 2},
 			success : re=>{alert(re)}
