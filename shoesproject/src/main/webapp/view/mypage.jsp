@@ -834,51 +834,13 @@
 			</div>
 		</div>
 		<div class="blist"> 구매내역 </div>
-			<div class="sell">
-				<table class="tablel">
-					<tr class="str">
-						<td><img src="1.jpg"></td>
-						<td class="stdn">Jordan 1 x Travis Scott x Fragment Retro Low OG SP Military Blue</td>
-						<td class="stds">280</td>
-						<td class="stdd">2022/10/03</td>
-						<td class="stdt">배송완료</td>
-					</tr>					
-				</table>
+			<div class="buy">
+				
 			</div>
 			
 		<div class="slist"> 판매내역 </div>
-			<div class="buy">
-				<table class="tablel">
-					<tr class="str">
-						<td><img src="1.jpg"></td>
-						<td class="stdn">Jordan 1 x Travis Scott x Fragment Retro Low OG SP Military Blue</td>
-						<td class="stds">280</td>
-						<td class="stdd">2022/10/03</td>
-						<td class="stdt">배송완료</td>
-					</tr>
-				</table>
-			</div>						
-			<div class="buy">
-				<table class="tablel">
-					<tr class="str">
-						<td><img src="1.jpg"></td>
-						<td class="stdn">Jordan 1 x Travis Scott x Fragment Retro Low OG SP Military Blue</td>
-						<td class="stds">280</td>
-						<td class="stdd">2022/10/03</td>
-						<td class="stdt">배송완료</td>
-					</tr>
-				</table>
-			</div>
-			<div class="buy">
-				<table class="tablel">
-					<tr class="str">
-						<td><img src="1.jpg"></td>
-						<td class="stdn">Jordan 1 x Travis Scott x Fragment Retro Low OG SP Military Blue</td>
-						<td class="stds">280</td>
-						<td class="stdd">2022/10/03</td>
-						<td class="stdt">배송완료</td>
-					</tr>
-				</table>
+			<div class="sell">
+
 			</div>						
 	</div> <!-- b:container end -->
 	<h2>로그인 정보</h2>
@@ -928,15 +890,12 @@
 	         </div>			
 		</footer>
 		<!-- 푸터 끝 -->
-		<script src="https://kit.fontawesome.com/def66b134a.js" crossorigin="anonymous"></script>
-		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 		<script type="text/javascript" src="../js/login.js"></script>
 		<script type="text/javascript" src="../js/dropdown.js"></script>
-
-</div>
-		<script src="https://kit.fontawesome.com/def66b134a.js" crossorigin="anonymous"></script>
-		<script src="http://code.jquery.com/jquery-latest.min.js"></script>
 		<script type="text/javascript" src="../js/mypage.js"></script>
+		<script type="text/javascript" src="../js/mybuynsell.js"></script>
+		<script src="https://kit.fontawesome.com/def66b134a.js" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
 	
 </body>

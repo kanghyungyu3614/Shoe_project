@@ -1,14 +1,11 @@
 
 function login(){
-	
-	
-	
 	let lid = document.querySelector('#lid').value
 	let lpw = document.querySelector('#lpw').value
 	let alertp = document.querySelector(".alertp")
-
 	$.ajax({
 		url:"/shoesproject/shoe/login",
+		async : false,
 		data : {"lid" : lid, "lpw":lpw},
 		success : function(re){
 			if(re==='1'){
@@ -22,12 +19,7 @@ function login(){
 
 			}else if(re==='0'){
 				alertp.innerHTML = "비밀번호가 틀렸거나 존재하지 않는 아이디입니다";
-
 			}
 		}
 	})
-	
-	
-	
-	
 }

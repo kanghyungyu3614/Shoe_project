@@ -1,25 +1,25 @@
 @charset "UTF-8";
-
-
 *{
-	margin: 0 auto;
+	margin: 0 auto;	
 	text-align: center;
 	box-sizing:  border-box;
 }
 
 .mainsize{
+	margin: 0 auto;
 	height: 1200px;
 	width: 800px;
-	border:solid 1px black; 
-	
+}
+.lsignup{
+	margin: 0 auto;
 }
 .trsize{
 	width: 400px;
 	height: 20px;
 	border: solid 1px black;
-	
 }
 .signsize{
+	padding-bottom: 20px;
 	margin : 20px;
 	border-bottom: solid 2px black;
 }
@@ -36,7 +36,7 @@
 	text-align: left;
 }
 .playrull{
-	width: 350px;
+	width: 400px;
 	height: 200px;
 
 	
@@ -44,24 +44,25 @@
 .playrull h3{
 	margin-top: 15px; 
 }
-.chek{
-		
-		display: flex;
-		margin: 20px;
+.chek{	
+	display: flex;
+	margin: 20px;
 }
 .ckbox1 , .ckbox2 {
 	width: 30px;
 	height: 30px;
-	direction: none
 }
+.playrull textarea{
+		width: 280px;
+	height: 60px;
+	
+}
+
 .cocl3{
 	height: 30px;
     width: 30px;
-    
     position: relative;
     top: 10px;
-   
- 	
 }
 .insertbox{
 	width: 400px;
@@ -69,7 +70,6 @@
 	display: flex;
 	border-bottom: solid 1px #ebebeb;
 	margin-top: 10px;
-	
 }
 .btnsize{
 	color: white;
@@ -81,4 +81,3 @@
 	margin-top: 10px;
 
 }
-

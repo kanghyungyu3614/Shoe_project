@@ -27,7 +27,6 @@
 	margin: 0px 20px;
 	display: flex;
 }
-
 a:hover{
 	text-decoration: none;
 	color: black;
@@ -46,7 +45,6 @@ a:visited{
 	text-decoration: none;
 	color: black;
 }
-
 
 /*헤더 끝*/ 
 /*이달의 인기 브랜드 , 카테고리 시작*/
@@ -433,9 +431,9 @@ img{
 .member_menu_open{
 	position: fixed;
     width: 1173px;
-    height: 24.7vh;
+	height: 100vh;
     background: #ffffff;
-    top: 114px;
+	top: 124px;
     z-index: 999;
     padding: 3rem;
     border: 1px solid black;
@@ -492,8 +490,9 @@ footer{
 /*일반유저 로그인 시작*/
 .member_menu_open{
 	position: fixed;
+	top: 120px;
     width: 1173px;
-    height: 24.7vh;
+	height: 100vh;
     background: #ffffff;
     z-index: 999;
     padding: 3rem;
@@ -552,8 +551,9 @@ footer{
 /*일반유저 로그인 시작*/
 .member_menu_open{
 	position: fixed;
+	top: 120px;
     width: 1173px;
-    height: 24.7vh;
+	height: 100vh;
     background: #ffffff;
     z-index: 999;
     padding: 3rem;
@@ -611,9 +611,9 @@ footer{
 /*햄버거 드롭다운 시작*/
 /*일반유저 로그인 시작*/
 .member_menu_open{
-position: fixed;
+	position: fixed;
     width: 1173px;
-    height: 50.7vh;
+	height: 63vh;
     background: #ffffff;
     top: 110px;
     z-index: 999;
@@ -794,7 +794,7 @@ footer{
 .member_menu_open{
 	position: fixed;
     width: 1173px;
-    height: 24.7vh;
+	height: 38vh;
     background: #ffffff;
     top: 114px;
     z-index: 999;
@@ -916,7 +916,7 @@ footer{
 .member_menu_open{
 	position: fixed;
     width: 1173px;
-    height: 24.7vh;
+	height: 35vh;
     background: #ffffff;
     top: 134px;
     z-index: 999;
@@ -975,7 +975,7 @@ footer{
 .member_menu_open{
 	position: fixed;
     width: 1173px;
-    height: 24.7vh;
+	height: 32vh;
     background: #ffffff;
 	top: 120px;
     z-index: 999;
@@ -1036,7 +1036,7 @@ footer{
 .member_menu_open{
 	position: fixed;
     width: 1173px;
-    height: 24.7vh;
+	height: 28vh;
     background: #ffffff;
 	top: 120px;
     z-index: 999;
@@ -1097,7 +1097,7 @@ footer{
 .member_menu_open{
 	position: fixed;
     width: 1173px;
-    height: 24.7vh;
+	height: 26vh;
     background: #ffffff;
     top: 114px;
     z-index: 999;
@@ -1158,7 +1158,7 @@ footer{
 .member_menu_open{
 	position: fixed;
     width: 1173px;
-    height: 24.7vh;
+	height: 24vh;
     background: #ffffff;
     top: 114px;
     left: 852px;
@@ -1221,7 +1221,7 @@ footer{
 .member_menu_open{
     position: fixed;
     width: 1173px;
-    height: 16.7vh;
+	height: 18vh;
     background: #ffffff;
     top: 124px;
     left: 1331px;
@@ -1347,7 +1347,7 @@ footer{
     width: 1170px;
     height: 9vh;
     background: #ffffff;
-    top: 110px;
+	top: 130px;
     left: 3254px;
     z-index: 999;
     padding: 3rem;

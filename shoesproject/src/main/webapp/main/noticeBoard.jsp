@@ -16,6 +16,7 @@
 			<span id="notice">공지사항</span>
 				<div id="notice_table_component notice_table">
 					<table class="notice" id="notice_table">
+					<tr><th>제목</th><th>내용</th><th>날짜</th></tr>
 					</table>
 				</div>
 			</div>

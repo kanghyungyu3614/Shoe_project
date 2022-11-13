@@ -296,6 +296,14 @@ a:visited{
 
 
 
+#notice_table{
+	border-top: 1px solid black;
+}
+
+
+
+
+
 /*하단 시작*/
 footer{
 	width: 1200px;

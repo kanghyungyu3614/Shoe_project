@@ -9,14 +9,9 @@
 <link href="../css/mainhome.css" rel="stylesheet">
 </head>
 <body>
-
 	<%@ include file="mainbaner.jsp" %>
-	
-	
 	<!-- 로그인을 안했을때 시작 -->
 	 <%if(lid==null){%> 
-	
-	
 	<div id= main>
 		<section class="brand">
 			<div class="brand_content">이달의 인기 브랜드</div> 
@@ -34,7 +29,6 @@
 			<span></span>
 			<span></span>
 		</a>
-	
 		<div class="menu_open">
 			<ul>
 				<li class="dept1">
@@ -186,8 +180,6 @@
 		
 		<!-- 로그인 컴포넌트 시작 -->
 		<section class="login_modal">
-		
-		
 			<div class="login_content">로그인</div>
 			<div class="id_content">아이디</div>
 			<input id="lid" class="id_input" type="text" placeholder="아이디를 입력해주세요."> 
@@ -949,7 +941,7 @@
 						</li>
 						<li>
 							<a>
-								<img class="slidelist_img" src="./img/3.jpg">
+								<img class="slidelist_img" src="./img/mainig1.jpg">
 							</a>
 						</li>
 					</ul>

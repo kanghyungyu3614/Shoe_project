@@ -17,14 +17,12 @@ function pload() {
 							'<td >이미지</td>'+
 							'<td >삭제버튼</td>'+
 						'</tr>';
-
 			for(let i = 0 ; i<product.length ; i++) {
 				let p = product[i]
 				if(p.pimg == null) {
 					p.pimg = "noimg.png"
 				}
 				let pimg = "/shoesproject/pupload/" + p.pimg
-				
 				html += `<tr style="text-align: center;">
 							<td onclick="spload(${p.pno})" style="width: 100px; height: 100px; cursor: pointer;">${p.pno}</td>
 							<td onclick="spload(${p.pno})" style="width: 100px; height: 100px; cursor: pointer;">${p.pcategory}</td>
@@ -37,14 +35,12 @@ function pload() {
 							<td><button type="button" onclick="pdelete(${p.pno})">삭제</button></td>
 						</tr>
 						<tbody class="product${p.pno}">
-						
 						</tbody>`
 			}
 			document.querySelector('.regist').innerHTML = html
 		}
 	})
 }
-
 let sploadOn = false
 function spload(pno) {
 	$.ajax({

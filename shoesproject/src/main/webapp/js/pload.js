@@ -5,16 +5,13 @@ function pload() {
 		data : { "type" : "admin" },
 		success : function (re) {
 			let product = JSON.parse(re)
-			console.log(product)
 			let html = ""
-
 			for(let i = 0 ; i<product.length ; i++) {
 				let p = product[i]
 				if(p.pimg == null) {
 					p.pimg = "noimg.png"
 				}
 				let pimg = "/shoesproject/pupload/" + p.pimg
-				
 				html += `<tr style="text-align: center;">
 							<td onclick="spload(${p.pno})" style="width: 100px; height: 100px; cursor: pointer;">${p.pcategory}</td>
 							<td onclick="spload(${p.pno})" style="width: 100px; height: 100px; cursor: pointer;">${p.pbrand}</td>
@@ -26,14 +23,12 @@ function pload() {
 							<td><button type="button" onclick="pdelete(${p.pno})">삭제</button></td>
 						</tr>
 						<tbody class="product${p.pno}">
-						
 						</tbody>`
 			}
 			document.querySelector('.regist').innerHTML = html
 		}
 	})
 }
-
 let sploadOn = false
 function spload(pno) {
 	$.ajax({
@@ -87,7 +82,6 @@ function pdelete(i) {
 		}
 	})
 }
-
 function logout() {
 	$.ajax({
 		url : "/shoesproject/logout",

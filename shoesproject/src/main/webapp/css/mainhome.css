@@ -501,9 +501,6 @@ footer{
 	.section [id="slide12"]:checked ~ .slidewrap .control03 {display:block;}
 	/*로그인 했을때 슬라이드 밑에 추가된거 끝*/
 	
-	
-
-
 /*브랜드 카테고리 슬라이드 끝*/
 
 /*메인 이미지 슬라이드 시작*/
@@ -547,9 +544,6 @@ footer{
 		
 	}
 /*인기상품 이미지 끝*/
-
-
-
 /*  드롭다운 시작 */
 /* reset css */
 html{font-size: 10px}
@@ -607,16 +601,3 @@ a{text-decoration: none;color: inherit;}
 .visual{background:#ccd1f1;width: 100%;height: 100vh;}
 
 /*  드롭다운 끝 */	
-	
-	
-
-
-
-
-
-
-
-
-
-
-

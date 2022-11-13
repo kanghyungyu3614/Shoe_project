@@ -1,6 +1,5 @@
 $(document).ready(function() {
 			var gnb = $('#gnb');
-
 			// 마우스 over 시
 			gnb.mouseenter(function() {
 				$('.inner_menu').show();
