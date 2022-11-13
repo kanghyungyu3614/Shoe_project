@@ -247,7 +247,7 @@
 	clear : both;
 
 	width: 1180px;
-	height: 600px;
+	
 	margin: 10px 10px;	
 	text-align: center;
 }
@@ -293,7 +293,7 @@
 .product_brand_content{
 }
 .slidelist_img{
-		width: 1170px; height: 570px;		
+		margin: 0 ;		
 }
 
 
@@ -421,13 +421,14 @@ footer{
 	.section .slidelist > li {display:inline-block;vertical-align:middle;width:100%;transition:all .5s; }
 	.section .slidelist > li > a {display:block;position:relative;}
 
-	/* 좌우로 넘기는 LABEL버튼에 대한 스타일 */
+	/* 좌우로 넘기는 LABEL버h튼에 대한 스타일 */
 	.section .slide-control {position:absolute;top:0;left:0;z-index:10;width:100%;height:100%;}
 	
 	.section img {
 	
 	border-radius: 20px;
-	margin: 5px;
+	margin-left : 10px;
+	height: 500px;
 	}
 	/* admin 오늘의 브랜드 베스트 내용 시작*/
 	.admin_category_sldie_content{
@@ -521,7 +522,7 @@ footer{
 	.section [id="slide12"]:checked ~ .slidewrap .control03 {display:block;}
 	
 	.category .slidelist img{
-			width: 270px; height: 160px;	
+			width: 250px; height: 160px;	
 	}
 	
 /*메인 이미지 슬라이드 끝*/
