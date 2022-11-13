@@ -58,14 +58,8 @@ function sellAddButton(num){ // 판매
 				'<td>유저아이디</td>'+
 			'</tr>';
 			for(let i = 0; i<json.length; i++){
-<<<<<<< HEAD
-			
 			
 		    html += '<tr class="productlist">'
-=======
-			console.log(json[i].spno)
-		    html += '<tr class="productlist" onclick="productlist('+json[i].spno+')">'
->>>>>>> refs/remotes/origin/황인상
 					    +'<td><button class="productlist" onclick="productlist('+json[i].spno+')">'+json[i].spsize+'</button></td>'
 					    +'<td><button class="productlist" onclick="productlist('+json[i].spno+')">'+json[i].spprice+'</button></td>'
 					    +'<td><button class="productlist" onclick="productlist('+json[i].spno+')">'+json[i].spbuyid+'</button></td>'
@@ -215,8 +209,8 @@ function productlist(spno){
 		$.ajax({
 			url : "/shoesproject/product/detail",
 			async: false,
-			type : "put",
-			data : {"spno":spno ,"type" : 1},
+			type : "post",
+			data : {"spno":spno ,"type" : 6},
 			success : re=>{alert(re)
 				window.location.reload()}
 		})
@@ -230,12 +224,10 @@ function productbuylist(spno){
 		$.ajax({
 			url : "/shoesproject/product/detail",
 			async: false,
-			type : "put",
-			data : {"spno":spno ,"type" : 2},
+			type : "post",
+			data : {"spno":spno ,"type" : 7},
 			success : re=>{alert(re)}
-			
 		})
-		
 	}
 }
 let xValues; 
