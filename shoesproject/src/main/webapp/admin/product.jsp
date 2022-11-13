@@ -43,7 +43,7 @@
 				</tr>	
 				<tr>
 					<td>가격</td>
-					<td><input type="text" name="pprice" class="ntitle" placeholder="ex)  원"> </td>
+					<td><input type="text" name="pprice" class="ntitle" placeholder="ex)  12000"> </td>
 				</tr>	
 				<tr>
 					<td>색상</td>
