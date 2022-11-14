@@ -62,9 +62,9 @@ figma : https://bit.ly/3THDIlG <br>
    <td>발표 준비 및<br> 10시 발표 및 시연</td>   
 </tr>
 </table>
-# Shoe_project 시연 영상
-1. <a href="https://bit.ly/3UWxyPE">시연 영상 1번<a/>
-2. <a href="https://bit.ly/3Ge0Bty">시연 영상 2번<a/>
-3. <a href="https://bit.ly/3tsRBt2">시연 영상 3번<a/>
+# Shoe_project 시연 영상 <br>
+<a href="https://bit.ly/3UWxyPE">시연 영상 1번<a/><br>
+<a href="https://bit.ly/3Ge0Bty">시연 영상 2번<a/><br>
+<a href="https://bit.ly/3tsRBt2">시연 영상 3번<a/>
 
  <br>
