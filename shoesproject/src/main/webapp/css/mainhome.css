@@ -135,7 +135,6 @@
 }
 /*member가 로그인했을때 카테고리 시작*/
 .member_category{
-	border: 1px solid black;
 	width: 98%;
 	height: 390px;
 	margin: 0 10px 10px 10px;
@@ -145,7 +144,7 @@
 
 /*admin이 로그인했을때 카테고리 시작*/
 .admin_category{
-	border: 1px solid black;
+	 
 	width: 98%;
 	height: 390px;
 	margin: 0 10px 10px 10px;
@@ -277,6 +276,7 @@
     z-index: 9999;
 }
 .productComponentImg{
+	border-radius : 10px;
 	width: 180px;
     height: 200px;
 }
@@ -299,6 +299,7 @@
 /*인기제품 끝*/
 /*제품 이미지 슬라이드 시작*/
 .product_img_slade{
+	border-bottom : solid;
 	clear : both;
 	width: 1180px;
 	height: 600px;
@@ -327,6 +328,7 @@
 /*제품 이미지 크기 끝*/
 /* 셀럽 이미지 시작*/
 .selloveimg{
+	margin : 50px;
     display: flex;
     width: 1180px;
     height: 574px;

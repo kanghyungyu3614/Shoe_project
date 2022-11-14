@@ -1852,7 +1852,6 @@ a:visited{
 
 /*member가 로그인했을때 카테고리 시작*/
 .member_category{
-	border: 1px solid black;
 	width: 98%;
 	height: 400px;
 	margin: 0 10px 10px 10px;
@@ -1862,7 +1861,7 @@ a:visited{
 
 /*admin이 로그인했을때 카테고리 시작*/
 .admin_category{
-	border: 1px solid black;
+	
 	width: 98%;
 	height: 400px;
 	margin: 0 10px 10px 10px;
