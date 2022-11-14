@@ -19,25 +19,25 @@ figma : https://bit.ly/3THDIlG <br>
    <th>담당</th>
 </tr>
  <tr>
-   <td><a href="https://github.com/kanghyungyu3614">김경주<a/></td>
+   <td><a href="https://github.com/kimkyoungju">김경주<a/></td>
    <td>팀장</td>
    <td>김경주</td>
    <td>백엔드 및 프론트엔드 작업</td>
 </tr>
   <tr>
-   <td><a href="https://github.com/ljh0407">안태섭<a/></td>
+   <td><a href="https://github.com/ANTAESEOP">안태섭<a/></td>
    <td>팀원</td>
    <td>안태섭</td>
    <td>백엔드 및 프론트엔드 작업</td>
 </tr>
   <tr>
-   <td><a href="https://github.com/Jooh94">인상<a/></td>
+   <td><a href="https://github.com/Hinsang">인상<a/></td>
    <td>팀원</td>
    <td>인상</td>
    <td>백엔드 및 프론트엔드 작업 </td>
 </tr>
   <tr>
-   <td><a href="https://github.com/dive27">강현규<a/></td>
+   <td><a href="https://github.com/kanghyungyu3614">강현규<a/></td>
    <td>팀원</td>
    <td>강현규</td>
    <td>백엔드 및 프론트엔드 작업</td>
