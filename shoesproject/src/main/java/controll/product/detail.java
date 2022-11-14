@@ -133,6 +133,37 @@ public class detail extends HttpServlet {
 			
 		}else if(type == 5) {
 			int pno = Integer.parseInt(request.getParameter("pno"));
+			ArrayList<SpregistDto> result = DetailDao.getInstance().suclistchart(pno);
+			JSONArray array = new JSONArray();
+			for(int i = 0 ; i<result.size(); i++) {
+				JSONObject object = new JSONObject();
+				object.put("spno" , result.get(i).getSpno());
+				object.put("spstatus" , result.get(i).getSpstatus());
+				object.put("spsize" , result.get(i).getSpsize());
+				object.put("spendday" , result.get(i).getSpendday());
+				object.put("spsellid" , result.get(i).getSpsellid());
+				object.put("spbuyid" , result.get(i).getSpbuyid());
+				object.put("spprice" , result.get(i).getSpprice());
+				object.put("pno" , result.get(i).getPno());
+				array.add(object);
+				
+		}
+			response.setCharacterEncoding("UTF-8");
+			response.getWriter().print(array);
+		} else if(type == 6) {
+			int spno = Integer.parseInt(request.getParameter("spno"));
+			System.out.println(spno);
+			boolean result = DetailDao.getInstance().successsell(spno , lid);
+			
+			response.getWriter().print(result);
+		} else if(type == 7) {
+			int spno = Integer.parseInt(request.getParameter("spno"));
+			System.out.println(spno);
+			boolean result = DetailDao.getInstance().successbuy(spno , lid);
+			
+			response.getWriter().print(result);
+		} else if(type == 8) {
+			int pno = Integer.parseInt(request.getParameter("pno"));
 			ArrayList<SpregistDto> result = DetailDao.getInstance().suclist(pno);
 			JSONArray array = new JSONArray();
 			for(int i = 0 ; i<result.size(); i++) {
@@ -157,7 +188,9 @@ public class detail extends HttpServlet {
 	protected void doPut(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		String lid = (String)request.getSession().getAttribute("lid");
-		int type  = Integer.parseInt(request.getParameter("type"));
+		System.out.println("id는 " + lid);
+		int type = Integer.parseInt(request.getParameter("type"));
+		System.out.println("type은 " + type);
 		if(type==1) {
 			
 			int spno = Integer.parseInt(request.getParameter("spno"));

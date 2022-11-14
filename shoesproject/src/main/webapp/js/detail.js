@@ -18,7 +18,6 @@ function detail() {
 			let pimg = "/shoesproject/pupload/"+ product.pimg
 			document.querySelector('.priceimg').src = pimg
 			document.querySelector('.priceimg1').src = pimg
-			
 			document.querySelector('.product').src = pimg
 			document.querySelector(".productname").innerHTML = product.pname
 			document.querySelector(".productdate").innerHTML = product.preleaseday
@@ -59,12 +58,8 @@ function sellAddButton(num){ // 판매
 			'</tr>';
 			for(let i = 0; i<json.length; i++){
 
-			
-			
-
 			console.log(json[i].spno)
 		    html += '<tr class="productlist">'
-
 					    +'<td><button class="productlist" onclick="productlist('+json[i].spno+')">'+json[i].spsize+'</button></td>'
 					    +'<td><button class="productlist" onclick="productlist('+json[i].spno+')">'+json[i].spprice+'</button></td>'
 					    +'<td><button class="productlist" onclick="productlist('+json[i].spno+')">'+json[i].spbuyid+'</button></td>'
@@ -214,8 +209,8 @@ function productlist(spno){
 		$.ajax({
 			url : "/shoesproject/product/detail",
 			async: false,
-			type : "put",
-			data : {"spno":spno ,"type" : 1},
+			type : "post",
+			data : {"spno":spno ,"type" : 6},
 			success : re=>{alert(re)
 				window.location.reload()}
 		})
@@ -229,17 +224,37 @@ function productbuylist(spno){
 		$.ajax({
 			url : "/shoesproject/product/detail",
 			async: false,
-			type : "put",
-			data : {"spno":spno ,"type" : 2},
+			type : "post",
+			data : {"spno":spno ,"type" : 7},
 			success : re=>{alert(re)}
-			
 		})
-		
 	}
 }
 let xValues; 
 let yValues;
 /*-------------------------------거래 리스트------------------------*/
+suclistchart()
+function suclistchart() {
+	let pno = Number(product_number)
+	if (product_number != null) {
+		$.ajax({
+			url: "/shoesproject/product/detail",
+			async: false,
+			type: "post",
+			data: { "type": 5, "pno": pno },
+			success: re => {
+				let json = JSON.parse(re)
+				xValues = [];
+				yValues = [];
+				for (let i = 0; i < json.length; i++) {
+					xValues[i] = ""
+					yValues[i] = json[i].spprice
+					console.log(yValues)
+				}
+			}
+		})
+	}
+}
 suclist()
 function suclist() {
 	let slist = document.querySelector(".successlist")
@@ -250,17 +265,10 @@ function suclist() {
 			url: "/shoesproject/product/detail",
 			async: false,
 			type: "post",
-			data: { "type": 5, "pno": pno },
+			data: { "type": 8, "pno": pno },
 			success: re => {
-				console.log("re");
-				console.log(re);
 				let json = JSON.parse(re)
-				xValues = [];
-				yValues = [];
 				for (let i = 0; i < json.length; i++) {
-					xValues[i] = ""
-					yValues[i] = json[i].spprice
-					console.log(yValues)
 					html += '<tr>' +
 						'<th>' + json[i].spsize + '</th>' +
 						'<th>' + json[i].spprice + '</th>' +

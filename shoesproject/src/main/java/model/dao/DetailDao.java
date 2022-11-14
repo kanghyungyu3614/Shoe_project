@@ -150,13 +150,34 @@ public class DetailDao extends dao {
 			System.out.println(e);
 		}
 		
-		
 		return false;
 	}
 
+	public ArrayList<SpregistDto>suclistchart(int pno){
+		ArrayList<SpregistDto>list = new ArrayList<>();
+		
+		String sql = "select * from sproduct where spstatus ='낙찰완료' and pno = ?;";
+		try {
+			ps = con.prepareStatement(sql);
+			ps.setInt(1, pno);
+			rs = ps.executeQuery();
+			
+			while(rs.next()) {	
+				SpregistDto dto = new SpregistDto(rs.getInt(1),rs.getString(2),
+						rs.getInt(3),rs.getString(4),rs.getString(5),
+						rs.getString(6), rs.getInt(7), rs.getInt(8));
+				list.add(dto);
+			}return list;
+			
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+		return list;
+	}
+	
 	public ArrayList<SpregistDto>suclist(int pno){
-		 ArrayList<SpregistDto>list = new ArrayList<>();
-		 
+		ArrayList<SpregistDto>list = new ArrayList<>();
+	 
 		String sql = "select * from sproduct where spstatus ='낙찰완료' and pno = ? order by spendday desc;";
 		try {
 			ps = con.prepareStatement(sql);
@@ -175,8 +196,5 @@ public class DetailDao extends dao {
 		}
 		return list;
 	}
-	
-
-
 
 }
