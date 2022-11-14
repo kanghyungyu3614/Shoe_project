@@ -3,7 +3,7 @@
  - 👋 Hi, I’m @kimkyoungju
  - 👋 Hi, I’m @ANTAESEOP
  - 👋 Hi, I’m @kanghyungyu3614
- - 👋 Hi, I’m @Hinsang
+ - 👋 Hi, I’m @Hinsang <br>
 주제 : 한정판 신발을 사고 파는 이커머스 사이트 입니다. <br>
 주제선정이유: 한정판 신발을 사고싶은 고객들의 리즈를 충족시키기 위해 프로젝트를 기획하게 되었습니다.<br>
 노션 : https://bit.ly/3hAXphw <br>
