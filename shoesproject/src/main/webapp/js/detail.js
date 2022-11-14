@@ -58,7 +58,6 @@ function sellAddButton(num){ // 판매
 			'</tr>';
 			for(let i = 0; i<json.length; i++){
 
-			console.log(json[i].spno)
 		    html += '<tr class="productlist">'
 					    +'<td><button class="productlist" onclick="productlist('+json[i].spno+')">'+json[i].spsize+'</button></td>'
 					    +'<td><button class="productlist" onclick="productlist('+json[i].spno+')">'+json[i].spprice+'</button></td>'

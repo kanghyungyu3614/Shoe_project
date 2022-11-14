@@ -6,7 +6,6 @@
 .login_modal{
     border: 1px solid black;
     width: 360px;
-   
     margin: 100px 10px 0 0;
     float: right;
     border-radius:10px; 
@@ -18,11 +17,11 @@
 @media (min-width: 2560px) and (max-width: 3839px) {
 /*로그인 시작*/
 .login_modal{
-	border: 1px solid black;
-    width: 364px;
-    height: 450px;
-    margin: 10px 10px 0 0;
+    border: 1px solid black;
+    width: 360px;
+    margin: 100px 10px 0 0;
     float: right;
+    border-radius:10px; 
 }
 /*로그인 끝*/	
 }
@@ -31,11 +30,11 @@
 @media (min-width: 3840px) and (max-width: 5759px) {
 /*로그인 시작*/
 .login_modal{
-	border: 1px solid black;
-	width: 362px;
-    height: 450px;
-    margin: 10px 10px 0 0;
+    border: 1px solid black;
+    width: 360px;
+    margin: 100px 10px 0 0;
     float: right;
+    border-radius:10px; 
 }
 /*로그인 끝*/	
 }
@@ -44,11 +43,11 @@
 @media (min-width: 5760px) and (max-width: 7679px) { 
 /*로그인 시작*/
 .login_modal{
-	border: 1px solid black;
-	width: 358px;
-    height: 450px;
-    margin: 10px 10px 0 0;
+    border: 1px solid black;
+    width: 360px;
+    margin: 100px 10px 0 0;
     float: right;
+    border-radius:10px; 
 }
 /*로그인 끝*/
 } 
@@ -57,11 +56,11 @@
 @media (min-width: 7680px) and (max-width: 10000px) { 
 /*로그인 시작*/
 .login_modal{
-	border: 1px solid black;
-	width: 354px;
-    height: 450px;
-    margin: 10px 10px 0 0;
+    border: 1px solid black;
+    width: 360px;
+    margin: 100px 10px 0 0;
     float: right;
+    border-radius:10px; 
 }
 /*로그인 끝*/
 } 
@@ -247,7 +246,7 @@
 	clear : both;
 
 	width: 1180px;
-	
+	height: 600px;
 	margin: 10px 10px;	
 	text-align: center;
 }
@@ -290,10 +289,9 @@
     font-size: 15px;
     font-weight: 700;
 }
-.product_brand_content{
-}
 .slidelist_img{
-		margin: 0 ;		
+	width: 1160px;
+    height: 570px;
 }
 
 
@@ -387,12 +385,13 @@ footer{
 	.section [id*="slide"] {display:none;}
 	/*member가 로그인했을때 이미지들 크기 시작*/	
 	.member_category img{
-		width: 300px; height: 155px;
+		width: 285px;
+    	height: 155px;
 	}
 	/*member가 로그인했을때 이미지들 크기 끝*/	
 	/*admin이 로그인했을때 이미지들 크기 시작*/	
 	.admin_category img{
-		width: 300px; height: 155px;
+		width: 285px; height: 155px;
 	}
 	/*admin이 로그인했을때 이미지들 크기 끝*/	
 	/*로그인 안했을때 카테고리 이미지 끝*/
@@ -421,14 +420,13 @@ footer{
 	.section .slidelist > li {display:inline-block;vertical-align:middle;width:100%;transition:all .5s; }
 	.section .slidelist > li > a {display:block;position:relative;}
 
-	/* 좌우로 넘기는 LABEL버h튼에 대한 스타일 */
+	/* 좌우로 넘기는 LABEL버튼에 대한 스타일 */
 	.section .slide-control {position:absolute;top:0;left:0;z-index:10;width:100%;height:100%;}
 	
 	.section img {
 	
 	border-radius: 20px;
-	margin-left : 10px;
-	height: 500px;
+	margin: 5px;
 	}
 	/* admin 오늘의 브랜드 베스트 내용 시작*/
 	.admin_category_sldie_content{
@@ -522,7 +520,8 @@ footer{
 	.section [id="slide12"]:checked ~ .slidewrap .control03 {display:block;}
 	
 	.category .slidelist img{
-			width: 250px; height: 160px;	
+		width: 255px;
+    	height: 160px;
 	}
 	
 /*메인 이미지 슬라이드 끝*/

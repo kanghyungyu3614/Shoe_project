@@ -930,7 +930,7 @@
 					<ul class="slidelist">
 						<li>
 							<a>
-								<img class="slidelist_img" src="./img/main2.webp" style="width: 100%">
+								<img class="slidelist_img" src="./img/main2.webp">
 							</a>
 						</li>
 						<li>
